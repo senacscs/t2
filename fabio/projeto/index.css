@@ -1,0 +1,7 @@
+body{
+    background: linear-gradient(-45deg, rgba(250, 100, 0, 0.904), yellow, pink, lightgreen, orange);
+    background-size: 1000% 1000%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+    overflow-y: hidden;
+}

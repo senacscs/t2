@@ -1,0 +1,76 @@
+body {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(157, 187, 88);
+    font-size: 18pt;
+    background: url("../img/capa.jpg");
+}
+h2 {
+  color: cornsilk;
+  text-align: center;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-texto{
+  background-color: rgba(0, 0, 0, 0.521);
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+body {
+  text-align: center;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 1000% 1000%;
+animation: gradient 15s ease infinite;
+}
+
+div {
+  text-align: center;
+  display: inline-block;
+}
+
+.text_shadow {
+  text-shadow: 1px 1px 2px rgb(0 0 0), 0 0 1em rgb(0 43 255), 0 0 0.2em rgb(255 176 0);
+  color: #ffffff;
+  font: Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+  font-size: 30pt;
+}
+
+a {
+  color:rgb(245, 245, 245);
+}
+
+a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer {
+  padding: 20px 0px 0px 0px;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+
+}
+}
