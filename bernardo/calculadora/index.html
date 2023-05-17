@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>CALCULADORA</h1>
+            <div class="content">
+                <label for="numero1">Digite um número:</label>
+                <input type="number" id="numero1" name="numero1">
+
+                <label for="equation">Selecione o tipo de equação:</label>
+                <select id="equation" name="equation">
+                    <option value="adicao">+</option>
+                    <option value="subtracao">-</option>
+                    <option value="multiplicacao">x</option>
+                    <option value="divisao">/</option>
+                </select>
+
+                <label for="numero2">Digite outro número:</label>
+                <input type="number" id="numero2" name="numero2">
+
+                <button id="button" onclick="calcular()">Calcular</button><br>
+	
+	            <label>Resultado:</label>
+	            <span id="resultado"></span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
