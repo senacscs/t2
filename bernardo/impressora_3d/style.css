@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@font-face {
+    font-family: mori;
+    src: url(fonts/PPMori-SemiBold.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+  /* Chrome, Edge, e Safari */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #202024;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(112, 104, 222);
+    border-radius: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#navbar{
+    position: fixed;
+    padding: 1.2%;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: left;
+}
+
+#navbar li{
+    list-style-type: none;
+}
+
+#navbar a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 120%;
+    font-weight: 500;
+    color: #f1f1f1;
+    transition: 0.4s;
+}
+
+#first_container{
+    display: flex;
+    height: 100vh;
+    background: #5436ec;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    margin: 4% 3% 3% 3%;
+    background: rgba(88, 88, 88, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(88, 88, 88, 0.38);
+    height: auto;
+    width: 100vw;
+    border-radius: 10px;
+    box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 0.35);
+    background: #010614;
+}
+
+.card_left{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Bruno Ace SC';
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 10px;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 800px) {
+    .card_left {
+      font-size: 28px;
+    }
+
+    .card{
+        margin: 5.5% 3% 3% 3%;
+    }
+
+    .right h1{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    .right p{
+        margin: 3% 20% 0 30%;
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 540px) and (max-height: 720px) {
+    .card_left {
+      font-size: 18px;
+    }
+
+    .card{
+        margin: 8% 3% 3% 3%;
+    }
+
+    #navbar ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .right h1{
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    
+    .right p{
+        margin: 3% 20% 0 30%;
+        font-size: 15px;
+    }
+  }
+  
+
+.card_left h1{
+    transition: 0.4s ease;
+    user-select: none;
+}
+
+.card_left h1:hover{
+    letter-spacing: 8px;
+}
+
+.card_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+}
+
+.card_right video{
+    width: 55%;
+    height: 90%;
+    filter: saturate(125%);
+}
+
+#second_container{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    flex: 1;
+    background-color: black;
+}
+
+.left img{
+    height: 100%;
+    width: 100%;
+    -webkit-user-drag: none;
+}
+
+.right{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #524C70;
+    font-family: 'Bruno Ace SC';
+    color: #fff;
+}
+
+.right h1{
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.right p{
+    margin: 3% 20% 0 30%;
+    font-size: 1.5em;
+}
+
+#third_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #010614;
+    font-family: 'Bruno Ace SC';
+    letter-spacing: 3px;
+}
+
+.buy_left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy_left img{
+    width: 78%;
+}
+
+.buy_right{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.buy_right h1{
+    margin: 2%;
+    color: #fff;
+    text-align: center;
+}
+
+.buy_right button{
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    background: #524C70;
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+
+#faq_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #524C70;
+    font-family: 'Bruno Ace SC';
+  }
+  
+.faq {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+  font-family: 'Bruno Ace SC';
+  color: #fff;
+}
+
+.faq h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 10px;
+}
+
+.faq p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}

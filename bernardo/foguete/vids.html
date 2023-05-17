@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/98dedcf184.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/android-chrome-192x192.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/android-chrome-512x512.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/apple-touch-icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Man 540</title>
+</head>
+<body>
+  <header>
+    <nav class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-rocket"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html" class="menu"><i class="fa-brands fa-buffer"></i>Projeto</a>
+        </li>
+        <li>
+          <a href="#"class="drop-btn"><i class="fa-solid fa-file"></i>Relatórios</a>
+          <span class="fas fa-caret-down"></span>
+        </li>
+          <ul class="drop">
+            <li><a class="menu-drop" href="RELATÓRIO GERAL 1.pdf" target="_blank">Rel. do Bernardo</a></li>
+            <li><a class="menu-drop" href="REL. Geral.pdf" target="_blank">Rel. do Gabriel G.</a></li>
+          </ul>
+        <li>
+          <a href="construcao.html"class="menu"><i class="fa-solid fa-helmet-safety"></i>Construção</a>
+        </li>
+        <li>
+          <a href="vids.html" class="menu"><i class="fa-solid fa-film"></i>Vídeos</a>
+        </li>
+        <li>
+          <a href="referencias.html"class="menu"><i class="fa-solid fa-book"></i>Referências</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+<script>
+  var sidebarBtn = document.querySelector(".drop-btn");
+  var dropul = document.querySelector(".drop");
+  var caret = document.querySelector(".fas");
+    sidebarBtn.addEventListener("click", ()=>{
+        dropul.classList.toggle("show");
+        caret.classList.toggle("up");
+    });
+</script>
+  <main>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgs">
+            <div class="videos">
+                <iframe src="videos/video1.mp4" width="300px" height="400px" frameborder="0" ></iframe>
+                <iframe src="videos/video2.mp4" width="300px" height="400px" frameborder="0"></iframe>
+                <iframe src="videos/video3.mp4" width="300px" height="400px" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <p>Feito por <a href="https://profluiz.com/t2/bernardo/" target="_blank">Bernardo Etges da Silva</a></p>
+  </footer>
+</body>
+</html>
