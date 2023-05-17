@@ -1,6 +1,6 @@
 <h1 align="center">
 🐼 <br>
- Giovana - T2
+ Blank
 </h1>
 
 ### → Sobre o repositório
