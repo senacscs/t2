@@ -1,0 +1,62 @@
+body{
+    background-color: #d8d3ed;
+}
+
+.titulo{
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 35px; 
+    margin-top: 20%;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+.nav-link{
+    font-size: 22px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: black;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.btn{
+    font-size: 25px;
+    margin-left: 42%;
+    margin-top: 20%;
+    color: black;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.btn-secondary{
+    background:none;
+    border-color: black;
+}
+
+.btn-primary{
+    font-size: 25px;
+    margin-left: 42%;
+    margin-top: 25%;
+    border-color: black;
+    background: none;
+    width: 17%;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.card{
+    margin-left: 40%;
+    margin-top: 18%;
+    background: none;
+    color: black;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.card-text{
+    color: black;
+}
+
+.card-title{
+    color: black;
+}
