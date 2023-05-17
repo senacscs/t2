@@ -1,0 +1,19 @@
+body {
+    background-color: dimgray
+  ;
+  }
+  p {
+    color: black;
+  }
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  h2 {
+   color: firebrick;
+  }
+  a {
+    font-family: verdana;
+    font-size: 20px;
+  }

@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(50, 186, 136);
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+  h1 {
+    color: black;
+    text-align: center;
+    font-family: italic;
+  }
+  
+  #menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(0, 0, 0);
+}
+  p {
+    font-family: italic;
+    text-align: center;
+    font-size:20px;
+  }
+ 
+  iframe{
+    text-align: center;
+ }
+
+h2{
+    text-align: center;
+    font-family: italic;
+    font-size:20px;
+}
+h3{
+    text-align: center;
+    font-family: italic;
+    font-size:20px;
+}
