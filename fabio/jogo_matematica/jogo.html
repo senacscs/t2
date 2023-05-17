@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Minha engine </title>
+        <style>
+            canvas {
+                position: absolute;
+                top: 0px;
+                bottom:0px;
+                left:0px;
+                right: 0px;
+                 margin: auto;
+            }
+        </style>
+         </head>
+         <body>
+             <script>
+                 //variáveis do jogo 
+                 var canv ,as,ctx,ALTURA,LARGURA,frames= 0, maxpulos = 3,velocidade = 6,
+                 estadoAtual, record,
+
+                 estados = {
+                      jogar: 0,
+                      jogando: 1,
+                      perdeu: 2
+                 },
+                 
+                 chao = {
+                 y: 550,
+                 altura:50,
+                 cor: "#ffdf70"
+                 
+                 desenha:function() {
+                     ctx.fillstyle=this.cor;
+                     ctx.fillRect(0,this.y,LARGURA,this.altura);
+                    }
+                 },
+                 
+                 bloco = {
+                     x: 50,
+                     y: 0,
+                     altura: 50,
+                    largura:50,
+                    cor:"#ff4e4e",
+                    gravidade: 2.5,
+                    velocidade: 2,
+                    forcaDoPulo: 15,
+                    qntPulos: 2, 
+                    score: 0,
+
+                    atualiza:function() {
+                        this.velocidade+=this.gravidade;
+                        this.y +=this.velocidade;
+
+                        if (this.y > chao.y-this.altura) {
+                            this.y =chao.y-this.altura;
+                            this.qntPulos= 2;
+                        }
+                    }
+
+                    Pula: function() {
+                        if(this.qntpulos <maxPulos) {
+                        this.velocidade = -this.forcaDoPulo;
+                        this.qntPulos++;
+                    }
+                            reset: funcation() {
+                             this.velocidade = 0;
+                             this.y = 0;
+
+                            if (this.score > record){
+                                localStorage.setItem("record",this.score);
+                                record = this.score;
+                            }
+
+                             this.score = 0;
+                        },
+
+                    desenha: function() {
+                        ctx.fillstyle = this.cor;
+                        ctx.fillRect(this.x,this.y,this.largura,this.altura);
+                    }
+                },
+
+                 obstaculos = {
+                     _obs:[],
+                     _cores:["#ffbc1c","#ff1c1c","#ff85e1,","#52a7ff","#78ff5d"],
+                     tempoInsere: 0,
+
+                     insere:function() {
+                      this._obs.push({
+                    x: LARGURA,
+                    //largura: 30 + Math.floor(21 * Math.random()),
+                    largura:50,  
+                    altura:30+Math.floor(120* Math.random()),
+                    cor:this.cores[Math.floor(5 * Math.random()]
+              });
+                       
+                      this.tempoInsere = 30 + Math.floor(21 * Math.random());
+                     },
+ 
+                     atualiza:function() {
+                         if (this.tempoInsere == 0)
+                           this.insere();
+                           else
+                                this.tempoInsere--;
+
+                          for(var i = 0, tam = this._obs. lenght; i <tam; i++) {
+                             var obs = this._obs[i];
+
+                             obs.x-=velocidade;
+
+                             if (bloco.x < obs.x + obs.largura gg  bloco.x + bloco.largura >=obs
+                             .x gg bloco.y + bloco.altura >= chao.y - obs.altura)
+                             estadoAtual =estados.perdeu;
+
+                             if (obs.x == 0)
+                              bloco.score++;
+
+                             else if (obs.x <=  -obs.largura)
+                             this._obs.splice(i, 1);
+                             tam--;
+                             i--;
+                         }
+                     }
+
+                     desenha:function() {for (var  i = 0, tam =this_obs.lenght;i <  tam; i++) {
+                         var obs = this._obs[i];
+                         ctx.fillstyle = obs.cor;
+                         ctx.fillRect(obs.x,chao.y-obs.altura, obs.largura,obs.altura);
+                          }
+                        
+                     }
+
+
+                     },
+                 };
+
+                 function clique(event) {
+                  if(estado atual  =estados jogando)
+                    bloco.pula();
+                 }
+                    else if (estadoAtual == estados.jogar){
+                        estadoAtual =estado.jogando;
+                    }
+                         else if(estadoAtual == estados.perdeu gg bloco.y >= 2 * ALTURA) {
+                           estadoAtual =estados.jogar;
+                           record =localStorage.getItem("record");
+
+                           if (record == null)
+                               record = 0;
+
+                               roda ();
+
+                          roda();
+                      }
+                       funcation roda() {
+                     atualiza(20);
+                     desenha(10);
+
+                         window.requestAnimationFrame(roda);
+                         }
+                      
+              
+
+                          obstaculos.limpa();
+                          bloco.velocidade = 0;
+                          bloco.y = 0;
+
+                              }
+                         }
+
+                 function main() {
+                     ALTURA=window.innerHeight;
+                     LARGURA=window.innerwidth;
+
+                     if (LARGURA >=500){
+                         LARGURA=500;
+                         ALTURA=600;
+                     }
+
+                       canvas=document.createElement("canvas");
+                       canvas.width = LARGURA;
+                       canvas.height =ALTURA;
+                        canvas.style.border = "1px solid  #000";
+
+                         ctx =canvas.getContext("2d");
+                         document.body.appendChild(canvas);
+                         document.addEventListener("mousedown",qlique); 
+
+                         roda();
+                          }
+
+                function roda() {
+                    atualiza();
+                    desenha();
+
+                    window.requestAnimationFrame(roda);
+                }
+
+                function atualiza() {
+                    frames++;
+
+                 bloco.atualiza();
+                 obstaculos.atualiza();
+                }
+
+                function desenha() {
+                    ctx.fillStyle = "#50beff";
+                    ctx.fillRect(0,0,LARGURA,ALTURA);
+                
+                    ctx.fillstyle = "#fff";
+                    ctx.font ="50px Arial";
+                    ctx.filltext(bloco.score,30, 68);
+                    
+                  if(estados atual == estados.jogar) {
+                   ctx.fillStyle ="green";
+                    ctx.fillRect(LARGURA / 2 - 50,ALTURA / 2 - 50, 100, 100);
+                  }
+                  else if (estadoAtual ==estados.perdeu) {
+                    ctx.fillstyle ="red";
+                    ctx.translate(LARGURA / 2- 50, ALTURA / 2 -50,100, 100);
+ 
+                     ctx.save();
+                     ctx.translate(LARGURA / 2 ,ALTURA / 2 );
+                     ctxfillStyle="#fff";
+
+                     if (bloco.score <10)
+                          ctx.filltext(bloco.score, -13, 19);
+
+                      else if (bloco.score >= 10  gg bloco.score < 100)
+                        ctx.filltext(bloco.score, -26, 19);
+
+                        else
+                            ctx.filltext(bloco.score, -39, 19);
+
+                     ctx.restoure();
+                 }
+
+                    else if (estadoAtual == estados.jogando)
+                    obstaculos.desenha();
+
+                    chao.desenha();
+                    obstaculos.desenha();
+                    bloco.desenha();
+                }
+
+                 //inicializa o jogo 
+                 main();
+             </script>
+         </body>
+    <html>
+
+    
+
