@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(-45deg, #a062ae, #a062ae, #a062ae, #a062ae);
+    background-size: 1000% 1000%;
+    /* animation: gradient 12s ease infinite; */
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+nav{
+    padding-bottom: 16px;
+    animation: nav-anim 1s ease-in-out;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+.hover-underline-animation {
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    color: #66596f;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #66596f;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+ul li a{
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family:  SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+ul li a:hover{
+    color: #fdcbf1;
+    transition: .3s;
+}
+
+img{
+    border-radius: 10px;
+    text-align: center;
+    animation: float 10s ease-in-out infinite;
+    box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 0.35);
+}
+
+p{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    transform: translateY(0px);
+    animation: float 10s ease-in-out infinite;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+footer{
+    margin-bottom: -10px;
+}
+
+.final{
+    animation: none;
+}
+
+hr{
+    width: 0%;
+    min-width: 50%;
+    max-width: 150%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #666;
+    position: relative;
+    transition: box-shadow 200ms ease-in-out;
+    box-shadow: 0px 0px 0px 0px #f9f9f9;
+    animation: float 10s ease-in-out infinite;
+}
+
+#tutorial, #site, #livro, #video, #podcast{
+    text-align: center;
+    animation: float 10s ease-in-out infinite;
+}
+
+iframe{
+    border-radius: 10px;
+    transform: translateY(0px);
+    animation: float 10s ease-in-out infinite;
+    box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 0.35);
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
