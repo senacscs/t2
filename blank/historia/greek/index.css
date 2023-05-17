@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@font-face {
+  font-family: 'Greek';
+  src: url(./fonts/dalek_pinpoint/DalekPinpointBold.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scroll__bar {
+    background-color: #9f886f;
+    overflow-y: scroll;
+}
+.scroll__bar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #9f886f;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100vh;
+  grid-gap: 10px;
+
+}
+
+.text {
+  width: 210%;
+  height: 60%;
+
+  margin:  15%;
+  padding: 4rem;
+
+  color: #3f422e;
+  font-family: 'MedievalSharp', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+
+ 
+  background-color: #f5e6c5;
+  /* background: url('https://img.pikbest.com/backgrounds/20191214/nostalgic-rice-paper-kraft-paper-to-make-old-banner-background_2763253.jpg!bwr800') bottom;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+}  
+
+
+ 
+span {
+    display: none;
+    min-width: 1em;
+}
+
+.link {
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+a {
+  
+  color: #d78b30;
+  font-family: 'Greek';
+  text-decoration: none;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 1rem 1.5rem  0 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a:hover {
+    border: 1px #444434 solid;
+    border-radius: 4px;
+} 
+
+figure {
+  width: 50%;
+  margin-left: 50%;
+}
+
+svg{
+  margin: 5% 10%;
+  cursor: pointer;
+}

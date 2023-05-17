@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@font-face {
+  font-family: 'Greek';
+  src: url(../fonts/dalek_pinpoint/DalekPinpointBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll__bar {
+    background-color:  #9f886f;
+    overflow-y: scroll;
+  }
+  .scroll__bar::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    background-color: #9f886f;
+}
+
+.container {
+    margin: 5% auto;
+    height: 55%;
+    width: 60%;
+
+    border-radius: 10px;
+    border: 1px solid rgba(88, 88, 88, 0.38);
+
+    background: #f5e6c5;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+}
+
+.content{
+    margin: 0 auto;
+    padding: 3rem;
+
+    color: #3f422e;
+    font-family: 'MedievalSharp';
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+
+}
+    .content header{
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .content header > h1{
+            padding: 1rem;
+            padding-bottom: 1.3rem;
+            font-size: 1.5rem;
+            color: #d78b30;
+            font-family: 'Greek';
+        }
+
+        .card {
+            height: 379px;
+            width: 300px;
+            background: #f5e6c5;
+            border-radius: 10px;
+            transition: background 0.8s;
+            overflow: hidden;
+            background: black;
+            box-shadow: 0 70px 63px -60px #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        
+            background: url("../imgs/chimera.jpg") center center no-repeat;
+            background-size: 300px;
+        }
+
+    .content main{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.7rem;
+        padding: 2rem;
+    }
+
+footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+    footer .btn{
+        padding: 1rem;
+        font-size: 1.2rem;
+        
+        color: #d78b30;
+        font-family: 'Greek';
+        text-decoration: none;
+
+        border: 1px rgb(84, 46, 52) solid;
+        border-radius: 5px;
+    }
+        footer .btn:hover{
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .sr-only {
+            border: 0 !important;
+            clip: rect(1px, 1px, 1px, 1px) !important;
+            -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;
+            height: 1px !important;
+            overflow: hidden !important;
+            margin: -1px !important;
+            padding: 0 !important;
+            position: absolute !important;
+            width: 1px !important;
+            white-space: nowrap !important;
+        }
+        
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            clip: auto !important;
+            -webkit-clip-path: none !important;
+            clip-path: none !important;
+            height: auto !important;
+            margin: auto !important;
+            overflow: visible !important;
+            position: static !important;
+            width: auto !important;
+            white-space: normal !important;
+        }
+        

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <title>A Esfinge</title>
+    </head>
+    <body class="scroll__bar">
+        <section class="container">
+            <div class="content">
+                <p>
+                    Aparentemente, Hermes escondeu o elmo em algum lugar distante e você precisa
+                    chegar até a cidade de Tebas para encontrar a localização do objeto. Para
+                    conseguir entrar na cidade, você precisa responder corretamente ao enigma da
+                    Esfinge.
+                </p>
+
+                <form>
+                    <div class="puzzle">
+                        <label for="password">
+                            <i>Qual animal tem quatro patas pela manhã, duas pela tarde e à noite três patas?</i>
+                        </label>
+                        <input
+                            type="text"
+                            id="password"
+                            autocomplete="off"
+                            placeholder="Sua resposta"
+                            required="required">
+                        <span>A resposta deve conter espaçamento e apenas letras minúsculas</span>
+                    </div>
+                    <input type="button" class="btn" onclick="checkPassword()" value="Responder">
+                </form>
+            </section>
+        </body>
+
+        <script>
+            function checkPassword() {
+                var password = $('#password').val();
+                if (password == 'o ser humano') {
+                    window.location.href = '../minotaur/'
+                } else {
+                    window.location.href = '../sphinxDead/';
+                }
+            }
+        </script>
+    </html>

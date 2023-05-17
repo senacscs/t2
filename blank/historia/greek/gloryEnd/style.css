@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@font-face {
+  font-family: 'Greek';
+  src: url(../fonts/dalek_pinpoint/DalekPinpointBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .scroll__bar {
+    background-color: transparent;
+    overflow-y: scroll;
+  }
+  .scroll__bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body{
+    background: url('../imgs/olympus.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content{
+    width: 70%;
+    height: 75vh;
+
+    min-height: 75vh;
+  
+    margin: 5% auto;
+    padding: 4rem;
+  
+    color: #3f422e;
+    font-family: 'MedievalSharp';
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    background: #c7ab94;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5.9px);
+  }
+  
+
+  .link {
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+  a {
+    color: #d78b30;
+  font-family: 'Greek';
+  text-decoration: none;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 1rem 1.5rem  0 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+a:hover {
+    border: 1px #444434 solid;
+    border-radius: 4px;
+} 
