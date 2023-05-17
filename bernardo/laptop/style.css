@@ -1,0 +1,74 @@
+body{
+    background: url(https://tenor.com/view/elmo-fire-flames-hell-dying-gif-4796519.gif) no-repeat;
+    background-size: 100%;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.display{
+    position: absolute;
+    background: linear-gradient(50deg, #a8acb0 50%, #abb1af 50%);     
+    height: 400px;
+    width: 700px;
+}
+
+img{
+    border-radius: px;
+}
+
+.border{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #44515b;
+    height: 465px;
+    width: 770px;
+    border: 5px white solid;
+}
+
+.border::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 375px;
+    margin-top: 7px;
+    border-radius: 70px;
+    background-color: black;
+}
+
+.bottom{
+    margin-top: 500px;
+    position: absolute;
+    height: 33px;
+    width: 925px;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
+
+.bottom::before{
+    content: '';
+    position: absolute;
+    background-color: #a8acb0;
+    height: 15px;
+    width: 925px;
+    margin-top: 30px;
+    border-bottom-right-radius: 7.5rem 2.5rem;
+    border-bottom-left-radius: 7.5rem 2.5rem;
+}
+
+.bottom::after{
+    content: '';
+    position: absolute;
+    background-color: #606067;
+    height: 10px;
+    width: 125px;
+    margin-left: 400px;
+    border-radius: 0 0 .25rem .25rem
+}
