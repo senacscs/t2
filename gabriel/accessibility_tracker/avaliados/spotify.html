@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+<title>Avaliação de acessibilidade para Spotify (web/desktop) - Accessibility Tracker: a acessibilidade ao seu alcance</title>
+</head>
+<body>
+<header>
+<a href="#main" accesskey="p">Ir para o conteúdo principal</a>
+<br>
+<a href="../index.html" accesskey="h">Página inicial do Accessibility Tracker</a>
+<nav>
+<ul class="nav">
+<li class="nav-item"><a class="nav-link" href="sobre.html" accesskey="s">Sobre</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html" accesskey="a">Nossas avaliações</a></li>
+<li class="nav-item"><a class="nav-link" href="solicitar.html" accesskey="l">Solicitar avaliação</a></li>
+<li class="nav-item"><a class="nav-link" href="mailto:contact@accessibilitytracker.com" accesskey="c">Entre em contato</a></li>
+</nav>
+</header>
+<main>
+<h1 id="main">Avaliação de acessibilidade para Spotify (web/desktop)</h1>
+<p><mark>Excelente</mark>
+<br>96%
+</p>
+<nav>
+<a href="index.html" accesskey="v">Voltar à página de avaliações</a>
+<section aria-label="Índice">
+<h2 id="indice">Índice</h2>
+<ol>
+<li><a href="#geral">Visão geral</a></li>
+<li><a href="#menus">Navegação e menus</a></li>
+<li><a href="#imagens">Imagens e descrição</a></li>
+<li><a href="#semantica">Títulos, seções e outros pontos de referência</a></li>
+<li><a href="#teclado">Atalhos de teclado</a></li>
+<li><a href="#outras">Outras informações</a></li>
+</ol>
+</section>
+</nav>
+<section aria-label="Visão geral">
+<h2 id="geral">Visão geral</h2>
+<p>Spotify é um conhecido aplicativo de streaming de música criado pela <a href="https://www.spotify.com">Spotify AB</a>.</p>
+<p>Com mais de 50 milhões de músicas disponíveis em seu catálogo, a plataforma é considerada como a mais popular do mundo no streaming musical.</p>
+<p>Em relação à acessibilidade, o Spotify realmente surpreende. Possui diversos pontos de referência para facilitar a navegação do usuário, a maioria dos links e botões estão rotulados, os atalhos de teclado funcionam adequadamente e muito mais.</p>
+<p>Com base no resumo apresentado acima, consedemos ao Spotify uma avaliação de acessibilidade de 96%. Veja abaixo o relatório completo.</p>
+<p class="alert alert-warning" role="alert">Nota: esta avaliação diz respeito apenas ao Spotify versão web/desktop, ambas as versões utilizam a mesma estrutura e possuem acessibilidade semelhante. A avaliação do Spotify mobile será feita em uma página separada.</p>
+</section>
+<section aria-label="Navegação e menus">
+<h2 id="menus">Navegação e menus</h2>
+<p>Em relação à navegação e aos menus, o Spotify possui uma estrutura bastante organizada. O aplicativo é apresentado como uma página web, assim é possível usar os atalhos do próprio leitor de tela para navegar.</p>
+<p>No computador, ao abrir o aplicativo estando logado, os primeiros botões que aparecem se chamam voltar e avançar. Esses botões funcionam, na verdade, como o histórico de um navegador. Se eu navegar para a playlist de músicas curtidas e depois clicar nesse botão, voltarei à página inicial do Spotify. Embora esses botões funcionem bem e tenham rótulos para identificá-los, Eles podem causar uma certa confusão.</p>
+<p>No Spotify, existem 3 significados para as palavras voltar e avançar. Pode ser no sentido de ir para a música anterior/próxima música, ir para a seção anterior/próxima seção ou voltar e avançar na música atual (sem trocar a música que está tocando).</p>
+<p>Embora as ações de voltar e avançar na mesma música não tenham botões específicos para isso, as opções de voltar e avançar entre as músicas possuem (dessa forma, os botões acabam ficando com o mesmo rótulo).</p>
+<p>Um indicador que ajuda a contornar essa situação é que, apesar do rótulo igual, os botões para voltar e avançar entre seções ficam bem no início da página, enquanto os de voltar e avançar no player ficam em uma seção separada. Assim, esse problema não se torna muito prejudicial.</p>
+<p>O 3º botão da página possui o nome do usuário do app. Por exemplo, se ao criar meu perfil eu defini que meu nome seria Gabriel, o Spotify mostrará Gabriel como o rótulo do botão.</p>
+<p>Há alguns pequenos problemas com esse botão, no entanto. O nome de usuário do perfil é repetido 3 vezes pelo leitor de tela. Isso ocorre porque o mesmo rótulo foi usado em várias partes do botão: na tag figure que possui a imagem do perfil, na descrição textual da própria imagem e em um texto que aparece ao lado da imagem. A solução mais fácil para isso seria ocultar a tag figure com aria-hidden e, assim, mostrar ao leitor de tela apenas o texto em si.</p>
+<p>Esse botão, na verdade, serve para abrir o menu do perfil (mostrando opções como conta, fazer logout etc.). Apesar dessa confusão envolvendo o nome, o menu em si é acessível pelo teclado e as opções funcionam normalmente.</p>
+<p>Outro problema que surgiu recentemente nesse botão é que, quando há uma atualização disponível para o app, aparece uma imagem sem descrição. Dessa forma, o leitor de tela lê uma mensagem em inglês (to get missing image descriptions, open the context menu).</p>
+<p>Logo após o botão do perfil, está a navegação principal do Spotify. Trata-se de uma lista que contém 3 itens, "início", "buscar" e "sua biblioteca". Cada opção é identificada pelo leitor de tela como um link, possuindo rótulos adequados e sendo bastante fácil de usar.</p>
+<p>Logo abaixo dessa navegação, há um botão chamado "criar playlist". Esse botão possui rótulo adequado e serve, obviamente, para criar uma nova playlist.</p>
+<p>Logo abaixo, no entanto, há uma seção que parece um pouco confusa. Lá estão listadas algumas playlists que o usuário ouviu recentemente, mas não há nenhum rótulo que identifique adequadamente essa seção. Além disso, o leitor de tela anuncia que a lista possui apenas 1 item, mesmo que haja várias playlists na mesma.</p>
+<p>Depois, há um controle deslisante chamado "redimensionar navegação principal. Ele não é muito útil para usuários de leitores de tela e, na minha opinião, poderia ter sido oculto deles com o atributo aria-hidden. No entanto, se você não quiser usá-lo, basta pular com a tecla tab.</p>
+<p>Após essa seção, está a "tela tocando agora", em que é mostrada a música que o usuário está ouvindo no momento. Essa tela funciona muito bem com leitores de tela e, como imaginado, abriga o pplayer do aplicativo. Este player é incrivelmente acessível e, diferente de muitos players existentes em outros sites/apps, funciona perfeitamente com as tecnologias assistivas.</p>
+<p>Todos os botões possuem rótulo adequado (como voltar, pausar e avançar), além do controle deslisante para voltar e avançar na própria música (que mostra o ponto atual da mesma e a duração total. Nesse controle, basta usar as setas para cima e para baixo para avançar e voltar, respectivamente.</p>
+<p>Após a seção usada ao redimencionar a navegação, o Spotify possui várias seções distintas. A 1ª seção apresenta algumas músicas e artistas que o usuário costuma ouvir, a 2ª mostra músicas que o usuário não ouve há tempo e assim por diante. A ordem e aparição dessas seções pode variar conforme o usuário, assim nem todos verão as mesmas seções e na mesma ordem.</p>
+<p>A navegação entre elas é bastante fácil, no entanto. Cada seção é separada por diferentes tags section e, no início de cada uma, há um título de nível 2 com o nome da seção. Dessa forma, os usuários de leitores de tela podem navegar entre as seções com atalhos de teclado.</p>
+<p>Após todas as seções com sugestões para o usuário (que podem ser mais de 20 no total mas funcionam de forma semelhante), há uma seção chamada "atividade de amigos". Esta seção serve para saber as músicas que nossos amigos estão ouvindo (além de permitir a adição de novos amigos, através de um botão bem rotulado).</p>
+<p>Após essa seção, no entanto, a página termina. Chegamos ao fim da navegação do Spotify! Com alguns pequenos problemas que não interferem muito na experiência geral do usuário, a navegação do Spotify é realmente bem estruturada e fácil de usar.</p>
+</section>
+<section aria-label="Imagens e descrição">
+<h2 id="imagens">Imagens e descrição</h2>
+<p>Em relação às imagens presentes no aplicativo, não há muito o que falar. A maioria das imagens estão ocultas dos leitores de tela, por serem de cunho decorativo, enquanto as imagens presentes em botões e links são adequadamente substituídas por rótulos.</p>
+<p>O único problema envolvendo imagens é, como relatado acima, o botão do perfil quando uma atualização está disponível para o app.</p>
+</section>
+<section aria-label="Títulos, seções e outros pontos de referência">
+<h2 id="semantica">Títulos, seções e outros pontos de referência</h2>
+<p>Como dito anteriormente, o Spotify possui diversos pontos de referência para facilitar a navegação do usuário. Cada parte da interface possui tags section com rótulos adequados para que o usuário saiba onde está, e cada section possui um título de nível 2 aninhado.</p>
+<p>Isso permite navegar usando as duas formas, tanto com a letra h (para navegar entre os títulos) quanto com a letra d ou outro atalho (para navegar entre as seções), semelhante ao layout desse site. Dessa forma, é possível pular rapidamente entre uma seção e outra, localizando facilmente o conteúdo que desejamos ouvir.</p>
+</section>
+<section aria-label="Atalhos de teclado">
+<h2 id="teclado">Atalhos de teclado</h2>
+<p>Além de permitir a navegação com os atalhos do próprio leitor de tela, o Spotify possui diversos atalhos adicionais para interagir com funções mais específicas do aplicativo. Segue uma tabela com alguns desses atalhos.</p>
+<table id="atalhos">
+<caption>Atalhos de teclado do Spotify</caption>
+<thead><tr>
+<th>Atalho</th>
+<th>Função</th>
+</tr></thead>
+<tbody><tr>
+<td>Alt+seta esquerda</td>
+<td>Voltar à página anterior em que o usuário estava (por exemplo, voltar de uma música para uma playlist."</td>
+</tr><tr>
+<td>Alt+seta direita</td>
+<td>Avançar para a próxima página em que o usuário já navegou (só funciona se ele já tiver voltado uma vez.</td>
+</tr><tr>
+<td>Ctrl+seta esquerda</td>
+<td>Voltar à música anterior.</td>
+</tr><tr>
+<td>Ctrl+seta direita</td>
+<td>Avançar para a próxima música.</td>
+</tr><tr>
+<td>Ctrl+l</td>
+<td>Ir para o campo de busca</td>
+</tr>
+</tbody>
+</table>
+<p>A <a href="https://support.spotify.com/br/article/keyboard-shortcuts/">Página com todos os atalhos do Spotify pode ser encontrada aqui</a>.</p>
+</section>
+<section aria-label="Outras informações">
+<h2 id="outras">Outras informações</h2>
+<p>É importante observar que, na verdade, o Spotify é um aplicativo da web e nem todos os seus atalhos funcionam com o leitor de tela no modo de navegação. O atalho Ctrl+seta esquerda, por exemplo, não funciona nesse modo (porque navega para a palavra anterior no leitor de tela). Dessa forma, é necessário ativar o modo de foco para usar esses atalhos, assim o leitor de tela os ignora e os passa direto ao Spotify.</p>
+<p>Baseada em todos os pontos relatados acima, a avaliação final para a acessibilidade do Spotify é de 96%.</p>
+</section>
+</main>
+</body>
+</html>

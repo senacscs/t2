@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="styles.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>Jogo inquisição e caça às bruxas</title>
+	</head>
+	<body>
+		<header>
+			<h1>Jogo inquisição e caça às bruxas</h1>
+		</header>
+		<main>
+			<p>Bem-vindo à aventura!</p>
+			<p>Antes de começar, você deve passar por um pequeno teste de conhecimento sobre a inquisição e a caça às bruxas.</p>
+			<p>Seu resultado mostrará se você está pronto para ir. Responda às perguntas abaixo e, quando estiver pronto, clique em enviar.</p>
+			<form id="questionario">
+				<fieldset>
+					<legend>A inquisição foi um movimento político e religioso que foi muito marcante na história da humanidade. Em que período histórico se iniciou esse movimento?</legend>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p1r1" name="p1"/>
+						<label class="form-check-label" for="p1r1">Na Idade Moderna</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p1r2" name="p1"/>
+						<label class="form-check-label" for="p1r2">Na Idade Contemporânea</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p1r3" name="p1"/>
+						<label class="form-check-label" for="p1r3">Na Idade Média</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p1r4" name="p1"/>
+						<label class="form-check-label" for="p1r4">Nenhuma das anteriores</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Na época em que a inquisição se iniciou, existia uma instituição muito poderosa que era responsável por muitas decisões que eram tomadas. Ela também criou outros movimentos dentro da inquisição, como a caça às bruxas. Qual é o nome dessa instituição? Dica: são duas palavras, a primeira começa com i e a segunda com c.</legend>
+					<div class="form-control">
+						<label class="form-label" for="p2">Digite o nome da instituição</label>
+						<input required type="text" id="p2"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>No período em que a inquisição ocorreu, a sociedade era dividida em vários grupos distintos, cada um com seus próprios privilégios. Em quais grupos a sociedade se dividiu?
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p3r1" name="p3"/>
+						<label class="form-label" for="p3r1">Nobreza, clero e senhores feudais</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p3r2" name="p3"/>
+						<label class="form-check-label" for="p3r2">Nobreza, clero e camponeses</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p3r3" name="p3"/>
+						<label class="form-check-label" for="p3r3">Clero, senhores feudais e camponeses</label>
+					</div>
+					<div class="form-check">
+						<input required class="form-check-input" type="radio" id="p3r4" name="p3"/>
+						<label class="form-check-label" for="p3r4">Senhores feudais, suseranos e vassalos</label>
+					</div>
+				</fieldset>
+				<button class="btn btn-success" type="submit">Enviar</button>
+			</form>
+		</header>
+		<script>
+			let form=document.getElementById("questionario");
+			form.onsubmit=function(event) {
+			event.preventDefault();
+				let pontos=0;
+				let p1Correta=document.getElementById("p1r3");
+				if(p1Correta.checked) {
+				pontos+=1;
+			}
+			let p2Correta="igreja católica";
+			let p2Texto=document.getElementById("p2").value;
+			if(p2Texto.toLowerCase()==p2Correta) {
+			pontos+=1;
+			}
+			let p3Correta=document.getElementById("p3r2");
+			if(p3Correta.checked) {
+			pontos+=1;
+			}
+			if(pontos==3) {
+			alert("Parabéns! Você fez 3 pontos e acertou todas as questões, assim está aprovado e pode começar a jogar. Clique em ok para iniciar.");
+			document.location.href="parte_1.html";
+			}
+			else {
+			alert(`Algo parece estar errado. Você fez apenas ${pontos} pontos. Ainda não está pronto...`);
+			}
+			}
+		</script>
+	</body>
+</html>

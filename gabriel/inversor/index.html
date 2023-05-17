@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>Inversor de textos</title>
+	</head>
+	<body>
+		<header>
+			<h1>Inversor de textos</h1>
+		</header>
+		<main>
+			<p>Bem-vindo ao inversor de textos! Informe o texto que você deseja inverter no campo abaixo e depois clique em inverter.</p>
+			<form id="reverse-form">
+				<div class="form-group">
+					<label class="form-label" for="reverse-text">Texto a inverter</label>
+					<textarea class="form-control" id="reverse-text"></textarea>
+				</div>
+				<button class="btn btn-success" id="reverse-submit" type="submit">Inverter</button>
+			</form>
+		</main>
+		<script>
+			let form=document.getElementById("reverse-form");
+			function reverseString(str) {
+				let splitString=str.split("");
+				let reverseArray=splitString.reverse();
+				let newString=reverseArray.join("");
+				return newString;
+			}
+			form.addEventListener("submit", (event)=> {
+				let text=document.getElementById("reverse-text").value;
+				let newText=reverseString(text);
+				alert(newText);
+			});
+			</script>
+	</body>
+</html>

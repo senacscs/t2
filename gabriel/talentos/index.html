@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz sobre HTML</title>
+<style>
+.sem-marcador {
+list-style-type: none;
+}
+.alert {
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+<dialog open tabindex="-1" title="Bem-vindo!">
+<p>Bem-vindo ao jogo de perguntas e respostas sobre HTML!</p>
+<p>Neste jogo, você receberá várias perguntas sobre esta linguagem e deverá marcar a resposta correta.</p>
+<p>Cada acerto lhe renderá 10 pontos. Você terminará o jogo quando tiver respondido todas as questões disponíveis.</p>
+<p>Ao finalizar, será apresentada a sua contagem total de pontos.</p>
+<p>Boa sorte!</p>
+<button>Fechar</button>
+</dialog>
+<header>
+<h1>Quiz sobre HTML</h1>
+<details open>
+<summary>Alternar navegação</summary>
+<nav>
+<ol title="Lista de perguntas">
+</ol>
+</nav>
+</details>
+</header>
+<main>
+<section title="Perguntas">
+<h2>Perguntas</h2>
+<h3 data-pergunta="0">No HTML, é obrigatório que a tag &ltnav&gt fique dentro da &ltheader&gt</h3>
+<ul>
+<li>
+<button>Verdadeiro</button>
+</li>
+<li>
+<button data-correto>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="1">Se Não colocarmos as tags &lthead&gt e &ltbody&gt, ainda podemos usar a tag &lttitle&gt</h3>
+<ul>
+<li>
+<button data-correto>Verdadeiro</button>
+</li>
+<li>
+<button>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="2">O que significa heading?</h3>
+<ul>
+<li>
+<button>Cabeçalho</button>
+</li>
+<li>
+<button data-correto>Título</button>
+</li>
+<li>
+<button>Cabeça</button>
+</li>
+<li>
+<button>Não existe esse termo em html</button>
+</li>
+</ul>
+<h3 data-pergunta="3">Podemos ter uma tag dentro de um atributo de outra tag</h3>
+<ul>
+<li>
+<button>Verdadeiro</button>
+</li>
+<li>
+<button data-correto>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="4">Podemos ter um atributo dentro do valor de outro atributo</h3>
+<ul>
+<li>
+<button>Verdadeiro</button>
+</li>
+<li>
+<button data-correto>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="5">Para colocar uma imagem junto com um link, colocamos a tag &lta&gt dentro da &ltimg&gt</h3>
+<ul>
+<li>
+<button>Verdadeiro</button>
+</li>
+<li>
+<button data-correto>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="6">O que acontece se colocarmos uma tag &lta&gt dentro de outra &lta&gt?</h3>
+<ul>
+<li>
+<button>Os 2 links serão exibidos, um dentro do outro</button>
+</li>
+<li>
+<button data-correto>Os 2 links serão exibidos, separados</button>
+</li>
+<li>
+<button>Apenas o primeiro link será exibido</button>
+</li>
+<li>
+<button>Nenhum dos links será exibido</button>
+</li>
+</ul>
+<h3 data-pergunta="7">Se colocarmos uma &lth1&gt dentro da &lthead&gt, ela vai aparecer na página, por mais que seja errado.</h3>
+<ul>
+<li>
+<button data-correto>Verdadeiro</button>
+</li>
+<li>
+<button>Falso</button>
+</li>
+</ul>
+<h3 data-pergunta="8">Qual das tags a seguir não é uma tag semântica?</h3>
+<ul>
+<li>
+<button>main</button>
+</li>
+<li>
+<button>Aside</button>
+</li>
+<li>
+<button>Time</button>
+</li>
+<li>
+<button data-correto>Todas essas tags são semânticas</button>
+</li>
+</ul>
+<h3 data-pergunta="9">Quando adicionamos o atributo style a um elemento na nossa página, estamos usando CSS interno, pois está no mesmo arquivo</h3>
+<ul>
+<li>
+<button>Verdadeiro</button>
+</li>
+<li>
+<button data-correto>Falso</button>
+</li>
+</ul>
+</section>
+<aside>
+<section title="Mensagens do jogo">
+<h2>Mensagens do jogo</h2>
+<p>Pontuação atual: 0</p>
+</section>
+</aside>
+</main>
+<script>
+var pontos=0
+var perguntasRespondidas=0
+var boasVindas=document.querySelector("dialog")
+boasVindas.addEventListener("keydown", function(event) {
+if(event.key==="Escape") {
+this.removeAttribute("open")
+}
+})
+function fechaDialog() {
+this.parentElement.removeAttribute("open")
+}
+boasVindas.querySelector("button").addEventListener("click", fechaDialog)
+boasVindas.focus()
+var listaPerguntas=document.querySelector("ol")
+var perguntas=document.querySelectorAll("h3")
+var seçãoPerguntas=document.querySelector("[title='Perguntas']")
+var seçãoMensagens=document.querySelector("[title='Mensagens do jogo']")
+var mostraPontos=seçãoMensagens.querySelector("p")
+var movePergunta=function() {
+perguntas.forEach(function(h3) {
+var buttonNumber=this.getAttribute("data-pergunta")
+var h3Number=h3.getAttribute("data-pergunta")
+if(buttonNumber===h3Number) {
+h3.focus()
+}
+}.bind(this))
+}
+var resultado=document.createElement("p")
+resultado.setAttribute("role", "alert")
+resultado.classList.add("alert")
+var respondida=document.createElement("p")
+respondida.innerHTML="Pergunta já respondida"
+perguntas.forEach(function(h3) {
+h3.setAttribute("tabindex", "-1")
+var li=document.createElement("li")
+var button=document.createElement("button")
+button.innerHTML=h3.innerHTML
+button.addEventListener("click", movePergunta)
+button.setAttribute("data-pergunta", h3.getAttribute("data-pergunta"))
+li.appendChild(button)
+li.setAttribute("data-pergunta", h3.getAttribute("data-pergunta"))
+li.addEventListener("click", movePergunta)
+listaPerguntas.appendChild(li)
+})
+var listasAlternativas=document.querySelectorAll("ul")
+listasAlternativas.forEach(function(ul) {
+ul.classList.add("sem-marcador")
+ul.setAttribute("title", "Alternativas")
+var buttons=ul.querySelectorAll("button")
+buttons.forEach(function(button) {
+button.addEventListener("click", function() {
+if(this.hasAttribute("data-correto")) {
+pontos+=10
+resultado.innerHTML="Parabéns, você acertou! Sua pontuação atual é "+pontos
+}
+else {
+resultado.innerHTML="Sinto muito, você errou!"
+}
+perguntasRespondidas+=1
+seçãoPerguntas.insertBefore(respondida.cloneNode(true), ul)
+seçãoPerguntas.insertBefore(resultado, ul.nextElementSibling)
+mostraPontos.innerHTML="Pontuação atual: "+pontos
+buttons.forEach(function(button) {
+button.setAttribute("disabled", "")
+if(button.hasAttribute("data-correto")) {
+button.innerHTML+=" (correto)"
+}
+else {
+button.innerHTML+=" (incorreto)"
+}
+if(perguntasRespondidas===perguntas.length) {
+finalização()
+}
+})
+setTimeout(function() {
+seçãoPerguntas.removeChild(resultado)
+}, 5000)
+})
+})
+})
+function finalização() {
+var dialog=document.createElement("dialog")
+dialog.setAttribute("title", "Parabéns!")
+var p1=document.createElement("p")
+p1.innerHTML="Parabéns!"
+var p2=document.createElement("p")
+p2.innerHTML="Você completou o jogo de perguntas e respostas sobre HTML!"
+var p3=document.createElement("p")
+p3.innerHTML="Sua pontuação final foi "+pontos+" pontos."
+dialog.appendChild(p1)
+dialog.appendChild(p2)
+dialog.appendChild(p3)
+var botãoFechar=document.createElement("button")
+botãoFechar.innerHTML="Fechar jogo"
+botãoFechar.addEventListener("click", function() {
+window.top.close()
+})
+dialog.appendChild(botãoFechar)
+var br=document.createElement("br")
+dialog.appendChild(br)
+var botãoRevisar=document.createElement("button")
+botãoRevisar.innerHTML="Revisar respostas"
+botãoRevisar.addEventListener("click", fechaDialog)
+dialog.appendChild(botãoRevisar)
+dialog.setAttribute("open", "")
+dialog.setAttribute("tabindex", "-1")
+document.body.appendChild(dialog)
+dialog.focus()
+}
+</script>
+</body>
+</html>

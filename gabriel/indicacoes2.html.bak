@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Indicações de conteúdo técnico (back-end)</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+	</head>
+	<body>
+		<header>
+			<h1 id="top">Indicações de conteúdo técnico (back-end)</h1>
+			<p>Nesta página, você encontrará diversos materiais sobre back-end em formato de livro, vídeo, podcast, tutorial e site.</p>
+			<nav>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="#livro" accesskey="l">Livro</a></li>
+					<li class="nav-item"><a class="nav-link" href="#video" accesskey="v">Vídeo</a></li>
+					<li class="nav-item"><a class="nav-link" href="#podcast" accesskey="p">Podcast</a></li>
+					<li class="nav-item"><a class="nav-link" href="#tutorial" accesskey="t">Tutorial</a></li>
+					<li class="nav-item"><a class="nav-link" href="#site" accesskey="s">Site</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		<section aria-label="livro">
+				<h2 id="livro">Livro</h2>
+				<a href="https://www.amazon.com.br/Python-Django-Desenvolvimento-Moderno-%C3%A1gil/dp/8550813648">Python e Django: desenvolvimento web moderno e ágil</a>
+				<p>Neste livro, você aprenderá a utilizar o popular framework back-end para Python chamado Django.</p>
+				<p>Um framework web que objetiva equilibrar facilidade de uso e alto desempenho, fornecendo muitas ferramentas prontas para uso, e ao mesmo tempo permitindo muita personalização por parte do usuário.</p>
+				<p>Além disso, você pode rodar suas aplicações em qualquer servidor compatível, sem grandes complicações e focando ao máximo no conteúdo do site, não tanto no código.</p>
+			</section>
+			<section aria-label="Vídeo">
+				<h2 id="video">Vídeo</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/F7KzJ7e6EAc" title="Vídeo sobre PHP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p>Este vídeo é a primeira parte de um curso completo de PHP, criado pelo professor Gustavo Guanabara. Nela, ele explica um pouco sobre a história do PHP (quando foi criado, qual o motivo inicial para a criação etc.).</p>
+			</section>
+			<section aria-label="podcast">
+				<h2 id="podcast">Podcast</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/URfpp5s_CkI" title="Podcast Python e Django" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p>Nesse episódio do podcast Hipsters ponto Talks, os participantes explicam um pouco sobre o funcionamento do Django, suas aplicações no mundo da web e como ele pode auxiliar no desenvolvimento de aplicações.</p>
+			</section>
+			<section aria-label="tutorial">
+				<h2 id="tutorial">Tutorial</h2>
+				<a href="https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end">Front-end, Back-end e Full Stack: o que são?</a>
+				<p>Neste artigo, a Alura explica um pouco sobre o que é front-end, o que é back-end e suas diferenças, bem como o significado de desenvolvimento full stack e como as duas áreas estão relacionadas.</p>
+				<p>Embora o artigo não esteja relacionado a nenhum framework ou tecnologia específica, é muito importante saber a diferença entre front e back-end antes de ingressar nessa área.</p>
+			</section>
+			<section aria-label="site">
+				<h2 id="site">Site</h2>
+				<a href="https://vercel.com/">versel.com</a>
+				<p>Embora o objetivo do site não seja ensinar os visitantes a usar back-end, ele pode ajudar muito quem está começando com alguma tecnologia e não tem um servidor para testar suas aplicações. Com ele, é possível hospedar aplicações gratuitamente online, em diversas tecnologias diferentes.</p>
+			</section>
+		</main>
+	</body>
+</html>

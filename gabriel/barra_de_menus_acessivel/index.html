@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Barra de menus acessível</title>
+<style>
+[role="menuitem"], [aria-haspopup] {
+display: block;
+}
+</style>
+</head>
+<body>
+<div role="menubar">
+<button aria-haspopup="true" accesskey="a">Arquivo</button>
+<div>
+<button>Novo</button>
+<button>Abrir</button>
+<button>Fechar arquivo atual</button>
+<button>Fechar todos os arquivos</button>
+<button>Salvar</button>
+<button>Salvar como...</button>
+<button>Sair</button>
+</div>
+<button aria-haspopup="true" accesskey="i">Editar</button>
+<div>
+<button>Desfazer</button>
+<button>Refazer</button>
+<button>Copiar</button>
+<button>Recortar</button>
+<button>Formatar</button>
+</div>
+<button aria-haspopup="true" accesskey="j">Ajuda</button>
+<div>
+<button>Sobre o site</button>
+<!--
+Também podemos adicionar outros elementos, não precisa ser só buttons, pois foi usado o seletor * do CSS
+para colocar tudo que tem dentro da div como itens do menu.
+-->
+<a href="ajuda.html">Exibir ajuda</a>
+<button>Enviar feedback</button>
+</div>
+</div>
+<script>
+let menuButtons=document.querySelectorAll("[aria-haspopup]")
+menuButtons.forEach(function(menuButton){
+menuButton.setAttribute("aria-expanded", "false")
+let menu=menuButton.nextElementSibling
+menu.setAttribute("role", "menu")
+menu.setAttribute("tabindex", "-1")
+menu.setAttribute("hidden", "")
+menuButton.addEventListener("click", function(){
+if(this.getAttribute("aria-expanded")==="true"){
+this.setAttribute("aria-expanded", "false")
+menu.setAttribute("hidden", "")
+}
+else{
+this.setAttribute("aria-expanded", "true")
+menu.removeAttribute("hidden")
+menu.firstElementChild.focus()
+}
+})
+let menuItems=menu.querySelectorAll("*")
+menuItems.forEach(function(menuItem){
+menuItem.setAttribute("role", "menuitem")
+menuItem.setAttribute("tabindex", "-1")
+menuItem.addEventListener("keydown", function(evt){
+switch(evt.key){
+case "Escape":
+menuButton.setAttribute("aria-expanded", "false")
+menu.setAttribute("hidden", "")
+menuButton.focus()
+break
+case "ArrowDown":
+(this.nextElementSibling)?this.nextElementSibling.focus():menu.firstElementChild.focus()
+break
+case "ArrowUp":
+this.previousElementSibling?this.previousElementSibling.focus():menu.lastElementChild.focus()
+break
+case "Home":
+menu.firstElementChild.focus()
+break
+case "End":
+menu.lastElementChild.focus()
+}
+})
+})
+})
+</script>
+</body>
+</html>
