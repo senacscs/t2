@@ -1,0 +1,197 @@
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 17px;
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(255, 255, 0), rgb(255, 33, 70), rgb(86, 255, 86), orange);
+    background-size: 1000% 1000%;
+    animation: gradient 9s ease infinite;
+    height: 500vh;
+    overflow-x: hidden;
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE: BERNARDO E.*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE (2): BERNARDO E.*/
+
+h1 {
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+.topnav2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: large;
+}
+
+.topnav {
+    background-color: black;
+    opacity: 70%;
+    padding: 20px;
+    text-align: right;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bottomnav {
+    background-color: black;
+    opacity: 70%;
+    padding: 50px;
+    text-align: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.insta {
+    text-align: left;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-right: 2000px;
+    padding-top: 20px;
+    color: chartreuse;
+    text-decoration: none;
+}
+
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.line {
+    background-color: white;
+    padding: 1px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: block;
+}
+
+.olltable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: silver;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.plltable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: silver;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ollcase {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.ollalgorithm {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-left: 240px;
+    padding-right: 280px;
+    padding-top: 10px;
+}
+
+.ollcase2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.ollalgorithm2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.pllcase {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.pllalgorithm {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-left: 240px;
+    padding-right: 280px;
+    padding-top: 10px;
+}
+
+.pllcase2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.pllalgorithm2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.thankyou {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.insta2 {
+    text-decoration: none;
+    color: chartreuse;
+    margin-right: 300px;
+}
+
+.backtotop {
+    text-decoration: initial;
+    margin: 0px auto 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-size: 17px;
+}

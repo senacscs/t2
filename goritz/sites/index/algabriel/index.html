@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Algoritmos 3x3</title>
+    </head>
+    <body>
+        <nav class="topnav" id="top">
+            <div><a class="insta" href="https://instagram.com/gabrielmgoeritz" target="_blank">
+            @gabrielmgoeritz
+            </a></div>
+            <a href="#BITE" class="topnav2">Intro </a>
+            <a href="#OF" class="topnav2">CFOP </a>
+            <a href="#19" class="topnav2">OLL </a>
+            <a href="#87" class="topnav2">PLL </a>
+            <a href="#footer" class="topnav2">FIM</a>
+        </nav>
+        <h1 id=>Algoritmos de Cubo Mágico 3x3 que eu conheço (e você deveria também)</h1>
+        <br>
+        <hr width="1000px">
+        <div id="BITE"><h2>Intro</h2></div>
+        <p>Eu criei este site com a intenção de compartilhar o meu vasto conhecimento
+            de algoritmos do cubo 3x3 de forma organizada, visto a grande variedade dos 
+            mesmos. As dicas mostradas daqui em diante fazem parte do Método CFOP de SpeedCubing.
+        </p>
+        <br>
+        <div class="line"></div>
+        <div id="OF"><h2>CFOP</h2></div>
+        <h2><a href="#top" class="backtotop">Voltar para o topo</a></h2>
+        <br>
+        <img src="CFOP.png" alt="KOLONIN" width="600px">
+        <br>
+        <br>
+        <p>CFOP é um dos, se não o método mais famoso utilizado para resolver o Cubo 
+            Mágico, principalmente pela sua simplicidade e a diversidade de algoritmos.
+        </p>
+        <p>"C" significa Cross (Cruz), e é o primeiro passo do método CFOP, onde você 
+            escolhe uma peça central para formar uma cruz que consiste nesse centro junto 
+            a quatro peças de borda da mesma cor. As peças da cruz são inseridas no slot de forma 
+            que a segunda cor da peça esteja conectada a sua respectiva peça central. Por ser 
+            o primeiro passo para resolver o cubo, e que ele está todo embaralhado com diversas 
+            combinações, não há necessidade de listar algoritmos específicos que resolvem a Cruz,
+            tornando a ser uma etapa mais intuitiva.
+        </p>
+        <br>
+        <p>"F" equivale a F2L, ou First 2 Layers (Primeiras 2 Camadas), é a próxima etapa depois de fazer 
+            a Cruz. Nesta parte do método você deve encontrar e juntar as peças de canto e de borda 
+            que se complementam formando pares, para assim inserí-los nos respectivos slots. Diante das inúmeras 
+            possibilidades de onde as peças podem se situar, esta etapa é majoritariamente intuitiva. Porém, 
+            os resolvedores de cubo criaram algoritmos para cada caso de F2L, mas já que são muito específicos e 
+            variados, não serão mostrados aqui.
+        </p>
+        <br>
+        <p>"O" significa OLL, ou Orientation of the Last Layer (Orientação da Última Camada), e acontece depois de resolver 
+            as Primeiras 2 Camadas. Utilizando um dos 57 algoritmos de OLL, você deve resolver o lado oposto a Cruz que 
+            você fez no início. Não há segredo, pois agora você deve observar, reconhecer o padrão e executar o movimento o mais 
+            rápido possível utilizando-se da sua memória muscular. Existe um método utilizado para formar casos considerados bons 
+            (peças de borda orientadas), para depois resolvê-los com as bordas já orientadas.
+        </p>
+        <p>A seguir, dois algoritmos básicos que orientarão todas as quatro peças de borda do topo:</p>
+        <img src="2LookOLLbr.png" alt="KOLONIN" width="700px">
+        <br>
+        <br>
+        <p>"P" equivale a PLL, ou Permutation of the Last Layer (Permutação da Última Camada), e é a última etapa do CFOP. Depois 
+            de OLL, você utilizará um dos 21 algoritmos que permutará a última camada. E assim, você resolve o Cubo. 
+            Assim como OLL, existem dois algoritmos que resolvem os cantos da última camada, para depois você finalizar com um algoritmo 
+            mais fácil, resolvendo o Cubo.</p>
+        <p>A seguir, dois algoritmos básicos que resolverão todas as quatro peças de canto do topo:</p>
+        <img src="2LookPLLbr.png" alt="KOLONIN" width="700px">
+        <br>
+        <br>
+        <div class="line"></div>
+        <h1> Notação de Cubo</h1>
+        <h2><a href="#top" class="backtotop">Voltar para o topo</a></h2>
+        <br>
+        <p>A comunidade utiliza-se de nomenclaturas para cada movimento realizável em um cubo mágico, partindo dos nomes de 
+            direções em inglês, e no sentido horário (Right, Left, Front, Up...). Um movimento sozinho representa uma giro de
+            90° daquela face do cubo.</p>
+        <p>A imagem a seguir demonstra 7 nomenclaturas que ajudarão a entender os algoritmos do Cubo Mágico 3x3 mostrados daqui pra frente:</p>
+        <img src="CN.png" alt="KOLONIN" width="700px">
+        <br>
+        <br>
+        <p>O apóstrofo (') ao lado das letras representa um movimento de 90° daquela face porém em sentido anti-horário:</p>
+        <img src="CN'.png" alt="KOLONIN" width="700px">
+        <br>
+        <br>
+        <p>Letras seguidas de um "2 (dois)" representam um movimento duplo, ou seja, um giro de 180° para qualquer sentido, horário ou anti-horário.</p>
+        <div class="line"></div>
+        <div id="19"><h2>OLL - 21/57</h2></div>
+        <p>Orientação da Última Camada</p>
+        <h2><a href="#top" class="backtotop">Voltar para o topo</a></h2>
+        <br>
+        <table border="5" class="olltable table table-dark table-hover container table-bordered">
+            <thead>
+            <tr>
+                <th class="ollcase">OLL</th>
+                <th class="ollalgorithm">Algoritmo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll1.png" width="150px"></td>
+                <td class="ollalgorithm2">F (U R U' R') F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll2.png" width="150px"></td>
+                <td class="ollalgorithm2">F (R U R U')2 F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll3.png" width="150px"></td>
+                <td class="ollalgorithm2">R U R' U R U' R' U' (R' F R F')</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll4.png" width="150px"></td>
+                <td class="ollalgorithm2">f' (L' U' L U) f</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll5.png" width="150px"</td>
+                <td class="ollalgorithm2">r U R' U' M U R U' R'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll6.png" width="150px"</td>
+                <td class="ollalgorithm2">r U2 R' U' R U' r'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll7.png" width="150px"></td>
+                <td class="ollalgorithm2">l' U2 L U L' U l</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll21.png" width="150px"></td>
+                <td class="ollalgorithm2">(F R' F' R) (U R U' R')</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll8.png" width="150px"></td>
+                <td class="ollalgorithm2">L' U' L U' L' U L U L F' L' F</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll9.png" width="150px"></td>
+                <td class="ollalgorithm2">F' (L' U' L U)2 F</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll10.png" width="150px"></td>
+                <td class="ollalgorithm2">F (R U R' U') F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll11.png" width="150px"></td>
+                <td class="ollalgorithm2">(R U R' U') (R' F R F')</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll12.png" width="150px"></td>
+                <td class="ollalgorithm2">(R U R' U') M' (U R U' R')</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll13.png" width="150px"></td>
+                <td class="ollalgorithm2">F (U R U' R')2 F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll14.png" width="150px"</td>
+                <td class="ollalgorithm2">F (R U R' U')3 F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll15.png" width="150px"></td>
+                <td class="ollalgorithm2">R U2 R2 U' R2 U' R2 U2 R</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll16.png" width="150px"></td>
+                <td class="ollalgorithm2">R U R' U R U2 R'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll17.png" width="150px"></td>
+                <td class="ollalgorithm2">R U2 R' U' R U' R'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll18.png" width="150px"></td>
+                <td class="ollalgorithm2">F R' x U' L U R U' r'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll19.png" width="150px"></td>
+                <td class="ollalgorithm2">L F R' F' L' F R F'</td>
+            </tr>
+            <tr>
+                <td class="ollcase2"><img src="OLL/oll20.png" width="150px"></td>
+                <td class="ollalgorithm2">R2 D R' U2 R D' R' U2 R'</td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+        <br>
+        <div class="line"></div>
+        <div id="87"><h2>PLL - 11/21</h2></div>
+        <p>Permutação da Última Camada</p>
+        <h2><a href="#top" class="backtotop">Voltar para o topo</a></h2>
+        <br>
+        <table border="5" class="plltable table table-dark table-hover container table-bordered">
+            <thead>
+            <tr>
+                <th class="pllcase">PLL</th>
+                <th class="pllalgorithm">Algoritmo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll1ja.png" width="150px"></td>
+                <td class="pllalgorithm2">x R2 F R F' R U2 r' U r U2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll2jb.png" width="150px"></td>
+                <td class="pllalgorithm2">R U R' F' R U R' U' R' F R2 U' R'</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll3aa.png" width="150px"></td>
+                <td class="pllalgorithm2">x L2 D2 L' U' L D2 L' U L'</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll4ab.png" width="150px"></td>
+                <td class="pllalgorithm2">x L U' L D2 L' U L D2 L2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll5t.png" width="150px"></td>
+                <td class="pllalgorithm2">R U R' U' R' F R2 U' R' U' R U R' F'</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll6y.png" width="150px"></td>
+                <td class="pllalgorithm2">F R U' R' U' R U R' F' R U R' U' R' F R F'</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll7h.png" width="150px"></td>
+                <td class="pllalgorithm2">M2 U M2 U2 M2 U M2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll8ua.png" width="150px"></td>
+                <td class="pllalgorithm2">R U' R U R U R U' R' U' R2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll9ub.png" width="150px"></td>
+                <td class="pllalgorithm2">M2 U' M U2 M' U' M2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll10z.png" width="150px"></td>
+                <td class="pllalgorithm2">M2 U M2 U M' U2 M2 U2 M'</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll11v.png" width="150px"></td>
+                <td class="pllalgorithm2">R U' R U R' D R D' R U' D R2 U R2 D' R2</td>
+            </tr>
+            <tr>
+                <td class="pllcase2"><img src="PLL/pll12nb.png" width="150px"></td>
+                <td class="pllalgorithm2">r' D' F r U' r' F' D r2 U r' U' r' F r F'</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2><a href="#top" class="backtotop">Voltar para o topo</a></h2>
+        <br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    <footer id="footer">
+        <hr>
+        <nav class="bottomnav">
+            <a class="thankyou">Se você chegou até aqui, muito obrigado por visitar o meu website!</a>
+            <br>
+            <a class="thankyou">Versão PT-BR finalizada.</a>
+            <br>
+            <br>
+            <a class="thankyou">Thank you for visiting my website!</a>
+            <br>
+            <br>
+            <div><a class="insta2" href="https://instagram.com/gabrielmgoeritz" target="_blank">
+                - @gabrielmgoeritz
+            </a></div>
+        </nav>
+    </footer>
+</html>

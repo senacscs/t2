@@ -1,0 +1,57 @@
+h1 {
+    font-family: franklin gothic medium;
+    text-align:center;
+}
+
+p{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: franklin gothic medium;
+}
+
+body {
+    background: linear-gradient(-45deg, cyan, yellow, pink, lightgreen, orange);
+    background-size: 1000% 1000%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE: BERNARDO E.*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE (2): BERNARDO E.*/
+
+nav {
+    border: 10px;
+    background-color: lime;
+    padding: 28px;
+    text-align: center;
+    border-radius:20px;
+    
+}
+
+.fim {
+    font-family: franklin gothic medium;
+}
+
+.title2 {
+   font-family: franklin gothic medium;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 20px;
+}

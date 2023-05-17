@@ -1,0 +1,71 @@
+.toptitle {
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 70px;
+    transition: 0.3s ease-in-out;
+}
+
+.toptitle:hover {
+    font-size: 72px;
+}
+
+.aktrovao {
+    margin-top: -30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.topbox {
+    border-radius: 10px;
+}
+
+.topnav {
+    background-color: black;
+    opacity: 70%;
+    padding: 20px;
+    text-align: right;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topnav2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+.topnav2:hover {
+    font-size: 19px;
+}
+
+body {
+    background: linear-gradient(-45deg, cyan, yellow, pink, lightgreen, orange);
+    background-size: 1000% 1000%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE: BERNARDO E.*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE (2): BERNARDO E.*/
+
+html {
+    scroll-behavior: smooth;
+}

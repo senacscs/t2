@@ -1,0 +1,42 @@
+.card{
+    display: flex;
+    background: radial-gradient(brown, #ff8c00);
+    height: auto;
+    width: 98vw;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  }
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+    margin-right: 50px ;
+    margin-left: 50px;
+}
+
+.contentlist {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+
+.artigo {
+    margin-left: 20px;
+}
+
+body {
+    background-color: #B22222;
+    overflow-x: hidden;
+}
+
+img {
+    margin-left: 20px;
+}

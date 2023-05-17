@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: qatar;
+    src: url(Qatar2022/Qatar2022Arabic-Bold.ttf);
+}
+
+body {
+    background-image: url(dronemark.jpg);
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    /* background-color: #B1B8BD;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    /* Fallback */
+    /* background-image: url(dronemark.jpg);
+    background-image: url(dronemark.jpg), 
+                      -moz-linear-gradient(top, #ADB2B6 50%, red 50%);
+    background-image: url(dronemark.jpg), 
+                      -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ADB2B6), color-stop(50%, red));
+    background-image: url(dronemark.jpg), 
+                      linear-gradient(to bottom, #ADB2B6, red); */
+}
+
+.flag{
+    margin: auto;
+    display: block;
+}
+
+/* body::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+    background: linear-gradient(lightgray 10%, #ff0000);
+} */
+
+.topbox {
+    border-radius: 10px;
+}
+
+.topnav {
+    background-color: white;
+    opacity: 70%;
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    font-family: qatar;
+}
+
+.topnav2 {
+    font-family: qatar;
+    color: red;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: large;
+    animation: navanim 2s;
+    z-index: 1;
+}
+
+@keyframes navanim {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.toptitle {
+    margin-top: 50px;
+    font-family: qatar;
+    text-align: center;
+    font-size: 70px;
+    animation: titleanim 2s;
+}
+
+.subtitle {
+    margin-top: -30px;
+    font-family: qatar;
+    text-align: center;
+    font-size: 20px;
+    animation: titleanim 2s;
+}
+
+@keyframes titleanim {
+    from{
+        transform: translateY(-60px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.minititles {
+    font-family: qatar;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.content {
+    font-family: qatar;
+    text-align: justify;
+    background: linear-gradient(lightgray 70%, #ff0000);
+    margin-left: 300px;
+    margin-right: 300px;
+}
