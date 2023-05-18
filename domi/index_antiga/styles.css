@@ -1,0 +1,50 @@
+html {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+.content{
+        position: fixed;
+		top: 20%;
+        left: 30%;
+        padding-right: 10%;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+a {
+    position: relative;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    background-color: #FFC600;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+a:hover::before{
+    transform: scaleX(1);
+}

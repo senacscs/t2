@@ -1,0 +1,52 @@
+html{
+    background: linear-gradient(180deg, rgba(194,39,45,1) 0%, rgba(1,97,51,1) 50%, rgba(194,39,45,1) 100%);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* IMAGEM */
+img{
+    min-width: 40%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 7px;
+    font-family: 'Montserrat', serif;
+}
+
+/* TEXTO */
+h1{
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1, h2, h3, p, figcaption{
+    font-family: 'Montserrat', serif;
+    color: #fff;
+}
+
+h3{
+    font-weight: 100;
+    font-size: small;
+    text-align: center;
+    color: #fff;
+}
+
+/* ENFEITE */
+::selection{
+    background-color: #c2272d;
+}
+
+h1::selection, h3::selection{
+    background-color: #c2272d;
+    color: #fff;
+}
+
+hr{
+    background-color: #c2272d;
+}

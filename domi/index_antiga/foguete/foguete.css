@@ -1,0 +1,131 @@
+html{
+    background-color: black;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    background-color: #5800FF;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding: 17px 20px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #5800FF;
+    text-decoration: none;
+}
+
+
+/* CONTEUDO */
+p{
+    text-align: justify;
+}
+
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0%;
+    padding: 0%;
+}
+
+#texto{
+    padding: 0%;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* IMAGENS */
+#fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p, a, h1, figcaption{
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+::selection{
+    background-color: #5800FF;
+    color: white;
+}
+
+/* VIDEO */
+.video{
+    margin: 0 auto;
+    display: block;
+    position: static;
+}
+
+/* RELATORIOS */
+.titles{
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#relatorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+a:hover{
+    color: #5800FF;
+}

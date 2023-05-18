@@ -1,0 +1,80 @@
+main{
+	text-align: justify;
+	margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 30px;
+	margin-bottom: 50px;
+    padding: 10px;
+}
+
+#title{
+	font-family: 'DM Serif Display', cursive;
+	font-weight: 500;
+	font-size: 2.5em;
+	margin-bottom: 0%;
+    text-align: center;
+}
+
+#title2{
+    font-family: 'DM Serif Display', cursive;
+	font-weight: 500;
+	font-size: 1.5em;
+    margin-top: 0%;
+	margin-bottom: 0%;
+    text-align: center;
+}
+
+#caption{
+    font-size: small;
+    text-align: center;
+}
+
+#info{
+    margin-bottom: 0%;
+}
+
+hr{
+    background-color: blueviolet;
+}
+
+footer{
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.icon{
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+
+#about{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#info{
+    text-align: justify;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+::selection{
+    color: black;
+    background-color: #9b74d4;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color: blueviolet;
+}

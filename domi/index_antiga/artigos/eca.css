@@ -1,0 +1,40 @@
+html{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Poppins', serif;;
+    background-color: #fff;
+}
+
+main{
+    margin: 5% 10%;
+}
+
+.title, .enfeite, a{
+    color: #F94892;
+}
+
+h1{
+    text-align: center;
+}
+
+.text{
+    text-align: justify;
+    line-height: 200%;
+    color: #FF7F3F;
+}
+
+.quote{
+    text-align: justify;
+    padding-left: 20%;
+    margin: 0;
+    line-height: 200%;
+    font-style: italic;
+    color: #89CFFD;
+    display: inline-block;
+    quotes: "“", "”";
+}
+
+::selection{
+    background-color: #554994;
+    color: #fff;
+}
