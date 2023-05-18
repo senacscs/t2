@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color:darkgrey;
+}
+
+header{
+    display: flex;
+    height: 40px;
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: large;
+}
+
+a{
+    color: chocolate;
+    margin-right: 5px;
+}
+
+
+div{
+    margin-left: 60%; 
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+
+img{
+    padding-top: 50px;
+    padding-left: 28%;
+}
+
+p{
+    text-align: center; 
+}
+
+h2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
