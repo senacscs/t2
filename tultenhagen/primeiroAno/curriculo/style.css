@@ -1,0 +1,176 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Public Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EBECF0;
+}
+.main-section{
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+.main-section .left-part{
+    width: 40%;
+    height: 100%;
+    background-color: #F4F4F4;
+    padding: 2.8rem;
+}
+.left-part .photo-container{
+    margin-bottom: 2.2rem;
+}
+.left-part .photo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.title{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    background-color: #444440;
+    color: white;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.contact-container .contact-list{
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #444440;
+    font-size: 1rem;
+}
+.education-container{
+    margin-bottom: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.education-container .course{
+    margin-bottom: 1rem;
+    color: #414042;
+}
+ 
+.education-container .education-title{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+.education-container .college-name{
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    
+}
+.education-container .education-date{
+    font-size: 0.9rem;
+}
+.skills-container .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-family: 'Lato', sans-serif;
+}
+.skills-container .skill .right-skill .outer-layer{
+    background-color: #BBBBBB;
+    height:0.4rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+}
+.skills-container .skill .right-skill .inner-layer{
+    background-color: #3D3D3D;
+    height: 100%;
+    border-radius: inherit;
+}
+.right-part{
+    padding: 2.8rem;
+}
+.right-part .banner{
+    font-family: 'Open Sans', sans-serif; 
+    color: #4D4D4F;
+    margin-bottom: 2.2rem;
+}
+.right-part .banner .firstname{
+    font-size: 4rem;
+}
+.right-part .banner .lastname{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-top: -1rem;
+}
+.right-part .banner .position{
+    letter-spacing: 0.3rem;
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+}
+.work-container{
+    margin-top: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+.work-container .work:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+.work-container .work .job-date{
+    display: flex;
+    justify-content: space-between;
+    color: #4D4D4F;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.work-container .work .company-name{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #4D4D4F;
+}
+.work-container .work .work-text{
+    color: #737373;
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1rem;
+}
+.references-container .references{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #4D4D4F;
+}
+.references-container .references .name{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.references-container .references .company-name{
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+.references-container .references .phone{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #414042;
+}
+.references-container .references .phone p{
+    margin: 0.4rem 0;
+}
+.references-container .references .phone .phone-text{
+    font-weight: 600;
+}
+.text-left{
+    text-align: left;
+}
