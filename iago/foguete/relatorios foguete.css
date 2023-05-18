@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to top left, #ffff00 20%, #6600cc 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2pX rgba(95, 95, 95, 0.733);
+}
+
+h2 {
+    font-size: 20px;
+    text-indent: 20%;
+    text-shadow: 2px 2pX rgba(103, 41, 165, 0.733);
+}
+
+h3 {
+    font-size: 20px;
+    text-indent: 20%;
+    text-shadow: 2px 2pX rgba(246, 227, 56, 0.981);
+}
+
+a {
+    font-size: 25px;
+}
+
+ol {
+    color: purple;
+} 

@@ -1,0 +1,18 @@
+body {
+    background-image: linear-gradient(to bottom, red, white, blue);
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+}
+
+p {
+    text-indent: 39PX;
+    font-family: 'Playfair Display SC', serif;
+}
+
+ol {
+    font-family: 'Playfair Display SC', serif;
+}

@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: #616bf7;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(https://giffiles.alphacoders.com/212/212449.gif);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+
+iframe {
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #616bf7;
+}
+
+p {
+    color: #fafcff;
+    font-size: 20px;
+}
+
+a {
+    color: #00cef3;
+}
+
+
+ol {
+    color: #a26cf8;
+    font-size: 25px
+}

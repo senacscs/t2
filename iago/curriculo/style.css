@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(to top left, #9452c3 0%, #290371 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 65px;
+    text-shadow: 0px 0pX 10px rgb(106, 237, 237), 2px 2pX 4px rgb(34, 64, 155);
+    color:rgb(24, 24, 24) ;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1px 1px 2px #38127c;
+    color: rgb(106, 165, 253);
+}
+
+p{
+    font-size: 15px;
+    text-indent: 220px;
+    margin: 1px;
+    color: azure;
+}
+
+a {
+    color:rgb(235, 138, 138)
+}
+

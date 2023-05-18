@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(to top left, #66ccff 0%, #006666 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2pX cornflowerblue;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+#quimica {
+    font-size: 15px;
+    margin: 5px;
+}
+
+#biogeo {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    text-indent: 60px;
+}
+

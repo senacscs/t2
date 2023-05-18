@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to bottom, #cc9900 0%, #996600 100%)
+}
+img {
+    border-color: black;
+    border: 10px;
+    border-radius: 25px;
+ }
+ a {
+    font-size: xx-large;
+ }
+
+ p {
+    font-size: 20px;
+    font-weight: 600;
+ }
+

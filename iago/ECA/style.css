@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&display=swap');
+
+
+body {
+    background: linear-gradient(to bottom right, #ccffff 0%, #669999 50%, #3b5a5a);
+    display: grid;
+}
+ 
+.sub {
+    color: rgb(31, 36, 70);
+    font-size: 15px;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    text-indent: 40px;
+    font-size: 15px;
+}

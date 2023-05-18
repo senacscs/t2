@@ -1,0 +1,149 @@
+html {
+    background: rgb(105, 79, 30);
+    background-attachment: fixed;
+    background-size: 400%;
+    scroll-behavior: smooth;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5 {
+    position: relative;
+    opacity: 0.55;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("https://cdn.discordapp.com/attachments/833457267365773353/1046433492550025256/musicoterapia.png");
+    min-height: 400px;
+}
+
+.bgimg-2 {
+    background-image: url("https://cdn.discordapp.com/attachments/833457267365773353/1046442783449284709/6061f15-musicoterapia-1024x598.webp");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://cdn.discordapp.com/attachments/833457267365773353/1046445138727149618/bem-me-care-musicoterapia-para-idosos-636x340.jpg");
+    min-height: 300px;
+}
+
+.bgimg-4 {
+    background-image: url("https://cdn.discordapp.com/attachments/833457267365773353/1046445651304644668/76c4309a8f74abe4807b79c4ae4fcb64ecfc6cbb.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("https://sementesdacura.com.br/wp-content/uploads/2018/08/musicoterapia-pessoa-com-fone.jpg");
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    background-image: url("https://cdn.discordapp.com/attachments/833457267365773353/1046445651304644668/76c4309a8f74abe4807b79c4ae4fcb64ecfc6cbb.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: rgb(39, 14, 2);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.btns {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    /* margin: 10px; */
+    width: 30vmin;
+    height: 10vmin;
+    background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, rgb(255, 153, 0), rgb(49, 11, 137));
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+    box-shadow: 6px 4px 4px 2px rgb(82, 54, 13);
+    padding: 20px;
+
+}
+
+@-webkit-keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.btn:hover {
+    background-image: conic-gradient(from var(--border-angle), rgb(95, 34, 30), rgb(91, 45, 45) 50%, rgb(106, 36, 36)), conic-gradient(from var(--border-angle), transparent 20%, rgb(189, 73, 202), rgb(255, 92, 83));
+}
+
+h1 {
+    color: rgb(78, 92, 252);
+    font-family: "Lobster";
+    text-align: center;
+    text-shadow: 5px 5px 15px rgb(7, 4, 88);
+    font-size: 40px;
+}
+
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    font-family: "PT Sans";
+    font-size: 20px;
+    color: #ced2ff;
+}
+
+.transform {
+    font-family: "Satisfy", cursive;
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul {
+    text-align: justify;
+    font-family: "PT Sans";
+    font-size: 20px;
+    color: #ab9bff;
+    margin: 0;
+}
+
+a {
+    color: rgb(150, 145, 247);
+}
+
+.modificar {
+    color: rgb(153, 102, 254);
+}

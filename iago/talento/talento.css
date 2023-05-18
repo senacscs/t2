@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(https://jbchost.com.br/madeinjapan/wp-content/uploads/2015/09/pixelart_koi.gif);
+    background-size: 100%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position:initial;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color:rgb(233, 113, 219);
+    border-style:ridge;
+    border-width:20px;
+    border-left: none;
+    border-right: none;
+    border-top: 10px groove rgb(52, 23, 102);
+    border-bottom: 10px groove rgb(72, 16, 102);
+    border-radius: 13px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15vmin;
+    line-height: 10vmin;
+}
+
+p {
+    font-size: 20px;
+    color:rgb(252, 159, 255);
+}
+
+.gradient-text {
+    color: transparent;
+    background: conic-gradient(
+      #544abe 12%, 
+      #5e4a8a 12%, #6f5f92 33%, 
+      #51622e 33%, #94b15c 55%, 
+      #673232 55%, #a56363 70%, 
+      #2b618d 70%, #98bbd7 87%, 
+      #a96b45 87%);
+    background-size: 5%;
+    background-clip: text;  
+    -webkit-background-clip: text;
+  
+    animation: expand-rev 0.5s ease forwards;
+  
+    cursor: pointer;
+  }
+  
+  .gradient-text:hover {
+    animation: expand 0.5s ease forwards;
+  }
+  
+  @keyframes expand {
+    0% {
+      background-size: 5%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 5%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 35%;
+      background-position: -10em -4em;
+    }
+  }
+  
+  @keyframes expand-rev {
+    0% {
+      background-size: 35%;
+      background-position: -10em -4em;
+    }
+    20% {
+      background-size: 5%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 5%;
+      background-position: 0 0;
+    }
+  }
