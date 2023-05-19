@@ -1,0 +1,144 @@
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	text-align: justify;
+	margin: 70px 20%;
+	padding: 0px;
+}
+
+.sobre {
+	margin-top: 0%;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'DM Serif Display', serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	margin-bottom: 2%;
+	margin-top: 0%;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	margin-bottom: 1%;
+}
+
+h3 {
+	font-family: 'DM Serif Display', serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-top: 5%;
+	line-height: 200%;
+}
+
+p {
+	font-size: medium;
+	line-height: 150%;
+	margin-bottom: 2%;
+}
+
+ul {
+	padding-left: 5%;
+}
+
+.enfeite {
+	color: blueviolet;
+}
+
+.info2 .enfeite {
+	text-decoration: underline;
+}
+
+a {
+	color: blueviolet;
+}
+
+/* icons */
+#redes p {
+	display: inline;
+}
+
+#redes p a {
+	text-decoration: none;
+	margin-right: 30px;
+	transition: ease 1s;
+}
+
+#redes p a:hover {
+	font-size: 20px;
+}
+
+/* animations */
+main .sobre {
+	animation: fromBottom 3s backwards;
+}
+
+main section h3,
+main section p,
+main section ul {
+	animation: fromBottom 4s 2s backwards;
+}
+@keyframes fromBottom {
+	from { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+	main {
+		margin: 10% 5% 10% 5%;
+		padding: 0px;
+		text-align: left;
+	}
+
+	.sobre {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin-bottom: 1%;
+	}
+
+	h2 {
+		font-size: 10px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: medium;
+		line-height: 150%;
+		margin-bottom: 5%;
+	}
+
+	ul {
+		padding-left: 10%;
+	}
+
+	.sobre p {
+		font-size: 15px;
+	}
+}
