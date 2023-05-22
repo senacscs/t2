@@ -215,6 +215,32 @@ h1 {
 }
 
 
+/* home button */
+#curriculo {
+    background-color: #000;
+
+    color: #fff;
+
+    width: 150px;
+
+    font-size: 15px;
+
+    padding: 15px;
+
+    border: none;
+
+    transition: all .5s;
+}
+
+#curriculo:hover {
+    background-color: #fff;
+    
+    color: #000;
+    
+    border-radius: 10px;
+}
+
+
 
 /* about */
 
