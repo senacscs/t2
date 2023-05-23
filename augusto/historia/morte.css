@@ -1,0 +1,73 @@
+body {
+    user-select: none;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: repeat;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+    font-size: 100px;
+    
+  }
+
+  a {
+    text-transform: none;
+    color: white;
+  }
+
+  .btn {
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+    width: 350px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 12%;
+  }
+  .btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;	
+  }
+  .btn-two span {
+    z-index: 2;	
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;	
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }

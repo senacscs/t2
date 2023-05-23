@@ -1,0 +1,39 @@
+body{ 
+    opacity: 1.0;
+}
+
+
+
+#Informacões{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+}
+
+hr{
+    border-color: black;
+}
+
+#Escolaridade{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+}
+
+#Experiências{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+}
+
+#Qualificacões{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+}
+
+#contatos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+    }
