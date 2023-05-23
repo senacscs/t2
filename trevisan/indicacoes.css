@@ -1,0 +1,48 @@
+body{ 
+    background-color: #F5DEB3;
+}
+a{ 
+    color: black;
+}
+p{ 
+    color: black;
+}
+div{ 
+    font-size: 20px;
+    color: black;
+}
+nav{ 
+    font-size: 20px;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+}
+header{
+    display: flex;
+    height: 80px;
+    padding: 40px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: large;
+}
+#menu{ 
+    display: flex;
+    list-style: none;
+    
+}
+#menu a{ 
+    display: block;
+    padding: .5rem;
+   
+}
+body, ul{
+    margin: 4px;
+    padding: 10px;
+}
