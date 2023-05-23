@@ -1,0 +1,24 @@
+body {
+    text-align:center;
+    background-color: black;
+    color: white;
+}
+img {
+    border-radius: 25px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h2 {
+    font-size: large;
+}
+h1 {
+font-family: arial;
+font-weight: bold;
+}
+.div1 {
+    width: 600px;
+    margin-left: 250  px;
+    background-color: purple;
+}
