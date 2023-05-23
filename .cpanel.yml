@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=$/home2/brude840/public_html/arquivo.dev/t2
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R / $DEPLOYPATH
