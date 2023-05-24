@@ -1,0 +1,26 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
