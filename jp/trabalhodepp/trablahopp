@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <html lang="pt-br">
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="trabalhopp.css">
+   <title>PP</title>
+</head>
+
+<body translate="no" onpageshow="updateidea();">
+    <script src="https://minecraft--duck132912.repl.co/script.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://minecraft--duck132912.repl.co/style.css">
+    <img alt="Minecraft" id="logo" src="https://minecraft--duck132912.repl.co/minecraft.svg"/>
+<div id="flashingtext">Bees! bees! bees!</div>
+<main>
+<button class="button" onclick="play()">Singleplayer</button>
+<br>
+<button class="button" onclick="playmulti()" id="playmulti">Multiplayer</button> <br>
+<button class="button" onclick="alert('Thanks to classic.minecraft.net for the game part')">Credits</button>
+<button class="button" onclick="how()">How to play</button>
+<audio id="audio">
+<source src="minecraft.mp4">
+</audio>
+<button id="button" class="button">Play audio</button>
+<button class="button button_small left" onclick="change()">Options</button>
+<button class="button button_small right" onclick="quit();">Quit Game</button>
+<script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
+<script type="text/javascript">
+function updateidea() {
+if (!("Notification" in window)) {
+alert("This browser does not support desktop notification");
+}
+else if (Notification.permission === "granted") {
+var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+}
+else if (Notification.permission !== "denied") {
+Notification.requestPermission().then(function (permission) {
+  if (permission === "granted") {
+    var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+  }
+});
+}
+}Notification.requestPermission().then(function(result) {
+console.log(result);
+});function spawnNotification(body, icon, title) {
+var options = {
+  body: body,
+  icon: icon
+};
+}
+var button = document.getElementById("button");
+var audio = document.getElementById("audio");
+button.addEventListener("click", function(){
+if(audio.paused){
+audio.play();
+button.innerHTML = "Pause audio";
+} else {
+audio.pause();
+button.innerHTML = "Play audio";
+}
+});
+</script>
+</main>
+</body>
+</html>
