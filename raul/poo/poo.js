@@ -34,6 +34,11 @@ class Cadeira {
     }
 }
 
+class Cavalo extends Animal {
+    constructor(nome) {
+        super(nome, 4);
+    }
+}
 function criaObjeto() {
     let nome = document.getElementById("nomeInput").value;
     let patas = parseInt(document.getElementById("patasInput").value);
