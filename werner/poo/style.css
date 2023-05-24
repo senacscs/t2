@@ -1,0 +1,39 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Slab:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Slab:ital,wght@0,300;0,500;1,400&display=swap');
+
+ *{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Josefin Slab', serif;
+ }
+body {
+    background-color: azure;
+    text-align: center;
+    background: url(selva.jpg);
+   background-position: center;
+}
+
+h1 {
+    color: rgb(147, 147, 200);
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 10px;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Josefin Slab', serif;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
