@@ -20,14 +20,7 @@ class Humano extends Animal {
     constructor(nome) {
         super(nome, 2);
     }
-}
-
-//make a class gato with extends animal with method miar
-class Gato extends Animal {
-    constructor(nome) {
-        super(nome, 4);
-    }
-    
+} 
 
 class Cadeira {
     constructor(nome, patas) {
