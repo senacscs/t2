@@ -1,0 +1,24 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+label, input, div {
+    color: #0050ff;
+    font-size: large;
+    padding: 10px;
+}
+
+button{
+    background-color: #0050ff;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
