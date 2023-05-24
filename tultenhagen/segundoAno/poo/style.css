@@ -1,0 +1,33 @@
+body {
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p3/8417952-multicolorido-patas-de-gato-design-plano-fofo-gato-patas-papel-de-parede-ilustracao-vetor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 18%;
+}
+
+h1 {
+    color: rgb(25, 190, 0);
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 15px;
+}
+
+label{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
