@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: containeranim 1s;
+}
+
+h1 {
+    color: blue;
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 10px;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+@keyframes containeranim{
+    from{
+        transform: translateY(-80px);
+    }
+  
+    to{
+        transform: translateY(0);
+    }
+  }
