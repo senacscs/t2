@@ -1,0 +1,9 @@
+body {
+    background-color: palegreen;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
