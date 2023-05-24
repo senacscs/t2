@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(57, 169, 169);
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+h1 {
+    color:#FFFF00;(255, 204, 0);
+    font-family: "Comic Sans MS";
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 12px;
+    font-family: "Comic Sans MS";
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: #FFFF00;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Comic Sans MS";
+}
