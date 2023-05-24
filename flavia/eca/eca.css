@@ -1,0 +1,25 @@
+html {
+    background-color:	#d3c6ae
+}
+h1 {
+    text-align: center;
+}
+h2 { 
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+}
+li {
+    background-color: #c4c3c3; 
+    border:1px solid #000000 ; 
+    padding: 15px;
+}
+img {
+    inline-size: 20%;
+}

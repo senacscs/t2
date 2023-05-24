@@ -1,0 +1,39 @@
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+p {
+    font-size: 18px;
+}
+li {
+    font-size: 18px;
+}
+button {
+    background-color: #e3e3e3;
+    color: #454545;
+    border: 1;
+    border-color: #000000;
+    padding: 15px 32px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 5px; 
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+   }
