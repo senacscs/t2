@@ -1,0 +1,25 @@
+html {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #13D6A7;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button {
+    background-color: #15AD88;
+    color:rgb(255, 255, 255);
+    border: 0;
+    padding: 15px 32px;
+    border-radius: 60px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+h3{
+    margin-left: 3%;
+}
+h4{
+    margin-left: 5%;
+}

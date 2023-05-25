@@ -1,0 +1,35 @@
+html{
+    background: radial-gradient(circle, rgba(252, 12, 124, 0.502) 15%, rgb(255, 255, 255) 100%);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+img{
+    inline-size: 25%;
+}
+img.img1{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+img.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+p.p1{
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 23px;
+}
+.a{
+    list-style-type: circle;
+}
