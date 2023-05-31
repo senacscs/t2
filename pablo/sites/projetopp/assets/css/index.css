@@ -276,6 +276,7 @@ section {
 
 .section-p2 {
   text-align: left;
+  font-size: 15px;
 }
 
 .section-title h2 {
@@ -312,7 +313,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
