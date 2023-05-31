@@ -1,0 +1,39 @@
+body {
+    background-color: #ffa5c6;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    background-color: rgb(155, 207, 255);
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    background-color: rgb(159, 140, 255);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+}

@@ -1,0 +1,81 @@
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 17px;
+}
+
+body {
+    background-color: rgb(1, 79, 13); 
+    background-size: 4px;
+    display: block;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+.topnav2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(23, 44, 49);
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: large;
+}
+
+.topnav {
+    background-color: black;
+    opacity: 70%;
+    padding: 20px;
+    text-align: right;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bottomnav {
+    background-color: black;
+    opacity: 70%;
+    padding: 50px;
+    text-align: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.line {
+    background-color:z
+    padding: 1px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: block;
+}
+
+.olltable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: silver;
+    color: black;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.backtotop {
+    text-decoration: initial;
+    margin: 0px auto 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(52, 56, 1, 0.712);
+    font-size: 17px;
+}
