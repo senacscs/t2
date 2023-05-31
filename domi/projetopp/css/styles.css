@@ -54,7 +54,7 @@ body {
 
 /* home */
 #home {
-    background-image: url(../img/home.jpg);
+    background-image: url(../img/home.png);
     height: 650px;
     max-height: 100%;
     display: flex;
@@ -74,8 +74,8 @@ body {
 }
 
 #objetivo img {
-    max-width: 45vw;
-    height: auto;
+    max-height: 100%;
+    width: auto;
 }
 
 #objetivo h3 {
