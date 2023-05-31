@@ -1,0 +1,295 @@
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #0b213d;
+    margin: 0;
+}
+h1, h2, h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #0b213d;
+}
+img{
+    border-style: none;
+}
+nav{
+    background-color: burlywood;
+}
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+nav div > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav div ul li{
+    text-align: center;
+    width: 100%;
+}
+nav div ul li a{
+    display: inline-block;
+    padding: 4px 0;
+    width: 100%;
+    color: rgb(252, 234, 202);
+    text-decoration: none;
+    
+}
+nav div ul li a:hover{
+    color: #0b213d;
+    background-color: white;
+}
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*formatar o menu sus.penso - dropdown*/
+nav div ul li ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+nav div ul li:hover ul{
+    display: flex;
+}
+nav div ul li ul li{
+    font-style: italic;
+    background-color: burlywood;
+}
+nav div ul{
+    flex-direction: row;
+    width: 70%;
+    align-items: start;
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/coffee-g1a49b2848_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+header a{
+    color: rgb(51, 28, 0);
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    font-size: .8em;
+    border-radius: 7px;
+}
+header a:hover{
+    color: rgb(252, 226, 156);
+    background-color: #0b213d;
+    transition: background 0.6s; 
+}
+header p{
+    margin-bottom: 2em;
+    text-shadow: 0px 0px 4px #0b213d;
+    font-size: 5em;
+}
+section#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-color: #e4ce9e;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+section#sobre h2{
+    color: #ffffff;
+}
+
+section#sobre p{
+    margin-bottom: 2em;
+    max-width: 500px;
+}
+section#sobre a{
+    color: rgb(51, 28, 0);
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    font-size: .8em;
+    border-radius: 7px;
+}
+section#sobre a:hover{
+    color: rgb(252, 226, 156);
+    background-color: #0b213d;
+    transition: background 0.6s;
+}
+section#servicos{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    margin-top: 30px;
+    
+}
+/* section#servicos div{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    text-align: center; 
+    margin-top: 3px;
+    background-color: #f1c586;
+}*/
+section#servicos p{
+    text-align: center;
+}
+section#servicos h2, h3{
+    text-align: center;
+}
+section#servicos img{
+    padding: 40px;
+}
+
+section#recomendacao1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+section#recomendacao1 h2{
+    margin-bottom: 20px;
+}
+section#recomendacao1 img{
+    width: 75%;
+    padding: 1px 1px 1px;
+    margin: auto;
+}
+section#recomendacao2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+section#recomendacao2 h2{
+    color: #0b213d;
+}
+section#recomendacao2 a{
+    color: #f1c586;
+    text-decoration: none;    
+    padding: 5px 30px;    
+    border-radius: 7px;
+}
+section#recomendacao2 a:hover{
+    background-color: #0b213d;
+    transition: background 0.6s;
+
+
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #f5cf98;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer a:hover{
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+/*responsividade do site*/
+@media screen and (min-width: 769px){
+    /*nav*/
+    nav{
+        height: 65px;
+    }
+    nav div{
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: auto;
+        align-items: start;
+    }
+
+    nav div > a{
+        margin-top: 2%;
+    }
+    
+    nav div ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    /* cabeçalho*/
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+    /*sobre*/
+    section#sobre{
+        height: 40vh;
+        justify-content: center;
+        /*min-height: 350px;*/
+    }
+    section#servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+    }
+    section#servicos h2{
+        width: 100%;
+    }
+    section#servicos div{
+        flex-basis: 150px;
+        padding: 0 10px;
+        flex-grow: 1;
+
+    }
+    section#servicos img{
+        padding: 55px;
+    }
+    /*produtos*/
+    section#produtos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section#produtos h2{
+        width: 100%;
+        text-align: center;
+    }
+    section#produtos img{
+        width: 33.333333%;
+        margin: 50px;
+        padding: 30px;
+    }
+    /*contato*/
+    section#contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 600px;
+        justify-content: space-around;
+
+    }
+    section#contato h2, section#contato p {
+        width: 100%;
+    }
+}
