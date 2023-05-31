@@ -54,7 +54,7 @@ body {
 
 /* home */
 #home {
-    background-image: url(https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(../img/home.jpg);
     height: 650px;
     max-height: 100%;
     display: flex;
