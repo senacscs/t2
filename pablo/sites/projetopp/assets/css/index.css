@@ -274,6 +274,10 @@ section {
   padding-bottom: 30px;
 }
 
+.section-p2 {
+  text-align: left;
+}
+
 .section-title h2 {
   font-size: 30px;
   font-weight: bold;
