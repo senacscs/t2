@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    background-color: #172540;
+    padding: 20px;
+}
+
+nav ul {
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFECCC;
+    padding: 16px 80px;
+}
+
+nav ul li a:hover {
+    color: #172540;
+    background-color: #FFECCC;
+    transition: all .5s;
+}
+
+/* INTRODUÇÃO */
+header {
+    margin: 0;
+    padding: 14rem 0;
+    background-image: url(https://cdn.discordapp.com/attachments/833457267365773353/1113265606007992331/musicoterapia.png);
+}
+
+header #inicio {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin: 0 218px;
+    border-top: 1px solid #000000;
+}
+
+/* SOBRE */
+.musicoSobre {
+    background-color: #172540;
+}
+
+.musicoSobre h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+}
+
+.musicoSobre p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
+
+/* OBJETIVOS */
+.musicoObjetivo {
+    background-color: #FFECCC;
+}
+
+.musicoObjetivo h2 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color: #172540;
+    justify-content: center;
+}
+
+.musicoObjetivo .imagen1 {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.musicoObjetivo .imagen2 {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.musicoObjetivo .imagens h3 {
+    padding: 0 16rem;
+}
+
+/* CONCLUSÃO */
+.musicoConclusao {
+    background-color: #172540;
+}
+
+.musicoConclusao h2 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color: #FFECCC;
+    justify-content: center;
+}
+
+.musicoConclusao p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
