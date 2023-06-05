@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Formação de Palavras</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap');
+    body {
+        font-family: 'Raleway', sans-serif;
+      text-align: center;
+      background-image: url(assets/img/fundodosite.avif);
+      background-repeat: no-repeat;
+      background-position: center;
+     background-size: cover;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    #game-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .word-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .drag-container {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin: 5px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .drag-container.dragged {
+      opacity: 0.5;
+    }
+
+    .drop-container {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      background-color: #f2f2f2;
+      border: 2px dashed #ccc;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .drop-container.correct {
+      border-color: green;
+    }
+
+    .drop-container.incorrect {
+      border-color: red;
+    }
+
+    #score {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <br> <br> <br> <br> <br> <br> <br>
+  <h1>Jogo de Formação de Palavrasㅤ<img src="assets/img/alfabeto.png" width="50px" height="50px"></h1>
+  <br> <br>
+  <h3>Ordene as palavras em: prefixo - radical - sufixo - desinência de gênero - desinência de número</h3>
+  <br>
+  <div id="game-container">
+    <div class="word-container">
+      <div class="drop-container" data-drop="prefixo"></div>
+      <div class="drop-container" data-drop="radical"></div>
+      <div class="drop-container" data-drop="sufixo"></div>
+      <div class="drop-container" data-drop="gênero"></div>
+      <div class="drop-container" data-drop="número"></div>
+    </div>
+  </div>
+  <p id="score">Pontuação: <span id="score-value">0</span></p>
+
+  <script>
+  var words = [
+  {  prefixo: "in", radical: "acredit", sufixo: "ável", gênero: "masculino", número: "singular" },
+  {  prefixo: "des", radical: "conhec", sufixo: "ido", gênero: "masculino", number: "singular" },
+  {  prefixo: "re", radical: "constru", sufixo: "ção", gênero: "feminino", number: "singular" },
+  {  prefixo: "in", radical: "feliz", sufixo: "es", gênero: "masculino", number: "plural" }
+];
+
+
+
+// Embaralhar as palavras
+shuffle(words);
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+    var currentWordIndex = 0;
+    var score = 0;
+
+    function initGame() {
+      currentWordIndex = Math.floor(Math.random() * words.length);
+      var currentWord = words[currentWordIndex];
+
+      var wordContainer = document.querySelector(".word-container");
+      wordContainer.innerHTML = "";
+
+      var wordOrder = ["prefixo", "radical", "sufixo", "gênero", "número"];
+
+      wordOrder.forEach(function(part) {
+        var dropContainer = document.createElement("div");
+        dropContainer.classList.add("drop-container");
+        dropContainer.dataset.drop = part;
+        dropContainer.addEventListener("dragover", allowDrop);
+        dropContainer.addEventListener("drop", drop);
+
+        wordContainer.appendChild(dropContainer);
+      });
+
+      score = 0;
+      document.getElementById("score-value").textContent = score;
+
+      for (var key in currentWord) {
+        var dragContainer = document.createElement("div");
+        dragContainer.classList.add("drag-container");
+        dragContainer.textContent = currentWord[key];
+        dragContainer.draggable = true;
+        dragContainer.dataset.part = key;
+        dragContainer.addEventListener("dragstart", dragStart);
+
+        wordContainer.appendChild(dragContainer);
+      }
+    }
+
+    function dragStart(event) {
+      event.dataTransfer.setData("text/plain", event.target.dataset.part);
+      event.target.classList.add("dragged");
+    }
+
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+
+    function drop(event) {
+      event.preventDefault();
+      var dragPart = event.dataTransfer.getData("text/plain");
+      var dropPart = event.target.dataset.drop;
+
+      if (dragPart === dropPart) {
+        event.target.classList.remove("incorrect");
+        event.target.classList.add("correct");
+        event.target.textContent = event.dataTransfer.getData("text/plain");
+        event.target.removeEventListener("dragover", allowDrop);
+        event.target.removeEventListener("drop", drop);
+        event.target.parentElement.classList.add("correct");
+
+        score += 1;
+        document.getElementById("score-value").textContent = score;
+
+        if (score === Object.keys(words[currentWordIndex]).length) {
+          setTimeout(function() {
+            alert("Parabéns! Você completou o jogo!");
+            initGame();
+          }, 500);
+        }
+      } else {
+        event.target.classList.remove("correto");
+        event.target.classList.add("incorreto");
+      }
+    }
+
+    initGame();
+  </script>
+</body>
+</html>
