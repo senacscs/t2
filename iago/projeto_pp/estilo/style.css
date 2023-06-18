@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+
+
 /* NAVEGAÇÃO */
 nav {
     background-color: #172540;
@@ -36,11 +38,14 @@ nav ul li a:hover {
     transition: all .5s;
 }
 
+
+
+
 /* INTRODUÇÃO */
 header {
     margin: 0;
     padding: 14rem 0;
-    background-image: url("../img/musicoterapia.png");
+    background-image: url("../imagens/musicoterapia.png");
 }
 
 header #inicio {
@@ -54,6 +59,13 @@ header h2 {
     border-top: 1px solid #000000;
 }
 
+header h1 {
+    font-weight: bold;
+}
+
+
+
+
 /* SOBRE */
 .musicoSobre {
     background-color: #172540;
@@ -64,6 +76,7 @@ header h2 {
     padding-top: 20px;
     text-align: center;
     color: #fdd897;
+    font-weight: 700;
 }
 
 .musicoSobre p {
@@ -73,77 +86,91 @@ header h2 {
     color: #FFECCC;
 }
 
+
+
 /* OBJETIVOS */
 .musicoObjetivo {
     background-color: #FFECCC;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#geral,
+#especifico {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: justify;
 }
 
 .musicoObjetivo h2 {
     width: 100%;
     text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    font-weight: 700;
 }
 
 .musicoObjetivo h3 {
-    width: 50%;
-    justify-content: center;
     text-align: center;
-    margin: 10px 70px;
-    display: flex;
-}
-
-.musicoObjetivo div {
-    margin: 0 200px;
 }
 
 #img1,
 #img2 {
-    width: 50%;
-    margin: -10px 0px;
-    padding: 130px 30px;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
     display: flex;
-    background-repeat: no-repeat;
+    flex-direction: column;
     background-position: center;
-    background-size: contain;
-    align-items: center;
-    justify-content: space-around;
+    background-repeat: no-repeat;
     text-decoration: none;
     cursor: pointer;
-    transition: all 1s;
-    text-decoration: none;
-    text-align: center;
+    width: 400px;
+    height: 680px;
 }
 
 ul#img1 {
-    background-image: url("../img/musi.png");
+    background-image: url("../imagens/musi.png");
     background-attachment: local;
-    margin-top: 12px;
+    align-items: center;
 }
 
 ul#img2 {
-    background-image: url("../img/musidois.png");
+    background-image: url("../imagens/musidois.png");
     background-attachment: local;
-    margin-top: -28px;
+    align-items: center;
 }
 
 .musicoObjetivo ul li {
     cursor: pointer;
-    max-width: 150px;
-    text-decoration: none;
-    display: block;
-    text-align: justify;
-    color: #5a6e9800;
+    display: none;
+    transition: all 1s;
 }
 
 .musicoObjetivo ul:hover li {
+    text-align: justify;
+    margin: 120px;
+    font-size: 18px;
+    display: block;
     color: #5a6e98;
-    transition: all 1s;
+    background-color: #fdd897;
     box-shadow: 1px 1px 8px #172540;
-    background-color: #fdd897
+    text-decoration: none;
+    padding: 10px;
 }
+
+#observacao {
+    font-style: italic;
+    margin: auto;
+}
+
+
+
 
 /* CONCLUSÃO */
 .musicoConclusao {
@@ -164,6 +191,9 @@ ul#img2 {
     text-align: justify;
     color: #FFECCC;
 }
+
+
+
 
 /* RODAPÉ */
 footer {
