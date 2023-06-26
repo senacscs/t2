@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pie Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart"></canvas>
+
+    <script>
+        // Data for the pie chart
+        var data = {
+            labels: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+            datasets: [{
+                data: [30, 20, 10, 40],
+                backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56'],
+            }]
+        };
+
+        // Options for the chart
+        var options = {
+            responsive: true,
+            maintainAspectRatio: false
+        };
+
+        // Create the pie chart
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: options
+        });
+    </script>
+</body>
+</html>
