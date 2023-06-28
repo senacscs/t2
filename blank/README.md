@@ -17,4 +17,4 @@ Os projetos variam de soluções para problemáticas apresentadas, à atividades
 <img src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="35pm"></img>
 <img src="https://i0.wp.com/pt.mundobabushka.com/wp-content/uploads/sites/5/2016/03/js-logo.png?fit=500%2C500&ssl=1" width="50pm"></img>
 
-<h4 align="center"> 🡕 <a href="https://arquivo.dev/t2/blank/"> Acesse os projetos </a> </h4>
+<h4 align="center"> 🡕 <a href="https://senacscs.github.io/t2/blank/"> Acesse os projetos </a> </h4>
