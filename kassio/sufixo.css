@@ -1,0 +1,20 @@
+$brand-primary: #204d74; // dark blue
+$brand-secondary: complement($brand-primary);
+
+body {
+  padding: 2rem;
+  background: #444!important;
+  color: #222;
+}
+
+dl div:nth-child(odd) dt {
+  color: $brand-primary;
+}
+
+dl div:nth-child(even) dt {
+  color: $brand-secondary;
+}
+
+dd {
+  margin-left: 1em;
+}

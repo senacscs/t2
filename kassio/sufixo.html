@@ -1,35 +1,252 @@
-<!DOCTYPE html>
 <html>
+<!-- Bomb Defusal Manual-->
+<!-- For the game -->
+<!-- "Keep Talking and Nobody Explodes" v1.3 code: 241 -->
+
 <head>
-    <title>Pie Chart Example</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+  <!-- https://v4-alpha.getbootstrap.com/content/typography/ -->
 </head>
 <body>
-    <canvas id="myChart"></canvas>
+  <section class="card">
+    <h2 id="wires" class="card-header">Wires</h2>
+    <div class="card-block">
+      <dl>
+        <div>
+          <dt class="h3">3 wires</dt>
+          <dd class="lead">No <span class="tag tag-danger">red</span> wires, cut the second wire.</dd>
+          <dd class="lead">Last wire is <span class="tag tag-default">white</span>, cut the last wire.</dd>
+          <dd class="lead">More than one <span class="tag tag-primary">blue</span> wire, cut the last <span class="tag tag-primary">blue</span> wire.</dd>
+          <dd class="lead">Otherwise, cut the last wire.</dd>
+        </div>
+        <div>
+          <dt class="h3">4 wires</dt>
+          <dd class="lead">If there is more than one <span class="tag tag-danger">red</span> wire and the last digit of the serial number is odd, cut the last <span class="tag tag-danger">red</span> wire.</dd>
+          <dd class="lead">Otherwise, if the last wire is <span class="tag tag-warning">yellow</span> and there are no <span class="tag tag-danger">red</span> wires, cut the first wire.</dd>
+          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-primary">blue</span> wire, cut the first wire.</dd>
+          <dd class="lead">Otherwise, if there is more than one <span class="tag tag-warning">yellow</span> wire, cut the last wire.</dd>
+          <dd class="lead">Otherwise, cut the second wire.</dd>
+        </div>
+        <div>
+          <dt class="h3">5 wires</dt>
+          <dd class="lead">If the last wire is black and the last digit of the serial number is odd, cut the fourth wire.</dd>
+          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-danger">red</span> wire and there is more than one <span class="tag tag-warning">yellow</span> wire, cut the first wire.</dd>
+          <dd class="lead">Otherwise, if there are no black wires, cut the second wire.</dd>
+          <dd class="lead">Otherwise, cut the first wire.</dd>
+        </div>
+        <div>
+          <dt class="h3">6 wires</dt>
+          <dd class="lead">If there are no <span class="tag tag-warning">yellow</span> wires and the last digit of the serial number is odd, cut the third wire.</dd>
+          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-warning">yellow</span> wire and there is more than one <span class="tag tag-default">white</span> wire, cut the fourth wire.</dd>
+          <dd class="lead">Otherwise, if there are no <span class="tag tag-danger">red</span> wires, cut the last wire.</dd>
+          <dd class="lead">Otherwise, cut the fourth wire.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
 
-    <script>
-        // Data for the pie chart
-        var data = {
-            labels: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
-            datasets: [{
-                data: [30, 20, 10, 40],
-                backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56'],
-            }]
-        };
+  <section class="card">
+    <h2 id="button" class="card-header">The Button</h2>
+    <div class="card-block">
+      <dl>
+        <dt>If the button is <span class="tag tag-primary">blue</span> and the button says <kdb>Abort</kdb></dt>
+        <dd>hold the button and refer to "Releasing a Held Button".</dd>
+        <dt>If there is more than 1 battery on the bomb and the button says <kbd>Detonate</kbd></dt>
+        <dd>press and immediately release the button.</dd>
+        <dt>If the button is <span class="tag tag-default">white</span> and there is a lit indicator with label <kdb>CAR</kdb></dt>
+        <dd>hold the button and refer to "Releasing a Held Button".</dd>
+        <dt>If there are more than 2 batteries on the bomb and there is a lit indicator with label FRK</dt>
+        <dd>press and immediately release the button.</dd>
+        <dt>If the button is <span class="tag tag-warning">yellow</span></dt>
+        <dd>hold the button and refer to "Releasing a Held Button".</dd>
+        <dt>If the button is <span class="tag tag-danger">red</span> and the button says <kbd>Hold</kbd></dt>
+        <dd>press and immediately release the button.</dd>
+        <dt>If none of the above apply</dt>
+        <dd>hold the button and refer to "Releasing a Held Button".</dd>
+      </dl>
+    </div>
+    <div class="card-block pt-0">
+      <h4>Releasing a Held Button</h4>
+      <ul>
+        <li><span class="tag tag-primary">Blue</span> strip: release when the countdown timer has a <strong>4 in any position</strong>.</li>
+        <li><span class="tag tag-default">White</span> strip: release when the countdown timer has a <strong>1 in any position</strong>.</li>
+        <li><span class="tag tag-warning">Yellow</span> strip: release when the countdown timer has a <strong>5 in any position</strong>.</li>
+        <li><em>Any other</em> color strip: release when the countdown timer has a <strong>1 in any position</strong>.</li>
+      </ul>
+    </div>
+  </section>
 
-        // Options for the chart
-        var options = {
-            responsive: true,
-            maintainAspectRatio: false
-        };
+  <section class="card">
+    <h2 id="symbols" class="card-header">Symbols</h2>
+    <div class="card-block">
+    <!--
+      capital koppa, cyrillic ë, copyright, shima, psi, shima
+      yus, capital koppa, cyrillic omega w/titlo, paragraph, teh w/ring, cyrillic ë
+      lambda w/stroke, rev. lunate sigma w/dot, abkhasian ha, yat, yat, cyrillic thousand
+      lowercase koppa, abkhasian ha, zhe, iotified big yus, lunate sigma w/dot, ae
+      iotified big yus, white star, komi dzje, zhe, paragraph, psi
+      kai, kai, lambda w/stroke, opening question mark, ksi ,cyrillic short i w/tail
+      rev. lunate sigma w/dot, opening question mark, white star, teh w/ring, black star, omega.
+    -->
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1"><span class="h3">Ϙ</span> <span class="text-muted small">Balloon</span></li>
+        <li class="mb-1 text-primary"><span class="h3">Ѧ</span> <span class="text-muted small">AT</span></li>
+        <li class="mb-1"><span class="h3">𝛌</span> <span class="text-muted small">upside-down 'y' (lamda)</span></li>
+        <li class="mb-1 text-primary"><span class="h3">ϟ</span> <span class="text-muted small">Squiggly N</span></li>
+        <li class="mb-1"><span class="h3">Ѭ</span> <span class="text-muted small">Squid Knife</span></li>
+        <li class="mb-1"><span class="h3">ϗ</span> <span class="text-muted small">Hook N</span></li>
+        <li class="mb-1"><span class="h3">Ͽ</span> <span class="text-muted small">Left 'C'</span></li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1"><span class="h3">Э</span> Euro</li>
+        <li class="mb-1"><span class="h3">Ϙ</span> Balloon</li>
+        <li class="mb-1"><span class="h3">Ͽ</span> Left 'C'</li>
+        <li class="mb-1"><span class="h3">Ҩ</span> Cursive</li>
+        <li class="mb-1"><span class="h3">☆</span> Hollow star</li>
+        <li class="mb-1"><span class="h3">ϗ</span> Hook N</li>
+        <li class="mb-1"><span class="h3">¿</span> Question Mark</li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1 text-primary"><span class="h3">©</span> Copyright</li>
+        <li class="mb-1 text-primary"><span class="h3">Ѽ</span> Pumpkin</li>
+        <li class="mb-1"><span class="h3">Ҩ</span> Cursive</li>
+        <li class="mb-1"><span class="h3">Ж</span> Double 'K'</li>
+        <li class="mb-1 text-primary"><span class="h3">Ԇ</span> Melted '3'</li>
+        <li class="mb-1"><span class="h3">𝛌</span> upside-down 'y' (lamda)</li>
+        <li class="mb-1"><span class="h3">☆</span> Hollow star</li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1"><span class="h3">Ϭ</span> '6' (six)</li>
+        <li class="mb-1"><span class="h3">¶</span> pilcrow paragraph</li>
+        <li class="mb-1"><span class="h3">Ѣ</span> bt</li>
+        <li class="mb-1"><span class="h3">Ѭ</span> Squid Knife</li>
+        <li class="mb-1"><span class="h3">Ж</span> Double 'K'</li>
+        <li class="mb-1"><span class="h3">¿</span> Question Mark</li>
+        <li class="mb-1"><span class="h3">😛</span> Smiley face</li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1"><span class="h3">Ψ</span> Pitchfork (Psi)</li>
+        <li class="mb-1"><span class="h3">😛</span> Smiley face</li>
+        <li class="mb-1"><span class="h3">Ѣ</span> bt</li>
+        <li class="mb-1 text-primary"><span class="h3">C</span> Right C</li>
+        <li class="mb-1"><span class="h3">¶</span> pilcrow paragraph</li>
+        <li class="mb-1 text-primary"><span class="h3">Ѯ</span> dragon</li>
+        <li class="mb-1 text-primary"><span class="h3">⭑</span> Filled star</li>
+      </ol>
+    </div>
+    <div class="col-sm-2">
+      <ol class="list-unstyled">
+        <li class="mb-1"><span class="h3">Ϭ</span> '6' (six)</li>
+        <li class="mb-1"><span class="h3">Э</span> Euro</li>
+        <li class="mb-1 text-primary"><span class="h3" style="transform: rotate(30deg); display: inline-block;">‡</span> tracks</li>
+        <li class="mb-1 text-primary"><span class="h3">æ</span> ae</li>
+        <li class="mb-1"><span class="h3">Ψ</span> Pitchfork (Psi)</li>
+        <li class="mb-1 text-primary"><span class="h3">Ҋ</span> 'N' With Hat</li>
+        <li class="mb-1 text-primary"><span class="h3">Ω</span> Omega</li>
+      </ol>
+    </div>
+    <small class="text-primary col-xs-12">highlighted = unique</small>
+  </div>
+</section>
 
-        // Create the pie chart
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myPieChart = new Chart(ctx, {
-            type: 'pie',
-            data: data,
-            options: options
-        });
-    </script>
+<section class="card">
+  <h2 id="password" class="card-header">Password</h2>
+  <div class="card-block">
+    <dl>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">A</dt>
+        <dd class="lead">about</dd>
+        <dd class="lead">after</dd>
+        <dd class="lead">again</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">B</dt>
+        <dd class="lead">below</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">C</dt>
+        <dd class="lead">could</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">E</dt>
+        <dd class="lead">every</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">F</dt>
+        <dd class="lead">first</dd>
+        <dd class="lead">found</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">G</dt>
+        <dd class="lead">great</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">H</dt>
+        <dd class="lead">house</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">L</dt>
+        <dd class="lead">large</dd>
+        <dd class="lead">learn</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">N</dt>
+        <dd class="lead">never</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">O</dt>
+        <dd class="lead">other</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">P</dt>
+        <dd class="lead">place</dd>
+        <dd class="lead">plant</dd>
+        <dd class="lead">point</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">R</dt>
+        <dd class="lead">right</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">S</dt>
+        <dd class="lead">small</dd>
+        <dd class="lead">sound</dd>
+        <dd class="lead">spell</dd>
+        <dd class="lead">still</dd>
+        <dd class="lead">study</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">TH</dt>
+        <dd class="lead">their</dd>
+        <dd class="lead">there</dd>
+        <dd class="lead">these</dd>
+        <dd class="lead">thing</dd>
+        <dd class="lead">think</dd>
+        <dd class="lead">three</dd>
+      </div>
+      <div class="col-sm-1 mb-1">
+        <dt class="h3">W</dt>
+        <dd class="lead">water</dd>
+        <dd class="lead">where</dd>
+        <dd class="lead">which</dd>
+        <dd class="lead">world</dd>
+        <dd class="lead">would</dd>
+        <dd class="lead">write</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+<footer>
+  <small style="position: fixed; bottom:0; color: #666; z-index: -1;">Verification Code: 241</small>
+</footer>
 </body>
 </html>
