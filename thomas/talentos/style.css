@@ -1,0 +1,288 @@
+body{
+    background-color: rgb(61, 94, 95);
+}
+article.capybara {
+    width: 100vw;
+    height: 100vh;
+    margin-left: -100px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  article.capybara div.capybara-head {
+    height: 480px;
+    width: 485px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  article.capybara div.capybara-head::before {
+    content: "";
+    margin-top: 140px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    background-image: linear-gradient(rgb(238, 255, 0), rgb(161, 172, 9));
+    border-radius: 100% 100% 100% 100%;
+    z-index: 4;
+  }
+
+  .cabinho{
+    content: "";
+    margin-top: -10px;
+    width: 5px;
+    height: 20px;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 2;
+    background-color: #00bb09;
+    border-radius: 10px 10px 10px 10px;
+    transform:rotate(10deg);
+    z-index: 5;
+  }
+  article.capybara div.capybara-head::after {
+    content: "";
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    margin-left: -195px;
+    margin-top: 175px;
+    background-color: #9d7349;
+    border-radius: 95% 0% 0% 0%;
+  }
+  article.capybara div.capybara-head div.capybara-head-ears {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 140px;
+  }
+  article.capybara div.capybara-head div.capybara-head-ears div.capybara-head-ear {
+    width: 55px;
+    height: 100%;
+    background-color: #855e3d;
+    border-radius: 15% 70% 50% 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  article.capybara div.capybara-head div.capybara-head-ears div.capybara-head-ear::before {
+    content: "";
+    width: 65%;
+    height: 90%;
+    background-color: #d64f4f;
+    box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15% 70% 10% 90%;
+  }
+  article.capybara div.capybara-head div.capybara-head-ears div.capybara-head-ear.left {
+    transform: scaleX(-1) rotate(40deg);
+  }
+  article.capybara div.capybara-head div.capybara-head-ears div.capybara-head-ear.right {
+    transform: rotate(40deg);
+  }
+  article.capybara div.capybara-head div.capybara-head-eyes {
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    z-index: 3;
+    transform: rotate();
+  }
+  article.capybara div.capybara-head div.capybara-head-eyes div.capybara-head-eye_left {
+    width: 10px;
+    height: 50px;
+    background-color: rgb(12, 10, 10);
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: -30px;
+    transform: rotate(-40deg);
+  }
+  article.capybara div.capybara-head div.capybara-head-eyes div.capybara-head-eye_left::before {
+    content: "";
+    width: 15px;
+    height: 20px;
+    margin-right: 7px;
+    position: absolute;
+    margin-top: 23px;
+    background-image: linear-gradient(rgb(12, 10, 10), rgb(12, 10, 10));
+    border-radius: 50% 0% 60% 60%;
+    transform: rotate();
+
+  }
+article.capybara div.capybara-head div.capybara-head-eyes div.capybara-head-eye_right{
+  width: 10px;
+  height: 50px;
+  background-color: rgb(12, 10, 10);
+  border-radius: 60%;
+  display: flex;
+  margin-right: -30px;
+  justify-content: center;
+  margin-top: 70px;
+
+  transform: rotate(40deg);
+}
+article.capybara div.capybara-head div.capybara-head-eyes div.capybara-head-eye_right::before {
+  content: "";
+  width: 15px;
+  height: 20px;
+  margin-right: -7px;
+  position: absolute;
+  margin-top: 23px;
+  background-image: linear-gradient(rgb(12, 10, 10), rgb(12, 10, 10));
+  border-radius: 0% 50% 60% 60%;
+  transform: rotate();
+
+}
+  article.capybara div.capybara-head div.capybara-head-nose {
+    width: 160px;
+    height: 85px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 405px;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose::before, article.capybara div.capybara-head div.capybara-head-nose::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #201b1f;
+    box-shadow: inset 3px 1px 5px #000;
+    z-index: 4;
+    border-radius: 100%;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose::before {
+    left: 18px;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose::after {
+    right: 18px;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-top {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    left: 0%;
+    top: -3%;
+    border-radius: 50%;
+    background-color: #333;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-center {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0px auto;
+    display: block;
+    background-image: radial-gradient(closest-corner at center 20%, #424242 55%, #333 20%);
+    border-radius: 100%;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-center::before, article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-center::after {
+    content: "";
+    width: 40px;
+    height: 115%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+  }
+  article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-center::before {
+    margin-left: -10px;
+    background-color: #333;
+    transform: rotate(-45deg);
+  }
+  article.capybara div.capybara-head div.capybara-head-nose div.capybara-head-nose-center::after {
+    right: -10px;
+    background-color: #333;
+    transform: rotate(45deg);
+  }
+  article.capybara div.capybara-head div.capybara-head-cheeks {
+    width: 170px;
+    height: 145px;
+    position: absolute;
+    margin-top: 410px;
+    background-color: transparent;
+    z-index: 4;
+  }
+  article.capybara div.capybara-head div.capybara-head-cheeks::before, article.capybara div.capybara-head div.capybara-head-cheeks::after {
+    content: "";
+    width: calc(50% - 1px);
+    height: 100%;
+    position: absolute;
+    background-color: #d6b498;
+    background-image: radial-gradient(closest-corner at center, #d6b498 45%, #ac805d 90%);
+    border-radius: 25% 50% 5% 50%;
+  }
+  article.capybara div.capybara-head div.capybara-head-cheeks::before {
+    left: 0px;
+    border-right: 1px #7b583a solid;
+  }
+  article.capybara div.capybara-head div.capybara-head-cheeks::after {
+    right: 0px;
+    border-left: 1px #7b583a solid;
+    border-radius: 30% 25% 50% 5%;
+  }
+   
+ .sombra-agua{
+    content: "";
+    width: 395px;
+    height: 100px;
+    position: absolute;
+    margin-top: 670px;
+    border-radius:0 0;
+    background-image: linear-gradient(#7b583a86, #7b583a00);
+  }
+.capybara-head2{
+  content: "";
+  width: 200px;
+  height: 350px;
+  margin-right: -390px;
+  position: absolute;
+  margin-left: -195px;
+  margin-top: 220px;
+  background-color: #9d7349;
+  border-radius: 0% 95% 0% 0%;
+  z-index: 2;
+}                             
+.fundo{
+  content: "";
+  width: 198px;
+  height: 40px;
+  margin-right: -385px;
+  position: absolute;
+  margin-left: -195px;
+  margin-top: 345px;
+  background-color: #9d7349;
+  border-radius: 0% 0% 0% 90%;
+}
+.fundo1{
+  content: "";
+  width: 198px;
+  height: 40px;
+  margin-right: 400px;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 345px;
+  background-color: #9d7349;
+  border-radius: 0% 0% 90% 0%;
+}
+.corpo{
+  content: "";
+  width: 230px;
+  height: 200px;
+  margin-right: -100px;
+  position: absolute;
+  margin-left: 170px;
+  margin-top: 390px;
+  background-color: #996b3e;
+  border-radius: 80% 100% 100% 110%;
+  transform: rotate(100deg);
+  z-index: 0;
+}
