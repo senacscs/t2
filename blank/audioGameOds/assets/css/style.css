@@ -59,81 +59,22 @@ button {
     #download h3{
       font-size: 2.7rem;
     }
+
+    .list-develop{
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+    }
 .section {
-  padding: 7rem 0;
+  padding: 7.5rem 0;
 }
   ::selection{
     background-color: rgb(0,158,219);
   }
 
-  .list-unstyled{
-    display: flex;
-    flex-direction: row;
-  }
-
-
-.filters a {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
-}
-
-.filters a:hover,
-.filters a:focus,
-.filters a:active {
-  text-decoration: none;
-}
-
-.filters a:hover:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  bottom: 0;
-  height: 1px;
-  background-color: #000;
-}
-
-.filters a.active {
-  color: #000;
-}
-
-.filters a.active:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  bottom: 0;
-  height: 1px;
-  background-color: #000;
-}
-
 .item {
   border: none;
   margin-bottom: 30px;
-}
-
-.item .item-wrap {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.item .item-wrap:after {
-  z-index: 2;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s all ease-in-out;
 }
 
 .item .item-wrap img {
@@ -141,43 +82,10 @@ button {
   transform: scale(1);
 }
 
-.item .item-wrap>.work-info {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  z-index: 3;
-  transform: translateY(-50%);
-  color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 20px;
-  transition: 0.3s all ease;
-}
-
-.item .item-wrap>.work-info h3 {
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-.item .item-wrap>.work-info span {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-
-.item .item-wrap:hover {
-  text-decoration: none;
-}
-
 .item .item-wrap:hover img {
   transform: scale(1.05);
 }
 
-.item .item-wrap:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
 
 .item .item-wrap:hover .work-info {
   margin-top: 0px;
@@ -217,6 +125,7 @@ button {
 .heading {
   font-size: 28px;
 }
+
 
 .readmore {
   display: inline-block;
@@ -303,15 +212,6 @@ button {
 
 .custom-progress .progress-bar {
   background: #000;
-}
-
-/* Services */
-.services i {
-  font-size: 40px;
-}
-
-.services h4 {
-  padding-top: 10px;
 }
 
 /* Contact Form */
