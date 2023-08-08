@@ -33,16 +33,20 @@ h6,
   font-family: "Raleway", sans-serif;
 }
 
-button {
-  padding: 0.7rem 2.5rem;
+.btn {
+  width: 100%;
+  cursor:default;
+  border: none;
 }
 
-  .btn{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border: none;
-  }
+button {
+  padding: 0.10rem 0.65rem;
+  font-size: 2rem;
+}
+
+#head{
+  font-size: 1rem;
+}
 
   .un{
     display: flex;
@@ -120,12 +124,8 @@ button {
 
 .h4 {
   font-size: 16px;
+  font-weight: 900;
 }
-
-.heading {
-  font-size: 28px;
-}
-
 
 .readmore {
   display: inline-block;
@@ -330,7 +330,7 @@ button {
 }
 
 .custom-navbar .navbar-brand {
-  font-size: 1.7rem;
+  font-size: 2.25rem;
 }
 
 /* Burger */
