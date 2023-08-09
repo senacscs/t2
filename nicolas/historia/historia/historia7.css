@@ -1,0 +1,34 @@
+body {
+    user-select: none;
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(diep-bui-bg1-color.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    padding: 5%;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+ .botao1{
+    display: flex;
+    margin-left: 30%;
+ }
+
+ .botao{
+    display: flex;
+    margin-left: 35%;
+ }
+
+ button {
+   color: white;
+   background-color: black;
+   padding: 8px;
+    font-size: 20px;
+
+ }
