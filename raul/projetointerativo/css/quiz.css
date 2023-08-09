@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://img.freepik.com/vetores-gratis/peixe-balao-em-saco-plastico-debaixo-d-agua-no-mar-ou-oceano-poluicao-dos-oceanos-por-lixo-lixo-global_107791-5233.jpg?w=2000);
+    background-image: url(https://img.freepik.com/vetores-gratis/peixe-balao-em-saco-plastico-debaixo-d-agua-no-mar-ou-oceano-poluicao-dos-oceanos-por-lixo-lixo-global_107791-5233.jpg?w=2000
 }
 
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 #quiz {
@@ -19,6 +20,7 @@ h1 {
 
 .question {
     margin-bottom: 20px;
+    color: white;
 }
 
 .question h2 {
