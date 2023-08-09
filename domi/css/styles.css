@@ -469,7 +469,30 @@ a div.cards {
 
 
 #filtn {
-    background-image: url(../img/filtn.jpg);
+    background-image: url(https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+
+
+
+
+#poo {
+    background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+
+
+
+
+#projeto {
+    background-image: url(https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+
+
+
+#interativo {
+    background-image: url(https://images.pexels.com/photos/316080/pexels-photo-316080.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
 
@@ -635,13 +658,9 @@ footer a:hover {
 
     #portfolio {
 
-        display: flex;
+        display: grid;
 
-        align-items: center;
-
-        justify-content: center;
-
-
+        grid-template-columns: 400px 400px 400px;
 
     }
 
