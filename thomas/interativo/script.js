@@ -107,7 +107,7 @@ var correctPiecesCounter = 0;
         setTimeout(function() {
           var confirmResult = confirm("Quebra-cabeça completo! Clique em OK para ser redirecionado.");
           if (confirmResult) {
-            window.location.href = "https://senacscs.github.io/t2/nicolas/interativo";
+            window.location.href = "https://senacscs.github.io/t2/nicolas/interativo/";
           }
         }, 1000);
       }
