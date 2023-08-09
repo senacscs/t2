@@ -20,7 +20,7 @@ h1 {
 
 .question {
     margin-bottom: 20px;
-    color: white;
+color: beige;
 }
 
 .question h2 {
@@ -60,3 +60,4 @@ button {
     margin: 20px auto;
     padding: 10px 20px;
 }
+
