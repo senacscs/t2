@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    overflow-x: none;
+    overflow-y: none;
+}
+
+@font-face {
+    font-family: gameboy;
+    src: url(/assets/fonts/Early\ GameBoy.ttf);
+}
+
+::selection {
+  background-color: #fff;
+}
+
+.font{
+  font-family: gameboy;
+}
+
+#screen{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.scenario{
+    flex-grow: 8;
+    background-color: #ff23;
+    position: relative;
+    pointer-events: none;
+}
+
+.scene{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.hud-content{
+    flex-grow: 2;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(/assets/imgs/hud.png);
+    width: 100vw;
+    border-top: 8px solid #494f45;
+}
+
+.option {
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: gameboy;
+    border: 3px solid #000;
+    border-radius: 6px;
+    background-color: rgb(52, 1, 1);
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .interative{
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: gameboy;
+    border: 3px solid #000;
+    border-radius: 6px;
+    background-color: rgb(27, 5, 126);
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+  }
+
+  .out{
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: gameboy;
+    border: 3px solid #000;
+    border-radius: 6px;
+    background-color: rgb(27, 5, 126);
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+  }
+
+  .end{
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: gameboy;
+    border: 3px solid #000;
+    border-radius: 6px;
+    background-color: rgb(27, 5, 126);
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+  }
+
+  button{
+    text-decoration: none;
+    color: #ff0000;
+    font-family: gameboy;
+    padding: 5px;
+    background-color: #494f45;
+  }
+  
+  .option:hover{
+    font-size: 2vw;
+    box-shadow: 0 0 10px black;
+  }
+
+  .interative:hover{
+    font-size: 2vw;
+    box-shadow: 0 0 10px black;
+  }
+
+  .end:hover{
+    font-size: 2vw;
+    box-shadow: 0 0 10px black;
+  }
+
+  #box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    font-family: gameboy;
+    font-size: large;
+    letter-spacing: 3px;
+    color: #000000;
+    display: none;
+  }
+
+  #verificar{
+    background-color: #494f45;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  #verificar:hover{
+    box-shadow: 0 0 10px black;
+  }
+
+  #fechar:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+  }
+
+  #box-content{
+    background-color: #a74848;
+    padding: 10px;
+    -webkit-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+  }
+
+  #input{
+    padding: 5px;
+    background-color: #494f45;
+    font-family: gameboy;
+  }
+
+  #paper {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #safe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    font-family: gameboy;
+    font-size: large;
+    letter-spacing: 3px;
+    color: #000000;
+    display: none;
+  }
+
+  #verificar{
+    background-color: #494f45;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  #verificar:hover{
+    box-shadow: 0 0 10px black;
+  }
+
+  #safe-content{
+    background-color: #aaaaaa;
+    padding: 10px;
+    -webkit-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+  }
+
+  #reward{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    border-radius: 5%;
+  }
+
+  #reward h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: gameboy;
+    font-size: large;
+    letter-spacing: 3px;
+    color: rgb(238, 255, 0);
+  }
+
+  #room-name{
+    font-family: gameboy;
+    font-size: 3vw;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.5px #fff;
+  }
+
+  #border{
+    width: 4%;
+    height: 50%;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    right: 5%;
+    top: 0;
+    bottom: 0;
+    border: 5px #fff solid;
+  }
+  
+  #sanity-bar{
+    width: 4%;
+    height: 0%;
+    background-color: red;
+    z-index: 0;
+    position: absolute;
+    margin: auto;
+    right: 5%;
+    top: 0;
+    bottom: 0;
+  }
+
+  #bar h1{
+    font-family: gameboy;
+    font-size: 1vw;
+    position: absolute;
+    top: calc(40% - 5px - 45% / 2);
+    right: 3%;
+    color: #fff;
+  }
+
+  #dialogue{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 75%;
+    left: 0;
+    background-color: #000000;
+    border: #ffffff 6px solid;
+  }
+
+  #text{
+    text-align: justify;
+    color: #fff;
+    padding: 10px;
+    font-family: gameboy;
+    font-size: 0.8vw;
+    animation: escrever 5s steps(40);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  #seconddialogue{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 75%;
+    left: 0;
+    background-color: #000000;
+    border: #ffffff 6px solid;
+  }
+
+  @keyframes escrever {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  #endbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    font-family: gameboy;
+    font-size: large;
+    letter-spacing: 3px;
+    color: #000000;
+    display: none;
+  }
+  
+  #end-code{
+    background-color: #524747;
+    padding: 10px;
+    -webkit-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 15px 3px rgba(0,0,0,0.75);
+  }
+
+  #chosebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    font-family: gameboy;
+    font-size: large;
+    letter-spacing: 3px;
+    color: #000000;
+    display: none;
+  }
+
+  #chose button{
+    padding: 12px;
+    margin: 80px;
+    font-size: 1.7vw;
+    cursor: pointer;
+    border: 3px solid #000;
+    -webkit-text-stroke: 0.6px #fff;
+  }
+
+  #chose button:hover{
+    box-shadow: 0 0 10px black;
+  }
+
+  .finalbt{
+    background: rgb(255, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    width: 5%;
+    appearance: none;
+   border: none;
+   cursor: pointer;
+   position: absolute;
+   border-radius: 2px;
+  }
+
+  .finalbt i{
+    transform: scale(2);
+    color: #fff;
+  }
+
+  span{
+    color: yellow;
+  }
+
+  #final{
+    filter: contrast(125%);
+  }

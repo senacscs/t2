@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: gameboy;
+    src: url(/assets/fonts/Early\ GameBoy.ttf);
+}
+
+@font-face {
+    font-family: nintendo;
+    src: url(/assets/fonts/Nintendo-DS-BIOS.ttf);
+}
+
+@font-face {
+    font-family: psp;
+    src: url(/assets/fonts/ratchet-clank-psp.ttf);
+}
+
+body{
+    background: url(/assets/imgs/menu/bckground.png) no-repeat center center;
+    background-size: cover;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    padding: 5px;
+    width: 30%;
+    pointer-events: none;
+}
+
+.itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+    font-size: 2vw;
+    font-family: gameboy;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.option{
+    padding: 1%;
+    list-style-type: none;
+}
+
+.itens a{
+    text-decoration: none;
+    color: #ff0000;
+    -webkit-text-stroke: 1.5px black;
+}
+
+nav button{
+    font-size: 2vw;
+    font-family: gameboy;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff0000;
+    background: none;
+    border: none;
+}
+
+#box-content #fechar{
+    cursor: pointer;
+}
+
+
+.itens a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.itens button:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgb(255, 20, 20);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  #text{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: #a60000;
+    padding: 5%;
+    position: absolute;
+    z-index: 1;
+    font-family: gameboy;
+    letter-spacing: 1px;
+    color: #fff;
+    width: auto;
+  }
+
+  #text button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 2%;
+    color: black;
+  }
+
