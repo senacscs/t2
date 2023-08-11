@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Janitor Night Shift</title>
+</head>
+<body onload="insanity()">
+    
+    <main>
+        <section id="screen">
+            <div class="scenario">
+               <img class="scene" src="/assets/imgs/end-room/right.png" alt="">
+               <div id="bar">
+                    <h1>sanidade</h1>
+                    <div id="border"></div>
+                    <div id="sanity-bar">
+                </div>
+            </div>
+            </div>
+            <audio id="audio">
+                <source src="/assets/sounds/hud.wav" type="audio/mpeg">
+              </audio> 
+            <div class="hud-content">
+                <a href="main.html"><button onmouseover="playAudio()" class="option">Esquerda</button></a>
+                <a href="left.html"><button onmouseover="playAudio()" class="option">Costas</button></a>
+                <a href="door.html"><button onmouseover="playAudio()" class="option">Direita</button></a>
+            </div>     
+            </div>       
+        </section>
+    </main>
+    <script src="/src/main.js"></script>
+</body>
+</html>

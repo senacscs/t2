@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Janitor Night Shift Menu</title>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="/assets/sounds/menu-soundtrack.mp3" type="audio/mpeg">
+      </audio>
+    <main>
+        <section id="menu">
+            <img src="/assets/imgs/menu/logo.png" alt="">
+            <nav>
+            <ul class="itens">
+                <li class="option"><a href="/public/first-room/main.html">Jogar</a></li>
+                <li class="option"><button onclick="openBox()" id="button">Sinopse</button></li>
+                <li class="option"><a href="/public/credits.html">Creditos</a></li>
+            </ul>
+        </nav>
+        <div id="text">
+            <p>Um faxineiro contratado para limpar a Catedral, depois de ir aos quartos do segundo piso <br> fica preso em uma sala e sofre com energias sobrenaturais. Agora, ele deve fugir!</p>
+            <button onclick="toggleText()"><span class="material-symbols-outlined">
+                close
+                </span></button>
+        </div>  
+        </section>
+    </main>
+    <script src="/src/menu.js"></script>
+</body>
+</html>

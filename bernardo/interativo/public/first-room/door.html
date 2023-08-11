@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <title>Janitor Night Shift</title>
+</head>
+<body>
+    <main>
+        <section id="screen">
+
+            <div class="scenario">
+               <img class="scene" src="/assets/imgs/first-room/door.png" alt="">
+            </div>
+
+            <audio id="audio">
+                <source src="/assets/sounds/hud.wav" type="audio/mpeg">
+              </audio> 
+
+            <div class="hud-content">
+                <a href="right.html"><button onmouseover="playAudio()" class="option">Esquerda</button></a>
+                <a href="main.html"><button onmouseover="playAudio()" class="option">Costas</button></a>
+                <button onclick="openBox()"  onmouseover="playAudio()" class="interative">Sair</button>
+                <a href="left.html"><button onmouseover="playAudio()" class="option">Direita</button></a>
+            </div>   
+            <div id="box">
+                <div id="box-content">
+                    <label>Senha: </label><input type="text" id="input" placeholder="Digite aqui" autocomplete="off">
+                    <button id="verificar" onclick="verificar()">Verificar</button>
+                    <span class="material-symbols-outlined">                
+                <button id="fechar" onclick="closeBox()">Fechar</button>
+            </span>
+                </div>
+            </div>          
+        </section>
+    </main>
+    <script src="/src/main.js"></script>
+</body>
+</html>
