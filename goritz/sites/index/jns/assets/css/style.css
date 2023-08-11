@@ -1,0 +1,98 @@
+@font-face {
+    font-family: gameboy;
+    src: url(../fonts/Early\ GameBoy.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 0px rgba(206,206,206,0.38);
+}
+
+#playnow {
+    text-decoration: none;
+    text-align: center;
+    color: #d000ff;
+    font-size: 2vw;
+    font-family: gameboy;
+}
+
+#playnow:hover {
+    text-decoration: underline ;
+    text-underline-offset: 10px;
+}
+
+#maintitle {
+    text-align: center;
+    color: #ff2f00;
+    font-size: 3vw;
+    font-family: gameboy;
+}
+
+#subtitle {
+    text-align: center;
+    color: #ff2f00;
+    font-size: 1.5vw;
+    font-family: gameboy;
+    width: 100vh;
+}
+
+#about {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-family: gameboy;
+    width: 100vh;
+}
+
+#lore {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: gameboy;
+    width: 100vh;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#container {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg1.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#container2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg2.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#container3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg3.png) no-repeat;
+    background-size: cover;
+}
+
+#img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#img img{
+    width: 30%;
+    box-shadow: 0 0 10px #FFFFFF, 2px 2px 0px rgba(206,89,55,0);
+}
