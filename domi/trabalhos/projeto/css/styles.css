@@ -75,20 +75,20 @@ body {
 
 #objetivo img {
     max-width: 45vw;
-    height: auto;
+    height: 70vh;
 }
 
 #objetivo h3 {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-size: 40px;
-    padding-left: 20px;
+    padding-left: 30px;
     width: 450px;
     margin-top: 20px;
 }
 
 #objetivo p {
-    padding-left: 20px;
+    padding-left: 30px;
     width: 450px;
 }
 
