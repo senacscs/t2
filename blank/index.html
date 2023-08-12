@@ -4,11 +4,10 @@ https://github.com/nisarhassan12/portfolio-template << -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="shortcut icon" type="image/png" href="./images/panda.png"/>
+        <link rel="shortcut icon" type="image/png" href="/assets/images/panda.png"/>
 
         <title>
             | Giovana |
@@ -18,7 +17,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
             name="description"
             content="Site com todos os meus projetos desenvolvidos durante meu segundo ano de Ensino Médio e Técnico.">
             <meta name="keywords" content="Giovana, HTML, CSS, JavaScript"/>
-            <link rel="stylesheet" href="index.css"/>
+            <link rel="stylesheet" href="assets/css/style.css"/>
         </head>
 
         <body class="scroll__bar">
@@ -47,7 +46,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
                             <span>Giovana</span>
                         </h1>
                         <p>Estudante de Ensino Médio e Desenvolvimento Web.</p>
-                        <a href="primeiroAno/" class="btn btn--pink">Primeira Index</a>
+                        <a href="primeiroAno/" class="btn btn--pink" title="Visite minha index de 2022">Primeira Index</a>
                     </div>
                 </div>
             </header>
@@ -60,7 +59,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
                         <div class="work__boxes">
 
                             <!--^^ Projeto > Backend ^^-->
-                            <!-- <div class="work__box">
+                            <div class="work__box">
                                 <div class="work__text">
                                     <h3>Indicações Backend</h3>
                                     <span class="tag">Técnico</span>
@@ -73,24 +72,22 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                     </ul>
 
                                     <div class="work__links">
-                                        <a href="backend/" class="link__text">
+                                        <a href="#" class="link__text" onclick="alert('Opa! Parece que este site está em manutenção :(')">
                                             Visite o Site
                                             <span>&rarr;</span>
                                         </a>
-                                        <a
+                                        <!-- <a
                                             href="https://github.com/giiovanaa/indicacoes-backend"
                                             title="Ver código fonte"
                                             target="_blank">
-                                            <img src="./images/github.svg" class="work__code" alt="GitHub"></a>
+                                            <img src="assets/images/github.svg" class="work__code" alt="GitHub"></a> -->
                                         </div>
                                     </div>
-                                    <div class="work__image-box">
-                                        <img
-                                            src="./images/projects/backend.png"
-                                            class="work__image"
-                                            alt="Indicações Backend"/>
+                                   
+                                    <div class="work-img img-1">
+                                        <span class="sr-only">Códigos na tela de um computador.</span>
                                     </div>
-                                </div> -->
+                                </div>
 
                                 <!--^^ Projeto > Jogo de História ^^-->
                                 <div class="work__box">
@@ -113,17 +110,15 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                             </a>
                                             <a href="https://github.com/giiovanaa/history-game">
                                                 <img
-                                                    src="./images/github.svg"
+                                                    src="assets/images/github.svg"
                                                     class="work__code"
                                                     title="Ver código fonte"
                                                     alt="GitHub"></a>
                                             </div>
                                         </div>
-                                        <div class="work__image-box">
-                                            <img
-                                                src="./images/projects/historia.png"
-                                                class="work__image"
-                                                alt="Jogo de História"/>
+                                        
+                                        <div class="work-img img-2">
+                                            <span class="sr-only">Desenhos antigos de criaturas com características de antropozoomorfismo.</span>
                                         </div>
                                     </div>
 
@@ -150,11 +145,8 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="work__image-box">
-                                            <img
-                                                src="./images/projects/iaComicBook.png"
-                                                class="work__image"
-                                                alt="HQ sobre IA"/>
+                                        <div class="work-img img-3">
+                                            <span class="sr-only">Códigos na tela de um computador.</span>
                                         </div>
                                     </div>
 
@@ -163,7 +155,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                     <div class="work__box">
                                         <div class="work__text">
                                             <h3>TechNinjas</h3>
-                                            <span class="tag">Técnico</span>
+                                            <span class="tag">Técnico & BTI</span>
                                             <p>
                                                 Site da TechNinjas, que fornece sistema de gerenciamento de estoque de peças de
                                                 reposição, personalizado para as empresas.
@@ -178,15 +170,12 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                                     Acesse Aqui
                                                     <span>&rarr;</span>
                                                 </a>
-                                                <a href="https://github.com/giiovanaa/techNinjas"> <img src="./images/github.svg" class="work__code" title="Ver
+                                                <a href="https://github.com/giiovanaa/techNinjas"> <img src="assets/images/github.svg" class="work__code" title="Ver
                                                 código fonte" alt="GitHub"> </a>
                                             </div>
                                         </div>
-                                        <div class="work__image-box">
-                                            <img
-                                                src="./images/projects/techninjas.png"
-                                                class="work__image"
-                                                alt="TechNinjas"/>
+                                        <div class="work-img img-4">
+                                            <span class="sr-only">Desenho animado de um ninja segurando uma espada.</span>
                                         </div>
                                     </div>
 
@@ -199,19 +188,19 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                             <ul class="work__list">
                                                 <li>Cafézinho
                                                     <img
-                                                        src="./images/icons/coffee.png"
+                                                        src="assets/images/icons/coffee.png"
                                                         width="20"
                                                         height="20"
                                                         alt="Xícara de café"/>
                                                 </li>
                                                 <li>Chocolate
                                                     <img
-                                                        src="./images/icons/chocolate.png"
+                                                        src="assets/images/icons/chocolate.png"
                                                         width="20"
                                                         height="20"
                                                         alt="Barra de chocolate"/></li>
                                                 <li>Uma boa história
-                                                    <img src="./images/icons/book.png" width="24" height="24" alt="Livro"/></li>
+                                                    <img src="assets/images/icons/book.png" width="24" height="24" alt="Livro"/></li>
                                             </ul>
             
                                             <div class="work__links">
@@ -221,18 +210,16 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                                 </a>
                                                 <!-- <a href=""> 
                                                 <img
-                                                    src="./images/github.svg"
+                                                    src="assets/images/github.svg"
                                                     class="work__code"
                                                     title="Ver código fonte"
                                                     alt="GitHub">
                                                 </a> -->
                                             </div>
                                         </div>
-                                        <div class="work__image-box">
-                                            <img
-                                                src="./images/projects/loading.png"
-                                                class="work__image"
-                                                alt="Em andamento"/>
+
+                                        <div class="work-img img-5">
+                                            <span class="sr-only">Barra de carregamento.</span>
                                         </div>
                                     </div>
                                     
@@ -247,18 +234,18 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                 <h2>Tecnologias</h2>
                                 <div class="tec__logos">
                                     <img
-                                        src="./images/logos/html-logo.png"
+                                        src="assets/images/logos/html-logo.png"
                                         class="tec__logo"
                                         alt="HTML"
                                         title="HTML"/>
-                                    <img src="./images/logos/css-logo.png" class="tec__logo" alt="CSS" title="CSS"/>
+                                    <img src="assets/images/logos/css-logo.png" class="tec__logo" alt="CSS" title="CSS"/>
                                     <img
-                                        src="./images/logos/js-logo.png"
+                                        src="assets/images/logos/js-logo.png"
                                         class="tec__logo"
                                         alt="JavaScript"
                                         title="JavaScript"/>
                                     <img
-                                        src="./images/logos/github-logo.webp"
+                                        src="assets/images/logos/github-logo.webp"
                                         class="tec__logo"
                                         alt="GitHub"
                                         title="GitHub"/>
@@ -285,16 +272,16 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                         <ul class="social-links">
                                             <li class="social-link-item">
                                                 <a href="https://github.com/giiovanaa/" title="Link para perfil no GitHub">
-                                                    <img src="./images/github.svg" class="social-image" alt="Github"></a>
+                                                    <img src="assets/images/github.svg" class="social-image" alt="Github"></a>
                                                 </li>
                                                 <li class="social-link-item">
                                                     <a href="https://codepen.io/giiovana" title="Link para perfil no CodePen">
-                                                        <img src="./images/codepen.svg" class="social-image" alt="Codepen"></a>
+                                                        <img src="assets/images/codepen.svg" class="social-image" alt="Codepen"></a>
                                                     </li>
                                                     <li class="social-link-item">
                                                         <a href="https://www.linkedin.com/in/giovana-blank/" ">
                                                             <img
-                                                                src="./images/linkedin.svg"
+                                                                src="assets/images/linkedin.svg"
                                                                 title="Link to Linkedin Profile"
                                                                 class="social-image"
                                                                 alt="Linkedin"></a>
@@ -307,7 +294,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
 
                                                     <img
                                                         class="about__photo"
-                                                        src="./images/me.png"
+                                                        src="assets/images/me.png"
                                                         width="90%"
                                                         alt="Ilustração representativa: cabelos loiros pouco acima dos ombros e com franja, usa óculos redondos e tem olhos castanhos; veste uma blusa branca."/>
 
@@ -318,7 +305,7 @@ https://github.com/nisarhassan12/portfolio-template << -->
                                 </main>
 
                                 <a href="#top" class="back-to-top" title="Back to Top">
-                                    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+                                    <img src="assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
                                 </a>
                                 <script src="./index.js"></script>
                             </body>
