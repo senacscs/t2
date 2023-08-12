@@ -6,14 +6,14 @@
     font-family: 'Hk Grotesk';
     font-style: normal;
     font-weight: 400;
-    src: url("./fonts/HKGrotesk-Regular.woff") format('woff');
+    src: url("../fonts/HKGrotesk-Regular.woff") format('woff');
 }
 
 @font-face {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url("./fonts/Jost-Regular.ttf") format('woff');
+    src: url("../fonts/Jost-Regular.ttf") format('woff');
 }
 
 * {
@@ -539,25 +539,25 @@ body:not(.user-is-tabbing) button:focus {
   }
 
 .img-1{
-    background-image: url("/assets/images/projetos/indicacoes.jpg");
+    background-image: url("../images/projetos/indicacoes.jpg");
 }
 
 .img-2{
-    background-image: url("/assets/images/projetos/historia.jpg");
+    background-image: url("../assets/images/projetos/historia.jpg");
 }
 
 .img-3{
-    background-image: url("/assets/images/projetos/hqAI.jpg");
+    background-image: url("../assets/images/projetos/hqAI.jpg");
     background-position: center;
 }
 
 .img-4{
-    background-image: url("/assets/images/projetos/ninjaBTI.jpg");
+    background-image: url("../assets/images/projetos/ninjaBTI.jpg");
     background-position: center;
 }
 
 .img-5{
-    background-image: url("/assets/images/projetos/loading.png");
+    background-image: url("../assets/images/projetos/loading.png");
     background-position: center;
 }
 @media(min-width: 901px) {
