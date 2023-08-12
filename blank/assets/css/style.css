@@ -543,21 +543,21 @@ body:not(.user-is-tabbing) button:focus {
 }
 
 .img-2{
-    background-image: url("../assets/images/projetos/historia.jpg");
+    background-image: url("../images/projetos/historia.jpg");
 }
 
 .img-3{
-    background-image: url("../assets/images/projetos/hqAI.jpg");
+    background-image: url("../images/projetos/hqAI.jpg");
     background-position: center;
 }
 
 .img-4{
-    background-image: url("../assets/images/projetos/ninjaBTI.jpg");
+    background-image: url("../images/projetos/ninjaBTI.jpg");
     background-position: center;
 }
 
 .img-5{
-    background-image: url("../assets/images/projetos/loading.png");
+    background-image: url("../images/projetos/loading.png");
     background-position: center;
 }
 @media(min-width: 901px) {
