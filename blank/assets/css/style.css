@@ -423,7 +423,7 @@ body:not(.user-is-tabbing) button:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url("./assets/images/pandabg.jpg");
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url("../images/pandabg.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
