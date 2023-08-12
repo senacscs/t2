@@ -7,5 +7,5 @@ t2
 
 > Site da Turma 2 (entrada em 2022). Atualmente cursando o segundo ano do ensino médio.
 <h1 align="center">🦭</h1>
-<h4 align="center"> 🡕 <a href="https://senacscs.github.io/t2/"> Acesse </a> </h4>
+<h4 align="center"> 🡕 <a href="https://senacscs.github.io/t2/"> Acesse a index </a> </h4>
 </capivara>
