@@ -42,6 +42,8 @@
 		margin-bottom:.5em;
 		border-bottom: 2px solid #5EB1BF;
 	}
+
+
 	
 	h1 span {
 		color:#5EB1BF;
@@ -82,10 +84,10 @@
 				background-position: right;
 			}
 	
-			section > a {
+			a {
 				color: #EEF9FC;
 			}
-				section > a:hover{
+				a:hover{
 					color: #5EB1BF;
 				}
 		footer{
@@ -101,11 +103,11 @@
 			}
 
 @media only screen and (max-width: 667px){
-	section, header{
+	section {
 		max-width: 25em;
 		}
 
-		footer{
-			width: 25%;
-		}
+	h1 {
+		font-size: 3rem;
+	}
 	} 
