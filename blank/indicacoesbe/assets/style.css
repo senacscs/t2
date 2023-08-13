@@ -82,7 +82,7 @@
 			section#tutorial h2,
 			section#book h2,
 			section#podcast h2 {
-				background: url("../assets/images/titlebg.jpg");
+				background-image: url("../assets/images/titlebg.jpg");
 				background-size: cover;
 				background-position: right;
 			}
