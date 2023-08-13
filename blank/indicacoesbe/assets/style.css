@@ -30,6 +30,11 @@
 	text-align: justify;
 	}
 	
+	#more {
+		display: flex;
+		flex-direction: row;
+	}
+
 	h1 {
 		color:#EEF9FC;
 		text-align:center;
@@ -43,8 +48,6 @@
 		border-bottom: 2px solid #5EB1BF;
 	}
 
-
-	
 	h1 span {
 		color:#5EB1BF;
 		font-size: 6rem;
