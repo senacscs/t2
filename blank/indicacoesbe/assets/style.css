@@ -87,6 +87,12 @@
 				background-position: right;
 			}
 	
+			section > a {
+				color: #EEF9FC;
+			}
+				section > a:hover{
+					color: #5EB1BF;
+				}
 		footer{
 			width: 17%;
 			color: #fff;
