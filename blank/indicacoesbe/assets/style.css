@@ -29,11 +29,6 @@
 	padding: 20px;
 	text-align: justify;
 	}
-	@media only screen and (max-width: 667px){
-		section{
-			max-width: 25em;
-		}
-	} 
 	
 	h1 {
 		color:#EEF9FC;
@@ -104,3 +99,13 @@
 				width: 19%;
 				background-color: #EEF9FC;
 			}
+
+@media only screen and (max-width: 667px){
+	section, header{
+		max-width: 25em;
+		}
+
+		footer{
+			width: 25%;
+		}
+	} 
