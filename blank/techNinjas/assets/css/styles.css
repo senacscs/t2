@@ -10956,7 +10956,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/main-bg.jpg");
+  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10995,17 +10995,17 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-#portfolio .portfolio-item {
+#services .services-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-#portfolio .portfolio-item .portfolio-link {
+#services .services-item .services-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#services .services-item .services-link .services-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11016,57 +11016,57 @@ header.masthead .masthead-heading {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#services .services-item .services-link .services-hover .services-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+#services .services-item .services-link:hover .services-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#services .services-item .services-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+#services .services-item .services-caption .services-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+#services .services-item .services-caption .services-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.portfolio-modal .modal-dialog {
+.services-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
-.portfolio-modal .modal-content {
+.services-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
 }
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+.services-modal .modal-content h2, .services-modal .modal-content .h2 {
   font-size: 3rem;
   line-height: 3rem;
 }
-.portfolio-modal .modal-content p.item-intro {
+.services-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.portfolio-modal .modal-content p {
+.services-modal .modal-content p {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content ul.list-inline {
+.services-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content img {
+.services-modal .modal-content img {
   margin-bottom: 2rem;
 }
-.portfolio-modal .close-modal {
+.services-modal .close-modal {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -11075,7 +11075,7 @@ header.masthead .masthead-heading {
   cursor: pointer;
   background-color: transparent;
 }
-.portfolio-modal .close-modal:hover {
+.services-modal .close-modal:hover {
   opacity: 0.3;
 }
 
@@ -11266,7 +11266,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
