@@ -23,7 +23,7 @@
 	}
 
 	section {
-	min-width:35em;
+	min-width:30m;
 	max-width: 50em;
 	margin: 0 auto;
 	padding: 20px;
@@ -31,7 +31,7 @@
 	}
 	@media only screen and (max-width: 667px){
 		section{
-			max-width: 30em;
+			max-width: 25em;
 		}
 	} 
 	
