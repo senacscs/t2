@@ -1,5 +1,5 @@
 body{
-background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1712/Blue_dazzling_lines_dark_background_4K_HD_1366x768.jpg"), url("pasta/Imagem2.jpg");
+background-image: url("fundo-site.webp");
 background-repeat: repeat, repeat-x;
 background-position: top right, center;
 }
@@ -89,10 +89,10 @@ button{
     
     background-color: rgba(7, 21, 125, 0.6);
     cursor: pointer;
-    border: 1px solid black;
+    border: 12% solid black;
     border-radius: 15%;
     width: 20%;
-    height: 40px;
+    height: 30%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -118,3 +118,4 @@ button{
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
+}
