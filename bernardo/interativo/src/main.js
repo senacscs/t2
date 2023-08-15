@@ -22,7 +22,7 @@ function closeBox() {
     const senhaInserida = document.getElementById("input").value;
     if (senhaCorreta === senhaInserida) {
         $('body').fadeOut('slow', function() {
-            window.location.href = "../public/first-room/hall.html";
+            window.location.href = "hall.html";
         }).css("background-color", "black");
     } else {
       Swal.fire({
@@ -131,7 +131,7 @@ function closeSafe() {
 $(document).ready(function() {
     $(".out").click(function() {
       $('body').fadeOut(500, function() {
-        window.location.href = "../public/first-room/hall.html";
+        window.location.href = "../../public/first-room/hall.html";
       }).css("background-color", "black");
     });
   });
