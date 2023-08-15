@@ -238,13 +238,13 @@ function clear(){
 
   function second() {
     $('body').fadeOut('slow', function() {
-          window.location.href = "../public/finals/second.html";
+          window.location.href = "../../public/finals/second.html";
       }).css("background-color", "black");
   }
 
   function first() {
     $('body').fadeOut('slow', function() {
-          window.location.href = "../public/finals/third.html";
+          window.location.href = "../../public/finals/third.html";
       }).css("background-color", "black");
   }
 
