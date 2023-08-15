@@ -14,13 +14,9 @@ body{
 
 .display{
     position: absolute;
-    background: linear-gradient(50deg, #a8acb0 50%, #abb1af 50%);     
+    background: linear-gradient(50deg, #1f1f20 50%, #abb1af 50%);     
     height: 400px;
     width: 700px;
-}
-
-img{
-    border-radius: px;
 }
 
 .border{
