@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: gameboy;
-    src: url(/assets/fonts/Early\ GameBoy.ttf);
+    src: url(../assets/fonts/Early\ GameBoy.ttf);
 }
 
 ::selection {
@@ -48,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background: url(/assets/imgs/hud.png);
+    background: url(../assets/imgs/hud.png);
     width: 100vw;
     border-top: 8px solid #494f45;
 }

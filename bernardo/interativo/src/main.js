@@ -110,7 +110,7 @@ function closeSafe() {
     const porta = localStorage.getItem("porta");
     if (porta==="aberta"){
       $('body').fadeOut('slow', function() {
-        window.location.href = "/public/end-room/main.html";
+        window.location.href = "../public/end-room/main.html";
     }).css("background-color", "black");
     }
     else{
@@ -131,7 +131,7 @@ function closeSafe() {
 $(document).ready(function() {
     $(".out").click(function() {
       $('body').fadeOut(500, function() {
-        window.location.href = "/public/first-room/hall.html";
+        window.location.href = "../public/first-room/hall.html";
       }).css("background-color", "black");
     });
   });
@@ -165,7 +165,7 @@ $(document).ready(function() {
       if (barHeight === 50) {
         clearInterval(intervalID);
         $('body').fadeOut('slow', function() {
-          window.location.href = "/public/finals/first.html";
+          window.location.href = "../public/finals/first.html";
       }).css("background-color", "black");
       } else {
         animate();
@@ -238,13 +238,13 @@ function clear(){
 
   function second() {
     $('body').fadeOut('slow', function() {
-          window.location.href = "/public/finals/second.html";
+          window.location.href = "../public/finals/second.html";
       }).css("background-color", "black");
   }
 
   function first() {
     $('body').fadeOut('slow', function() {
-          window.location.href = "/public/finals/third.html";
+          window.location.href = "../public/finals/third.html";
       }).css("background-color", "black");
   }
 

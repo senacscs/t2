@@ -7,21 +7,21 @@
 
 @font-face {
     font-family: gameboy;
-    src: url(/assets/fonts/Early\ GameBoy.ttf);
+    src: url(../assets/fonts/Early\ GameBoy.ttf);
 }
 
 @font-face {
     font-family: nintendo;
-    src: url(/assets/fonts/Nintendo-DS-BIOS.ttf);
+    src: url(../assets/fonts/Nintendo-DS-BIOS.ttf);
 }
 
 @font-face {
     font-family: psp;
-    src: url(/assets/fonts/ratchet-clank-psp.ttf);
+    src: url(../assets/fonts/ratchet-clank-psp.ttf);
 }
 
 body{
-    background: url(/assets/imgs/menu/bckground.png) no-repeat center center;
+    background: url(../assets/imgs/menu/bckground.png) no-repeat center center;
     background-size: cover;
 }
 

@@ -7,11 +7,11 @@
 
 @font-face {
     font-family: gameboy;
-    src: url(/assets/fonts/Early\ GameBoy.ttf);
+    src: url(../assets/fonts/Early\ GameBoy.ttf);
 }
 
 body{
-    background: url(/assets/imgs/backgroundcredits.png) no-repeat;
+    background: url(../assets/imgs/backgroundcredits.png) no-repeat;
     background-size: cover;
     
 }
