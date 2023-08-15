@@ -165,12 +165,12 @@ $(document).ready(function() {
       if (barHeight === 50) {
         clearInterval(intervalID);
         $('body').fadeOut('slow', function() {
-          window.location.href = "../public/finals/first.html";
+          window.location.href = "../../public/finals/first.html";
       }).css("background-color", "black");
       } else {
         animate();
       }
-    }, 6000);
+    }, 5700);
   }
 
 function talk() {
