@@ -110,7 +110,7 @@ function closeSafe() {
     const porta = localStorage.getItem("porta");
     if (porta==="aberta"){
       $('body').fadeOut('slow', function() {
-        window.location.href = "../public/end-room/main.html";
+        window.location.href = "../../public/end-room/main.html";
     }).css("background-color", "black");
     }
     else{
