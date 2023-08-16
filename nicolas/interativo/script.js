@@ -62,7 +62,7 @@ function play(){
                         if (parseInt(score_val.innerHTML) >= 11) {
                                 game_state = 'End';
                                 alert('Você zerou! Parabéns!');
-                                window.location.href = 'https://senacscs.github.io/t2/raul/projetointerativo/quiz.html'
+                                window.location.href = 'https://senacscs.github.io/t2/augusto/menu.html'
                             }
 
                     }
