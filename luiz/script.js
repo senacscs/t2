@@ -1,6 +1,6 @@
 class Animal {
     constructor(nome, patas) {
-        this.nome = nome;
+        this.nome = nome; 
         this.patas = patas;
     }
     
