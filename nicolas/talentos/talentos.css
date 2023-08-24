@@ -36,7 +36,7 @@
   .cell {
     width: 100px;
     height: 100px;
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@
     content: "";
     height: calc(100px * 0.15);
     width: calc(100px * 0.9);
-    background: white;
+    background: rgb(85, 85, 85);
     position: absolute;
   }
   
@@ -102,7 +102,7 @@
     content: "";
     height: calc(100px * 0.9);
     width: calc(100px * 0.9);
-    background: white;
+    background: rgb(255, 0, 0);
     position: absolute;
     border-radius: 50%;
   }
@@ -129,7 +129,7 @@
     border-radius: 5px;
     border: none;
     margin-top: 16px;
-    color: white;
+    color: rgb(129, 71, 71);
   }
   
   .winning-message-button:hover {
