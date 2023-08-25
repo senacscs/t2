@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css-index.css">
@@ -203,7 +203,7 @@
                         <div class="flip-card">
                           <div class="flip-card-inner">
                             <div class="flip-card-front">
-                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                              <img src="avatar/avatar-isabelle.png" alt="Avatar" style="width:250px;height:200px;">
                             </div>
                             <div class="flip-card-back">
                               <h1>ISABELLE</h1>
@@ -471,26 +471,24 @@
             alert("Você não tem permissão para acessar o menu de contexto.");
         }
 
+
         document.addEventListener("keydown", function(e) {
             if (e.ctrlKey && e.key === "u") {
                 e.preventDefault();
-                mostrarMensagem();
+                showOverlay();
             }
         });
 
-        function mostrarMensagem() {
-            alert("Você não tem permissão para visualizar o código-fonte.");
+        function showOverlay() {
+            const overlay = document.createElement("div");
+            overlay.className = "overlay";
+
+            const message = document.createElement("div");
+            message.className = "overlay-message";
+            message.textContent = "O acesso ao código-fonte é restrito.";
+
+            overlay.appendChild(message);
+            document.body.appendChild(overlay);
         }
-
-
-
-
-
-
-
-
-                      </script>
-
-
-
+</script>
 </html>
