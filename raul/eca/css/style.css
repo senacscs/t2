@@ -1,0 +1,30 @@
+h1 {
+
+    text-align: center;
+
+    font-size: larger;
+
+    color: azure;
+
+    background: rgb(8, 8, 8);
+
+    padding: 10px;
+
+    margin: 0%;
+
+}
+
+li{
+
+     font-size: large;
+
+     font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+color: black;
+}
+
+footer{
+color: rgb(255, 0, 217);    
+}
