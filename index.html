@@ -1,134 +1,486 @@
 <!DOCTYPE html>
-<!-- 22 16:53 -->
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Index da Turma</title>
-  <style>
-    h1{
-      text-align: center;
-      font-size: 50px;
-    }
-
-    table{
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    a{
-      font-size: 20px;
-      color: black;
-    }
-    a:link{
-      text-decoration: none;
-      background-color: transparent;
-    }
-    a:hover{
-      color: purple;
-      transition: 0.5s;
-      text-decoration: none;
-      background-color: transparent;
-    }
-
-
-  </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-index.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="jquery-3.6.4.min.js"></script>
+    <link rel="shortcut icon" href="favicon-livros.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX SEGUNDÃO</title>
 </head>
+
+
 <body>
-  <h1>Index do Segundão</h1>
 
-  <table>
-    <tbody>
-      <tr>
-        <td><a target="_blank" href="augusto">AUGUSTO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="bernardo/index">BERNARDO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="blank">GIOVANA</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="bruno">BRUNO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="domi">THEO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="eduardo">EDUARDO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="fabio">FABIO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="flavia">FLAVIA</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="gabriel">GABRIEL H.</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="goritz/sites/index">GABRIEL G.</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="guizin">GUILHERME</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="henryque">PEDRO S.</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="vitoria">VITóRIA</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="iago">IAGO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="jp">JOÃO PEDRO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="kassio">KÁSSIO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="kist">ISADORA</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="leonardo/leo">LEONARDO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="nick/index">NICOLE</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="nicolas/index.html">NICOLAS</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="octavio">OCTÁVIO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="pablo/sites">PABLO</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="raul">RAUL</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="silveira">WESLEY</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="thomas">THOMAS</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="trevisan">TREVISAN</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="tultenhagen">EDUARDA</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="vitinho">VITHOR</a></td>
-      </tr>
-      <tr>
-        <td><a target="_blank" href="werner">PEDRO W.</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <h2 class="title">Index do Segundão</h2>
 
-</body>
+  <header>
+    <input type="text" id="searchInput" placeholder="Digite o Nome do Aluno">
+    <div id="flipCardContainer">
+  </header>
+
+                    <!--ALUNOS-->
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-augusto.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>AUGUSTO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/augusto/">INDEX</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-bernardo.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>BERNARDO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/bernardo/">INDEX</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>BRUNO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/bruno/">INDEX</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-eduarda.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>EDUARDA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/tultenhagen/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-eduardo.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>EDUARDO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/eduardo/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>FABIO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/fabio/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>FLAVIA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/flavia/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>GABRIEL.G</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/goritz/sites/index/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-gabriel.h.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>GABRIEL.H</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/gabriel/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-giovana.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>GIOVANA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/blank/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-guilherme.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>GUILHERME</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/guizin/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>IAGO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/iago/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-kist.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>ISADORA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/kist/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>ISABELLE</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/goritz/sites/index/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-jp.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>JOÃO PEDRO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/jp/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>KÁSSIO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/kassio/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>LAURA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/vitoria/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>LEONARDO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-manuela.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>MANUELA</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/trevisan/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-nicolas.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>NICOLAS</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/nicolas/index.html">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>NICOLE</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/nick/index/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>OCTAVIO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/octavio/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-pablo.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>PABLO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/pablo/sites/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>PEDRO.S</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>PEDRO.W</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/werner/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-raul.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>RAUL</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/raul/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>THEO</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/domi/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-thomas.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>THOMAS</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/thomas/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="25273339.jpg" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>VITOR</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/vitinho/">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="avatar/avatar-wesley.png" alt="Avatar" style="width:250px;height:200px;">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>WESLEY</h1>
+                              <p>Link para minha Index</p>
+                              <a target="_blank" href="https://senacscs.github.io/t2/silveira/ ">INDEX</a>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+                      <!--JAVASCRIP-->
+                        <script>
+                          const searchInput = document.getElementById("searchInput");
+                          const flipCards = document.querySelectorAll(".flip-card");
+                  
+                          searchInput.addEventListener("input", function () {
+                              const searchTerm = searchInput.value.toLowerCase();
+                  
+                              flipCards.forEach(flipCard => {
+                                  const name = flipCard.querySelector(".flip-card-back h1").textContent.toLowerCase();
+                                  
+                                  if (name.startsWith(searchTerm)) {
+                                      flipCard.style.display = "block";
+                                  } else {
+                                      flipCard.style.display = "none";
+                                  }
+                              });
+                          });
+
+                         // Desabilitar o menu de contexto (botão direito do mouse)
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+            mostrarMensagem();
+        });
+
+        function mostrarMensagem() {
+            alert("Você não tem permissão para acessar o menu de contexto.");
+        }
+
+
+
+
+
+
+
+
+
+                      </script>
+
+
+
 </html>

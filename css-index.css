@@ -1,0 +1,144 @@
+
+*{
+  user-select: NONE;
+}
+
+body{
+padding-left: 110px;
+background-color: black;
+}
+
+p{
+  line-height: 0.5px;
+}
+
+a{
+  font-size: 20px;
+  color: rgb(254, 251, 251);
+  line-height: 0.1x;
+}
+a:link{
+  text-decoration: none;
+  line-height: 0.1x;
+  background-color: transparent;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  float: left;
+  width: 250px;
+  height: 200px;
+  border: 4px solid #f1f1f1;
+  padding: px;
+  margin: 3%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(10, 11, 11);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+header input{
+  background-color: rgb(232, 237, 235);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+header input:hover{
+  padding: 13px;
+}
+
+h2{
+
+  -webkit-text-stroke: .1vh #fffefe;
+
+  font-size: 5vw;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  background-image: url();
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  animation: text 10s ease alternate infinite;
+
+  transition-duration: 1s;
+
+  background-repeat: no-repeat;
+
+}
+
+
+
+@keyframes text{
+
+  from{
+
+      background-position: 10% 50%;
+
+  }
+
+  to{
+
+      background-position: 100% 50%;
+
+  }
+
+}
+
+
+
+
+
+
+
