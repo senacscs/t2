@@ -27,6 +27,12 @@
 </header>
 
 
+
+<input type="text" id="searchInput" placeholder="Digite um nome">
+    <button id="searchButton">Pesquisar</button>
+    <ul id="resultsList"></ul>
+
+
 <div class="eca">
     <img src="img/eca.png" alt=""width="350">
 </div>    
@@ -130,22 +136,37 @@
 
 
     <script>
-const searchInput = document.getElementById("searchInput");
-                          const flipCards = document.querySelectorAll(".flip-card");
-                  
-                          searchInput.addEventListener("input", function () {
-                              const searchTerm = searchInput.value.toLowerCase();
-                  
-                              flipCards.forEach(flipCard => {
-                                  const name = flipCard.querySelector(".flip-card-back h1").textContent.toLowerCase();
-                                  
-                                  if (name.startsWith(searchTerm)) {
-                                      flipCard.style.display = "block";
-                                  } else {
-                                      flipCard.style.display = "none";
-                                  }
-                              });
-                          });
+ const searchButton = document.getElementById("searchButton");
+        const searchInput = document.getElementById("searchInput");
+        const resultsList = document.getElementById("resultsList");
+        
+        // Lista simulada de nomes para pesquisa
+        const names = [
+            "vida",
+            "respeito",
+            "convivencia",
+            "educacao",
+            "trabalho",
+            "fundamentais",
+            "adocao",
+            "internacional",
+            "processo",
+            "menor"
+            // ... adicione mais nomes aqui
+        ];
+
+        searchButton.addEventListener("click", function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            resultsList.innerHTML = ""; // Limpar os resultados anteriores
+            
+            for (const name of names) {
+                if (name.toLowerCase().includes(searchTerm)) {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = name;
+                    resultsList.appendChild(listItem);
+                }
+            }
+        });
 
                          // Desabilitar o menu de contexto (botão direito do mouse)
         document.addEventListener("contextmenu", function(e) {
