@@ -1,6 +1,6 @@
 body {
     user-select: none;
-    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(daniel-thomas-minealley.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/daniel-thomas-minealley.jpg);
     background-size: 100%;
     background-repeat: repeat;
     font-family: 'Courier New', Courier, monospace;
