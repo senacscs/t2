@@ -128,6 +128,61 @@
 </div>
 <br>
 
+
+    <script>
+const searchInput = document.getElementById("searchInput");
+                          const flipCards = document.querySelectorAll(".flip-card");
+                  
+                          searchInput.addEventListener("input", function () {
+                              const searchTerm = searchInput.value.toLowerCase();
+                  
+                              flipCards.forEach(flipCard => {
+                                  const name = flipCard.querySelector(".flip-card-back h1").textContent.toLowerCase();
+                                  
+                                  if (name.startsWith(searchTerm)) {
+                                      flipCard.style.display = "block";
+                                  } else {
+                                      flipCard.style.display = "none";
+                                  }
+                              });
+                          });
+
+                         // Desabilitar o menu de contexto (botão direito do mouse)
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+          //  mostrarMensagem();
+        });
+
+        //function mostrarMensagem() {
+          //  alert("Você não tem permissão para acessar o menu de contexto.");
+        //}
+
+
+        document.addEventListener("keydown", function(e) {
+            if (e.ctrlKey && e.key === "u") {
+                e.preventDefault();
+                showOverlay();
+            }
+        });
+
+        function showOverlay() {
+            const overlay = document.createElement("div");
+            overlay.className = "overlay";
+
+            const message = document.createElement("div");
+            message.className = "overlay-message";
+            message.textContent = "O acesso ao código-fonte é restrito.";
+
+            overlay.appendChild(message);
+            document.body.appendChild(overlay);
+        }
+    </script>
+
+
+
+
+
+
 <footer> <a href="#topo">Voltar ao Topo</a></footer>
 <br>
 
