@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -250,19 +251,23 @@ span{
     background: rgb(29, 29, 29);
     display: flex;
     justify-content: center;
-    height: 150vh;
-}
-
-.content-container{
+    align-items: center;
     height: 100vh;
-    width: 50vw;
-
 }
 
-.content-container img{
-    padding: 4%;
-    height: 30%;
-    width: 40%;
-    border-radius: 60px;
-    text-align: center;
+.content-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+    list-style-type: disc;
+    font-size: x-large;
+    color: rgb(112, 104, 222);
+}
+
+.content-container a{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 300;
 }
