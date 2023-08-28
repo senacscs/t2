@@ -267,7 +267,7 @@ span{
     height: 100vh;
     list-style-type: disc;
     font-size: x-large;
-    color: rgb(112, 104, 222);
+    color: #fff;
 }
 
 .content-container a{
