@@ -1,0 +1,43 @@
+body {
+  user-select: none;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://hugolapa.files.wordpress.com/2012/12/duplo-caminho.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: 'Courier New', Courier, monospace;
+}
+.botao{
+ display: flex;
+ margin-left: 35%;
+ margin-top: 17%;
+}
+
+.botao1{
+  margin-left: 35%;
+  
+
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  
+  
+}
+p {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding: 5%;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  color: white;
+  background-color: black;
+  padding: 8px;
+  font-size: 20px;
+
+}
+

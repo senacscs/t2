@@ -1,0 +1,50 @@
+body {
+  user-select: none;
+  background-image: url(https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2019/04/plano-de-fundo-preto28.jpg?w=1320&ssl=1);
+  background-size: 100%;
+  background-repeat: no-repeat;  
+  font-family:'Courier New', Courier, monospace ;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 7%;
+}
+
+.container {
+	height: 60%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  margin-top: 25%;
+
+}
+.animated-word {
+	font-family: Helvetica;
+	letter-spacing: 0.4em;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
+  cursor: pointer;
+  max-width: 300px; 
+  width: 40%; 
+  outline: 3px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 35px;
+  transition: all 1s cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+	color: rgba(255, 255, 255, 0.7);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 200px;
+}
+
