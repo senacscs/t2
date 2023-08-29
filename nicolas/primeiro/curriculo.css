@@ -1,0 +1,26 @@
+
+body{
+    background-color: rgba(176, 178, 255, 0.5);
+}
+hr{
+    margin: 10px;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+h4{
+    display: inline;
+    padding: 10px;
+    display: inline-flexbox;
+}
+hr{
+    border-color: rgb(0, 0, 0);
+}
+a {
+    text-decoration: rgb(0, 0, 0);
+}
