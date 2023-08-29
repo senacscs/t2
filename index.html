@@ -490,5 +490,18 @@
             overlay.appendChild(message);
             document.body.appendChild(overlay);
         }
+
+// Esta função desativa a tecla F12 pressionada.
+function disableF12(e) {
+  if ((e.keyCode === 123) || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+    e.preventDefault(); // Impede o comportamento padrão (abrir ferramentas de desenvolvedor)
+  }
+}
+
+// Adicionar um ouvinte de evento para capturar pressionamentos de tecla.
+document.addEventListener("keydown", disableF12);
+
+
+
 </script>
 </html>avatar/avatar-isabelle.png
