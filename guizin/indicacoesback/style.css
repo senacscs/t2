@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(50, 118, 186);
+    height: 100vh;
+    scroll-behavior: smooth;
+
+    margin: 0 auto;
+    display: flex;
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    font-family: italic;
+}
+
+  #menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul { 
+     max-width: 800px;
+    list-style: non;
+    padding: 0;
+}
+
+  
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 15px; 
+    display: inline-block;
+    text-decoration: none;
+    transition: background4s;
+}
+
+h2{
+text-align: left;
+font-family: italic;
+}
+
+p{
+    text-align: left;
+    font-family: arial;
+    font-style: italic;
+}
+
+h1{
+    text-align: left;
+}
