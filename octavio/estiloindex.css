@@ -1,0 +1,60 @@
+body {
+   background-image: url("https://i.ytimg.com/vi/hVHtLz1J080/maxresdefault.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size: 1600px 800px;
+  }
+  h1 {
+    color: black;
+    text-align: left;
+  }
+  
+  h2 {
+   color: black;
+   text-align: left;
+  }
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0.5%;
+    width: 35%;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+    .button::before{
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 100%;
+
+        background:
+        linear-gradient(115deg,
+        #4fcf70, #fad648,
+        #a767e5, #12bcfe,
+        #44ce7b);
+        background-size: 50% 100%;
+        border-radius: inherit;
+    }
+        .button:hover::before{
+            animation: animate_border
+            .75s linear infinite;
+        }
+
+            .button span{
+                display: block;
+                text-align: center;
+                font-size: 25px;
+                background-color: rgba(0, 0, 0, 0.797);
+                padding: 13px 20px;
+                border-radius: 3px;
+                position: relative;
+                z-index: 2;
+            }
+            
