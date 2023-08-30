@@ -1,0 +1,21 @@
+html {
+    background-color: #f5cd5f;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+      }
+button {
+    background-color:  #ecae28;
+    color:rgb(255, 255, 255);
+    border: 1;
+    border-color: rgb(0, 0, 0);
+    padding: 20px 32px;
+    border-radius: 60px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
