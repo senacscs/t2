@@ -1,0 +1,70 @@
+.bg-secundary-color {
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+/* SLIDER */
+#slider {
+    margin-top: 8em;
+}
+
+/* Subir o conteúdo */
+.carousel-caption {
+    bottom: 7em;
+}
+
+/* Formatar o indicador ativo */
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+/* Posicionar os indicadores */
+.carousel-indicators {
+    bottom: 5em;
+}
+
+/* levar para trás */
+#slider{
+    z-index: 1;
+}
+
+/* INFORMAÇÕES IMPORTANTE */
+/* margem do conteúdo */
+.row {
+    margin: auto;
+}
+
+/* trazer pra frente */
+#info-conteudo {
+    z-index: 3;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+} 
+
+.subtitulo {
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 12rem;
+    border: 1px solid #7a7a7a;
+    opacity: 1;
+    margin-bottom: 0.7em;
+}
+
+
+
+/* MD para resolução de 768 */
+@media (min-width: 768px) {
+    /* INFORMAÇÕES IMPORTANTES */
+    /* posicionamento do conteúdo */
+    #sobre {
+        flex-direction: row;
+        margin: -5rem 3rem 0 3rem;
+    }
+}

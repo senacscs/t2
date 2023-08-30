@@ -1,0 +1,81 @@
+/* cores */
+.tertiary-color {
+    color: #1c1c1c;
+}
+
+*::selection {
+    background-color: #1c1c1c4f;
+}
+
+/* slider */
+/* mudar o botao do primeiro slide */
+.carousel-item .carousel-caption .btn {
+    font-size: 2em
+}
+
+/* mudar a legenda dos slides */
+.carousel-item .carousel-caption p {
+    text-shadow: 0px 0px 10px #000;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #fff;
+}
+
+/* banners */
+.card-body {
+    min-height: 200px;
+}
+
+#mini-banners {
+    margin-bottom: 50px;
+}
+
+/* produtos */
+/* tirar o fundo dos botões dos modais */
+#produtos {
+    margin-bottom: 50px;
+}
+
+#produtos hr {
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 1;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.btn-produtos {
+    border: none;
+    background-color: transparent;
+}
+
+#conheca h1 {
+    margin-bottom: 20px;
+}
+
+/* accordions */
+.accordion-button {
+    background-color: #e2e2e2;
+    color: #1c1c1c;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #fff;
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button i {
+    padding-right: 10px;
+}
+
+.accordion-body {
+    background-color: #e2e2e298;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #1c1c1c79;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.37);
+    --bs-accordion-active-color: #fff;
+    margin-bottom: 50px;
+}
