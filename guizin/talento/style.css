@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-family: Arial;
+    font-style: oblique;
+}
+body{
+    background-color: gray;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+}
+
+.videos{
+    display: grid;
+    align-items: center;
+}
+
+.iframe{
+    text-align: center;
+    margin-left: 25%;
+    display: relative;
+}
