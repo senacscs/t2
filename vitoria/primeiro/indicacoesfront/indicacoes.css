@@ -1,0 +1,26 @@
+body {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 1.5em;
+}
+.intro {
+    padding: 0px 40px;
+    font-size: 1.25em;
+    text-align: center;
+}
+p {
+   padding: 0 40px;
+   text-align: center;
+   font-size: 0.75em;
+}
+.logo {
+    background-color: #008 aff;
+    height: 350px;
+    text-align: center;
+}
+.logo img {
+    margin: 30px;
+    position: relative;
+    max-width: 75%;
+}

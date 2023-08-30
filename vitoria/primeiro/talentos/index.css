@@ -1,0 +1,11 @@
+#greenrobot.png {
+    height: 100px;
+    position: absolute;
+    left: -200px;
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    0% { left: -200px }
+    50% { left:0 }
+    100% { left: -200px }
+}
