@@ -8,10 +8,10 @@
     text-decoration: none;
 }
 
-::selection {
+::selection{
     color: #202024;
-    background-color: rgb(255, 255, 255);
-  }
+    background: #fff;
+}
 
 body {
     scrollbar-width: 12px;
