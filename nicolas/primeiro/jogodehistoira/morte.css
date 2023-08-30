@@ -1,0 +1,9 @@
+body {
+    user-select: none;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: repeat;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+
