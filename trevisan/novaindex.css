@@ -16,9 +16,9 @@ body{
 
 }
 
-.scroll_bar {
+
    
-}
+
     .scroll_bar::-webkit-scrollbar {
         display: none;
         float: left;
