@@ -1,0 +1,22 @@
+body {
+    background-image: url("flag-background.png");
+    background-size: cover;
+    background-attachment: fixed;      
+}
+img{
+    filter: blur(100%);
+}
+.background{
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 2%;
+}
+h1{
+    text-align: center;
+}
+p, ul{
+    margin-left: 30%;
+    margin-right: 20%;
+}
+ul{
+    list-style-type: none,
+}
