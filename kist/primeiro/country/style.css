@@ -1,0 +1,18 @@
+html {
+    background-image: linear-gradient(to bottom, blue, white, red  );
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family: italic;
+}
+
+
+
+li{
+    font-family:'Times New Roman', Times, serif;
+    font-style:'Times New Roman';
+}
