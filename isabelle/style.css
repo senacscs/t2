@@ -1,0 +1,30 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+  }
