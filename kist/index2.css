@@ -346,7 +346,7 @@ select:disabled {
 [type="reset"],
 [type="submit"],
 button {
-    -webkit-appearance: button;
+-webkit-appearance: button;
 }
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -2129,8 +2129,6 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {
     border-radius: 0.25em;
