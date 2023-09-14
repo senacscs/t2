@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugol vira JS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Exemplos de <a href="https://dgadelha.github.io/Portugol-Webstudio/">Portugol WebStudio</a> convertido para
+        JavaScript</h1>
+
+    <div class="entrada-saida">
+        <h2>Entrada e Saída</h2>
+
+        <section>
+            <details>
+                <!-- Olá Mundo em alert, console.log e inner html -->
+                <summary>Olá Mundo</summary>
+
+                <button onclick="olaMundo()">Executar</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <!-- armazenar e ler um número inteiro numa variável -->
+                <summary>Número Digitado</summary>
+
+                <label for="numero">Digite um número:</label>
+                <input type="number" id="numero" name="numero" placeholder="Digite um número...">
+
+                <button onclick="numeroDigitado()">Executar</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <!-- obter e armazenar o nome de um usuário numa variável -->
+                <summary>Seu Nome</summary>
+
+                <label for="nome">Digite seu nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+
+                <button onclick="seuNome()">Executar</button>
+            </details>
+        </section>
+    </div>
+
+    <div class="operacoes-aritmeticas">
+        <h2>Operações Aritméticas</h2>
+
+        <section>
+            <details>
+
+                <summary>Operações Simples</summary>
+                <!-- realiza operações simples -->
+                <label for="numero1">Digite o primeiro número:</label>
+                <input type="number" name="numero1" id="numero1">
+
+                <label for="numero2">Digite o segundo número:</label>
+                <input type="number" name="numero2" id="numero2">
+
+                <button onclick="operacoesSimples()">Mostrar resultados</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Divisões Inteiras</summary>
+                <!-- o usuário informa um número inteiro e recebe a metade e o resto -->
+                <label for="numInt">Digite um número:</label>
+                <input type="number" name="num" id="numInt" placeholder="Digite um número...">
+
+                <button onclick="divisoesInteiras()">Executar</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Prioridades</summary>
+                <!-- exemplos de como funciona a prioridade do javascript -->
+                <button onclick="prioridade()">Mostrar exemplos</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Potência e Raiz</summary>
+                <!-- utiliza a biblioteca 'matematica' para calcular e exibir
+            um número elevado ao cubo e a raíz quadrada do número -->
+                <label for="num">Digite um número:</label>
+                <input type="number" name="num" id="num" placeholder="Digite um número...">
+
+                <button onclick="potenciaRaiz()">Executar</button>
+            </details>
+        </section>
+    </div>
+
+    <div class="algoritmos-sequenciais">
+        <h2>Algoritmos Sequenciais</h2>
+
+        <section>
+            <details>
+                <summary>Troca variáveis</summary>
+                <!-- armazena dois valores e depois efetua uma troca -->
+                <label for="valor_um">Digite o primeiro valor:</label>
+                <input type="number" name="valor_um" id="valor_um" placeholder="Informe o valor">
+
+                <label for="valor_dois">Digite o segundo valor:</label>
+                <input type="number" name="valor_dois" id="valor_dois" placeholder="Informe o valor">
+
+                <button onclick="trocaVariaveis()">Executar</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Maioridade penal</summary>
+                <!-- calcula quantos anos faltam de uma idade até a maioridade -->
+                <label for="idade">Digite sua idade:</label>
+                <input type="number" name="idade" id="idade" placeholder="Digite aqui">
+
+                <button onclick="maioridadePenal()">Calcular</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Altura média</summary>
+                <!-- calcula a média entre 3 alturas informadas pelo usuário -->
+                <label for="altura1">Informe a primeira altura:</label>
+                <input type="number" name="altura1" id="altura1" placeholder="Digite aqui">
+
+                <label for="altura2">Informe a primeira altura:</label>
+                <input type="number" name="altura2" id="altura2" placeholder="Digite aqui">
+
+                <label for="altura3">Informe a primeira altura:</label>
+                <input type="number" name="altura3" id="altura3" placeholder="Digite aqui">
+
+                <button onclick="alturaMedia()">Calcular</button>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>Loja de ferramentas</summary>
+                <!-- pede o nome do usuário e três valores inteiros que representam três itens a serem comprados 
+                após, exibe o nome do usuário, a quantidade de cada item a ser comprado e o preço total -->
+
+                <label for="nome_usuario">Digite seu nome:</label>
+                <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite aqui">
+
+                <label for="quantidade_parafusos">Insira a quantidade de parafusos que deseja comprar:</label>
+                <input type="number" name="quantidade_parafusos" id="quantidade_parafusos" placeholder="Digite aqui">
+
+                <label for="quantidade_arruelas">Insira a quantidade de arruelas que deseja comprar:</label>
+                <input type="number" name="quantidade_arruelas" id="quantidade_arruelas" placeholder="Digite aqui">
+
+                <label for="quantidade_parafusos">Insira a quantidade de porcas que deseja comprar:</label>
+                <input type="number" name="quantidade_porcas" id="quantidade_porcas" placeholder="Digite aqui">
+
+                <button onclick="lojaDeFerramentas()">Calcular</button>
+            </details>
+        </section>
+    </div>
+
+    <div>
+        <p id="mostrar"></p>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
