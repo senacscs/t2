@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+*::selection {
+    background-color: indigo;
+    color: white;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: blueviolet;
+}
+
+h2 {
+    margin-top: 50px;
+    color: cornflowerblue;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+details,
+summary {
+    color: white;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+div {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    animation: appear .5s;
+}
+
+div.entrada-saída {
+    animation: appear .5s backwards;
+}
+
+div.operacoes-aritmeticas {
+    animation: appear .7s backwards;
+}
+
+div.operacoes-aritmeticas {
+    animation: appear .7s .5s backwards;
+}
+
+div.algoritmos-sequenciais {
+    animation: appear .7s .9s backwards;
+}
+
+a {
+    color: white;
+}
+
+details {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+details label, 
+details input,
+details button {
+    margin-top: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    max-width: 250px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
