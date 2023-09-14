@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ptjs</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>pt4js</title>
 </head>
 <body>
-    <div id="modal-container">
-        <div class="modal-background">
-          <div class="modal">
-            <h2>Entradas e Saídas</h2>
-            <p>Aqui terá exemplos.</p>
-            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-                                      <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-                                  </svg>
-          </div>
-        </div>
-      </div>
+  <header>
+    <h1>Portugol para JavaScript</h1>
+    <p> Exemplos do <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a> convertidos para JavaScript</p>
+    <nav></nav>
+  </header>
+
       <div class="content">
-        <h1>Modal Animations</h1>
+        <h2>Entradas e Saídas</h2>
         <div class="buttons">
-          <div id="one" class="button">Unfolding</div>
-          <div id="two" class="button">Revealing</div>
-          <div id="three" class="button">Uncovering</div>
-          <div id="four" class="button">Blow Up</div><br>
-          <div id="five" class="button">Meep Meep</div>
-          <div id="six" class="button">Sketch</div>
-          <div id="seven" class="button">Bond</div>
+          <button class="custom-btn bonito" id="olaMundoModal"><span>Olá Mundo</span></button>
+          <button class="custom-btn bonito" id="numModal"><span>Número Digitado</span></button>
+          <button class="custom-btn bonito" id="seuNomeModal"><span>Seu Nome</span></button>
+        </div>
+      </div>
+
+      <!-- Modais de Entrada e Saída -->
+
+      <!-- Número Digitado-->
+      <div class="modal" id="num">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        <label for="number">Digite um número: </label>
+        <input type="number" id="numero" name="number" placeholder="Apenas números">
+        <p id="output"> </p>
+        <button onclick="numeroDigitado()">Executar</button>
+      </div>
+      </div>
+
+      <!-- Seu Nome -->
+      <div class="modal" id="name">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <label for="name">Digite seu nome: </label>
+          <input type="text" name="name" id="nome" placeholder="Seu nome">
+          <p id="output"> </p>
+          <button onclick="seuNome()">Executar</button>
         </div>
       </div>
 
@@ -36,11 +52,10 @@
 
 
 
+      <div class="content">
+        <h2>Operações Aritméticas</h2>
+      </div>
 
-      
-    <button onclick="olaMundo()">Executar</button>
-    <div id="mostrar"></div>
-
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
