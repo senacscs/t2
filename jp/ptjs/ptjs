@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ptjs.css">
+    <title>Portugol para Java</title>
+</head>
+<body>
+    <h1>
+        Portugol para JavaScript
+        Exemplos do <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a> convertidos para JavaScript
+    </h1>
+
+    <details close>
+        <summary>Olá Mundo</summary>
+        <code>document.getElementById("mostrar").innerHTML = "Olá Mundo!";<br>
+        console.log(`Olá Mundo!`);<br>
+        alert(`Olá Mundo!`);
+        </code>
+        <button onclick="olaMundo()">Executar</button>
+
+    </details>        
+    <details close>
+        <summary>Número Digitado</summary>
+        <label>Digite um número: </label><input type="number" id="numero" placeholder="Só Números"><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>        
+
+    <div id="mostrar"></div>
+
+     <script src="ptjs.js"></script>
+</body>
+</html>
