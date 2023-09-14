@@ -1,4 +1,4 @@
-//O código tem alguns comentários 
+//O código tem alguns comentários
 //perdidos para os oleguinhas não copiarem
 
 //Olá Mundo!
@@ -23,7 +23,7 @@ function nomeDigitado() {
 function calcular() {
   var primNum = document.getElementById("primeiroNum").value;
   var segmNum = document.getElementById("segundoNum").value;
-  const sel = document.getElementById("select").value;//aksjf
+  const sel = document.getElementById("select").value; //aksjf
 
   if (sel == "opcao1") {
     const resultado = parseFloat(primNum) + parseFloat(segmNum);
@@ -97,7 +97,7 @@ function troca() {
     "Variáveis antes da troca: " +
     "A = " +
     a +
-    " B = " +//aksjf
+    " B = " + //aksjf
     b +
     "<br>" +
     "Variáveis após a troca: " +
@@ -238,7 +238,8 @@ function idade() {
   var idade = document.getElementById("idadeUser").value;
   if (idade < 18) {
     document.getElementById("mostrar").innerHTML = "Você é menor de idade";
-  } else {//kajs
+  } else {
+    //kajs
     document.getElementById("mostrar").innerHTML = "Você é maior de idade";
   }
 }
@@ -374,7 +375,7 @@ function contagem() {
 
 //Tabuada
 function tabuada() {
-  let numero, resultado, contador;//pow
+  let numero, resultado, contador; //pow
 
   numero = document.getElementById("numTab").value;
 
@@ -440,13 +441,13 @@ function fatorial() {
   numero = parseInt(prompt("Digite um número: "));
 
   while (atual <= numero) {
-    fatorial = fatorial * atual;  //ja
+    fatorial = fatorial * atual; //ja
     atual = atual + 1;
   }
   alert("O fatorial de " + numero + " é " + fatorial);
 }
 
-//Eleição   
+//Eleição
 function eleicao() {
   let candidato_a = 0,
     candidato_b = 0;
@@ -475,7 +476,7 @@ function eleicao() {
         break;
       case 3:
         brancos = brancos + 1;
-        break;  //kasj
+        break; //kasj
       default:
         nulos = nulos + 1;
     }
@@ -495,7 +496,7 @@ function eleicao() {
       total_votos +
       "\n\nCandidato A: " +
       candidato_a +
-      " voto(s). " +  //lala
+      " voto(s). " + //lala
       porcentagem_candidato_a +
       " % do total\nCandidato B: " +
       candidato_b +
@@ -526,13 +527,13 @@ function vetor() {
   for (let posicao = 0; posicao < 10; posicao++) {
     document.getElementById("mostrar").innerHTML += vetor[posicao] + " ";
   }
-      //ueit
+  //ueit
   document.getElementById("mostrar").innerHTML +=
     "<br>Vetor na ordem inversa: ";
 
   for (let posicao = 9; posicao >= 0; posicao--) {
     document.getElementById("mostrar").innerHTML += vetor[posicao] + " ";
-  }
+  }//kasj
 }
 
 //Pesquisa vetor
@@ -599,7 +600,7 @@ function exibe(matriz) {
     output += "\n";
   }
   alert(output);
-}
+}//kasfj
 
 //Exibe matriz
 function exibe() {
@@ -616,7 +617,7 @@ function exibe() {
     }
     output += "\n";
   }
-    //fg
+  //fg
   alert(output);
 }
 
@@ -632,7 +633,7 @@ function mensagem(texto) {
   var linha = "";
   for (var i = 0; i < 50; i++) {
     linha += "-";
-  }
+  }//kaj
   alert(linha + "\n" + texto + "\n" + linha);
 }
 
@@ -659,7 +660,7 @@ function animar(coluna_inicial, passos) {
       aguardar(500);
     }
   }
-        //b
+  //b
   console.clear();
   desenhar_lagarta(coluna_final, 0);
   console.log("Animação concluída!");
@@ -669,7 +670,7 @@ function desenhar_lagarta(coluna, andando) {
   if (andando === 0) {
     branco(coluna * 3 + 14);
     console.log("\\ /");
-    branco(coluna * 3);
+    branco(coluna * 3);//pairj
     console.log("( )( )( )( )( 0.0 )");
   } else {
     branco(coluna * 3 + 7);
@@ -678,7 +679,7 @@ function desenhar_lagarta(coluna, andando) {
     console.log("\\ /");
     branco(coluna * 3 + 2);
     console.log("( )( ) ( )( 0.0 )");
-  }//peor
+  } //peor
 
   console.log("\n");
 }
@@ -709,7 +710,7 @@ function parametro() {
 
   alert("\n\nVariável após:\n" + vet.valor);
 }
-
+//per
 function preenche(v) {
   v.valor = Math.floor(Math.random() * 100) + 1;
 }
@@ -727,13 +728,14 @@ function vetores() {
 
   mostrarResultado("Vetor antes da ordenação:", vet);
 
-  ordena(vet);//ajkhasj
+  ordena(vet); //ajkhasj
 
   mostrarResultado("Vetor após a ordenação:", vet);
 }
 
 function preenche(v) {
-  for (let i = 0; i < 10; i++) {//askjh
+  for (let i = 0; i < 10; i++) {
+    //askjh
     v[i] = Math.floor(Math.random() * 100) + 1;
   }
 }
@@ -764,7 +766,7 @@ function troca(v, a, b) {
 
 function mostrarResultado(mensagem, vetor) {
   const divResultado = document.getElementById("mostrar");
-  divResultado.innerHTML += `<p>${mensagem}</p>`;//kapoe
+  divResultado.innerHTML += `<p>${mensagem}</p>`; //kapoe
   divResultado.innerHTML += `<p>${exibe(vetor)}</p>`;
 }
 
@@ -806,7 +808,7 @@ function fibonacci(posicao) {
   let temp;
 
   for (let i = 2; i < posicao; i++) {
-    temp = a + b;//asfj
+    temp = a + b; //asfj
     a = b;
     b = temp;
   }
