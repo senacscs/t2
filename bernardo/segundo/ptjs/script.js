@@ -1,3 +1,6 @@
+//O código tem alguns comentários 
+//perdidos para os oleguinhas não copiarem
+
 //Olá Mundo!
 function olaMundo() {
   document.getElementById("mostrar").innerHTML = "Olá Mundo!";
@@ -20,7 +23,7 @@ function nomeDigitado() {
 function calcular() {
   var primNum = document.getElementById("primeiroNum").value;
   var segmNum = document.getElementById("segundoNum").value;
-  const sel = document.getElementById("select").value;
+  const sel = document.getElementById("select").value;//aksjf
 
   if (sel == "opcao1") {
     const resultado = parseFloat(primNum) + parseFloat(segmNum);
@@ -94,7 +97,7 @@ function troca() {
     "Variáveis antes da troca: " +
     "A = " +
     a +
-    " B = " +
+    " B = " +//aksjf
     b +
     "<br>" +
     "Variáveis após a troca: " +
@@ -124,7 +127,7 @@ function altura() {
   var altura1 = parseFloat(document.getElementById("primeiraAltura").value);
   var altura2 = parseFloat(document.getElementById("segundaAltura").value);
   var altura3 = parseFloat(document.getElementById("terceiraAltura").value);
-
+  //kajhs
   media_altura = (altura1 + altura2 + altura3) / 3;
 
   document.getElementById("mostrar").innerHTML =
@@ -224,7 +227,7 @@ function media() {
   } else if (m3 < media) {
     document.getElementById("mostrar").innerHTML =
       "A média final é: " +
-      Math.round(media) +
+      Math.round(media) + //akls
       "<br>" +
       "A média 3 é menor que a média final";
   }
@@ -235,7 +238,7 @@ function idade() {
   var idade = document.getElementById("idadeUser").value;
   if (idade < 18) {
     document.getElementById("mostrar").innerHTML = "Você é menor de idade";
-  } else {
+  } else {//kajs
     document.getElementById("mostrar").innerHTML = "Você é maior de idade";
   }
 }
@@ -371,7 +374,7 @@ function contagem() {
 
 //Tabuada
 function tabuada() {
-  let numero, resultado, contador;
+  let numero, resultado, contador;//pow
 
   numero = document.getElementById("numTab").value;
 
@@ -409,7 +412,7 @@ function mediaDez() {
     soma = soma + numero;
     contador = contador + 1;
   }
-
+  //oeut
   media = soma / 10;
   alert("A média dos números é: " + media);
 }
@@ -437,13 +440,13 @@ function fatorial() {
   numero = parseInt(prompt("Digite um número: "));
 
   while (atual <= numero) {
-    fatorial = fatorial * atual;
+    fatorial = fatorial * atual;  //ja
     atual = atual + 1;
   }
   alert("O fatorial de " + numero + " é " + fatorial);
 }
 
-//Eleição
+//Eleição   
 function eleicao() {
   let candidato_a = 0,
     candidato_b = 0;
@@ -472,7 +475,7 @@ function eleicao() {
         break;
       case 3:
         brancos = brancos + 1;
-        break;
+        break;  //kasj
       default:
         nulos = nulos + 1;
     }
@@ -492,7 +495,7 @@ function eleicao() {
       total_votos +
       "\n\nCandidato A: " +
       candidato_a +
-      " voto(s). " +
+      " voto(s). " +  //lala
       porcentagem_candidato_a +
       " % do total\nCandidato B: " +
       candidato_b +
@@ -523,7 +526,7 @@ function vetor() {
   for (let posicao = 0; posicao < 10; posicao++) {
     document.getElementById("mostrar").innerHTML += vetor[posicao] + " ";
   }
-
+      //ueit
   document.getElementById("mostrar").innerHTML +=
     "<br>Vetor na ordem inversa: ";
 
@@ -549,7 +552,7 @@ function posicao() {
   if (achou == false) {
     document.getElementById("mostrar").innerHTML = "O número não está no vetor";
   }
-}
+} //haj
 
 //Tabela de dados
 function tabela() {
@@ -567,7 +570,7 @@ function tabela() {
 //Diagonal principal
 function diagonal() {
   const TAMANHO = 5;
-  let matriz = Array(TAMANHO)
+  let matriz = Array(TAMANHO) //lka
     .fill()
     .map(() => Array(TAMANHO).fill(" "));
 
@@ -613,7 +616,7 @@ function exibe() {
     }
     output += "\n";
   }
-
+    //fg
   alert(output);
 }
 
@@ -624,7 +627,7 @@ function procedimento() {
   alert("O resultado do segundo cálculo é: " + calcula(7.0, 2.0));
   mensagem("Tchau");
 }
-
+//cd
 function mensagem(texto) {
   var linha = "";
   for (var i = 0; i < 50; i++) {
@@ -656,7 +659,7 @@ function animar(coluna_inicial, passos) {
       aguardar(500);
     }
   }
-
+        //b
   console.clear();
   desenhar_lagarta(coluna_final, 0);
   console.log("Animação concluída!");
@@ -675,14 +678,14 @@ function desenhar_lagarta(coluna, andando) {
     console.log("\\ /");
     branco(coluna * 3 + 2);
     console.log("( )( ) ( )( 0.0 )");
-  }
+  }//peor
 
   console.log("\n");
 }
 
 function branco(quantidade) {
   let brancos = 1;
-
+  //b
   while (brancos <= quantidade) {
     console.log(" ");
     brancos++;
@@ -724,13 +727,13 @@ function vetores() {
 
   mostrarResultado("Vetor antes da ordenação:", vet);
 
-  ordena(vet);
+  ordena(vet);//ajkhasj
 
   mostrarResultado("Vetor após a ordenação:", vet);
 }
 
 function preenche(v) {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {//askjh
     v[i] = Math.floor(Math.random() * 100) + 1;
   }
 }
@@ -742,7 +745,7 @@ function exibe(v) {
   }
   return result;
 }
-
+//b
 function ordena(v) {
   for (let i = 0; i < 10; i++) {
     for (let j = 0; j < 9; j++) {
@@ -761,7 +764,7 @@ function troca(v, a, b) {
 
 function mostrarResultado(mensagem, vetor) {
   const divResultado = document.getElementById("mostrar");
-  divResultado.innerHTML += `<p>${mensagem}</p>`;
+  divResultado.innerHTML += `<p>${mensagem}</p>`;//kapoe
   divResultado.innerHTML += `<p>${exibe(vetor)}</p>`;
 }
 
@@ -786,6 +789,8 @@ function calcularFibonacci() {
     resultado += fibonacci(i) + " ";
   }
 
+  //b
+
   document.getElementById("mostrar").innerHTML = resultado;
 }
 
@@ -801,7 +806,7 @@ function fibonacci(posicao) {
   let temp;
 
   for (let i = 2; i < posicao; i++) {
-    temp = a + b;
+    temp = a + b;//asfj
     a = b;
     b = temp;
   }
