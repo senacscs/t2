@@ -1,6 +1,4 @@
-function olaMundo(){
-    document.getElementById("mostrar").innerHTML = "Olá Mundo!";
-    console.log('Olá Mundo!');
+function ola(){
     alert('Olá Mundo!');
 }
 
