@@ -777,6 +777,18 @@ function calcularFibonacci() {
   document.getElementById("mostrar").innerHTML = resultado;
 }
 
+//Fibonacci resursivo
+function calcularFibonacci() {
+  const numero = parseInt(document.getElementById("sequencia").value);
+  let resultado = "";
+
+  for (let i = 1; i <= numero; i++) {
+    resultado += fibonacci(i) + " ";
+  }
+
+  document.getElementById("mostrar").innerHTML = resultado;
+}
+
 function fibonacci(posicao) {
   if (posicao <= 0) {
     return 0;
