@@ -3,12 +3,12 @@ function ola(){
 }
 
 function valorDigitado(){
-    var numero = document.getElementById("numero");
+    var numero = document.getElementById("numero").value;
     alert("O valor digitado foi: " + numero)
 }
 
 function nomeDigitado(){
-    var nome = document.getElementById("nome");
+    var nome = document.getElementById("nome").value;
     alert("O nome digitado foi: " + nome + "!")
 }
 
