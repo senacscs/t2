@@ -383,7 +383,7 @@ function tabuada() {
 
   for (contador = 1; contador <= 10; contador++) {
     resultado = numero * contador;
-    document.getElementById("mostrar").innerHTML +=
+    document.getElementById("mostrar").innerHTML +=//oeri
       numero + " X " + contador + " = " + resultado + "<br>";
   }
 }
