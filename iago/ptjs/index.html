@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portugol para JS</title>
+</head>
+
+<body>
+    <h1>
+        Exemplos do <span>Portugol Webstudio</span> para JavaScript
+    </h1>
+
+    <h2>
+        Entradas e Saídas:
+    </h2>
+    <details close>
+        <code>
+        document.getElementById("mostrar").innerHTML = "Olá Mundo!";<br>
+        console.log("Olá Mundo!");<br>
+        alert("Olá mundo!");<br>
+        </code>
+        <summary>Olá Mundo</summary><br>
+        <button onclick="olaMundo()">Executar</button>
+    </details>
+    <br>
+    <details close>
+        <summary>Número Digitado</summary>
+        <label>Digite seu número: </label><input type="number" id="numero"><br><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>
+    <br>
+    <details close>
+        <summary>Nome digitado</summary>
+        <label>Digitado seu nome: </label><input type="text" id="nome"><br><br>
+        <button onclick="nomeDigitado()">Executar</button>
+    </details>
+
+    <div id="mostrarSE"></div>
+
+    <h2>
+        Operações Aritméticas:
+    </h2>
+
+    <details close>
+        <summary>Operações simples</summary>
+        <label>Digite seu primeiro valor: </label><input type="number" id="a"><br>
+        <label>Digite seu segundo valor: </label><input type="number" id="b"><br><br>
+        <button onclick="operaSimples()">Executar</button>
+
+        <div id="mostrarOA"></div>
+    </details>
+    <br>
+    <details close>
+        <summary>Propriedades</summary>
+        <code>
+        // Neste exemplo, a operação de multiplicação (*) será executada primeiro<br>
+		resultado = 5.0 + 4.0 * 2.0<br>
+ 		escreva("Operação: 5 + 4 * 2 = ", resultado)<br>
+
+ 		// Neste exemplo, a operação de soma (+) será executada primeiro<br>
+ 		resultado = (5.0 + 4.0) * 2.0<br>
+ 		escreva("\nOperação: (5 + 4) * 2 = ", resultado)<br>
+ 		/*
+ 		 * Neste exemplo, a operação de divisão (/) será executada primeiro,
+ 		 * seguida pela operação de multiplicação (*). Por último, será
+ 		 * executada a operação de soma (+)
+ 		 */<br>
+ 		resultado = 1.0 + 2.0 / 3.0 * 4.0<br>
+ 		escreva("\nOperação: 1 + 2 / 3 * 4 = ", resultado)<br>
+ 		/*
+ 		 * Neste exemplo, a operação de soma (+) será executada primeiro,
+ 		 * seguida pela operação de multiplicação (*). Por último, será
+ 		 * executada a operação de divisão (/).
+ 		 */<br>
+ 		resultado = (1.0 + 2.0) / (3.0 * 4.0)<br>
+ 		escreva("\nOperação: (1 + 2) / (3 * 4) = ", resultado, "\n")<br>
+        </code><br>
+        <button onclick="propriedades()">Executar</button>
+
+        <div id="mostrarP1"></div>
+        <div id="mostrarP2"></div>
+        <div id="mostrarP3"></div>
+        <div id="mostrarP4"></div>
+    </details>
+    <br>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
