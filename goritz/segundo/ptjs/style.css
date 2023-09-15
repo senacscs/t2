@@ -1,0 +1,40 @@
+* {
+    border-radius: 6vh;
+    padding: 1vh;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 0px rgba(206,206,206,0.38);
+}
+
+button, input, select {
+    border-radius: 2vh;
+}
+
+summary {
+    font-size: 4vh;
+}
+
+#helloWorld {
+    padding: 3vh;
+    background-color: aqua;
+    width: auto;
+}
+
+#portugol, h1 {
+    font-size: 7vh;
+}
+
+#portugol:hover {
+    font-size: 8vh;
+}
+
+h2 {
+    color: rgb(172, 245, 26);
+    font-size: 5vh;
+}
+
+#outputResult {
+    color: purple;
+}
