@@ -1,0 +1,94 @@
+body {
+    justify-content: center;
+}
+.home.astro-J7PV25F6 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--pale);
+}
+.home.astro-J7PV25F6 p.astro-J7PV25F6 {
+    margin-bottom: 0;
+}
+@media (min-width: 850px) {
+    main.astro-J7PV25F6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+    }
+    .wrap.astro-J7PV25F6 {
+        position: relative;
+        z-index: 10;
+        animation: whee 1s forwards;
+    }
+    .rectangle-wrap.astro-J7PV25F6 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .rectangle.astro-J7PV25F6 {
+        background: var(--light);
+        box-shadow: var(--cut);
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+    }
+    .home.astro-J7PV25F6 {
+        padding: 128px;
+        animation: cuts 0.5s ease 0.5s;
+    }
+    .home-wrap.astro-J7PV25F6 {
+        z-index: 100;
+        display: flex;
+        animation: card 1s ease 1s forwards;
+    }
+}
+@media (max-width: 850px) {
+    .rectangle-wrap.astro-J7PV25F6 {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .home-wrap.astro-J7PV25F6,
+    .home.astro-J7PV25F6,
+    .wrap.astro-J7PV25F6 {
+        animation: none;
+    }
+}
+@keyframes whee {
+    0% {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(6deg);
+    }
+}
+@keyframes card {
+    to {
+        transform: rotate(-12deg);
+        box-shadow: var(--cutout);
+    }
+}
+@keyframes cuts {
+    0% {
+        border: none;
+    }
+    20% {
+        border-top: 1px solid var(--light);
+    }
+    40% {
+        border-right: 1px solid var(--light);
+    }
+    60% {
+        border-bottom: 1px solid var(--light);
+    }
+    80% {
+        border-left: 1px solid var(--light);
+    }
+    to {
+        border: 1px solid var(--light);
+    }
+}
