@@ -1,16 +1,48 @@
-function operacoesSimples () {
-    var a, b, c, sum, sub, mult, div;
+// operações simples
+function operacoesSimples() {
+    var a,
+        b,
+        c,
+        sum,
+        sub,
+        multi,
+        div;
 
-    document.getElementById("")
+    a = num1.value;
+    b = num2.value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    sum = a + b;
+    sub = a - b;
+    multi = a * b;
+    div = a / b;
+
+    document
+        .getElementById("outputSum")
+        .innerHTML = "A soma dos números é igual a: " + sum;
+
+    document
+    .getElementById("outputSub")
+    .innerHTML = "A subtração dos números é igual a: " + sub;
+
+    document
+    .getElementById("outputMulti")
+    .innerHTML = "A multiplicação dos números é igual a: " + multi;
+
+    document
+    .getElementById("outputDiv")
+    .innerHTML = "A divisão dos números é igual a: " + div;
+
 }
 
+//
 
 
 
-
-//MODAIS
-
-//modal operacoes ar itméticas
+//MODAIS 
+//modal operacoes aritméticas
 var modalOp = document.getElementById("op");
 var btnOp = document.getElementById("opSimples");
 var spanOp = document.getElementsByClassName("close")[0];
@@ -26,37 +58,3 @@ btnOp.onclick = function () {
         }
     }
 }
-
-
-
-
-
-
-
-function insert(num)
-{
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
-}
-function clean()
-{
-    document.getElementById('resultado').innerHTML = "";
-}
-function back()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-}
-function calcular()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado)
-    {
-        document.getElementById('resultado').innerHTML = eval(resultado);
-    }
-    else
-    {
-        document.getElementById('resultado').innerHTML = "Nada..."
-    }
-}
-﻿
