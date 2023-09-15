@@ -1,0 +1,182 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-size: 80px;
+    margin-bottom: 0;
+    color: white;
+
+
+
+}
+
+h3 {
+    padding: 0;
+    margin-left: 80px;
+    color: white;
+
+}
+
+/* styles.css */
+.amarelo-link {
+    color: yellow;
+    padding: 0%;
+    margin-bottom: 0;
+
+}
+
+h4 {
+
+    margin-right: 90px;
+    margin-top: 50px;
+
+
+}
+
+a {
+    align-items: center;
+    text-align: right;
+    margin-right: 50px;
+} 
+
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.olaMundo {
+    background-color: white;
+}
+
+.voltar {
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.scroll-arrow {
+    position: relative;
+    margin-left: 90%;
+    bottom: 40px;
+    font-size: 80px;
+    color: white; /* Cor branca */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#mostrar{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 40px;
+}
+
+.botaozinho {
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remova a borda padrão */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+.flechaPreta {
+    position: relative;
+    margin-left: 90%;
+    bottom: 100px;
+    font-size: 80px;
+    color: black; /* Cor branca */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#tituloCalculadora{
+    color: white;
+}
+
+#numberInput{
+    align-items: center;
+    margin-left: 42%;
+}
+
+#textoCalculadora{
+    color: white;
+}
+
+#result{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.tituloContagem{
+    color: black;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contagemRegressiva{
+    background-color: white;
+}
+
+#startButton{
+    margin-left: 46%;
+    size: 50px;
+    background-color: black; /* Define a cor de fundo como preto */
+    border-radius: 10px; /* Define o raio das bordas para torná-las arredondadas */
+    padding: 10px 20px; /* Aumenta o tamanho do botão ajustando o preenchimento interno */
+    color: white; /* Define a cor do texto como branca */
+    cursor: pointer;
+
+}
+
+#countdownDisplay{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flechaContagem {
+    position: relative;
+    margin-left: 90%;
+    bottom: 100px;
+    font-size: 80px;
+    color: white; /* Cor branca */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.screen-break {
+    animation: screenBreak 1s ease-in-out forwards;
+}
+
+@keyframes screenBreak {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+    100% {
+        transform: scaleX(0) scaleY(0);
+        display: none;
+    }
+}
+
