@@ -1,48 +1,48 @@
-// operações simples
 function operacoesSimples() {
-    var a,
-        b,
-        c,
-        sum,
-        sub,
-        multi,
-        div;
+    var alertOpSimple = document.getElementById("alertOP");
+    if (!document.opForms.number1.value) {
+        alertOpSimple.style.display = "block";
+    } else {
 
-    a = num1.value;
-    b = num2.value;
+        var a,
+            b,
+            sum,
+            sub,
+            multi,
+            div;
 
-    a = parseFloat(a);
-    b = parseFloat(b);
+        a = num1.value;
+        b = num2.value;
 
-    sum = a + b;
-    sub = a - b;
-    multi = a * b;
-    div = a / b;
+        a = parseFloat(a);
+        b = parseFloat(b);
 
-    document
-        .getElementById("outputSum")
-        .innerHTML = "A soma dos números é igual a: " + sum;
+        sum = a + b;
+        sub = a - b;
+        multi = a * b;
+        div = a / b;
 
-    document
-    .getElementById("outputSub")
-    .innerHTML = "A subtração dos números é igual a: " + sub;
+        document
+            .getElementById("outputSum")
+            .innerHTML = "A soma dos números é igual a: " + sum;
 
-    document
-    .getElementById("outputMulti")
-    .innerHTML = "A multiplicação dos números é igual a: " + multi;
+        document
+            .getElementById("outputSub")
+            .innerHTML = "A subtração dos números é igual a: " + sub;
 
-    document
-    .getElementById("outputDiv")
-    .innerHTML = "A divisão dos números é igual a: " + div;
+        document
+            .getElementById("outputMulti")
+            .innerHTML = "A multiplicação dos números é igual a: " + multi;
 
+        document
+            .getElementById("outputDiv")
+            .innerHTML = "A divisão dos números é igual a: " + div;
+
+        alertOpSimple.style.display = "none"
+    }
 }
 
-//
-
-
-
-//MODAIS 
-//modal operacoes aritméticas
+//MODAIS modal operacoes aritméticas
 var modalOp = document.getElementById("op");
 var btnOp = document.getElementById("opSimples");
 var spanOp = document.getElementsByClassName("close")[0];
