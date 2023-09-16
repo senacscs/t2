@@ -1,46 +1,46 @@
 function operacoesSimples() {
     var alertOpSimple = document.getElementById("alertOP");
-    if (!document.opForms.number1.value) {
+     if (!document.opForms.number1.value || !document.opForms.number2.value){
         alertOpSimple.style.display = "block";
     } else {
+        
+            var a,
+                b,
+                sum,
+                sub,
+                multi,
+                div;
 
-        var a,
-            b,
-            sum,
-            sub,
-            multi,
-            div;
+            a = num1.value;
+            b = num2.value;
 
-        a = num1.value;
-        b = num2.value;
+            a = parseFloat(a);
+            b = parseFloat(b);
 
-        a = parseFloat(a);
-        b = parseFloat(b);
+            sum = a + b;
+            sub = a - b;
+            multi = a * b;
+            div = a / b;
 
-        sum = a + b;
-        sub = a - b;
-        multi = a * b;
-        div = a / b;
+            document
+                .getElementById("outputSum")
+                .innerHTML = "A soma dos números é igual a: " + sum;
 
-        document
-            .getElementById("outputSum")
-            .innerHTML = "A soma dos números é igual a: " + sum;
+            document
+                .getElementById("outputSub")
+                .innerHTML = "A subtração dos números é igual a: " + sub;
 
-        document
-            .getElementById("outputSub")
-            .innerHTML = "A subtração dos números é igual a: " + sub;
+            document
+                .getElementById("outputMulti")
+                .innerHTML = "A multiplicação dos números é igual a: " + multi;
 
-        document
-            .getElementById("outputMulti")
-            .innerHTML = "A multiplicação dos números é igual a: " + multi;
-
-        document
-            .getElementById("outputDiv")
-            .innerHTML = "A divisão dos números é igual a: " + div;
-
-        alertOpSimple.style.display = "none"
+            document
+                .getElementById("outputDiv")
+                .innerHTML = "A divisão dos números é igual a: " + div;
+                
+                alertOpSimple.style.display = "none" 
+        }
     }
-}
 
 //MODAIS modal operacoes aritméticas
 var modalOp = document.getElementById("op");
