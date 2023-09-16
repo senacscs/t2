@@ -1,117 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>pt4js</title>
-    </head>
-    <body>
-        <header>
-            <h1>Portugol para JavaScript</h1>
-            <p>
-                Exemplos do
-                <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a>
-                convertidos para JavaScript</p>
-            <nav></nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>pt4js</title>
+</head>
+<body>
+  <header>
+    <h1>Portugol para JavaScript</h1>
+    <p> Exemplos do <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a> convertidos para JavaScript</p>
+    <nav></nav>
+  </header>
 
-        <div class="content">
-            <h2>Entradas e Saídas</h2>
-            <div class="buttons">
-                <button class="custom-btn bonito" id="olaMundoModal">
-                    <span>Olá Mundo</span></button>
-                <button class="custom-btn bonito" id="numModal">
-                    <span>Número Digitado</span></button>
-                <button class="custom-btn bonito" id="nameModal">
-                    <span>Seu Nome</span></button>
-            </div>
+      <div class="content">
+        <h2>Entradas e Saídas</h2>
+        <div class="buttons">
+          <button class="custom-btn bonito" id="olaMundoModal"><span>Olá Mundo</span></button>
+          <button class="custom-btn bonito" id="numModal"><span>Número Digitado</span></button>
+          <button class="custom-btn bonito" id="nameModal"><span>Seu Nome</span></button>
         </div>
+      </div>
 
-        <!-- Modais de Entrada e Saída -->
+      <!-- Modais de Entrada e Saída -->
 
-        <!-- Olá Mundo -->
-        <div class="modal hello" id="hello">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <button onclick="olaMundo()">Executar</button>
-                <div id="mostrar"></div>
-            </div>
+      <!-- Olá Mundo -->
+      <div class="modal hello" id="hello">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <button onclick="olaMundo()">Executar</button>
+        <div id="mostrar"> </div>
+      </div>
+      </div>
+
+      <!-- Número Digitado -->
+      <div class="modal num" id="num">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        <label for="number">Digite um número: </label>
+        <input type="number" id="numero" name="number" placeholder="Apenas números" >
+
+        <p id="outputNum"> </p>
+        <button onclick="numeroDigitado()">Executar</button>
+      </div>
+      </div>
+
+      <!-- Seu Nome -->
+      <div class="modal name" id="name">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <label for="name">Digite seu nome: </label>
+          <input type="text" name="name" id="nome" placeholder="Seu nome" >
+          <p id="outputName"> </p>
+          <button onclick="seuNome()">Executar</button>
         </div>
+      </div>
 
-        <!-- Número Digitado -->
-        <div class="modal num" id="num">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <label for="number">Digite um número:
-                </label>
-                <input type="number" id="numero" name="number" placeholder="Apenas números">
-
-                <p id="outputNum"></p>
-                <button onclick="numeroDigitado()">Executar</button>
-            </div>
+      <!-- Operações Aristméticas -->
+      <div class="content">
+        <h2>Operações Aritméticas</h2>
+        <div class="buttons">
+          <button class="custom-btn bonito" id="opSimples"><span>Operações Simples</span></button>
+          <button class="custom-btn bonito" id="prioridades"><span>Prioridades</span></button>
+          <button class="custom-btn bonito" id="divisoesInteiras"><span>Divisões Inteiras</span></button>
+          <button class="custom-btn bonito" id="potenciaRaiz"><span>Potência e Raiz</span></button>
         </div>
+      </div>
 
-        <!-- Seu Nome -->
-        <div class="modal name" id="name">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <label for="name">Digite seu nome:
-                </label>
-                <input type="text" name="name" id="nome" placeholder="Seu nome">
-                <p id="outputName"></p>
-                <button onclick="seuNome()">Executar</button>
+      <!-- Modais Operações Aritméticas -->
+      <div class="modal operacoesSimples" id="op">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <div class="center">
+            <h3>Operações Aritméticas</h3>
+            <form name="opForms">
+            <div class="inputbox">
+              <label for="number1">Digite o primeiro número: </label>
+              <input type="number" id="num1" name="number1" placeholder="apenas números" required="required">
             </div>
-        </div>
-
-        <!-- Operações Aristméticas -->
-        <div class="content">
-            <h2>Operações Aritméticas</h2>
-            <div class="buttons">
-                <button class="custom-btn bonito" id="opSimples">
-                    <span>Operações Simples</span></button>
-                <button class="custom-btn bonito" id="prioridades">
-                    <span>Prioridades</span></button>
-                <button class="custom-btn bonito" id="divisoesInteiras">
-                    <span>Divisões Inteiras</span></button>
-                <button class="custom-btn bonito" id="potenciaRaiz">
-                    <span>Potência e Raiz</span></button>
+            <div class="inputbox">
+              <label for="number2">Digite o segundo número: </label>
+              <input type="number" id="num2" name="number2" placeholder="apenas números">
             </div>
+          </div>
+        <div class="outputresults">
+            <p id="outputSum"> </p>
+            <p id="outputSub"> </p>
+            <p id="outputMulti"> </p>
+            <p id="outputDiv"> </p>
+          </div>
+        <p id="alertOP">É necessário que dois valores sejam inseridos nos campos acima.</p>
+          
+        </form>
+          <button onclick="operacoesSimples()">Executar</button>
+        
         </div>
+      </div>
 
-        <!-- Modais Operações Aritméticas -->
-        <div class="modal operacoesSimples" id="op">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div center="center">
-                    <h3>Operações Aritméticas</h3>
-                    <form name="opForms">
-                        <div class="inputbox">
-                            <label for="number1">Digite o primeiro número:
-                            </label>
-                            <input type="number" id="num1" name="number1" placeholder="apenas números">
-                        </div>
-                        <div class="inputbox">
-                            <label for="number2">Digite o segundo número:
-                            </label>
-                            <input type="number" id="num2" name="number2" placeholder="apenas números">
-                        </div>
-                    </div>
-                    <div class="outputresults">
-                        <p id="outputSum"></p>
-                        <p id="outputSub"></p>
-                        <p id="outputMulti"></p>
-                        <p id="outputDiv"></p>
-                    </div>
-                    <p id="alertOP">É necessário que dois valores sejam inseridos nos campos acima.</p>
-
-                </form>
-                <button onclick="operacoesSimples()">Executar</button>
-
-            </div>
-        </div>
-
-        <script src="./assets/js/scriptEntradasSaidas.js"></script>
-        <script src="./assets/js/scriptOperacoesAritmeticas.js"></script>
-    </body>
+    
+    <script src="./assets/js/scriptModal.js"></script>
+    <script src="./assets/js/scriptEntradasSaidas.js"></script>
+    <script src="./assets/js/scriptOperacoesAritmeticas.js"></script>
+</body>
 </html>
