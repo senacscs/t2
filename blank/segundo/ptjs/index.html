@@ -78,14 +78,14 @@
                     <span>Operações Simples</span></button>
                 <button class="custom-btn bonito" id="prioridades">
                     <span>Prioridades</span></button>
-                <button class="custom-btn bonito" id="divisoesInteiras">
+                <button class="custom-btn bonito" id="divisoesInteiras" onclick="alert('Ainda em desenvolvimento...')">
                     <span>Divisões Inteiras</span></button>
-                <button class="custom-btn bonito" id="potenciaRaiz">
+                <button class="custom-btn bonito" id="potenciaRaiz" onclick="alert('Ainda em desenvolvimento...')">
                     <span>Potência e Raiz</span></button>
             </div>
         </div>
 
-        <!-- Modais Operações Aritméticas -->
+        <!-- Operações Simples -->
         <div class="modal operacoesSimples" id="op">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -115,10 +115,69 @@
                             <p id="outputMulti"></p>
                             <p id="outputDiv"></p>
                         </div>
-                        <p id="alertOP">É necessário que dois valores sejam inseridos nos campos acima.</p>
+                        <p class="alert">É necessário que valores sejam inseridos nos campos acima.</p>
 
                     </form>
                     <button onclick="operacoesSimples()">Executar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prioridades -->
+        <div class="modal prioridades" id="prior">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <div class="center">
+                    <div class="center">
+                        <form name="priorForms">
+                            <div class="inputbox">
+                                <label for="priornum1">Digite o primeiro número:
+                                </label>
+                                <input
+                                    type="number"
+                                    id="priorNum1"
+                                    name="priornum1"
+                                    placeholder="apenas números"
+                                    required="required">
+                            </div>
+                            <div class="inputbox">
+                                <label for="priornum2">Digite o segundo número:
+                                </label>
+                                <input
+                                    type="number"
+                                    id="priorNum2"
+                                    name="priornum2"
+                                    placeholder="apenas números">
+                            </div>
+
+                            <div class="inputbox">
+                                <label for="priornum3">Digite o terceiro número:
+                                </label>
+                                <input
+                                    type="number"
+                                    id="priorNum3"
+                                    name="priornum3"
+                                    placeholder="apenas números">
+                            </div>
+
+                            <div class="inputbox">
+                                <label for="priornum4">Digite o quarto número:
+                                </label>
+                                <input
+                                    type="number"
+                                    id="priorNum4"
+                                    name="priornum4"
+                                    placeholder="apenas números">
+                            </div>
+                        </div>
+                        <p class="alert">É necessário que valores sejam inseridos nos campos acima.</p>
+                        <p class="outputPrior"> </p>
+                        <p class="outputPrior"> </p>
+                        <p class="outputPrior"> </p>
+                        <p class="outputPrior"> </p>
+                    </form>
+                    <button onclick="prioridades()">Executar</button>
                 </div>
             </div>
         </div>

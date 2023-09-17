@@ -10,7 +10,7 @@ function numeroDigitado() {
 
     document
         .getElementById("outputNum")
-        .innerHTML = "O número digitado foi " + numero.value;
+        .innerHTML = "O número digitado foi " + numero.value
 }
 
 //seu nome
