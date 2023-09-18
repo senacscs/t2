@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #606C38;
+    background-color: #1d4584;
     user-select: none;
 }
 
@@ -27,7 +27,7 @@ header {
 
 h1 {
     margin: 0 auto;
-    color: #FEFAE0;
+    color: #f19200;
     justify-self: center;
     align-self: center;
     font-size: clamp(2rem, 1rem + 10vh, 4rem);
@@ -38,11 +38,11 @@ h1 {
     margin: 0 auto;
     max-width: 60rem;
     min-height: 70rem;
-    background: #FEFAE0;
+    background: #f7f7f7;
 }
 
 h2 {
-    color: #283618;
+    color: #f19200;
     text-align: center;
     padding: 1em;
     font-size: clamp(1rem, 0.2rem + 10vh, 3rem);
@@ -63,11 +63,11 @@ p {
 span {
     font-size: 23px;
     font-weight: 600;
+    color:#1d4584;
 }
 
 hr {
     margin: 2rem 5rem;
-
 }
 
 img {
@@ -82,8 +82,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer > p {
-    font-size: 15px;
 }
