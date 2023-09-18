@@ -113,20 +113,7 @@ nav > a {
 			a:hover{
 				color: #5EB1BF;
 			}
-	footer{
-		width: 25%;
-		color: #fff;
-		text-align: center;
-		margin: 0 auto;
-	}
-		footer a {
-			color: #EEF9FC;
-		}
-		footer a:hover{
-			color: #5EB1BF;
-			font-style: italic;
-		}
-
+	
 @media only screen and (max-width: 667px){
 section {
 	max-width: 25em;
