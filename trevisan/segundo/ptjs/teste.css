@@ -1,17 +1,49 @@
-body {
-    background-color: rgb(174, 68, 174);
-    text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(167, 41, 167);
 }
+
+ 
+
+body {
+    background-color: rgb(220, 61, 220) (102, 102, 102);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ 
 
 h1 {
     color: black;
 }
 
-label, input, div {
-    color: #000000;
+ 
+
+label, div {
+    color: black;
     font-size: large;
     padding: 10px;
+    margin: 5px;
 }
+
+ 
+
+input{
+  padding: 10px;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+ 
 
 button{
     background-color: rgb(0, 0, 0);
@@ -22,17 +54,25 @@ button{
     margin: 15px auto;
     display: block;
 
+ 
+
 }
+
+ 
 
 details {
     padding: 10px;
   }
+
+ 
 
   summary {
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
   }
+
+ 
 
   code {
     font-family: 'Courier New', monospace;
@@ -42,13 +82,18 @@ details {
     border-radius: 5px;
     display: block;
   }
-  
+
 #mostrar {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 238, 0);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }

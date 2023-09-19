@@ -27,14 +27,63 @@
         <label>Digite um número: </label><input type="text" id="number" placeholder="Só Números"><br>
         <button onclick="numeroDigitado()">Executar</button>
     </details>
+
     <details close>
         <summary>Nome Digitado</summary>
         <label>Digite seu nome: </label><input type="nomeDigitado()" id="nome" placeholder="Só Letras"><br>
         <button onclick="nomeDigitado()">Executar</button>
     </details>          
 
-    <div id="mostrar"></div>
+    <details close>
+        <summary>Operações simples</summary>
+        <label>Digite o primeiro número: </label>
+        <input type="number" id="primeiroNum" placeholder="Só números" /><br />
+        
+              <label>Selecione a operação: </label>
+        <select id="select" name="opcao">
+        <option value="opcao1">+</option>
+        <option value="opcao2" selected>-</option>
+        <option value="opcao3">/</option>
+        <option value="opcao4">*</option></select
+        ><br />
+        
+              <label>Digite o segundo número: </label>
+        <input type="number" id="segundoNum" placeholder="Só números" /><br />
+        
+              <button onclick="calcular()">Executar</button>
+        </details>
+            
+                <details close>
+            <summary>Divisão inteira</summary>
+            <label>Digite um valor: </label>
+            <input type="number" id="valor" placeholder="Só números" /><br />
+            <button onclick="div()">Executar</button>
+            </details>
+            
+             
+            
+                <details close>
+            <summary>Potência e raiz</summary>
+            <label>Digite um valor: </label>
+            <input type="number" id="num" placeholder="Só números" /><br />
+            <button onclick="pot()">Executar</button>
+            </details>
 
+            <details close>
+                <summary>Idade</summary>
+                <label>Informe sua idade: </label>
+                <input type="num" id="idadeUser" placeholder="Só números" /><br />
+                <button onclick="idade()">Executar</button>
+                </details>
+
+                <details close>
+                    <summary>Número iguais</summary>
+                    <label>Informe um número de 0 a 6: </label>
+                    <input type="num" id="numIgual" placeholder="Só números" /><br />
+                    <button onclick="num()">Executar</button>
+                    </details>
+       
+    <div id="mostrar"></div>
      <script src="script.js"></script>
 </body>
 </html>
