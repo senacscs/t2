@@ -115,6 +115,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//add um número
 
+document.getElementById("botao").addEventListener("click", function() {
+    const numeroInput = document.getElementById("numeroInput");
+    const resultado = document.getElementById("resultado");
+    
+    const numero = parseInt(numeroInput.value);
+    
+    if (!isNaN(numero)) {
+        resultado.innerText = "O número digitado foi: " + numero;
+    } else {
+        resultado.innerText = "Por favor, digite um número válido.";
+    }
+});
+
+
+//rolagem seta 4
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollButton = document.getElementById("flechaNumeroDigitado");
+
+    scrollButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        var contentSection = document.getElementById("numeroDigitado"); // Substitua "content-section" pelo ID da seção de conteúdo desejada.
+        var contentSectionPosition = contentSection.offsetTop;
+        
+        window.scrollTo({
+            top: contentSectionPosition,
+            behavior: "smooth" // Animação suave
+        });
+    });
+});
+
+//seu nome
+
+document.getElementById("botaoSeuNome").addEventListener("click", function() {
+    const nomeInput = document.getElementById("nomeInput");
+    const resultado = document.getElementById("resultadoseunome");
+    
+    const nome = nomeInput.value;
+    
+    if (nome.trim() !== "") {
+        resultado.innerText = "Seu nome é: " + nome;
+    } else {
+        resultado.innerText = "Por favor, digite seu nome.";
+    }
+});
+
+//rolagem seta 5
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollButton = document.getElementById("flechaSeuNome");
+
+    scrollButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        var contentSection = document.getElementById("seuNome"); // Substitua "content-section" pelo ID da seção de conteúdo desejada.
+        var contentSectionPosition = contentSection.offsetTop;
+        
+        window.scrollTo({
+            top: contentSectionPosition,
+            behavior: "smooth" // Animação suave
+        });
+    });
+});
 
 
