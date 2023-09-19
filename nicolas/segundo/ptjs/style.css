@@ -1,0 +1,28 @@
+html {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(31, 0, 0);
+}
+details {
+    margin: 20px;
+}
+label {
+    margin: 20px;
+    color: white;
+}
+
+button {
+    margin: 20px;
+}
+
+summary {
+    margin: 20px;
+    color: white;
+}
+h1 {
+    color: white;
+}
+div {
+    color: white;
+}
