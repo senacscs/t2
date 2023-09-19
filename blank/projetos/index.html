@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Indique um Livro</title>
+</head>
+<body>
+    <div id="container">
+        <h1>&bull; Indique um LIVRO &bull;</h1>
+        <div class="underline"></div>
+        <div class="icon_wrapper">
+            <!--icon de livro-->
+        </div>
+
+        <form action="" method="post" id="indicateAbookForm">
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Meu email" name="email" id="email-input" required>
+              </div>
+              
+            <div class="title">
+                <label for="title"></label>
+                <input type="text" placeholder="Título" name="title" id="title-input" required>
+            </div>
+
+            <div class="author">
+                <label for="author"></label>
+                <input type="text" placeholder="Nome do autor" name="author" id="author-input" required>
+            </div>
+
+            <div class="genre">
+                <label for="genre"></label>
+                <select placeholder="Gênero do livro" name="genre" id="genre-input" required>
+                    <option value="genre" disabled hidden selected>Gênero do livro</option>
+                    <option value="fiction">Ficção</option>
+                    <option value="horror">Terror</option>
+                    <option value="romance">Romance</option>
+                    <option value="fantasy">Fantasia</option>
+                </select>
+            </div>
+
+            <div class="review">
+                <label for="review"></label>
+                <textarea placeholder="Deixe aqui sua opinião sobre o livro." name="review" id="review-input" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Indique" id="form-button"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
