@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(90deg,rgb(0, 110, 255), blue, rgb(140, 0, 255));
+    text-align: center;
+}
+
+details{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.titulo{
+    color:#fff ;
+    font-size: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p{
+    color: #fff;
+}
+
+summary{
+    color: #fff;
+}
+
+.conteudo{
+    background-color: rgba(37, 68, 134,.5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label{
+    color:#fff;
+}
+
+div{
+    color: #ff0000;
+    margin-top: 10px;
+}
