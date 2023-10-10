@@ -1,0 +1,16 @@
+#main-heading {
+text-align: center;
+}
+#main-list, #courses-list {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+#courses-list ul {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+body {
+background-color: lightblue;
+}
