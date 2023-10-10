@@ -1,0 +1,514 @@
+/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: #ff13b6;
+    color: #fff;
+}
+
+/* navbar */
+ul {
+    list-style: none;
+}
+
+nav {
+    background: #fff;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #292929;
+    font-size: 17px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #292929;
+    font-size: 17px;
+}
+
+nav a.active {
+    font-weight: 700;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #292929;
+    transition: .2s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #010101;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* main */
+#inicio {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 8%;
+}
+
+#home h1,
+p {
+    color: #010101;
+}
+
+#home h1 {
+    font-size: 90px;
+    font-weight: 900;
+    margin-top: 20%;
+}
+
+#home p {
+    margin-top: 10px;
+    width: 470px;
+    font-size: 15px;
+}
+
+#home button {
+    background-color: #010101;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    width: 150px;
+    margin-top: 25px;
+}
+
+#home-img {
+    background: rgb(255, 19, 182);
+    background: radial-gradient(circle, rgba(255, 19, 182, 1) 0%, rgba(93, 109, 255, 1) 100%);
+    width: 100%;
+    height: 500px;
+    float: left;
+}
+
+/* sobre */
+#sobre {
+    height: 600px;
+}
+
+#sobre div {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+}
+
+#sobre img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#sobre h1 {
+    color: #010101;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#sobre p {
+    padding: 10px 30px 30px 30px;
+    line-height: 30px;
+}
+
+/* glossario */
+#glossario {
+    height: 600px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#glossario div.cards {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    margin: 10px;
+}
+
+#glossario h1 {
+    color: #010101;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#glossario p {
+    padding: 10px 30px 30px 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    font-size: 15px;
+}
+
+/* direitos */
+#direitos .enfeite-div {
+    background: rgb(107, 17, 237);
+    background: radial-gradient(circle, rgba(107, 17, 237, 1) 0%, rgba(255, 218, 25, 1) 100%);
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    height: 250px;
+    margin-top: 40px;
+}
+
+#direitos .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    height: 200px;
+}
+
+#direitos h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#direitos p {
+    margin-left: 20px;
+    line-height: 30px;
+    max-width: 320px;
+    font-size: 15px;
+}
+
+#direitos h2 {
+    margin-bottom: 40px;
+}
+
+#direitos .direito p {
+    margin-left: 0;
+}
+
+#direitos .direito .btn-direito {
+    background-color: #010101;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 40px auto;
+}
+
+#direitos .direito .btn-direito i {
+    margin-right: 10px;
+}
+
+/* card */
+.card-holder a {
+    text-decoration: none;
+}
+
+div.cards {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #292929;
+    transition: 0.3s;
+}
+
+div.cards#art-definicoes {
+    background-color: #5271ff;
+}
+
+div.cards#art-trans {
+    background-color: #ff66ca;
+}
+
+div.cards#art-inclusao {
+    background-color: #5E17EB;
+}
+
+div.cards#art-pronomes {
+    background-color: #ffd62f;
+}
+
+div.cards h3 {
+    font-weight: 800;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/* footer */
+footer {
+    background-color: #010101;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer section div {
+    margin: auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+footer h3,
+footer h4,
+footer a,
+footer p {
+    color: #fff;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    #inicio {
+        background: rgb(255, 19, 182);
+        background: radial-gradient(circle, rgba(255, 19, 182, 1) 0%, rgba(93, 109, 255, 1) 100%);
+    }
+
+    label.logo {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff9f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+        margin: auto;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+        margin: auto;
+        margin-top: 30%;
+        height: 700px;
+    }
+
+    #home h1,
+    #home p,
+    #home btn {
+        text-align: center;
+        color: #fff;
+    }
+
+    #home h1 {
+        font-size: 60px;
+    }
+
+    #home p {
+        font-size: 20px;
+        margin-top: 40px;
+        max-width: 200px;
+    }
+
+    #home button {
+        margin: 70px auto;
+        width: 100%;
+        max-width: 240px;
+        height: 50px;
+        font-size: 20px;
+        background-color: #fff;
+        color: #292929;
+    }
+
+    #home-img {
+        display: none;
+    }
+
+    #sobre {
+        height: auto;
+        max-width: 300px;
+    }
+
+    #sobre img {
+        padding-top: 90px;
+        width: 200px;
+    }
+
+    #sobre div {
+        max-width: 100%;
+    }
+
+    #sobre p {
+        max-width: 100%;
+        padding: 0%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #glossario {
+        max-width: 300px;
+        height: 800px;
+    }
+
+    #glossario h1 {
+        padding-top: 100px;
+    }
+
+    #glossario div.cards {
+        margin: 10px auto;
+    }
+
+    #glossario .card-holder {
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    #glossario p {
+        max-width: 200px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        height: 600px;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+        text-align: left;
+        padding-bottom: 40px;
+        max-width: 300px;
+    }
+
+    footer h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    footer h4 {
+        color: #fff;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    footer p {
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    footer a {
+        color: #fff;
+    }
+}
