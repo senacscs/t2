@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "para";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/para_supreme_light_fine-webfont.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/para_supreme_light_fine-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "begum";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/begum-regular-webfont.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/begum-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tt-commons";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/ttcommons-bold-webfont.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/ttcommons-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #112e08;
+  margin: 0;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+#loader .grey, #loader .white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#loader .grey {
+  z-index: 2;
+  background-color: #112e08;
+}
+#loader .white {
+  z-index: 1;
+  background-color: white;
+}
+#loader .text-wrap {
+  overflow: hidden;
+}
+#loader .text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "tt-commons";
+  color: white;
+  font-size: 70px;
+  z-index: 3;
+}
+#loader .text-wrap span {
+  display: inline-block;
+}
+
