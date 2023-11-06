@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini calculadora</title>
+</head>
+<body>
+<header>
+<h1>Mini calculadora</h1>
+</header>
+<hr>
+<main>
+<p aria-hidden="true">Realizar operação</p>
+<form id="main-form" aria-label="Realizar operação">
+<label for="n1">1º número</label>
+<input required type="number" id="n1"/>
+<br>
+<label for="n2">2º número</label>
+<input required type="number" id="n2"/>
+<br>
+<label for="op">Operação a realizar:</label>
+<select required id="op">
+<option value="+" selected>Soma</option>
+<option value="-">Subtração</option>
+<option value="*">Multiplicação</option>
+<option value="/">Divisão</option>
+<option value="%">Resto da divisão</option>
+</select>
+<br>
+<button type="submit" id="submit-button">Calcular</button>
+</form>
+</main>
+<script>
+let form=document.getElementById("main-form")
+form.onsubmit=function() {
+let n1=parseInt(document.getElementById("n1").value)
+let n2=parseInt(document.getElementById("n2").value)
+let op=document.getElementById("op").value
+let result;
+if(op==="+") {
+result=n1+n2
+}
+else if(op==="-") {
+result=n1-n2
+}
+else if(op==="*") {
+result=n1*n2
+}
+else if(op==="/") {
+result=n1/n2
+}
+else if(op==="%") {
+result=n1%n2
+}
+else {
+alert("Operação inválida!")
+return
+}
+alert(`O resultado do cálculo é ${result}`)
+}
+</script>
+</body>
+</html>

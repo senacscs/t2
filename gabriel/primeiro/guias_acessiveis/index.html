@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guias acessíveis</title>
+<style>
+[role="tab"] {
+display: block;
+}
+</style>
+</head>
+<body>
+<div role="tablist" title="Selecione uma opção">
+<button data-tab="0">Informações básicas</button>
+<button data-tab="1">perfil</button>
+<button data-tab="2">mais informações</button>
+</div>
+<div title="Informações básicas" data-panel="0">
+<p>Painel informações básicas</p>
+</div>
+<div title="Perfil" data-panel="1">
+<p>Painel com perfil</p>
+</div>
+<div title="Mais informações" data-panel="2">
+<p>Painel com mais informações</p>
+</div>
+<script>
+let tablists=document.querySelectorAll('[role="tablist"]')
+let panels=document.querySelectorAll('[data-panel]')
+panels.forEach(function(panel) {
+panel.setAttribute("role", "tabpanel")
+panel.style.display="none"
+panel.setAttribute("tabindex", "0")
+})
+tablists.forEach(function(tablist) {
+tablist.nextElementSibling.style.display="block"
+let tabs=tablist.querySelectorAll('[data-tab]')
+tabs.forEach(function(tab){
+tab.setAttribute("role", "tab")
+tab.setAttribute("aria-selected", "false")
+tab.setAttribute("tabindex", "-1")
+tab.addEventListener("click", function(){
+tabs.forEach(function(otherTab) {
+otherTab.setAttribute("aria-selected", "false")
+otherTab.setAttribute("tabindex", "-1")
+})
+this.setAttribute("aria-selected", "true")
+this.setAttribute("tabindex", "0")
+panels.forEach(function(panel){
+panel.style.display="none";
+let tabNumber=this.getAttribute("data-tab");
+let panelNumber=panel.getAttribute("data-panel");
+if(tabNumber===panelNumber){
+panel.style.display="block"
+panel.focus()
+}
+}.bind(this))
+})
+tab.addEventListener("keydown", function(e) {
+switch(e.key) {
+case "ArrowRight":
+(this.nextElementSibling)?this.nextElementSibling.focus():tablist.firstElementChild.focus()
+break
+case "ArrowLeft":
+(this.previousElementSibling)?this.previousElementSibling.focus():tablist.lastElementChild.focus()
+break
+case "Home":
+tablist.firstElementChild.focus()
+break
+case "End":
+tablist.lastElementChild.focus()
+}
+})
+})
+tablist.firstElementChild.setAttribute("aria-selected", "true")
+tablist.firstElementChild.setAttribute("tabindex", "0")
+})
+</script>
+</body>
+</html>
