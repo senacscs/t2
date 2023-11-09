@@ -6,7 +6,7 @@ elementsWithKey.forEach((element) => {
 	`;
 });
 document.addEventListener("keydown", (evt) => {
-	if(evt.altKey) {
+	if(evt.altKey && evt.key!=="Alt") {
 			evt.preventDefault();
 		elementsWithKey.forEach((element) => {
 			let elementKey=element.getAttribute("data-shortcut-key");
