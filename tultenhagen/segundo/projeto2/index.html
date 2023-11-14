@@ -1,79 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Projeto de pesquisa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<body class="loading">
+<html lang="en">
 
-	<!-- add karla font -->
+<head>
+	<meta charset="UTF-8">
+	<title>UPCYCLING
+	</title>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div id="loader">
+		<div class="grey"></div>
+		<div class="white"></div>
+		<div class="text-wrap">
+			<div class="text">ETM<span>.</span></div>
+		</div>
+	</div>
 
 	<header>
-		<div class="inner">
-			<div class="logo"><img src="images/URP.png"></div>
-			<div class="burger"></div>
-			<nav>
-				<a class="active" href="#">Slides</a>
-				<a href="body/index.html">Projeto</a>
-			</nav>
-			<a href="#" class="donate-link">Doar</a>
-		</div>
 	</header>
-
-	<main>
-		<div id="slider">
-
-			<div class="slider-inner">
-				<div id="slider-content">
-					<div class="meta">Poluição</div>
-					<h2 id="slide-title">Amur <br>Leopard</h2>
-					<span data-slide-title="0">Amur <br>Leopard</span>
-					<span data-slide-title="1">Asiatic <br>Lion</span>
-					<span data-slide-title="2">Siberian <br>Tiger</span>
-					<span data-slide-title="3">Brown <br>Bear</span>
-					<div class="meta">Ambiental</div>
-					<div id="slide-status">Animais prejudicados pelo plástico</div>
-					<span data-slide-status="0">Critically Endangered</span>
-					<span data-slide-status="1">Endangered</span>
-					<span data-slide-status="2">Animais prejudicados pelo plástico</span>
-					<span data-slide-status="3">Least Concern</span>
-				</div>
-			</div>
-
-			<img src="images/pássaro.png" />
-			<img class="imgLixao" src="images/lixão.png" />
-			<img src="images/foca.png" />
-			<img src="images/ods.png" />
-
-			<div id="pagination">
-				<button class="active" data-slide="0"></button>
-				<button data-slide="1"></button>
-				<button data-slide="2"></button>
-				<button data-slide="3"></button>
-			</div>
-
+	<canvas id="slider-canvas"></canvas>
+	<article>
+		<div class="slide-count">
+			<span class="total"></span>
 		</div>
-	</main>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-40525870-5');
-</script>
+		<h1 class="slide-title">
+			<span class="code">
+				<span class="current"></span>
+			</span>
+		</h1>
 
-	</body>
-<!-- partial -->
-  <script src='scripts/script1.js'></script>
-<script src='scripts/script2.js'></script>
-<script src='scripts/script3.js'></script>
-<script  src="scripts/script.js"></script>
+
+		<div class="dots"></div>
+		<div class="slide-nav">
+			<button data-direction="prev" disabled><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 32.023201">
+				</svg></button>
+			<button data-direction="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 32.023201">
+				</svg></button>
+		</div>
+	</article>
+
+
+	</section>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js'></script>
+	<script src="script/script.js"></script>
 
 </body>
+
 </html>

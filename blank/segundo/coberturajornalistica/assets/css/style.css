@@ -76,6 +76,10 @@ img {
     padding: 0 1rem;
 }
 
+a {
+    color: #f19200;
+}
+
 footer {
     color: #f7f7f7;
     margin: 0 auto;

@@ -1,0 +1,35 @@
+body{
+
+  font-family: 'Times new roman', sans-serif;
+
+font-family: 'Barlow', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Noto Sans TC', sans-serif;
+
+text-align: center;
+
+background-color: beige;
+
+}
+
+a{
+
+  text-decoration-color: rgb(255, 255, 255);
+
+  color: black;
+
+}
+
+summary{
+
+  cursor: pointer;
+
+}
+
+button{
+
+  cursor: pointer;
+
+}
