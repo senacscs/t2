@@ -15,7 +15,6 @@ html, body, * {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-
   }
   
   .forms {
@@ -60,4 +59,12 @@ html, body, * {
   
   #output {
     padding-top: 15px;
+  }
+  @media (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+    .content{
+      width: 100%;
+    }
   }
