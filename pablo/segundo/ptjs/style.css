@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(184, 242, 250);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(8, 8, 6);
+    font-family:fantasy;
+}
+
+label, input, div {
+    color: #000000;
+    font-size: large;
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(26, 49, 182);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 25px;
+}
+
+details {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  summary {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+#mostrar {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    background-color: #000000;
+    color: greenyellow;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+  }
+  
