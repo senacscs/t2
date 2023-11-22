@@ -1,0 +1,126 @@
+ 
+    body{
+        background-color: #D5D5D5;
+        font-family: system-ui;
+    }
+    .container{
+        background-color: #E9E7EA;
+        width:1000px;
+        max-width: 100%;
+        margin:auto;
+        padding:50px;
+        box-shadow: 0 10px 50px #858585;
+        display: grid;
+       grid-template-columns: 35% 60%;
+       column-gap: 5%; 
+       row-gap: 30px;
+    }
+    
+    .avatar img{
+        width:200px;
+        height:200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .avatar{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .name{
+        padding-left: 30px;
+        border-left:1px solid #000;
+    }
+    .name h1{
+        font-weight: 300;
+        font-size: xxx-large;
+        margin:0px 0 5px ;
+    }
+    .name .specialize{
+        margin:0;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .name .contact{
+        padding:0;
+        list-style: none;
+    }
+    .name .contact span{
+        display: inline-block;
+        background-color: #000;
+        width:20px;
+        height:20px;
+        color:#fff;
+        text-align: center;
+        border-radius: 50%;
+        font-size: small;
+        margin-right: 20px;
+    }
+    .name .contact li{
+        padding:5px 0;
+        transform: translate(-40px);
+        background-color: #E9E7EA;
+    }
+    .info ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        line-height: 30px;
+    } 
+    
+    h2{
+        padding:0;
+        margin: 0 0 20px 0;
+    }
+    .intro{
+        padding-left: 30px;
+        border-left: 1px solid #000;
+        text-align: justify;
+    }
+    .experience{
+        text-align: right;
+    }
+    .experience h4{
+        margin:20px 0 10px;
+    }
+    .skills{
+        margin-top:  50px;
+    }
+    .experience ul{
+        padding:0;
+        margin: 0;
+    list-style: none;
+    }
+    .experience li{
+        padding:10px 0;
+    }
+    .project{
+        padding-left: 30px;
+        text-align: justify;
+        border-left: 1px solid #000;
+    }
+    .project h4{
+        margin:20px 0 10px;
+    }
+    .project .web{
+        color: #0c7373;
+        padding:10px 0;
+    }
+    .project .location{
+        font-weight: 500;
+        padding-bottom:10px;
+    }
+    .project .item{
+        position: relative;
+    }
+    .project .item::before{
+        position: absolute;
+        width:13px;
+        height: 13px;
+        background-color: #000;
+        content: '';
+        border-radius: 50%;
+        left: -37px;
+    }
+  
