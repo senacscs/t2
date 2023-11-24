@@ -1,5 +1,6 @@
 @charset "UTF-8"
 
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -74,3 +75,4 @@ nav a {
     text-align: center;
     padding: 10px 0;
 }
+
