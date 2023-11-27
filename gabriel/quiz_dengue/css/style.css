@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* título */
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 50px;
+	animation: colors infinite 5s 5s;
+	text-shadow: #aeaeae 1px 0 5px;
+}
+
+/* introducao */
+.introduction {
+	max-width: 560px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	margin: auto;
+	line-height: 150%;
+}
+
+/* layout da main */
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+/* pergunta */
+.question {
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+/* btn proxima pergunta */
+#next-question-btn {
+	color: white;
+	background-color: black;
+	border: none;
+	padding: 20px;
+	border-radius: 20px;
+	max-width: 300px;
+	width: 100%;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#next-question-btn:hover {
+	cursor: pointer;
+	animation: colors-bg 2s infinite;
+	transition: all .5s;
+}
+
+/* alternativas */
+.answer-btn {
+	background-color: blue;
+	min-height: 50px;
+	min-width: 250px;
+	max-width: 400px;
+	width: 100%;
+	border: none;
+	color: white;
+	margin: 10px auto;
+	font-size: 25px;
+	padding: 10px auto;
+}
+
+.answer-btn:hover {
+	cursor: pointer;
+	animation: colors-bg 2s infinite;
+}
+
+
+/* mensagem de acerto ou erro */
+.correct-answer {
+	font-weight: 700;
+}
+
+#question-message {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+
+/* botao de proximo nivel */
+.continue-btn {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 15px;
+	margin: auto;
+	margin-bottom: 20px;
+	transition: all .2s;
+}
+
+.continue-btn:hover {
+	cursor: pointer;
+	background-color: #00cc00;
+	border-radius: 20px;
+}
+
+#level-dialog {
+	border: solid 2px #00cc00;
+	transition: all .5s;
+	margin-top: 30px;
+}
+
+ul.answers-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.dialog-heading {
+	text-align: center;
+}
+
+.dialog-actions {
+	text-align: right;
+}
+
+.dialog-actions button,
+.dialog-actions a {
+	display: block;
+}
+
+#play-again-btn {
+	appearance: button;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 15px;
+	margin: 20px auto;
+	transition: all .3s;
+	max-width: 150px;
+	text-decoration: none;
+}
+
+#play-again-btn:hover {
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#end-game-btn {
+	appearance: button;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 15px;
+	margin: 20px auto;
+	transition: all .3s;
+	max-width: 150px;
+	text-decoration: none;
+}
+
+#end-game-btn:hover {
+	background-color: white;
+	color: black;
+	text-decoration: underline;	
+	cursor: pointer;
+}
+
+/* animations */
+@keyframes colors {
+	0%   {color: #00cc00;}
+	50%  {color: blue;}
+	100% {color: #00cc00;}
+}
+
+@keyframes colors-bg {
+	0%   {background-color: blue;}
+	50%  {background-color: #00cc00;}
+	100% {background-color: blue;}
+}
+/* Ocultar apenas visualmente */
+.visually-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 1px;
+	margin: -1px;
+}

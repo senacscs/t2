@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Dengue Quiz</title>
+	<link rel="shortcut icon" href="img/dengue.png" type="image/x-icon">
+	<!-- <a href="https://www.flaticon.com/br/icones-gratis/dengue" title="dengue ícones">Dengue ícones criados por Freepik - Flaticon</a> -->
+</head>
+
+<body>
+	<header>
+		<h1 id="title">Quiz sobre a dengue</h1>
+	</header>
+	<main>
+		<p class="introduction">Boas-vindas ao quiz sobre a dengue! Neste jogo, você deverá responder a diversas
+			perguntas, que vão ficando mais difíceis ao longo do jogo. Algumas serão de verdadeiro ou falso, enquanto
+			outras serão com diversas alternativas, dificultando ainda mais a sua jornada. Quantos pontos você
+			conseguirá fazer?</p>
+		<div id="game">
+			<div class="question"></div>
+			<div id="question-message" tabindex="-1"></div>
+			<div id="next-question-container">
+				<button id="next-question-btn" class="visually-hidden" hidden>
+					Próxima pergunta
+				</button>
+			</div>
+			<dialog id="level-dialog" aria-labelledby="level-h2" aria-modal="true" hidden>
+				<h2 class="dialog-heading" id="level-h2">
+					Você passou para o nível
+					<span id="current-level"></span>
+				</h2>
+				<div class="dialog-actions">
+					<button class="continue-btn" id="level-continue">
+						Continuar
+					</button>
+				</div>
+			</dialog>
+			<dialog id="end-game-dialog" aria-labelledby="end-game-h2" aria-describedby="end-game-content"
+				aria-modal="true" hidden>
+				<h2 class="dialog-heading" id="end-game-h2">Parabéns! Você chegou ao fim do jogo</h2>
+				<div class="dialog-content" id="end-game-content">
+					<p>Você acabou de terminar o jogo do quiz sobre a dengue! Sua pontuação final foi
+						<span id="final-score"></span>
+						pontos.
+					</p>
+					<p>Quer estudar mais? Abaixo, temos uma lista de materiais para você!</p>
+					<ul id="materials-list">
+						<li class="material"><a class="material-link" href="https://bvsms.saude.gov.br/dengue-16/" target="_blank">Página da dengue na Biblioteca Virtual em Saúde do governo do Mato Grosso do Sul (abre em uma nova guia)</a></li>
+						<li class="material"><a class="material-link" href="https://www.dengue.pr.gov.br/Pagina/Como-combater" target="_blank">Como combater a dengue (por projeto Paraná contra a Dengue, do governo do Paraná) (abre em uma nova guia)</a></li>
+						<li class="material"><a class="material-link" href="https://mundoeducacao.uol.com.br/doencas/dengue.htm" target="_blank">Dengue: transmissão, tratamento, prevenção (por Mundo Educação) (abre em uma nova guia)</a></li>
+					</ul>
+				</div>
+				<div class="dialog-actions">
+					<a role="button" id="play-again-btn" href="index.html">
+						Jogar novamente
+					</a>
+					<button id="end-game-btn">
+						Sair do jogo
+					</button>
+				</div>
+			</dialog>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
