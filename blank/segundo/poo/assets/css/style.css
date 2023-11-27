@@ -4,18 +4,17 @@ html, body, * {
     font-family: 'Roboto', sans-serif;
   }
   
-  .container {
+  /* .container {
     width: 100%;
     height: 100vh;
     background-color: #aed6d6;
     border-radius: 5px;
-  }
+  } */
 
   .content {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-
   }
   
   .forms {
@@ -60,4 +59,10 @@ html, body, * {
   
   #output {
     padding-top: 15px;
+  }
+  @media (max-width: 576px) {
+    .content{
+      width: 100%;
+      padding: 0;
+    }
   }
