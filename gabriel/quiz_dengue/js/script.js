@@ -244,7 +244,7 @@ function hideInSteps(element) {
 	element.classList.add("visually-hidden");
 	window.setTimeout(() => {
 		element.hidden=true;
-	}, 150);
+	}, 500);
 }
 function showCompletely(element) {
 	element.hidden=false;
@@ -261,7 +261,8 @@ nextButton.addEventListener("click", (evt) => {
 		finalScore.innerHTML=score;
 		endDialog.hidden=false;
 		endDialog.setAttribute("open", "");
-		playAgainButton.focus();
+		let firstFocusableElement=endDialog.querySelector("button, a");
+		firstFocusableElement.focus();
 	}
 	else {
 		messageDiv.innerHTML="";
@@ -289,19 +290,22 @@ continueButton.addEventListener("click", (evt) => {
 endGameButton.addEventListener("click", (evt) => {
 	window.close();
 });
-let actionElements = document.querySelectorAll("dialog button, dialog a");
-let actions = Array.from(actionElements.children);
-actions.forEach((action) => {
+let dialogElements=document.querySelectorAll("dialog");
+dialogElements.forEach((dialogEl) => {
+let actionElements = dialogEl.querySelectorAll("button, a");
+let actions = Array.from(actionElements);
+actions.forEach((action, index) => {
 	action.addEventListener("keydown", (evt) => {
 		if(evt.key === "Tab" && !evt.shiftKey) {
 			evt.preventDefault();
-			let elementToFocus = action.nextElementSibling ? action.nextElementSibling : actions[0];
+			let elementToFocus = actions.length > index+1 ? actions[index+1] : actions[0];
 			elementToFocus.focus();
 		}
 		else if(evt.key === "Tab" && evt.shiftKey) {
 			evt.preventDefault();
-			let elementToFocus = action.previousElementSibling ? action.previousElementSibling : actions[actions.length-1];
+			let elementToFocus = index > 0 ? actions[index-1] : actions[actions.length-1];
 			elementToFocus.focus();
 		}
 	});
+});
 });
