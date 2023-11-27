@@ -244,7 +244,7 @@ function hideInSteps(element) {
 	element.classList.add("visually-hidden");
 	window.setTimeout(() => {
 		element.hidden=true;
-	}, 150);
+	}, 500);
 }
 function showCompletely(element) {
 	element.hidden=false;
