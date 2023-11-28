@@ -11,6 +11,7 @@ nav {
 }
 
 nav ul {
+    max-width: 1200px;
     flex-direction: row;
     text-align: center;
     list-style: none;
@@ -38,14 +39,11 @@ nav ul li a:hover {
     transition: all .5s;
 }
 
-
-
-
-/* INTRODUÇÃO */
+/* CABEÇALHO */
 header {
     margin: 0;
     padding: 14rem 0;
-    background-image: url("../imagens/musicoterapia.png");
+    background-image: url("../img/musicoterapia.png");
 }
 
 header #inicio {
@@ -63,15 +61,12 @@ header h1 {
     font-weight: bold;
 }
 
-
-
-
-/* SOBRE */
-.musicoSobre {
+/* INTRODUÇÃO */
+.musicoIntro {
     background-color: #172540;
 }
 
-.musicoSobre h2 {
+.musicoIntro h2 {
     margin: 0;
     padding-top: 20px;
     text-align: center;
@@ -79,14 +74,52 @@ header h1 {
     font-weight: 700;
 }
 
-.musicoSobre p {
+.musicoIntro p {
     margin-bottom: 0;
     padding: 15px 20px;
     text-align: justify;
     color: #FFECCC;
 }
 
+/* JUSTIFICATIVA */
+.musicoTema {
+    background-color: #fdd897;
+}
 
+.musicoTema h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoTema p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+/* JUSTIFICATIVA */
+.musicoJust {
+    background-color: #172540;
+}
+
+.musicoJust h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+    font-weight: 700;
+}
+
+.musicoJust p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
 
 /* OBJETIVOS */
 .musicoObjetivo {
@@ -135,13 +168,13 @@ header h1 {
 }
 
 ul#img1 {
-    background-image: url("../imagens/musi.png");
+    background-image: url("../img/musi.png");
     background-attachment: local;
     align-items: center;
 }
 
 ul#img2 {
-    background-image: url("../imagens/musidois.png");
+    background-image: url("../img/musidois.png");
     background-attachment: local;
     align-items: center;
 }
