@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portugol para Java</title>
+</head>
+<body>
+    <header>
+    <h1>
+    <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank" id="">Portugol</a> para JavaScript
+    </h1>
+    </header>
+
+    <main>
+    <details close>
+        <summary>Olá Mundo</summary>
+        <code>document.getElementById("mostrar").innerHTML = "Olá Mundo!";<br>
+        console.log(`Olá Mundo!`);<br>
+        alert(`Olá Mundo!`);
+        </code>
+        <button onclick="olaMundo()">Executar</button>
+
+    </details>        
+    <details close>
+        <summary>Número Digitado</summary>
+        <label>Digite um número: </label><input type="number" id="numero" placeholder="Só Números"><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Seu Nome</summary>
+        <label>Digite seu nome: </label><input type="text" id="nome" placeholder="Só Letras"><br>
+        <button onclick="nomeDigitado()">Executar</button>
+    </details>         
+    
+    <details close>
+        <summary>Operações Simples</summary>
+        <label>Digite o primeiro número:</label>
+        <input type="number" name="numero1" id="numero1" placeholder="Só Números">
+        <label>Digite o segundo número:</label>
+        <input type="number" name="numero2" id="numero2" placeholder="Só Números">
+        <button onclick="operacoesSimples()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Prioridades</summary>
+        <button onclick="prioridades()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Divisões Inteiras</summary>
+        <label >Digite um número: </label>
+        <input type="number" name="numero" id="num"  placeholder="Só Números">
+        <button onclick="divisoesInteiras()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Potência e Raiz</summary>
+        <label>Digite um número:</label>
+        <input type="number" name="valor" id="valor" placeholder="Digite um número...">
+        <button onclick="potenciaRaiz()">Executar</button>
+    </details>
+
+
+    <details close>
+        <summary>Troca Variáveis</summary>
+        <label for>Digite o primeiro valor:</label>
+        <input type="number" name="a" id="a" placeholder="Só Números">
+        <label for="b">Digite o segundo valor:</label>
+        <input type="number" name="b" id="b" placeholder="Só Números">
+        <button onclick="trocaVariaveis()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Maioridade penal</summary>
+        <label>Digite sua idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Só Números ">
+        <button onclick="maioridadePenal()">Executar</button>
+    </details>
+
+    <details close>
+        <summary>Altura Média</summary>
+        <label>Digite a primeira altura:</label>
+        <input type="number" name="Altura1" id="Altura1:" placeholder="Só Números">
+        <label>Digite a segunda altura:</label>
+        <input type="number" name="Altura2" id="Altura2:" placeholder="Só Números">
+        <label>Digite a terceira altura:</label>
+        <input type="number" name="Altura3" id="Altura3:" placeholder="Só Números">
+        <button onclick="alturaMedia()">Executar</button>
+    </details>
+    </main>
+
+    <div id="mostrar"></div>
+
+     <script src="script.js"></script>
+</body>
+</html>
