@@ -68,7 +68,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 500px;
     max-height: 100%;
 }
@@ -178,6 +177,32 @@ body {
     line-height: 170%;
 }
 
+/* metodologia */
+#metodologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    min-height: 400px;
+}
+
+#metodologia h4 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#metodologia p {
+    font-size: 15px;
+    line-height: 170%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
 /* rodape */
 #rodape {
     background-color: #160D0C;
@@ -209,7 +234,7 @@ body {
 }
 
 /* responsividade */
-@media (max-height: 916px) {
+@media (max-width: 916px) {
 
     /* titles */
     .main-title {
@@ -282,13 +307,14 @@ body {
     }
 
     .card {
+        width: 100%;
         padding-right: 0px;
     }
 
     /* rodape */
 
     #rodape h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     #rodape p {
