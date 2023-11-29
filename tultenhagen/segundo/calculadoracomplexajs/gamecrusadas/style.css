@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #95836c;
+}
+
+.container{
+    margin: 3% 0 0 33%;
+    background: rgba(172, 167, 167, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(88, 88, 88, 0.38);
+    height: auto;
+    width: 35vw;
+    border-radius: 10px;
+    box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 0.35);
+}
+
+.content{
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    margin: 0% 5% 0% 5%;
+    padding: 5%;
+}
+
+.font{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Tillana', cursive;
+    margin: 0% 5% 0% 5%;
+    padding: 5%;
+    
+}
+
+.content h1{
+    font-size: 25px;
+}
+
+.content p{
+    font-size: 18px;
+}
+
+.content a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.button{
+    position: absolute;
+    display: flex;
+    background-color: #95836c;
+    width: 15vw;
+    margin-top: -100px;
+    margin-left: 73px;
+    font-size: 2.0vw;
+    color: #95836c;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-family: 'Tillana', cursive;
+}
+
+.button:hover{
+    background-color: #ff0000;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+    color: #ffffff;
+}
+
+img{
+    width: 65%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
