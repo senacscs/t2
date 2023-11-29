@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/menu.css"/>
+		<title>Magic Alimentos - Rastreador de Acessibilidade</title>
+	</head>
+	<body>
+		<header>
+			<div id="homepage-container">
+				<a href="../index.html" id="homepage-link">Página inicial do Rastreador de Acessibilidade</a>
+			</div>
+			<div id="search">
+				<form id="search-form">
+					<div id="form-field">
+						<label class="form-label" for="search-input">Pesquisar 
+							<input type="search" id="search-input" placeholder="Pesquise pelo nome de uma empresa" required/></label>
+					</div>
+					<div id="search-submit-container">
+						<button type="submit" id="search-submit-btn">Enviar pesquisa</button>
+					</div>
+				</form>
+			</div>
+			<div id="account-container" data-menu>
+				<button id="account-btn" data-menu-id="account-menu">Opções da conta</button>
+				<div id="account-menu">
+					<button id="my-rattings-btn">Minhas avaliações</button>
+					<button id="switch-account-btn">Editar perfil</button>
+					<button id="logout-btn">Sair</button>
+				</div>
+			</div>
+			<ul id="login-options">
+				<li id="signin-container">
+					<a id="signin-link" href="../signin.html">Fazer login</a>
+				</li>
+				<li id="signup-container">
+					<a id="signup-link" href="../signup.html">Criar conta</a>
+				</li>
+			</ul>
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-item"><a class="nav-link" href="../rankings.html">Rankings</a></li>
+					<li class="nav-item"><a class="nav-link" href="../companies.html">Empresas cadastradas</a></li>
+					<li class="nav-item"><a class="nav-link" href="../add_company.html">Cadastrar minha empresa</a></li>
+					<li class="nav-item"><a class="nav-link" href="../news.html">Notícias</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Magic Alimentos</h1>
+			<p class="company-register-age">Cadastrada há 1 ano</p>
+			<section class="company-note-section">
+				<h2 class="company-note-heading">Nota da empresa</h2>
+				<div class="rattings-info">
+					<p class="company-note">4,7 estrelas</p>
+					<p class="note-info"> </p>
+					<p class="rattings-number">87 avaliações</p>
+				</div>
+				<div id="rate-link-container">
+					<a class="rate-link" href="../rate_company.html">Avaliar empresa</a>
+				</div>
+			</section>
+			<section id="rattings-section">
+				<h2 id="rattings-heading">Avaliações</h2>
+				<div id="rattings">
+					<div class="ratting">
+						<h3 class="ratting-title">
+							Boa 
+							<span class="ratting-date">(07/01/2023)</span>
+						</h3>
+						<p class="ratting-author">Ana</div>
+						<p class="ratting-text">Estou usando o site tranquilamente com o NVDA, área de compra super acessível recomendo.</p>
+					</div>
+				</div>
+				</section>
+		</main>
+		<footer>
+			<ul class="nav-list">
+				<li class="nav-item"><a class="nav-link" href="../about.html">Sobre</a></li>
+				<li class="nav-item"><a class="nav-link" href="../terms.html">Termos de uso</a></li>
+				<li class="nav-item"><a class="nav-link" href="../privacy_policy.html">Política de privacidade</a></li>
+			</ul>
+			<p class="copiright-warning">Copiright (C) 2023 - Rastreador de Acessibilidade. Todos os direitos reservados.</p>
+		</footer>
+		<script src="../js/menu.js"></script>
+	</body>
+</html>
