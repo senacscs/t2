@@ -16,7 +16,6 @@ nav ul {
     text-align: center;
     list-style: none;
     display: flex;
-    max-width: 1000px;
     justify-content: center;
     margin: auto;
 }
@@ -30,7 +29,7 @@ nav ul li a {
     font-weight: 600;
     font-size: 20px;
     color: #FFECCC;
-    padding: 16px 80px;
+    padding: 16px 60px;
 }
 
 nav ul li a:hover {
@@ -81,7 +80,7 @@ header h1 {
     color: #FFECCC;
 }
 
-/* JUSTIFICATIVA */
+/* TEMA */
 .musicoTema {
     background-color: #fdd897;
 }
