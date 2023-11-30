@@ -1,23 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
 
+body p {
+    font-size: 18px;
+}
+
+body h2 {
+    font-size: 30px;
+}
 
 
 /* NAVEGAÇÃO */
 nav {
     background-color: #172540;
     padding: 20px;
+    max-width: 100%;
 }
 
 nav ul {
-    max-width: 1200px;
     flex-direction: row;
     text-align: center;
     list-style: none;
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -29,7 +42,9 @@ nav ul li a {
     font-weight: 600;
     font-size: 20px;
     color: #FFECCC;
-    padding: 16px 60px;
+    padding: 16px 40px;
+    max-width: 100%;
+
 }
 
 nav ul li a:hover {
@@ -37,6 +52,7 @@ nav ul li a:hover {
     background-color: #FFECCC;
     transition: all .5s;
 }
+
 
 /* CABEÇALHO */
 header {
@@ -60,6 +76,7 @@ header h1 {
     font-weight: bold;
 }
 
+
 /* INTRODUÇÃO */
 .musicoIntro {
     background-color: #172540;
@@ -80,9 +97,12 @@ header h1 {
     color: #FFECCC;
 }
 
+
 /* TEMA */
 .musicoTema {
     background-color: #fdd897;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .musicoTema h2 {
@@ -100,12 +120,15 @@ header h1 {
     color: #172540;
 }
 
-/* JUSTIFICATIVA */
-.musicoJust {
+
+/* PROBLEMA */
+.musicoProb {
     background-color: #172540;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.musicoJust h2 {
+.musicoProb h2 {
     margin: 0;
     padding-top: 20px;
     text-align: center;
@@ -113,12 +136,33 @@ header h1 {
     font-weight: 700;
 }
 
-.musicoJust p {
+.musicoProb p {
     margin-bottom: 0;
     padding: 15px 20px;
     text-align: justify;
     color: #FFECCC;
 }
+
+/* JUSTIFICATIVA */
+.musicoJust {
+    background-color: #fdd897;
+}
+
+.musicoJust h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoJust p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
 
 /* OBJETIVOS */
 .musicoObjetivo {
@@ -145,6 +189,7 @@ header h1 {
     margin-top: 0;
     padding-top: 20px;
     font-weight: 700;
+    color: #172540;
 }
 
 .musicoObjetivo h3 {
@@ -202,18 +247,62 @@ ul#img2 {
 }
 
 
+/* METODOLOGIA */
+.musicoMeto {
+    background-color: #fdd897;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.musicoMeto h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoMeto p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+/* REFERÊNCIAL */
+.musicoRefe {
+    background-color: #172540;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.musicoRefe h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+    font-weight: 700;
+}
+
+.musicoRefe p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
 
 /* CONCLUSÃO */
 .musicoConclusao {
-    background-color: #172540;
+    background-color: #fdd897;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .musicoConclusao h2 {
     margin: 0;
     padding-top: 10px;
     text-align: center;
-    color: #FFECCC;
+    color: #172540;
     justify-content: center;
 }
 
@@ -221,10 +310,8 @@ ul#img2 {
     margin-bottom: 0;
     padding: 15px 20px;
     text-align: justify;
-    color: #FFECCC;
+    color: #172540;
 }
-
-
 
 
 /* RODAPÉ */
