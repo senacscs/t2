@@ -66,8 +66,8 @@ html{
 body.dark-theme{
   --title-color: rgb(68, 138, 223)7, 11;
   --text-color: rgb(0, 0, 0);
-  --body-color: rgb(220, 223, 225);
-  --container-color: rgb(236, 244, 247);
+  --body-color: rgb(243, 250, 255);
+  --container-color: rgb(208, 243, 255);
 }
 
 /*========== Button Dark/Light ==========*/
