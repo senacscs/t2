@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor5: #2F7475;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive; 
+}
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor5);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+   
+}
+
+header h2 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 34px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+
+}
+nav a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav > a:hover {
+    background-color: #00D7DC;
+    color: white;
+    transition: .5s;
+}
+
+main p {
+    color: white;
+    margin:  15px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 20px;
+}
+main {
+    background-color: var(--cor5);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;  
+    box-shadow: 0px 5px 17px black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+main h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
