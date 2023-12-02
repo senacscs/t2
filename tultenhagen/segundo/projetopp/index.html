@@ -72,7 +72,7 @@
                 <h3>Sejam bem-vindos ao
                     <strong>meu projeto</strong>
                 </h3>
-                <h1>Upcycling: a revolução do plástico</h1>
+                <h1>Upcycling e a revolução do plástico</h1>
                 <h2>Olá! Meu nome é Eduarda Tultenhagen Machado, sou uma estudante do Ensino médio técnico <br>Senac que pretende auxiliar o meio ambiente e informar população para os malefícios do plástico à saúde!</h2>
                 <a href="#sobre" class="btn-get-started scrollto">Saiba mais</a>
             </div>
@@ -189,8 +189,8 @@
                                     <h4 class="title">
                                         <a id="alerta">Documento</a>
                                     </h4>
-                                    <p class="description">Aqui você poderá fazer o download do documento em PDF!</p> <br><br>
-                                    <button class="px-6 py-4 bg-green-700 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500" style="border-color: transparent; background-color: #f0efef; border-radius: 3%; padding-left: 2%; padding-right: 2%;"  id="alerta"><a style="color: black;">Download PDF</a></button><br><br>
+                                    <p class="description">Aqui você poderá fazer o download do documento em PDF em breve!</p> <br><br>
+                                    <button class="px-6 py-4 bg-green-700 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500" style="border-color: transparent; background-color: #f0efef; border-radius: 3%; padding-left: 2%; padding-right: 2%;"  id="alerta"><a  href="" style="color: black;">Download PDF</a></button><br><br>
 
                                 </div>
                             </div>
@@ -201,21 +201,28 @@
                 <br><br>
 
                 <!-- End Services Section -->
-
+                <br><br>
                 <!-- ======= Cta Section ======= -->
                 <section id="slides" class="cta">
                     <div class="container">
 
                         <div class="text-center">
                             <h3>Slides-pitch</h3>
-                            <p>Montei slides para meu pitch. Caso esteja interessado, acesse o aqui:</p>
-                            <a class="cta-btn" href="https://www.canva.com/design/DAF0tRl1ZNU/3KRVfClAckQfTCIx20YIFw/view?utm_content=DAF0tRl1ZNU&utm_campaign=designshare&utm_medium=link&utm_source=editor">Veja a apresentação!</a>
-                        </div>
+                            <p>Montei slides para meu pitch. Caso queira fazer o download do PDF acesse aqui:</p>
+                            <a class="cta-btn" a href="UPCYCLING A revolução do plástico.pdf" download="" >Veja a apresentação!</a>
+                            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF1pDVw2rQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF1pDVw2rQ&#x2F;view?utm_content=DAF1pDVw2rQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">UPCYCLING: A revolução do plástico</a> de EDUARDA TULTENHAGEN MACHADO
 
                     </div>
                 </section>
                 <!-- End Cta Section -->
-
+                <br><br>
 
             <!-- ======= início seção sobre ======= -->
             <section id="objetivos" class="services">
@@ -408,16 +415,41 @@
 
             <!-- Template Main JS File -->
             <script src="assets/js/main.js"></script>
-            <script>
-                            feather.replace()
+                   <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+            feather.replace()
 
-let alerta = document.getElementById("alerta")
+            let alerta = document.getElementById("alerta")
+let pausar = document.querySelector('.pausar')
 
 alerta.addEventListener("click", function(event) {
-alert('Desculpe, mas essa pesquisa ainda não está finalizada. Quando estiver pronta será possível fazer download do documento! Caso seja de seu interesse receber o PDF quando lançado, deixe na aba mensagem do formulário de contato!')
+  alert('Desculpe, mas essa pesquisa ainda não está finalizada. Quando estiver pronta será possível fazer download do documento! Caso seja de seu interesse receber o PDF quando lançado, deixe na aba motivos do formulário de contato!')
 }, true);
 
-            </script>
+        </script>
 
         </body>
 
