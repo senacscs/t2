@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #82b387;
+    box-shadow: inset 0 0 5px rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #526154;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2a3c2c;
+}
+
+/* Navegação */
+nav {
+    background-color: #4E7952;
+    padding: 30px;
+    top: 50%;
+}
+
+nav ul {
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 34px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: overline;
+    transition: all .5s;
+}
+
+.ativado {
+    text-decoration: overline;
+}
+
+/* cabeçalho */
+header {
+    margin: 0;
+    padding: 12rem 0;
+    background-image: url("../imagens/musicoterapia.png");
+}
+
+header{
+    padding-left: 3rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4E7952;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #5a6e98;
+}
