@@ -92,18 +92,17 @@
                                                 <main class="astro-4OXC2ZQZ" id="top">
                                                     <h1 class="astro-HCJUQWDU">Projetos que eu fiz.</h1>
 
-                                                    <div class="astro-S3GEF3U7">
+
                                                         <form action="" role="search">
                                                             <input
                                                                 type="text"
                                                                 name="q"
-                                                                id="search-query"
+                                                                id="searchBar"
                                                                 aria-label="Pesquise por meus projetos."
                                                                 placeholder="Pesquise por meus projetos..."
                                                                 autocapitalize="off"
                                                                 autocomplete="off"
                                                                 class="astro-S3GEF3U7"></form>
-                                                        </div>
 
                                                         <div class="grid astro-HCJUQWDU">
                                                             <article class="card astro-WSY3ECDU">
@@ -275,6 +274,29 @@
                                                                 isBackToTopRendered = false;
                                                                 alterStyles(isBackToTopRendered);
                                                             }
+                                                        });
+
+                                                        //search bar
+                                                        const searchBar = document.getElementById("searchBar");
+                                                        const flipCards = document.querySelectorAll(".flip-card");
+
+                                                        searchInput.addEventListener("input", function () {
+                                                            const searchTerm = searchBar
+                                                                .value
+                                                                .toLowerCase();
+
+                                                            flipCards.forEach(flipCard => {
+                                                                const name = flipCard
+                                                                    .querySelector(".flip-card-back h1")
+                                                                    .textContent
+                                                                    .toLowerCase();
+
+                                                                if (name.startsWith(searchTerm)) {
+                                                                    flipCard.style.display = "block";
+                                                                } else {
+                                                                    flipCard.style.display = "none";
+                                                                }
+                                                            });
                                                         });
                                                     </script>
                                                 </body>
