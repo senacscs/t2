@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #82b387;
+    box-shadow: inset 0 0 5px rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #526154;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2a3c2c;
+}
+
+/* Navegação */
+nav {
+    background-color: #4E7952;
+    padding: 30px;
+    top: 50%;
+    margin-bottom: 0;
+}
+
+nav ul {
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 34px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: overline;
+    transition: all .5s;
+}
+
+.ativado {
+    text-decoration: overline;
+}
+
+/* cabeçalho */
+header {
+    margin: 0;
+    padding: 10rem 0;
+    background-image: url("imgs/santa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -18px;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header h1 {
+    padding: 20px 20px;
+    margin: 15px 10rem;
+    background-color: #ffffff;
+}
+
+/* Informação */
+section {
+    width: 70%;
+    padding: 0 15% 0 15%;
+
+}
+
+#problema {
+    margin-top: 8rem;
+}
+
+#justificativa {
+    padding-bottom: 163px;
+}
+
+#solucao {
+    margin-top: 8rem;
+}
+
+section h2 {
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    justify-content: center;
+    text-align: center;
+}
+
+section p {
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+img {
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.linkquiz {
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: #4E7952;
+    border-color: #2a3c2c;
+    transition: all 1.5s;
+}
+
+.linkquiz:hover {
+    background-color: #ffffff;
+    border-color: #526154;
+}
+
+.linkquiz a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 1.5s;
+}
+
+.linkquiz a:hover {
+    color: #4E7952;
+}
+
+.botao {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links a{
+    font-size: 15px;
+    align-items: center;
+}
+
+.links h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4E7952;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #5a6e98;
+}
