@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Exemplos em Portugol convertidos para JavaScript</title>
+	</head>
+	<body>
+		<header>
+			<h1>Exemplos de Portugol convertidos para JavaScript</h1>
+		</header>
+		<main>
+			<details>
+				<summary>Olá mundo</summary>
+				<button id="executar-olamundo">Executar</button>
+				<div id="mostrar-olamundo"></div>
+			</details>
+			<details>
+				<summary>Número digitado</summary>
+				<form id="form-numerodigitado">
+					<label for="numero">Digite ou escolha um número
+					<input id="numero" type="number" required/></label>
+					<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-numerodigitado"></div>
+			</details>
+			<details>
+				<summary>Idade</summary>
+				<form id="form-idade">
+					<label for="idade">Informe sua idade
+					<input id="idade" type="number" required/></label>
+				<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-idade"></div>
+			</details>
+			<details>
+				<summary>Média final</summary>
+				<form id="form-mediafinal">
+					<label for="nome">Digite seu nome
+					<input id="nome" type="text" minlength="3" required/></label>
+					<label for="nota1">Digite a primeira nota
+					<input id="nota1" type="number" required/></label>
+					<label for="nota2">Digite a segunda nota
+					<input id="nota2" type="number" required/></label>
+					<label for="nota3">Digite a terceira nota
+					<input id="nota3" type="number" required/></label>
+					<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-mediafinal"></div>
+			</details>
+			<details>
+				<summary>Múltiplo</summary>
+				<form id="form-multiplo">
+					<label for="numero-verificado">Qual número você deseja verificar se é múltiplo de outro?
+						<input id="numero-verificado" type="number" required/></label>
+					<label for="numero-a-dividir">Você deseja verificar se o número acima é múltiplo de qual número?
+						<input id="numero-a-dividir" type="number" required/></label>
+					<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-multiplo"></div>
+			</details>
+			<details>
+				<summary>Vogal</summary>
+				<form id="form-vogal">
+					<label for="letra">Qual letra você deseja verificar se é uma vogal?
+						<input id="letra" type="text" maxlength="1" required/></label>
+					<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-vogal"></div>
+			</details>
+			<details>
+				<summary>Mini calculadora</summary>
+				<form id="form-minicalculadora">
+					<label for="operando1">Digite o primeiro número da operação
+						<input id="operando1" type="number" required/></label>
+					<label for="operando2">Digite o segundo número da operação
+						<input id="operando2" type="number" required/></label>
+					<label for="operacao">Escolha a operação a realizar
+						<select id="operacao" required>
+							<option value="" selected>Selecione uma opção</option>
+							<option value="+">Soma</option>
+							<option value="-">Subtração</option>
+							<option value="*">Multiplicação</option>
+							<option value="/">Divisão</option>
+						</select></label>
+						<button type="submit">Executar</button>
+					</form>
+					<div id="mostrar-minicalculadora"></div>
+				</details>
+				<details>
+					<summary>Troca variáveis</summary>
+					<form id="form-trocavariaveis">
+						<label for="texto1">Digite o texto para a primeira variável
+							<input id="texto1" type="text" required/></label>
+						<label for="texto2">Digite o texto para a segunda variável
+							<input id="texto2" type="text" required/></label>
+						<button type="submit">Executar</button>
+					</form>
+					<div id="mostrar-trocavariaveis"></div>
+				</details>
+			<details>
+				<summary>Contagem regressiva</summary>
+				<form id="form-contagemregressiva">
+					<label for="numero-inicial">A partir de qual número você deseja iniciar a contagem?
+						<input id="numero-inicial" type="number" required/></label>
+					<label for="tempo-contagem">De quantos em quantos segundos você quer que o número mude?
+						<input id="tempo-contagem" type="number" required/></label>
+					<button type="submit">Executar</button>
+				</form>
+				<div id="mostrar-contagemregressiva" aria-live="polite"></div>
+			</details>
+			<details>
+				<summary>Quantos dias se passaram</summary>
+				<form id="form-quantosdias">
+					<label for="ano-contagem">Informe o ano a partir do qual deseja contar os dias
+						<input id="ano-contagem" type="number" required/></label>
+						<button type="submit">Executar</button>
+					</form>
+				<div id="mostrar-quantosdias"></div>
+			</details>
+		</main>
+				<script src="js/script.js"></script>
+	</body>
+</html>
