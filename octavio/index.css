@@ -31,11 +31,11 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
+    --black: #020000;
     --pink: #7c07db;
-    --white: #f0e9f2;
+    --white: #ffffff;
     --white-1: #e5e5e6da;
-
+ 
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -531,16 +531,11 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 18rem;
 }
 
-@media(max-width: 1240px) {
-    .tec__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
 
     .tec__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
-}
+
 
 
 /* --------------------------------------- */
