@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/bb14c45ef7.js" crossorigin="anonymous"></script>
+  <link href="output.css" rel="stylesheet" />
+  <link href="input.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <main class="h-screen overflow-hidden">
+    <header>
+      <nav class="p-5 fixed right-0">
+        <ul class="flex">
+          <li class="font-medium text-xl text-lint"></li>
+          <div class="flex">
+            <button onclick="openCalendar()">
+              <li><a href="#"><i class="fa-solid fa-calendar text-emeraldg text-2xl pr-5"></a></i></li>
+            </button>
+            <li><a href="#"><i class="fa-solid fa-bell text-emeraldg text-2xl"></a></i></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <section id="main_section" class="flex flex-col items-center justify-center h-screen">
+      <div class="">
+        <h1 class="text-3xl p-3 font-medium text-forestg tracking-wide">Conectando comunidades, cuidando do nosso lar.
+      </h1> 
+        <div class="flex justify-evenly">
+          <button onclick="openBox()" class="p-3 bg-forestg text-lint rounded-sm bg-beige">Agendar coleta</button>
+          <a href="#learn_section" class="p-3 bg-forestg text-lint rounded-sm bg-beige"">Aprender</a>
+        </div>
+      </div>
+      <div id="box"
+        class="rounded-md shadow-xl flex flex-col text-xl font-medium text-lint absolute h-3/4 w-2/4 bg-gradient-to-br from-forestg to-lint">
+        <div class="h-4 w-full p-5 flex justify-end">
+          <button onclick="closeBox()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <form class="flex flex-col items-center justify-center h-full">
+          <label for="data">Data:</label><br>
+          <input class="text-black rounded-sm" type="date" id="data" name="data"><br>
+          <label for="hora">Hora:</label><br>
+          <input class="text-black rounded-sm" type="time" id="hora" name="hora"><br>
+          <label for="local">Localização:</label><br>
+          <input class="text-black rounded-sm" autocomplete="off" maxlength="20" type="text" id="local" name="local"><br>
+          <button onclick="add()" class="bg-beige text-forestg p-3 rounded-3xl">Agendar</button>
+        </form>
+      </div>
+      <div id="calendar"
+        class="rounded-md shadow-xl flex items-center flex-col text-xl font-medium text-lint absolute h-3/4 w-2/4 bg-gradient-to-br from-emeraldg to-beige">
+        <div class="h-4 w-full p-8 flex justify-between">
+          <button onclick="clearStorage()">
+            <i class="fa-solid fa-broom"></i>
+          </button>
+          <button onclick="closeBoxCal()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <h1 class="pb-8">AGENDAMENTOS</h1>
+        <ul class="w-full" id="list">
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="learn_section" class="overflow-auto flex flex-col justify-center items-center text-justify h-screen">
+      <nav class="h-1/6 p-5">
+        <ul class="flex">
+          <div class="flex">
+            <li><a href="#main_section"><i class="fa-solid fa-arrow-up-long text-emeraldg text-2xl"></a></i></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="w-2/4 h-screen">
+        <h1 class="text-base sm:text-md md:text-md lg:text-xl xl:text-3xl font-bold">Separe o Lixo</h1>
+        <p class="text-sm sm:text-md md:text-md">Separe o lixo em categorias: reciclável, orgânico e rejeito. Isso facilita o processo de reciclagem e compostagem.</p>
+        <br>
+        <h1 class="ttext-base sm:text-md md:text-md lg:text-xl xl:text-3xl font-bold">Reciclagem</h1>
+        <p class="text-lg">Recicle sempre que possível. Papel, plástico, vidro e metal são materiais comumente recicláveis. Lembre-se de lavar os itens recicláveis para remover qualquer resíduo de alimentos.</p>
+        <br>
+        <h1 class="text-base sm:text-md md:text-md lg:text-xl xl:text-3xl font-bold">Compostagem</h1>
+        <p class="text-lg">Composte resíduos orgânicos. Restos de alimentos e resíduos de jardim podem ser compostados em casa, reduzindo a quantidade de lixo que vai para os aterros sanitários e criando um adubo rico para o seu jardim.</p>
+        <br>
+        <h1 class="text-base sm:text-md md:text-md lg:text-xl xl:text-3xl font-bold">Descarte Seguro de Itens Especiais</h1>
+        <p class="text-lg">Alguns itens, como pilhas, eletrônicos e lâmpadas, contêm substâncias que podem ser prejudiciais ao meio ambiente e à saúde humana. Procure pontos de coleta especializados para descartar esses itens de maneira segura.</p>
+        <br>
+        <h1 class="text-base sm:text-md md:text-md lg:text-xl xl:text-3xl font-bold">Reduza, Reutilize, Recicle</h1>
+        <p class="text-lg">Lembre-se dos 3 R’s: Reduza o consumo, Reutilize sempre que possível e Recicle o que não pode ser reutilizado.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
