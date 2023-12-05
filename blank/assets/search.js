@@ -7,16 +7,16 @@
          .value
          .toLowerCase();
 
-     projects.forEach(projects => {
-         const name = projects
+     projects.forEach(project => {
+         const name = project
              .querySelector(".projects span")
              .textContent
              .toLowerCase();
 
          if (name.startsWith(searchTerm)) {
-             projects.style.display = "block";
+             project.style.display = "block";
          } else {
-             projects.style.display = "none";
+             project.style.display = "none";
          }
      });
  });
