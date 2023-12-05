@@ -2,7 +2,7 @@
  const searchBar = document.getElementById("searchBar");
  const projects = document.querySelectorAll(".project");
 
- searchInput.addEventListener("input", function () {
+ searchBar.addEventListener("input", function () {
      const searchTerm = searchBar
          .value
          .toLowerCase();
