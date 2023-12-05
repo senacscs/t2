@@ -1,0 +1,51 @@
+.topnav {
+    background-color: black;
+    padding: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.topnav2 {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 55px;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+.topnav2:hover {
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.segtopnav {
+    background-color: black;
+    padding: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.segtopnav2 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+.segtopnav2:hover {
+    font-size: 18px;
+}
+
+a {
+    color: black;
+}
+.link {
+    margin-left: 1000px;
+}
