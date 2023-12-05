@@ -95,7 +95,7 @@
                                                     <input
                                                         type="text"
                                                         name="q"
-                                                        id="searchBar"
+                                                        id="search"
                                                         onkeyup="mySearch()"
                                                         aria-label="Pesquise por meus projetos."
                                                         placeholder="Pesquise por meus projetos..."
@@ -103,8 +103,8 @@
                                                         autocomplete="off"
                                                         class="astro-S3GEF3U7">
 
-                                                        <ul class="grid astro-HCJUQWDU projects">
-                                                            <li class="card astro-WSY3ECDU">
+                                                        <div class="grid astro-HCJUQWDU" id="cards">
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/indicacoesback">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -125,8 +125,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
-                                                            <li class="card astro-WSY3ECDU">
+                                                            </article>
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/poo">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -146,8 +146,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
-                                                            <li class="card astro-WSY3ECDU">
+                                                            </artic>
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/desafio">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -169,8 +169,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
-                                                            <li class="card astro-WSY3ECDU">
+                                                            </article>
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/interativo">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -191,8 +191,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
-                                                            <li class="card astro-WSY3ECDU">
+                                                            </article>
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/ptjs">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -212,9 +212,9 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
+                                                            </article>
 
-                                                            <li class="card astro-WSY3ECDU">
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/coberturajornalistica/">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -236,9 +236,9 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
+                                                            </article>
 
-                                                            <li class="card astro-WSY3ECDU">
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./projetos/sementinha/">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -260,9 +260,9 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
+                                                            </article>
 
-                                                            <li class="card astro-WSY3ECDU">
+                                                            <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/cidade/">
                                                                     <div class="content astro-WSY3ECDU">
                                                                         <div class="text astro-WSY3ECDU">
@@ -275,7 +275,7 @@
                                                                                 2°ano do EM.</p>
                                                                         </div>
 
-                                                                        <div class="astro-NYR2HY6C">
+                                                                        <div class=" tags astro-NYR2HY6C">
                                                                             <span class="astro-HL5A4E72">
                                                                                 segundo
                                                                             </span>
@@ -288,8 +288,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                            </li>
-                                                        </ul>
+                                                            </article>
+                                                        </div>
                                                     </main>
 
                                                     <a href="#top" class="back-to-top" title="back To Top">
@@ -327,25 +327,25 @@
                                                         });
 
                                                         //search bar
-                                                        function myFunction() {
+                                                        function mySearch() {
                                                             var input,
                                                                 filter,
-                                                                ul,
-                                                                li,
+                                                                div,
+                                                                article,
                                                                 a,
                                                                 i;
-                                                            input = document.getElementById("mySearch");
+                                                            input = document.getElementById("searchInput");
                                                             filter = input
                                                                 .value
                                                                 .toUpperCase();
-                                                            ul = document.getElementById("myMenu");
-                                                            li = ul.getElementsByTagName("li");
-                                                            for (i = 0; i < script li.length; i++) {
-                                                                a = li[i].getElementsByTagName("a")[0];
+                                                            div = document.getElementById("cards");
+                                                            article = div.getElementsByTagName("article");
+                                                            for (i = 0; i < article.length; i++) {
+                                                                a = article[i].getElementsByTagName("a")[0];
                                                                 if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                                                                    li[i].style.display = "";
+                                                                    article[i].style.display = "";
                                                                 } else {
-                                                                    li[i].style.display = "none";
+                                                                    article[i].style.display = "none";
                                                                 }
                                                             }
                                                         }
