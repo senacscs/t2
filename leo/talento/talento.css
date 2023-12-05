@@ -1,0 +1,108 @@
+h1 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+    
+}
+
+img {
+    position: absolute;
+    right: -65px;
+    width: 300px ;    
+}
+body {
+    background: linear-gradient(-45deg, rgb(234, 0, 255), rgb(0, 0, 255), rgb(222, 4, 4), rgb(251, 255, 0));
+
+    background-size: 1000% 1000%;
+
+    animation: gradient 7s ease infinite;
+
+    height: 100vh;
+
+} /* CRÉDITOS DE CÓDIGO DO GRADIENTE: BERNARDO E.*/
+
+
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+} /* CRÉDITOS DE CÓDIGO DO GRADIENTE (2): BERNARDO E.*/
+
+
+  .container {
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+  }
+  .leaves {
+    width: 7px;
+    height: 70px;
+    background: #339B00;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    z-index: 1;
+  }
+  .leaves:after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #339B00;
+    position: absolute;
+    border-radius: 0% 50%;
+    transform: rotate(96deg) skew(21deg, 11deg);
+    transform-origin: left top;
+    top: 32px;
+  }
+  .leaves:before {
+    content: '';
+    width: 70px;
+    left: 8px;
+    height: 70px;
+    background: #339B00;
+    position: absolute;
+    border-radius: 0% 50%;
+    transform: rotate(-16deg) skew(21deg, 11deg);
+    transform-origin: left top;
+    top: 32px;
+  }
+  .lemon {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    transform: rotate(48deg) skew(6deg, 6deg);
+    top: 69px;
+    left: 50%;
+    margin-left: -80px;
+  }
+  .lemon:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    top: 64%;
+    left: 50%;
+    position: absolute;
+    margin-left: 24px;
+    border-radius: 19px;
+  }

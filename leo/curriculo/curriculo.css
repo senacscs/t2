@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+h2 {
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.div1 {
+    margin: 100px;
+    margin-bottom: 150px;
+}
+.hr1 {
+    margin-top: 20px;
+}
+.div2 {
+    margin-top: 50px;
+}
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(7,7,51,1) 50%, rgba(0,0,0) 100%);
+}
+.div3 {
+    background-color: white;
+    margin: 70px;
+    font-family: sans-serif;
+}
