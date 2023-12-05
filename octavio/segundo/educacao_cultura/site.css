@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+.evento{
+    padding-right: 0px;
+    
+}
+img{
+    border: 2px solid black;
+}
+body {
+	background-image: linear-gradient(10deg, #ff4735, #f5b8d5);
+}
+
+.nav-bar {
+	min-height: 5rem;
+	width: 100%;
+	background-color: transparentize(#f5b8d5, 0.5);
+	position: sticky;
+	top: 0;
+	z-index: -1;
+}
+
+.blokken {
+	position: relative;
+	background-color: #fff;
+	width: calc(100vw - 10rem);
+	min-height: calc(100vh - 10rem);
+	box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+	margin: 5rem;
+	font-size: 2rem;
+	background-image: linear-gradient(to bottom, #fff calc(1em - 1px), #ccc calc(1em - 1px), #ccc 1em, #fff 1em);
+	background-position: 0% 1em;
+	background-size: 100% 1em;
+	background-repeat: repeat-y;
+	
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.1);
+	}
+	
+	&:before {
+		transform: rotate(-2deg);
+		z-index: -1;
+	}
+	
+	&:after {
+		transform: rotate(2deg);
+		z-index: -1;
+	}
+}

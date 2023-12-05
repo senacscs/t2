@@ -13,6 +13,19 @@
   user-select: none;
 }
 
+.style{
+  background-color: white;
+  border-color: transparent;
+}
+
+.style a{
+ color: black;
+}
+
+.style a:hover{
+  color: black;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -195,7 +208,6 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
