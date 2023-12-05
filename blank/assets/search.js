@@ -1,22 +1,22 @@
  //search bar
- const searchBar = document.getElementById("searchBar");
- const projects = document.querySelectorAll(".project");
+let searchBar = document.getElementById("searchBar");
+let projects = document.querySelectorAll(".project");
 
  searchBar.addEventListener("input", function () {
      const searchTerm = searchBar
          .value
          .toLowerCase();
 
-     projects.forEach(project => {
-         const name = project
+     projects.forEach(projectTag => {
+         const name = projectTag
              .querySelector(".tags span")
              .textContent
              .toLowerCase();
 
          if (name.startsWith(searchTerm)) {
-             project.style.display = "block";
+             projectTag.style.display = "block";
          } else {
-             project.style.display = "none";
+             projectTag.style.display = "none";
          }
      });
  });
