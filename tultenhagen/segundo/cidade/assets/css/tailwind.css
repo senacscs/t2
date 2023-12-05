@@ -11,9 +11,8 @@ Document
 Use a better box model (opinionated).
 */
 
-*,
-::before,
-::after {
+*
+::before ::after {
   box-sizing: border-box;
 }
 *{
