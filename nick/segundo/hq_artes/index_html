@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+	<html lang="pt-BR">
+		<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="style.css">
+			<title>Index</title>
+		</head>
+        <body>
+            <h1>História em quadrinhos com IA</h1>
+            <img class="displayed" src="historinhas.png">
+        </body>
+    </html>
