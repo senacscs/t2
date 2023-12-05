@@ -9,7 +9,7 @@
 
      projects.forEach(project => {
          const name = project
-             .querySelector(".projects span")
+             .querySelector(".tags span")
              .textContent
              .toLowerCase();
 
