@@ -182,3 +182,13 @@ footer p a {
     text-decoration: none;
     color: #5a6e98;
 }
+
+/* Responsivo */
+@media (max-width:750px) {
+    header h1 {
+        padding: 10px 10px;
+        margin: 10px 5rem;
+        background-color: #ffffff;
+        font-size: 40px;
+    }
+}

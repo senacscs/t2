@@ -33,7 +33,7 @@
 .problema {
     padding-top: 22%;
     padding-bottom: 22%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/02/01/age20220131068.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/img/risco.png);
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
@@ -50,7 +50,7 @@
 body {
     font-size: var(--body);
     font-family: "Overpass", sans-serif;
-    background-color: white;
+    background-color: rgb(219, 219, 219);
 }
 
 header {
@@ -60,13 +60,15 @@ header {
     background-color: black;
     color: white;
     background-size: 100%;
-    padding-top: 22%;
-    padding-bottom: 22%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     text-align: center; 
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
+
+
 
 nav {
     background-color: black;
@@ -107,16 +109,30 @@ footer p {
 }
 
 .inicio{
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(141, 141, 141);
     padding: 40px;
     border-radius: 30px;
 }
 
 footer {
     background-color: var(--bkg--footer);
-    border-top-right-radius: 6rem;
     padding-block: var(--space-xl-2xl);
     color: var(--bkg);
+}
+
+iframe{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#desenvolvimento{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#justificativa{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .footer-flex {
@@ -131,5 +147,10 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
+}
+
+.conteudo {
+    margin-right: 5%;
+    margin-left: 5%;
 }
 

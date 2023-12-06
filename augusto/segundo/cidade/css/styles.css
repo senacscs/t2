@@ -525,6 +525,13 @@ progress {
   }
 }
 
+
+#imagemfundo{
+  text-align: center;
+  align-items: center;
+
+}
+
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
