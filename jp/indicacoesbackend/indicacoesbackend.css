@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.image {
+    overflow: hidden;
+    height: 300px;
+}
+
+.header {
+    height: 500px;
+}
+
+.backgroundImage {
+    overflow: hidden;
+    height: 100%;
+    background-image: url(imagens/imagem1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+#header {
+    background-image: url(imagens/imagem2.jpg);
+}
+
+#more {
+    background-image: url(imagens/imagem3.jpg);
+}
+
+#last {
+    background-image: url(imagens/imagem4.avif);
+}
+
+.content {
+    background: white;
+}
+
+.content article {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background: #333;
+}
+iframe {
+    text-align: center;
+}
