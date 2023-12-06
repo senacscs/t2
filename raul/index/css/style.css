@@ -1,0 +1,190 @@
+.content { float:left; width:92%; margin:0 4%; padding: 20px 0; }
+
+/*BTN*/
+.btn-download       { background-color:#ee2727; color:#fff; border-radius: 50px; font-family: 'open_sansregular'; padding: 0.5em 0.8em; display:block; float: none; text-decoration: none; margin: auto; width:100%; font-size: 1.5em; text-align: center; line-height: 40px; }
+.btn-download:hover { background-color:#d00f0f; color:#fff; }
+
+/*HEADER*/
+.main_header          { background:#ffffff; border-bottom:1px #f4f4f4 solid; z-index:1; padding: 0.5em 0em; }
+.main_header .content { float:left; padding:0px 0; }
+
+.fixed            { display:block; position:fixed; z-index:9;  }
+.main_header_logo { text-align:center; margin:auto; float:none; width:138px; }
+.main_header_logo img { height:69px; }
+
+/*PUBLICIDADE*/
+.boxBannerTopo   { padding:0em 0; background-color:transparent; }
+.bannerTopo      { width:100%; float:left; background-color:#fff; border:1px solid #e9ebee; }
+.bannerTopo .imagemBan   { margin:auto; max-width:900px; overflow:hidden; }
+.bannerTopo .imagemBan a { width:100%; height:100%; float:left; display:block; }
+
+/*Seu Código*/
+.section-seu-codigo          { padding:10px 0px; background-color:#f4f4f4; }
+.section-seu-codigo .content { float:left; padding:1em 0; }
+.section_title               { width: 100%; float:left; margin-bottom:1em; font-size:1.3em; font-weight: 300; text-align: center; border-bottom: 1px #eceaea solid; padding-bottom: 1em; }
+
+.box-artigo   { width:100%; float:left; padding:1em; }
+
+/*Portfólio*/
+
+	.portfolio { 
+
+		width:100%; 
+		height:100%; 
+		background:#CCC;   
+		float:left;
+		margin-bottom:20px;  
+		position:relative; 
+		overflow:hidden;
+		border-radius:6px; 
+	}
+
+	.portfolio img { width:100%; height:100%; border-radius:6px; }
+
+	.portfolio .portfolio_hover { 
+
+		z-index:2; 
+		width:100%; 
+		height:100%; 
+		position:absolute; 
+		top:-100%; 
+		left:0; 
+		background: rgba(0, 0, 0, 0.90);
+		border-radius:6px;  
+		transition:all 500ms; 
+		-moz-transition:all 500ms; 
+		-ms-transition:all 500ms; 
+		-o-transition:all 500ms; 
+		-webkit-transition:all 500ms;
+	}
+
+	.portfolio:hover .portfolio_hover { top:0;}
+	.portfolio:hover .title { left:0;}
+	.portfolio:hover .link  { left:0;}
+	.portfolio img          { top:0; left:0; z-index:1;}
+
+	.title { 
+
+		font-family: Helvetica, sans-serif; 
+		position:absolute; 
+		top:35%; 
+		left:100%; 
+		z-index:3; 
+		color:#fff; 
+		text-align:center; 
+		width:100%; 
+		font-size:25px;
+
+	}
+
+	.link { 
+
+		font-family: Helvetica, sans-serif; 
+		position:absolute; 
+		top:55%; 
+		left:-100%; 
+		z-index:3; 
+		color:#0adbdf; 
+		text-align:center; 
+		width:100%; 
+		font-size:16px;
+		text-decoration:none; 
+
+	}
+
+	.title,.link, .portfolio_hover{
+
+		transition:all 500ms; 
+		-moz-transition:all 500ms; 
+		-ms-transition:all 500ms; 
+		-o-transition:all 500ms; 
+		-webkit-transition:all 500ms;
+
+	}
+
+	/*RESPONSIVO*/
+	/*768PX BREAKPOINT*/
+
+	@media (min-width:48em){
+
+	    .portfolio {  width:32%; margin-right:2%; }
+	    .portfolio:nth-of-type(3n+0) {  margin-right:0; }
+
+
+	} 
+
+/*Portfólio*/
+
+/*Seu Download*/
+.section-seu-download          { padding:10px 0px; background-color:#f4f4f4; }
+.section-seu-download .content { float:left; padding:1em 0; }
+.box-download                  { width:100%; float:left; background:transparent; padding:1em; }
+
+/*FOOTER*/
+.main_footer          { background-color:#353535; color:#fff; font-size:0.875em; }
+.main_footer .content { padding:3em 0em; }
+
+.main_footer_copy       { background-color:#262626; width:100%; float:left; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p     { font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+
+/*Começa o Responsivo*/
+
+/*480PX BREAKPOINT*/
+/*480 dividido por 16 = 30em*/
+@media (min-width:30em){
+
+.boxBannerTopo { padding:1em 0; }
+
+}
+
+/*600PX BREAKPOINT*/
+/*600 dividido por 16 = 37,5em*/
+@media (min-width:37em){
+
+
+} 
+
+/*768PX BREAKPOINT*/
+/*768 dividido por 16 = 48em*/
+@media (min-width:48em){
+
+
+} 
+
+/*960PX BREAKPOINT*/
+/*960 dividido por 16 = 60em*/
+@media (min-width:60em){
+
+ .section-seu-codigo          { padding:20px 0px; }
+ .section-seu-codigo .content { width:80%; padding:1em 0; margin:0 10%; }
+
+.btn-download { width:35%; }
+
+}
+
+/*1280PX BREAKPOINT*/
+/*1280 dividido por 16 = 80em*/
+@media (min-width:80em){
+
+ 
+}
+
+/*1366PX BREAKPOINT*/
+/*1366 dividido por 16 = 85,375em*/
+@media (min-width:85em){
+
+ .content  { width:80%; margin:0 10%; }
+
+}
+
+/*1600PX BREAKPOINT*/
+/*1600 dividido por 16 = 100em*/
+@media (min-width:100em){
+
+
+}
+/*Fecha o Responsivo*/
