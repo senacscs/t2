@@ -246,6 +246,14 @@ a div.cards {
     background-image: url(https://images.pexels.com/photos/316080/pexels-photo-316080.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
+#ptjs {
+    background-image: url(https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#cidade {
+    background-image: url(https://images.pexels.com/photos/409127/pexels-photo-409127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
 a div.cards h3 {
     display: flex;
     justify-content: center;
