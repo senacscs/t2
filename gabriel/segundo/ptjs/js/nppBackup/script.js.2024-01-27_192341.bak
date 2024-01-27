@@ -149,7 +149,7 @@ function quantosDias(evt) {
 	else {
 	let anosBissextos=anoContagem//4;
 	let totalDias=(anoContagem-1)*365+anosBissextos;
-	mostrarConteudo("mostrar-quantosdias", `Desde 01/01/${anoContagem}, já se passaram ${totalDias} dias!`);
+	mostrarConteudo("mostrar-quantosdias", "Desde 01/01/0001, já se passaram "+totalDias+" dias!");
 	}
 	evt.preventDefault();
 }
