@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: #000000;
+}
+
+.backtotop {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.title2 {
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+}
+
+.navtext {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+    margin-right: 50px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.navtext:hover {
+    font-size: 35px;
+}
+
+h2 {
+    color: white;
+}
+
+body {
+    background: linear-gradient(-45deg, #ffffff, #b3b3b3);
+    background-size: 1000% 1000%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE: BERNARDO E.*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE (2): BERNARDO E.*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    border: 10px;
+    background-color: #98e0ff;
+    padding: 28px;
+    text-align: center;
+    border-radius:20px;
+}
+
+.fim {
+}
+
+.title2 {
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-align: left;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    font-size: 20px;
+}
