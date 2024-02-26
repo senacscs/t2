@@ -1,0 +1,19 @@
+ul.nav {
+	list-style-type: none;
+}
+h1.titulo-principal, header p {
+	text-align: center;
+}
+h1.titulo-principal {
+	font-size: 2.5rem;
+}
+section h2 {
+	font-size: 1.5rem;
+}
+p {
+	font-size: 16px;
+}
+section {
+	display: flex;
+	margin: 0 auto;
+}

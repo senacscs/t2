@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Indicações de conteúdo técnico sobre mobile</title>
+	</head>
+	<body>
+		<header>
+			<h1 id="titulo-principal">Indicações de conteúdo técnico sobre mobile</h1>
+			<p id="introducao">Neste site, você encontrará diversas indicações de conteúdos técnicos para começar a aprender sobre o desenvolvimento mobile ou aprofundar seu conhecimento. Aproveite!</p>
+			<p id="nome-tecnologia">Tecnologia escolhida: React Native</p>
+			<p id="descricao-tecnologia">Escolhi esta tecnologia por ser uma ferramenta que está em alta nos últimos anos, e permite criar aplicativos tanto para Android quanto para IOS. Além disso, o código do React Native se assemelha muito ao código de linguagens que já conheço, como HTML e CSS, e também utiliza JavaScript. Os aplicativos em React Native também costumam ser bastante acessíveis com leitores de tela.</p>
+			<nav>
+				<ul id="nav-list">
+					<li><a href="#livro" data-shortcut-key="l">Livro</a></li>
+					<li><a href="#video" data-shortcut-key="v">Vídeo</a></li>
+					<li><a href="#podcast" data-shortcut-key="p">Podcast</a></li>
+					<li><a href="#tutorial" data-shortcut-key="t">Tutorial</a></li>
+					<li><a href="#influencer" data-shortcut-key="i">Influencer</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="livro-secao" aria-label="livro">
+				<h2 id="livro">Livro</h2>
+				<p id="titulo-livro">React native: desenvolvimento de aplicativos mobile com React</p>
+				<p id="descricao-livro">Neste livro, escrito por Diego Martins de Pinho e Bruna Escudelario, você aprenderá a desenvolver aplicativos mobile utilizando o React Native, o framework mobile criado pelo Facebook (atual Meta) e baseado no framework web React. O livro vai desde os conteúdos mais básicos, mostrando os primeiros passos da criação de apps com React Native, até operações mais complexas, como o consumo de serviços na internet (APIs).</p>
+			</section>
+			<section id="video-secao" aria-label="vídeo">
+				<h2 id="video">Vídeo</h2>
+				<p id="nome-video">Como começar no React Native em 2023</p>
+				<p id="descricao-video">Neste vídeo produzido pelo conhecido canal do YouTube Rocketseat, você aprenderá como começar a usar o React Native e criar seus primeiros aplicativos.</p>
+			</section>
+		</main>
+		<script src="js/shortcut_keys.js"></script>
+	</body>
+</html>
