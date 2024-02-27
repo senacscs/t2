@@ -52,6 +52,7 @@ main {
     list-style: none;
     display: flex;
     transition: all 0.3s ease;
+    box-shadow: none;
 }
 
   
@@ -59,11 +60,13 @@ main {
     letter-spacing: 3px;
     margin-left: 32px;
     transition: all 0.3s ease;
+    box-shadow: none;
 }
   
 .mobile-menu {
     display: none;
     cursor: pointer;
+    box-shadow: none;
 }
   
 .mobile-menu div {
@@ -72,6 +75,7 @@ main {
     background: #fff;
     margin: 8px;
     transition: 0.3s;
+    box-shadow: none;
 }
   
 @media (max-width: 4000px) {
@@ -79,6 +83,7 @@ main {
       overflow-x: hidden;
       font-family: "Popins", sans-serif;
       background-color: #f4f4f4;
+      box-shadow: none;
     }
     .nav-list {
       position: absolute;
