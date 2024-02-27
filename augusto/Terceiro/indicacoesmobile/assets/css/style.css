@@ -52,7 +52,6 @@ main {
     list-style: none;
     display: flex;
     transition: all 0.3s ease;
-    box-shadow: none;
 }
 
   
@@ -107,7 +106,11 @@ main {
       
     }
 
-    
+    header {
+        overflow-x: hidden;
+    }
+
+
 }
 
 
