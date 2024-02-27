@@ -38,8 +38,7 @@ nav {
     background: #23232e;
     height: 8vh;
     transition: all 0.3s ease;
-    overflow-x: hidden;
-
+  
 }
   
 main {
@@ -78,7 +77,7 @@ main {
   
 @media (max-width: 4000px) {
     body {
-      /*overflow-x: hidden;*/
+      overflow-x: hidden;
       font-family: "Popins", sans-serif;
       background-color: #f4f4f4;
     }
