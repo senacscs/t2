@@ -112,7 +112,12 @@ main {
 
     
 }
-  
+.nav-list.disable {
+    overflow: hidden;
+}
+
+
+
 .nav-list.active {
     transform: translateX(0);
   }
