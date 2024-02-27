@@ -38,6 +38,7 @@ nav {
     background: #23232e;
     height: 8vh;
     transition: all 0.3s ease;
+    box-shadow: none;
 
 }
   
@@ -91,6 +92,7 @@ main {
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
+      box-shadow: none;
       
     }
     .nav-list li {
