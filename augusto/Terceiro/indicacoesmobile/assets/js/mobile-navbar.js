@@ -55,11 +55,6 @@ const mobileNavbar = new MobileNavbar(
 });
 
 
-window.addEventListener('resize', function() {
-  if(window.outerWidth < 500) {
-      window.resizeTo(500, window.outerHeight);
-  }
-}, true)
 
 
 window.onscroll = function() {scrollFunction()};
