@@ -103,9 +103,11 @@ main {
     .nav-list li {
       margin-left: 0;
       opacity: 0;
+      box-shadow: none;
     }
     .mobile-menu {
       display: block;
+      box-shadow: none;
     }
 
     
