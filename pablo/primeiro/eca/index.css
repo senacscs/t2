@@ -1,0 +1,56 @@
+body {
+	background: linear-gradient(100deg, #1efd31, #ebe52c, #23a6d5, #de1515);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+    text-align: center;
+    font-family: Comic Sans MS; 
+    font-size: 2.05em;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-family: Comic Sans MS; 
+    font-size: 1.95em;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    text-align: center;
+    font-size: 1.05em;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.p2 {
+    text-align: left;
+    font-size: 0.90em;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+details {
+     font-size: 1.10em;
+     font-weight: 400;
+     font-family: sans-serif;
+}
