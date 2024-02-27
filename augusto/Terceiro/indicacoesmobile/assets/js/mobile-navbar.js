@@ -55,6 +55,8 @@ const mobileNavbar = new MobileNavbar(
 });
 
 
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
