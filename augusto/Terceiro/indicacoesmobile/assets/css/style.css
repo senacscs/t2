@@ -99,7 +99,7 @@ main {
     }
     .nav-list li {
       margin-left: 0;
-      opacity: 0.7;
+      opacity: 0;
       
     }
     .mobile-menu {
