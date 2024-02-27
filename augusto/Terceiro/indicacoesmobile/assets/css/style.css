@@ -113,7 +113,7 @@ main {
     
 }
 .nav-list.disable {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
