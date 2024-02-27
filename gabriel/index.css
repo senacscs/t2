@@ -12,19 +12,30 @@ h1#titulo-principal {
 p#introducao-1 {
 	font-size: 1.2em;
 }
-nav {
+ul#index-antigas {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	list-style-type: none;
+}
+ul#index-antigas li {
+	padding: 5px;
+	margin-bottom: 15px;
+}
+main {
+	padding: 20px;
 	margin: 15px;
 }
-ul.nav {
+ul#sites {
 	display: flex;
 flex-direction: column;
 	list-style-type: none;
 }
-ul.nav li {
+ul#sites li {
 	padding: 5px;
 	margin-bottom: 15px;
 }
-.nav a {
+#sites a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
@@ -34,30 +45,12 @@ a:hover {
 	text-decoration: underline;
 	background-color: #555;
 }
-main {
-	padding: 20px;
-}
-iframe {
-	width: 100%;
-	height: 315px;
-	border: none;
-	border-radius: 8px;
-}
-section {
-	padding: 20px;
-	margin: 40px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-}
-a[id^="link"] {
-	display: block;
-	margin-top: 15px;
-}
 @media only screen and (max-width: 600px) {
 	header {
 		padding: 10px;
 	}
 	main {
 		padding: 10px;
+	margin: 8px;
 	}
 }
