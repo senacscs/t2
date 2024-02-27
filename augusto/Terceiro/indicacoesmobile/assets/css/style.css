@@ -38,7 +38,7 @@ nav {
     background: #23232e;
     height: 8vh;
     transition: all 0.3s ease;
-    box-shadow: none;
+    overflow-x: hidden;
 
 }
   
@@ -52,7 +52,6 @@ main {
     list-style: none;
     display: flex;
     transition: all 0.3s ease;
-    box-shadow: none;
 }
 
   
@@ -60,13 +59,11 @@ main {
     letter-spacing: 3px;
     margin-left: 32px;
     transition: all 0.3s ease;
-    box-shadow: none;
 }
   
 .mobile-menu {
     display: none;
     cursor: pointer;
-    box-shadow: none;
 }
   
 .mobile-menu div {
@@ -75,7 +72,7 @@ main {
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-    box-shadow: none;
+    
 }
   
 @media (max-width: 4000px) {
@@ -83,7 +80,6 @@ main {
       overflow-x: hidden;
       font-family: "Popins", sans-serif;
       background-color: #f4f4f4;
-      box-shadow: none;
     }
     .nav-list {
       position: absolute;
@@ -97,23 +93,22 @@ main {
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
-      box-shadow: none;
+      
       
     }
     .nav-list li {
       margin-left: 0;
-      opacity: 0;
-      box-shadow: none;
+      opacity: 0.7;
+      
     }
     .mobile-menu {
       display: block;
-      box-shadow: none;
+      
     }
 
-    
-}
-.nav-list.disable {
-    overflow: hidden;
+
+
+
 }
 
 
