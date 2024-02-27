@@ -43,9 +43,9 @@ nav {
 }
   
 main {
-    /*background: url("bg.jpg") no-repeat center center;
+    /*background: url("bg.jpg") no-repeat center center;*/
     background-size: cover;
-    height: 92vh;*/
+    height: 92vh;
 }
   
 .nav-list {
@@ -106,13 +106,7 @@ main {
       
     }
 
-    header {
-        overflow-x: hidden;
-    }
 
-    main {
-        overflow-x: hidden;
-    }
 
 
 }
