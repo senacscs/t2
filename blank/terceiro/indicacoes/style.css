@@ -58,7 +58,7 @@ h3{
 	font-size: clamp(1rem, 0.5rem + 10vh, 2rem);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
     .split {
         display: flex;
         flex-direction: column;
