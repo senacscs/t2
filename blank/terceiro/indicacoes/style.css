@@ -26,7 +26,6 @@ header {
     min-height: 37rem;
 	color: rgb(39,40,44);
     display: flex;
-
 }
 
 h1 {
@@ -36,10 +35,10 @@ h1 {
     align-self: center;
     font-size: clamp(2rem, 1rem + 10vh, 4rem);
 }
+
 .description{
 	text-align: center;
 }
-
 .container {
     padding: 0 1em;
     margin: 0 auto;
@@ -62,6 +61,7 @@ h3{
 @media only screen and (max-width: 600px){
     .split {
         display: flex;
+        flex-direction: column;
         gap: 2em;
     }
     iframe {
