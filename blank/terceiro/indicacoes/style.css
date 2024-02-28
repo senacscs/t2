@@ -71,6 +71,11 @@ h3{
     h1 {
         font-size: clamp(1rem, 1rem + 10vh, 2.5rem); 
     }
+    body {
+        background-repeat: no-repeat;
+        position: fixed;
+    }
+    
 }
 
 p {
