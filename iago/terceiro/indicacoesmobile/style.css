@@ -1,0 +1,236 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #FCFCFC;
+  margin: 0;
+  text-align: justify;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dd6d3a;
+}
+
+/* fonte */
+h2 {
+  color: #970101;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 10px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* navegação */
+nav {
+  background-color: #dd6d3a;
+}
+
+.icon-menu {
+  display: none;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  margin: 10px;
+  padding: 10px 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #FCFCFC;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu a:hover {
+  color: #f8d99f;
+  transition: background .5s;
+  border-left: 2px solid #970101;
+  border-top: 2px solid #970101;
+}
+
+/* Cabeçalho */
+header a {
+  background-size: cover;
+}
+
+.imagem {
+  background-image: url(imgs/swift.jpg);
+  padding-bottom: 3rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.texto-cabecalho {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+  color: #943408;
+  font-size: 50px;
+}
+
+.sub-cabecalho {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  color: #560707;
+  font-size: 30px;
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 200px;
+}
+
+
+/* Corpo */
+.corpo {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.just {
+  max-width: 1000px;
+  margin: 10px auto;
+  box-shadow: 3px 2px 10px #554c38;
+  padding: 30px 10px 30px 10px;
+  background-color: #282828;
+}
+
+.just p {
+  color: #fff;
+}
+
+.margem {
+  margin: 8rem 0rem;
+}
+
+#tutorial p,
+#livro p,
+#video p,
+#podcast p,
+#influencer p {
+  max-width: 1000px;
+  box-shadow: 3px 2px 10px #554c38;
+  padding: 30px 10px 30px 10px;
+  background-color: #282828;
+  margin: 10px auto;
+  color: #fff;
+}
+
+/* link */
+.link {
+  text-decoration: none;
+  color: #FCFCFC;
+  font-size: 20px;
+}
+
+.link:hover {
+  transition: .5s;
+  color: #000000;
+  box-shadow: 2px 2px 10px #FCFCFC;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+/* responsivo */
+@media (max-width:750px) {
+  /* navegação */
+  .menu {
+    top: 36px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #282828;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  .show {
+    transition: 1s;
+    height: 150;
+    opacity: 1;
+    height: 240px;
+  }
+
+  .hide {
+    transition: 1s;
+    height: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+    border: none;
+  }
+
+  .icon-menu {
+    display: flex;
+    text-align: left; 
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+
+  nav {
+    padding: 18px 0;
+  }
+
+  /* cabeçalho */
+  .texto-cabecalho {
+    text-align: center;
+  }
+
+  /* corpo */
+  h2 {
+   text-align: center;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vidLar {
+    width: 436px;
+  }
+}

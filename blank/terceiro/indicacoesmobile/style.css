@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.scroll__bar {
+    overflow-y: scroll;
+}
+.scroll__bar::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: linear-gradient(to right bottom, rgb(127, 82, 255), rgb(177, 37, 234), rgb(226, 68, 98));
+}
+::selection {
+    background-color: rgb(127, 82, 255, 0.2);
+}
+header {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 60rem;
+    min-height: 37rem;
+    color: rgb(39,40,44);
+    display: flex;
+}
+h1 {
+    margin: 0 auto;
+    color: rgb(244,244,244);
+    justify-self: center;
+    align-self: center;
+    font-size: clamp(2rem, 1rem + 10vh, 4rem);
+}
+.description {
+    text-align: center;
+}
+.container {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 60rem;
+    min-height: 70rem;
+    background-color: rgb(244,244,244);
+}
+h2,
+h3 {
+    color: rgb(239,72,87);
+    text-align: center;
+    padding: 1em;
+    font-size: clamp(1rem, 0.5rem + 10vh, 3rem);
+}
+h3 {
+    font-size: clamp(1rem, 0.5rem + 10vh, 2rem);
+}
+@media only screen and (max-width: 640px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    iframe {
+        display: none;
+        visibility: hidden;
+    }
+    h1 {
+        font-size: clamp(1rem, 1rem + 10vh, 2.5rem);
+    }
+}
+p {
+    font-size: 20px;
+    padding: 1rem;
+}
+span {
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(154,79,214);
+}
+hr {
+    margin: 2rem 5rem;
+}
+img {
+    width: 40%;
+    float: left;
+    padding: 0.5rem;
+    user-select: none;
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+
+    width: 500px;
+    height: 300px;
+}
+a {
+    color: rgb(235,72,92);
+}
