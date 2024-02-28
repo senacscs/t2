@@ -5,12 +5,19 @@ body {
 header {
 	text-align: center;
 	padding: 20px;
+	margin: 20px;
 }
 h1#titulo-principal {
 	font-size: 2rem;
 }
 p#introducao-1 {
 	font-size: 1.2em;
+}
+p#introducao2, p#introducao3 {
+	font-size: 1em;
+}
+p#introducao1, p#introducao2, p#introducao3 {
+	margin-bottom: 15px;
 }
 ul#index-antigas {
 	display: flex;
@@ -45,12 +52,16 @@ a:hover {
 	text-decoration: underline;
 	background-color: #555;
 }
+a {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 @media only screen and (max-width: 600px) {
 	header {
 		padding: 10px;
+	margin: 10px;
 	}
 	main {
 		padding: 10px;
-	margin: 8px;
+	margin: 10px;
 	}
 }
