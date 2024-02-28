@@ -66,11 +66,6 @@ h3 {
     body {
         background-repeat: no-repeat;
     }
-    .container {
-        .container {
-            margin: 0;
-        }
-    }
 }
 p {
     font-size: 20px;
