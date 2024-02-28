@@ -66,8 +66,7 @@ h3{
     }
 
     iframe {
-        width: 200px;
-        height: 100px;
+        display: hidden;
     }
 
     h1 {
