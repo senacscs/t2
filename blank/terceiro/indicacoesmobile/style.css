@@ -75,6 +75,10 @@ h3{
         background-repeat: no-repeat;
         position: fixed;
     }
+    .container{
+        .container {
+            margin: 0;
+    }
     
 }
 
