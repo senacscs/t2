@@ -66,11 +66,11 @@ h3{
     }
 
     iframe {
-        display: hidden;
+        display: none;
     }
 
     h1 {
-        font-size: clamp(1rem, 1rem + 10vh, 3rem); 
+        font-size: clamp(1rem, 1rem + 10vh, 2rem); 
     }
 }
 
