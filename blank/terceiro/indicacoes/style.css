@@ -64,13 +64,12 @@ h3{
         display: flex;
         gap: 2em;
     }
-
     iframe {
         display: none;
+        visibility: hidden;
     }
-
     h1 {
-        font-size: clamp(1rem, 1rem + 10vh, 2rem); 
+        font-size: clamp(1rem, 1rem + 10vh, 3rem); 
     }
 }
 
