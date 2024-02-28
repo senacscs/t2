@@ -69,7 +69,7 @@ h3{
         visibility: hidden;
     }
     h1 {
-        font-size: clamp(1rem, 1rem + 10vh, 3rem); 
+        font-size: clamp(1rem, 1rem + 10vh, 2.5rem); 
     }
 }
 
