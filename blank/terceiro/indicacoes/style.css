@@ -64,6 +64,15 @@ h3{
         display: flex;
         gap: 2em;
     }
+
+    iframe {
+        width: 200px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: clamp(1rem, 1rem + 10vh, 3rem); 
+    }
 }
 
 p {
@@ -87,15 +96,13 @@ img {
     padding: 0.5rem;
 	user-select: none;
 }
+
 iframe{
 	display: block;
 	margin: 0 auto;
-}
 
-@media (min-width: 40em) {
-    iframe {
-        width: 400px;
-    }
+    width: 500px;
+    height: 300px;
 }
 a {
     color: rgb(235,72,92);
