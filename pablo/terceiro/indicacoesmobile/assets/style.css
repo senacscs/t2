@@ -1,0 +1,85 @@
+
+.h1 { 
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 0px rgba(206,206,206,0.38);
+}   
+
+.h2 {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 0px rgba(206,206,206,0.38);
+
+}
+
+.p1 {    
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+
+.p2 {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 0px rgba(206,206,206,0.38);
+    color: rgb(0, 121, 60);
+}
+
+.nav {     
+    background-color: rgb(48, 45, 45); 
+    opacity: 80%; 
+    padding: 25px; 
+    text-align: center; 
+    margin-top: -20px; 
+    margin-left: -8px; 
+    margin-right: -8px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.nav2 { 
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    text-align: center;
+} 
+
+.nav2:hover{
+    font-size: 23px;
+}
+
+
+.botao {
+    text-align: center;
+    text-decoration: none;
+} 
+
+body {
+    background: linear-gradient(-45deg, #b8b5b5, #b6b5b5);
+    background-size: 1000% 1000%;
+    animation: gradient 10s ease infinite;
+    text-align: center;
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE: BERNARDO E.*/   
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} /* CRĆ‰DITOS DE CĆ“DIGO DO GRADIENTE (2): BERNARDO E.*/
+
+html{
+    scroll-behavior: smooth;
+}
