@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #810000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #502004;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #810000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.scroll-to-top:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.recommendation {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+/* Adicionando classe para ocultar o conteúdo */
+p.hidden {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+}

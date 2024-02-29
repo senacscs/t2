@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Recomendações</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1>Recomendações</h1>
+        <div class="navigation-buttons">
+            <button onclick="scrollToSection('tutorial')" class="nav-button">Ir para o Tutorial</button>
+            <button onclick="scrollToSection('livro')" class="nav-button">Ir para o Livro</button>
+            <button onclick="scrollToSection('video')" class="nav-button">Ir para o Vídeo</button>
+            <button onclick="scrollToSection('podcast')" class="nav-button">Ir para o Podcast</button>
+            <button onclick="scrollToSection('influencer')" class="nav-button">Ir para o Influencer</button>
+        </div>
+    </div>
+    </header>
+
+    <main>
+
+        <section class="recommendation" id="tutorial">
+            <h2>Tutorial</h2>
+            <p>Insira aqui informações e links para o tutorial recomendado.</p>
+        </section>
+
+        <section class="recommendation" id="livro">
+            <h2>Livro</h2>
+            <p>Insira aqui informações e links para o livro recomendado.</p>
+        </section>
+
+        <section class="recommendation" id="video">
+            <h2>Vídeo do YouTube</h2>
+            <p>Insira aqui informações e links para o vídeo do YouTube recomendado.</p>
+        </section>
+
+        <section class="recommendation" id="podcast">
+            <h2>Podcast no Spotify</h2>
+            <p>Insira aqui informações e links para o podcast recomendado.</p>
+        </section>
+
+        <section class="recommendation" id="influencer">
+            <h2>Influencer do Instagram</h2>
+            <p>Insira aqui informações e links para o perfil do influencer recomendado no Instagram.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recomendações</p>
+    </footer>
+
+    <button onclick="scrollToTop()" class="scroll-to-top">&#9650;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
