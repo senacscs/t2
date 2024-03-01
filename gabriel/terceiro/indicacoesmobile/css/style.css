@@ -28,7 +28,7 @@ flex-direction: column;
 	list-style-type: none;
 }
 ul.nav li {
-	padding: 5px;
+	padding: 7px;
 	margin-bottom: 15px;
 }
 .nav a {
@@ -39,6 +39,7 @@ ul.nav li {
 }
 a:hover {
 	text-decoration: underline;
+	color: white;
 	background-color: #555;
 }
 main {
