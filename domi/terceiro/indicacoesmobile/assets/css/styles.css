@@ -1,18 +1,35 @@
 /* CSS Reset */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     scroll-behavior: smooth;
 }
 
 *::selection {
-    background-color: #4404c5;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+/* background & colors */
+html {
+    background: linear-gradient(180deg, rgba(255,183,3,1) 15%, rgba(193,86,144,1) 50%, rgba(114,9,183,1) 80%);
+    scroll-behavior: smooth;
+    padding-bottom: 50px;
+}
+
+html p,
+html h1,
+html h2 {
+    color: #000;
+}
+
+html main section {
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 /* scroll bar */
@@ -78,7 +95,7 @@ div>ul li:hover ul li a {
 }
 
 div>ul li ul li:hover {
-    background-color: #4404c5;
+    background-color: #ffb703;
 }
 
 /* sections */
@@ -91,12 +108,14 @@ section h1 {
     text-align: center;
     font-size: 40px;
     padding-bottom: 30px;
-    font-family: "Anta", sans-serif;
+    padding-top: 30px;
+    font-family: "Grandstander", sans-serif;
 }
 
 section h2 {
     padding-bottom: 10px;
-    font-family: "Anta", sans-serif;
+    padding-top: 10px;
+    font-family: "Grandstander", sans-serif;
 }
 
 section p {
@@ -144,7 +163,7 @@ section a {
     }
 
     div>ul li ul li:hover {
-        color: #5217c9;
+        color: #ffb703;
         background-color: #000;
     }
 
