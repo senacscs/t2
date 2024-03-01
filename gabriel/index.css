@@ -13,25 +13,11 @@ h1#titulo-principal {
 p#introducao-1 {
 	font-size: 1.2em;
 }
-p#introducao2, p#introducao3 {
+p#introducao-2, p#introducao-3 {
 	font-size: 1em;
 }
-p#introducao1, p#introducao2, p#introducao3 {
+p#introducao-1, p#introducao-2, p#introducao3 {
 	margin-bottom: 15px;
-}
-ul#index-antigas {
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	list-style-type: none;
-}
-ul#index-antigas li {
-	padding: 5px;
-	margin-bottom: 15px;
-}
-main {
-	padding: 20px;
-	margin: 15px;
 }
 ul#sites {
 	display: flex;
@@ -39,7 +25,7 @@ flex-direction: column;
 	list-style-type: none;
 }
 ul#sites li {
-	padding: 5px;
+	padding: 7px;
 	margin-bottom: 15px;
 }
 #sites a {
@@ -50,18 +36,46 @@ ul#sites li {
 }
 a:hover {
 	text-decoration: underline;
+	color: white;
 	background-color: #555;
+}
+main {
+	padding: 20px;
+	margin: 20px;
 }
 a {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
+	body {
+		font-family: "Arial", sans-serif;
+		font-size: 14px;
+	}
 	header {
+		text-align: center;
 		padding: 10px;
-	margin: 10px;
+		margin: 10px;
+	}
+	h1#titulo-principal {
+		font-size: 1.5em;
+	}
+	p#introducao-1 {
+		font-size: 1em;
+	}
+	ul#sites {
+		display: flex;
+	flex-direction: column;
+		list-style-type: none;
+	}
+	ul#sites li {
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+	#sites a {
+		font-size: 1em;
 	}
 	main {
 		padding: 10px;
-	margin: 10px;
+		margin: 10px;
 	}
 }

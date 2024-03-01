@@ -70,12 +70,55 @@ section, a {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
+	body {
+		font-family: "Arial", sans-serif;
+		font-size: 14px;
+	}
 	header {
+		text-align: center;
 		padding: 10px;
 		margin: 10px;
+	}
+	h1#titulo-principal {
+		font-size: 1.5em;
+	}
+	p#introducao-1 {
+		font-size: 1em;
+	}
+	nav {
+		margin: 8px;
+	}
+	ul.nav {
+		display: flex;
+	flex-direction: column;
+		list-style-type: none;
+	}
+	ul.nav li {
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+	.nav a {
+		font-size: 1em;
 	}
 	main {
 		padding: 10px;
 		margin: 10px;
+	}
+	section {
+		padding: 10px;
+		margin: 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+iframe {
+	width: 100%;
+	height: 200px;
+}
+	a[id^="link"] {
+	margin-top: 11px;
+	}
+	#nome-influencer {
+		font-size: 9px;
+		font-weight: bold;
 	}
 }
