@@ -8,7 +8,7 @@ header {
 	margin: 20px;
 }
 h1#titulo-principal {
-	font-size: 2em;
+	font-size: 2rem;
 }
 p#introducao-1 {
 	font-size: 1.2em;
@@ -19,19 +19,16 @@ p#introducao-2, p#introducao-3 {
 p#introducao-1, p#introducao-2, p#introducao3 {
 	margin-bottom: 15px;
 }
-nav {
-	margin: 15px;
-}
-ul.nav {
+ul#sites {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style-type: none;
 }
-ul.nav li {
+ul#sites li {
 	padding: 7px;
 }
-.nav a {
+#sites a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
@@ -46,27 +43,7 @@ main {
 	padding: 20px;
 	margin: 20px;
 }
-iframe {
-	width: 100%;
-	height: 315px;
-	border: none;
-	border-radius: 8px;
-}
-section {
-	padding: 20px;
-	margin: 40px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-}
-a[id^="link"] {
-	display: block;
-	margin-top: 15px;
-}
-#nome-influencer {
-	font-size: 18px;
-	font-weight: bold;
-}
-section, a {
+a {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
@@ -85,35 +62,29 @@ section, a {
 	p#introducao-1 {
 		font-size: 1em;
 	}
-	nav {
-		margin: 8px;
-	}
-	ul.nav {
+	ul#index-antigas {
 		display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+		flex-direction: column;
+		justify-content: space-evenly;
 		list-style-type: none;
 	}
-	ul.nav li {
+	ul#index-antigas li {
 		padding: 5px;
 	}
-	.nav a {
+	ul#sites {
+		display: flex;
+	flex-direction: column;
+		justify-content: space-evenly;
+		list-style-type: none;
+	}
+	ul#sites li {
+		padding: 5px;
+	}
+	#sites a {
 		font-size: 1em;
 	}
 	main {
 		padding: 10px;
 		margin: 10px;
-	}
-	section {
-		padding: 10px;
-		margin: 20px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-	}
-iframe {
-	height: 200px;
-}
-	a[id^="link"] {
-	margin-top: 10px;
 	}
 }

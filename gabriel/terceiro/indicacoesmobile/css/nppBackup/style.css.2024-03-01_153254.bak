@@ -116,4 +116,8 @@ iframe {
 	a[id^="link"] {
 	margin-top: 10px;
 	}
+	#nome-influencer {
+		font-size: 12px;
+		font-weight: bold;
+	}
 }

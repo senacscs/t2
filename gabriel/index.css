@@ -8,7 +8,7 @@ header {
 	margin: 20px;
 }
 h1#titulo-principal {
-	font-size: 2rem;
+	font-size: 2em;
 }
 p#introducao-1 {
 	font-size: 1.2em;
@@ -19,14 +19,23 @@ p#introducao-2, p#introducao-3 {
 p#introducao-1, p#introducao-2, p#introducao3 {
 	margin-bottom: 15px;
 }
+ul#index-antigas {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+ul#index-antigas li {
+	padding: 8px;
+}
 ul#sites {
 	display: flex;
-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-evenly;
 	list-style-type: none;
 }
 ul#sites li {
-	padding: 7px;
-	margin-bottom: 15px;
+	padding: 8px;
 }
 #sites a {
 	text-decoration: none;
@@ -62,14 +71,23 @@ a {
 	p#introducao-1 {
 		font-size: 1em;
 	}
+	ul#index-antigas {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		list-style-type: none;
+	}
+	ul#index-antigas li {
+		padding: 5px;
+	}
 	ul#sites {
 		display: flex;
 	flex-direction: column;
+		justify-content: space-evenly;
 		list-style-type: none;
 	}
 	ul#sites li {
 		padding: 5px;
-		margin-bottom: 10px;
 	}
 	#sites a {
 		font-size: 1em;
