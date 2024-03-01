@@ -1,0 +1,95 @@
+/* Reset de estilos padrão */
+body, h1, details, summary, button, label, input, code {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo global */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #dbf7ff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos personalizados para o elemento <details> */
+.custom-details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilos para esconder o conteúdo do <details> por padrão */
+.custom-details:not([open]) .custom-content {
+  display: none;
+}
+
+/* Estilos para o conteúdo personalizado dentro do <details> */
+.custom-content {
+  margin-top: 10px;
+}
+
+.custom-message {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  background-color: #1c9fe0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1c9dcd;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#mostrar {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
