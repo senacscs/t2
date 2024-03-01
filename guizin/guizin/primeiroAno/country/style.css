@@ -1,0 +1,20 @@
+  html {
+    background-image:linear-gradient(to bottom, black, red, yellow) ;
+  }
+
+
+h1{
+    font-size: large;
+    font-family: Arial;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+p{
+    font-size: medium;
+    font-family: Arial;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
