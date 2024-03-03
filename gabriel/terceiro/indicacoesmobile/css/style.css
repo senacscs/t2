@@ -25,7 +25,7 @@ nav {
 ul.nav {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	list-style-type: none;
 }
 ul.nav li {
@@ -91,7 +91,7 @@ section, a {
 	ul.nav {
 		display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 		list-style-type: none;
 	}
 	ul.nav li {

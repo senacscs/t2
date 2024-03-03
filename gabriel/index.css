@@ -22,7 +22,7 @@ p#introducao-1, p#introducao-2, p#introducao3 {
 ul#index-antigas {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	list-style-type: none;
 }
 ul#index-antigas li {
@@ -31,7 +31,7 @@ ul#index-antigas li {
 ul#sites {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	list-style-type: none;
 }
 ul#sites li {
@@ -74,7 +74,7 @@ a {
 	ul#index-antigas {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		list-style-type: none;
 	}
 	ul#index-antigas li {
@@ -83,7 +83,7 @@ a {
 	ul#sites {
 		display: flex;
 	flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		list-style-type: none;
 	}
 	ul#sites li {
