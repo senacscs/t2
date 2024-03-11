@@ -1,0 +1,6 @@
+// Transitions
+@mixin transitionProperty($transitionDetail) {
+    -webkit-transition: $transitionDetail;
+    -o-transition: $transitionDetail;
+    transition: $transitionDetail;
+}

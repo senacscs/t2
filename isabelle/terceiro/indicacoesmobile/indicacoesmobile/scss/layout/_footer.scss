@@ -1,0 +1,40 @@
+#footer {
+    background: $light-black;
+    text-align: center;
+    z-index: 10;
+    padding: 30px 0;
+    color: $light;
+    p {
+        &.copyright {
+            a {
+                color: $light-aqua;
+                font-weight: 700;
+            }
+        }
+    }
+    .social {
+        a {
+            padding: 0 5px;
+            text-decoration: none;
+            i {
+                &.fa {
+                    font-size: 1.1rem;
+                    color: $light-grey;
+                    @include transitionProperty(all .3s ease);
+                    &:hover,
+                    &:active,
+                    &:focus{
+                        color: $light;
+                    }
+                }
+            }
+            &:hover {
+                i {
+                    &.fa {
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}
