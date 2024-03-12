@@ -1,7 +1,7 @@
 html {
     margin-left: 25%;
     margin-right: 25%;
-    background-color: #eb5959;
+    background-color: #b859eb;
 }
 h1{
     text-align: center;
@@ -9,7 +9,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button {
-    background-color: #e94d4d;
+    background-color: #b247eb;
     color:rgb(255, 255, 255);
     border: 0;
     padding: 15px 32px;
