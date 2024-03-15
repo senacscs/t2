@@ -1,0 +1,56 @@
+{
+  "name": "carousel-template",
+  "version": "1.0.1",
+  "main": "index.js",
+  "description": "Carousel is the Beautiful Slideshow Template for Bootstrap 4.",
+  "keywords": [
+    "carousel",
+    "carousel-template",
+    "slideshow",
+    "slideshow-Template",
+    "Bootstrap 4 Template",
+    "Bootstrap 4",
+    "HTML",
+    "SCSS",
+    "CSS",
+    "Bootstrap",
+    "responsive",
+    "theme",
+    "template",
+    "Showcase"
+  ],
+  "homepage": "https://orbitthemes.com/downloads/carousel/",
+  "author": "Orbit Themes <themesorbit@gmail.com> (https://orbitthemes.com)",
+  "bugs": {
+    "url": "https://github.com/orbitthemes/carousel/issues",
+    "email": "themesorbit@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Sandeep Prasad Bhatt",
+      "email": "sandeep.bhatt59@gmail.com",
+      "url": "http://sandeepbhatt.com.np/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbitthemes/carousel.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "4.0.1",
+    "gulp-uglify": "3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "font-awesome": "4.7.0",
+    "jquery": "3.3.1",
+    "popper.js": "1.14.3"
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portugol para JavaScript</title>
+    <style>
+        /* Adicione estilos CSS personalizados aqui */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3b8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #d89aff;
+            color: white;
+        }
+
+        details {
+            background-color: #fff;
+            border: 1px solid #edefff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #6118e0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6118e0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #b6daff;
+            border-radius: 5px;
+        }
+
+        #mostrar {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portugol para JavaScript</h1>
+
+    <details class="custom-details">
+        <summary>Olá Mundo</summary>
+        <div class="custom-content">
+            <p class="custom-message">Olá Mundo!</p>
+            <button onclick="olaMundo()">Executar</button>
+        </div>
+    </details>
+
+    <details>
+        <summary>Número Digitado</summary>
+        <label>Digite um número: </label><input type="number" id="numero" placeholder="Só Números"><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>
+
+    <details>
+        <summary>Nome Digitado</summary>
+        <label>Digite seu nome: </label><input type="text" id="nome" placeholder="Só Letras"><br>
+        <button onclick="nomeDigitado()">Executar</button>
+    </details>
+
+    <div id="mostrar"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
