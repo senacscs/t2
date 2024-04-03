@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valor Absoluto</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+ 
+</head>
+<body>
+    <center><h1>Calculadora de Valor Absoluto</h1>
+   <center> <p>Insira um número para calcular seu valor absoluto:</p></center>
+    <input type="number" id="inputNumber">
+    <button onclick="calculateAbsoluteValue()">Calcular</button>
+    <p>Resultado: <span id="result"></span></p>
+    <center><img src=""></center>
+
+    <script>
+        function calculateAbsoluteValue() {
+            const input = document.getElementById("inputNumber").value;
+            const result = Math.abs(parseFloat(input));
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valor Absoluto</title>
+</head>
+<body>
+   

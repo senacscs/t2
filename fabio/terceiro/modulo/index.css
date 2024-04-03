@@ -1,0 +1,44 @@
+/* Estilos para a calculadora de valor absoluto */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("fundo.jpg"); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #15d4a7;
+}
+
+p {
+    color: #07ffc5;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-weight: bold;
+    color: #333;
+}

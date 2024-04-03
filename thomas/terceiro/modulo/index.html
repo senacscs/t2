@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Calculador de Intensidade de Flatulência</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    display: flex;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+<div id="app">
+  <label for="flatulence-intensity">Intensidade da Flatulência (positiva ou negativa):</label>
+  <input type="number" id="flatulence-intensity" placeholder="Insira um valor...">
+  <button onclick="saveIntensity()">Salvar Intensidade</button>
+  <p>Valor Absoluto da Intensidade: <span id="abs-intensity">0</span></p>
+  <p>Maior Intensidade: <span id="max-intensity">0</span></p>
+  <p>Menor Intensidade: <span id="min-intensity">0</span></p>
+</div>
+<div><img src="https://www.bing.com/images/blob?bcid=sjF9rJJLct0GJw"></div>
+
+<script>
+let maxIntensity = 0;
+let minIntensity = null;
+
+function saveIntensity() {
+  const rawIntensity = Number(document.getElementById('flatulence-intensity').value);
+  const intensity = Math.abs(rawIntensity);
+  document.getElementById('abs-intensity').textContent = intensity;
+
+  if (intensity > maxIntensity) {
+    maxIntensity = intensity;
+    document.getElementById('max-intensity').textContent = maxIntensity;
+  }
+  if (minIntensity === null || rawIntensity < minIntensity) {
+    minIntensity = rawIntensity;
+    document.getElementById('min-intensity').textContent = minIntensity;
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Força de Velocidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Força de Velocidade</h1>
+        <form id="velocity-form">
+            <label for="velocity">Velocidade (m/s):</label>
+            <input type="number" id="velocity" step="0.01" required>
+            <button type="button" onclick="calculateForce()">Calcular</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateForce() {
+            const velocityInput = document.getElementById("velocity");
+            const velocity = parseFloat(velocityInput.value);
+            const force = 2 * Math.abs(velocity);
+
+            document.getElementById("result").textContent = `A força de velocidade é ${force.toFixed(2)}.`;
+        }
+    </script>
+</body>
+</html>
