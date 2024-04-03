@@ -6,9 +6,9 @@ const numeroPositivo = 13;
 function valorAbsolutoDaPersonalidade(numero) {
     const valorAbsoluto = Math.abs(numero);
     if (numero < 0) {
-        return `O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`;
+        console.log(return `O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`;)
     } else {
-        return `O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`;
+        console.log(return `O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`;)
     }
 }
 
