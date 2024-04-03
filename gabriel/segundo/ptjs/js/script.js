@@ -1,6 +1,5 @@
 function mostrarConteudo(nomeDiv, conteudo) {
 	let div=document.getElementById(nomeDiv);
-	div.classList.add("sr-only");
 	div.innerHTML=conteudo;
 	let screenReaderDiv=document.createElement("div");
 	screenReaderDiv.setAttribute("aria-live", "polite");

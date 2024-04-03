@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#informacao-adicional {
+	font-size: 14px; /* Tamanho do parágrafo adicional */
+	color: #666; /* Cor do texto */
+	margin-top: 10px; /* Espaçamento acima do parágrafo */
+}
+#formulario {
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center; /* Centralizar os elementos horizontalmente */
+}
+
+#posicaoX {
+    margin-bottom: 10px; /* Espaçamento entre o campo de entrada e o botão */
+}
+
+#calcularButton {
+    display: block; /* Tornar o botão um bloco para que ele fique abaixo do campo */
+    margin-top: 10px; /* Espaçamento entre o campo e o botão */
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0px;
+	margin: -1px;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+}

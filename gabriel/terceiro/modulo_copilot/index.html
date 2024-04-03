@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Movimento</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--
+	Prompts:
+	"Me forneça outros exemplos de aplicação da função abs em JavaScript em que ter o valor absoluto é útil."
+	"Gostei bastante do exemplo do controle de movimento nos jogos. Você pode escrever um código completo em html, css e javascript de um site que solicita ao usuário a posição do jogador num formulário e mostra o valor absoluto na tela?"
+	"Excelente código! Agora, você pode separar este código como se estivesse em 3 arquivos, um index.html, um style.css e um script.js?"
+	"Você pode corrigir este css para que o botão calcular fique em baixo do campo para informar a posição?"
+	"Na verdade, preciso de uma alteração em que o leitor de tela possa detectar o que foi modificado, e o botão fique abaixo não por flexbox, mas sim por um display: block ou o uso de <br>."
+	"Acho que você colocou um id no CSS, mas no HTML esse id está faltando. Você pode colocar o id calcular-button no HTML também?"
+	Usei a IA sempre que possível para corrigir os erros, como no caso do botão calcular e o CSS.
+	Para o leitor de tela conseguir ler adequadamente os resultados em qualquer caso, eu mesmo criei a função mostrarConteudo
+	no JavaScript que faz corretamente esse processo, pois a IA não conseguiria adaptar isso da melhor maneira possível.
+	"Eu coloquei um pequeno parágrafo abaixo do h1 com uma informação adicional sobre algumas modificações que fiz. Você acha que é necessário adaptar um pouco o CSS já que eu adicionei este parágrafo? Ele ficou assim:
+<p id="informacao-adicional">Este exemplo foi adaptado para abranger algumas melhorias de acessibilidade com leitores de tela.</p>"
+"Eu gostaria que, quando o usuário apertasse enter no campo da posição, o formulário fosse enviado. Você pode modificar este botão para ter o type='submit' ao invés de ser um botão normal e o evento ser com onsubmit no formulário ao invés de onclick no botão?"
+"Acho que só está faltando um preventDefault no evento de submit para evitar que a página recarregue. Você pode corrigir o código para poder usar e.preventDefault?"
+
+	-->
+</head>
+<body>
+	<h1>Controle de Movimento</h1>
+	<p id="informacao-adicional">Este exemplo foi adaptado para abranger algumas melhorias de acessibilidade com leitores de tela.</p>
+	<form id="formulario">
+		<label for="posicaoX">Posição do Jogador (X):</label>
+		<input type="number" id="posicaoX" placeholder="Digite a posição X" required>
+		<button type="submit" id="calcularButton">Calcular</button>
+	</form>
+	<div id="resultado"></div>
+	<script src="js/script.js"></script>
+</body>
+</html>
