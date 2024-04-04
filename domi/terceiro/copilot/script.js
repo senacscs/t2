@@ -18,6 +18,12 @@ function valorAbsolutoDaPersonalidade(numero) {
 console.log(valorAbsolutoDaPersonalidade(numeroNegativo));
 console.log(valorAbsolutoDaPersonalidade(numeroPositivo));
 
+alert(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
+console.log(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
+
+alert(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
+console.log(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
+
 /* Neste exemplo criativo:
 
 O número -7 é um rebelde, mas seu valor absoluto é 7.
