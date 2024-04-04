@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo da página */
+    background-color: #fbf1ff; /* Define a cor de fundo */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da página como 100% da altura da janela */
+}
+
+.calculator {
+    background-color: #ecdaff; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(2, 99, 255, 0.1); /* Sombra */
+    text-align: center; /* Alinhamento de texto */
+}
+
+h1 {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; /* Define a fonte minimalista para o título */
+    font-size: 29px; /* Tamanho da fonte do título */
+    font-weight: normal; /* Peso da fonte do título */
+}
+
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(166, 64, 255);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b51ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ac00d3;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .explanation {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
