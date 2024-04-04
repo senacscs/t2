@@ -3,11 +3,7 @@ body {
     text-align: center;
 }
 
-#informacao-adicional {
-	font-size: 14px; /* Tamanho do parágrafo adicional */
-	color: #666; /* Cor do texto */
-	margin-top: 10px; /* Espaçamento acima do parágrafo */
-}
+
 #formulario {
     margin: 20px auto;
     max-width: 300px;
@@ -21,6 +17,13 @@ body {
 #calcularButton {
     display: block; /* Tornar o botão um bloco para que ele fique abaixo do campo */
     margin-top: 10px; /* Espaçamento entre o campo e o botão */
+}
+
+#informacaoAdicional,
+#integrantes {
+	font-size: 14px; /* Tamanho do parágrafo adicional */
+	color: #666; /* Cor do texto */
+	margin-top: 10px; /* Espaçamento acima do parágrafo */
 }
 
 .sr-only {
