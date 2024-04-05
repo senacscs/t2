@@ -6,10 +6,8 @@ const numeroPositivo = 13;
 function valorAbsolutoDaPersonalidade(numero) {
     const valorAbsoluto = Math.abs(numero);
     if (numero < 0) {
-        alert(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
         console.log(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
     } else {
-        alert(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
         console.log(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
     }
 }
@@ -18,11 +16,19 @@ function valorAbsolutoDaPersonalidade(numero) {
 console.log(valorAbsolutoDaPersonalidade(numeroNegativo));
 console.log(valorAbsolutoDaPersonalidade(numeroPositivo));
 
-alert(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
-console.log(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
+function qualPersonalidadeNumero(numero) {
+    var numero = window.prompt("Insira um número")
+    var valorAbsoluto = Math.abs(numero)
 
-alert(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
-console.log(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
+    if (numero < 0) {
+        alert(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
+        console.log(`O número ${numero} é um rebelde, mas seu valor absoluto é ${valorAbsoluto}.`)
+    } else {
+        alert(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
+        console.log(`O número ${numero} é um otimista, e seu valor absoluto continua sendo ${valorAbsoluto}.`)
+    }
+}
+
 
 /* Neste exemplo criativo:
 

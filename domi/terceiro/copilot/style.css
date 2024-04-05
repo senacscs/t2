@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html,
 body {
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .center {
@@ -8,6 +11,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    max-width: 650px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.center p {
+    margin-bottom: 30px;
 }
 
 #button {
