@@ -1,40 +1,61 @@
+.container {
+  text-align: center;
+  margin-top: 15%;
+}
+
 /* Estilizando o cabeçalho */
 h1 {
-    color: #333; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte */
-    margin-bottom: 20px; /* Espaçamento inferior */
-  }
-  
-  /* Estilizando o formulário */
-  form {
-    margin-bottom: 20px; /* Espaçamento inferior */
-  }
-  
-  label {
-    display: block; /* Faz com que as labels ocupem uma linha inteira */
-    margin-bottom: 10px; /* Espaçamento inferior */
-  }
-  
-  input[type="number"] {
-    width: 80%; /* Largura total do input */
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 10px;
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 5px; /* Cantos arredondados */
-  }
-  
-  button {
-    background-color: #0074D9; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
-  }
-  
-  /* Estilizando o resultado */
-  #result {
-    font-size: 18px; /* Tamanho da fonte */
-    margin-top: 20px; /* Espaçamento superior */
-  }
-  
+  color: #333;
+  /* Cor do texto */
+  font-size: 24px;
+  /* Tamanho da fonte */
+  margin-bottom: 20px;
+  /* Espaçamento inferior */
+}
+
+/* Estilizando o formulário */
+form {
+  padding: 20px;
+  margin: 0px;
+}
+
+label {
+  display: block;
+  /* Faz com que as labels ocupem uma linha inteira */
+  margin-bottom: 10px;
+  /* Espaçamento inferior */
+}
+
+input[type="number"] {
+  /* width: 50%; Largura total do input */
+  padding: 10px;
+  /* Espaçamento interno */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  /* Borda */
+  border-radius: 5px;
+  /* Cantos arredondados */
+}
+
+button {
+  background-color: #0074D9;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do texto do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+  border: none;
+  /* Sem borda */
+  border-radius: 5px;
+  /* Cantos arredondados */
+  cursor: pointer;
+  /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilizando o resultado */
+#result {
+  font-size: 18px;
+  /* Tamanho da fonte */
+  margin-top: 20px;
+  /* Espaçamento superior */
+}
