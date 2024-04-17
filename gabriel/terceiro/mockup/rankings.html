@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/menu.css"/>
+		<title>Rankings - Accessibling: dando voz à acessibilidade digital</title>
+	</head>
+	<body>
+		<header>
+			<div id="homepage-container">
+				<a href="index.html" id="homepage-link">Página inicial do Accessibling</a>
+			</div>
+			<div id="search">
+				<form id="search-form">
+				<div id="form-field">
+						<label for="search-input">Pesquisar</label> 
+							<input type="search" id="search-input" placeholder="Pesquise pelo nome de uma empresa" required/>
+					</div>
+					<div id="search-submit-container">
+						<button type="submit" id="search-submit-btn">Enviar pesquisa</button>
+					</div>
+				</form>
+			</div>
+			<div id="account-container" data-menu>
+				<button id="account-btn" data-menu-id="account-menu">Opções da conta</button>
+				<div id="account-menu">
+					<button id="my-rattings-btn">Minhas avaliações</button>
+					<button id="switch-account-btn">Editar perfil</button>
+					<button id="logout-btn">Sair</button>
+				</div>
+			</div>
+			<ul id="login-options">
+				<li id="signin-container">
+					<a id="signin-link" href="signin.html">Fazer login</a>
+				</li>
+				<li id="signup-container">
+					<a id="signup-link" href="signup.html">Criar conta</a>
+				</li>
+			</ul>
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+					<li class="nav-item"><a class="nav-link" href="companies.html">Empresas cadastradas</a></li>
+					<li class="nav-item"><a class="nav-link" href="add_company.html">Cadastrar uma empresa</a></li>
+					<li class="nav-item"><a class="nav-link" href="news.html">Notícias</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Rankings</h1>
+			<p>As melhores e piores empresas no quesito acessibilidade digital</p>
+			<section id="best-companies">
+				<h2 id="best-companies-heading">As melhores</h2>
+				<ul class="company-list">
+					<li class="company">
+						<a href="companies/super_game_store.html">Super Game Store</a> 
+						<span class="company-ratting">(4,9 estrelas</span>
+					</li>
+					<li class="company">
+						<a class="company-link" href="companies/trick_books.html">Trick Books</a> 
+						<span class="company-ratting">(4,8 estrelas)</span>
+					</li>
+					<li class="company">
+						<a class="company-link" href="companies/magic_alimentos.html">Magic Alimentos</a> 
+						<span class="company-ratting">(4,7 estrelas)</span>
+					</li>
+				</ul>
+			</section>
+			<section id="worst-companies">
+				<h2 id="worst-companies-h2">As piores</h2>
+				<ul class="company-list">
+					<li class="company">
+						<a class="company-link" href="companies/new_shop.html">New Shop</a> 
+						<span class="company-ratting">(1,7 estrelas)</span>
+					</li>
+					<li class="company">
+						<a class="company-link" href="companies/max_link_internet.html">Max Link Internet</a> 
+						<span class="company-ratting">(1,9 estrelas)</span>
+					</li>
+					<li class="company">
+						<a class="company-link" href="companies/fast_ingressos.html">fast Ingressos</a> 
+						<span class="company-ratting">(2,0 estrelas)</span>
+					</li>
+				</ul>
+			</section>
+			<section id="evoluting-companies">
+				<h2 id="evoluting-heading">As que mais evoluíram</h2>
+				<ul class="company-list">
+					<li class="company">
+						<a class="company-link" href="companies/magic_alimentos.html">Magic Alimentos</a> 
+						<span class="company-ratting">(4,7 estrelas)</span>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<ul class="nav-list">
+				<li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+				<li class="nav-item"><a class="nav-link" href="terms.html">Termos de uso</a></li>
+				<li class="nav-item"><a class="nav-link" href="privacy_policy.html">Política de privacidade</a></li>
+			</ul>
+			<p class="copiright-warning">Copiright (C) 2024 - Accessibling. Todos os direitos reservados.</p>
+		</footer>
+		<script src="js/menu.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+[data-menu] {
+	position: relative;
+	display: inline-block;
+}
+[data-menu-opens], [data-menu] [role^="menuitem"] {
+	text-align: left;
+	border: 0;
+}
+[data-menu] [role="menu"] {
+	position: absolute;
+	left: 0;
+}
+[data-menu] [role^="menuitem"] {
+	display: block;
+	min-width: 100%;
+	white-space: nowrap;
+}
