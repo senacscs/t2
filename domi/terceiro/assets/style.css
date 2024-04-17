@@ -1,0 +1,219 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #1b1212;
+}
+
+main {
+    width: 100%;
+}
+
+/* titles */
+section#home h1,
+section#portfolio h2,
+section#outros h3 {
+    padding-bottom: 20px;
+}
+
+/* home */
+#home {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10%;
+    background: linear-gradient(180deg, rgba(93,63,211,1) 15%, rgba(27,18,18,1) 80%);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#home h1,
+#home p {
+    color: #faf9f6;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-top: 29%;
+}
+
+#home p {
+    line-height: 150%;
+}
+
+#home button#curriculo {
+    background-color: #faf9f6;
+    border: none;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    max-width: 290px;
+}
+
+#home button#curriculo a {
+    color: #1b1212;
+    text-decoration: none;
+}
+
+#home a #works {
+    background-color: #1b121200;
+    border: 2px solid #faf9f6;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    max-width: 290px;
+}
+
+#home a #works {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+#home button:hover {
+    cursor: pointer;
+}
+
+/* portfolio */
+#portfolio {
+    background-color: #1b1212;
+    margin-top: 0;
+}
+
+#portfolio h2,
+#porfolio h3,
+#portfolio p {
+    color: #faf9f6;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: auto 50px;
+}
+
+/* outros */
+section#outros {
+    background-color: #1b1212;
+}
+
+#outros h2,
+#outros h3,
+#outros p {
+    color: #faf9f6;
+}
+
+#outros h3 {
+    text-align: center;
+    font-size: 35px;
+    margin: 100px 60px auto 60px;
+}
+
+#outros h4 {
+    color: #faf9f6;
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+/* cards */
+.card-holder {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    max-width: 300px;
+    width: 100%;
+    max-height: 280px;
+    height: 100%;
+    background-color: #5D3FD3;
+    padding: 5%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.card h3,
+.card h4 {
+    margin: 20px 0;
+    color: #faf9f6;
+    font-size: 25px;
+}
+
+.card p {
+    line-height: 140%;
+}
+
+/* buttons */
+.card button {
+    border: none;
+    background-color: #faf9f6;
+    width: 135px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.card button a {
+    text-decoration: none;
+    color: #1b1212;
+    padding: 25px;
+    transition: all .3s;
+}
+
+.card button:hover {
+    background-color: #5D3FD3;
+    border: 1px solid #faf9f6;
+}
+
+.card button a:hover {
+    color: #faf9f6;
+}
+
+@media (min-width: 800px) {
+    /* tela inicial */
+    #home {
+        height: 500px;
+    }
+
+    #home > div {
+        width: 600px;
+        margin: auto;
+    }
+
+    #home h1 {
+        margin-top: 5%;
+        font-size: 60px;
+    }
+
+    #home p {
+        font-size: 20px;
+    }
+
+    #home div a button,
+    #home div a {
+        font-size: 15px;
+    }
+
+    /* cards */
+    .card-holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+  }
