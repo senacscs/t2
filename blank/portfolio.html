@@ -102,7 +102,7 @@
                                                         autocomplete="off"
                                                         class="astro-S3GEF3U7">
 
-                                                        <div class="grid astro-HCJUQWDU">
+                                                        <div class="grid astro-HCJUQWDU" id="results">
                                                             <article class="card astro-WSY3ECDU">
                                                                 <a class="cardlink astro-WSY3ECDU" href="./segundo/indicacoesback">
                                                                     <div class="content astro-WSY3ECDU">
@@ -324,28 +324,60 @@
                                                         });
 
                                                         //search bar
-                                                            const searchInput = document.getElementById("searchInput");
-                                                            const projectsShow = document.querySelectorAll(".card");
+                                                        //     const searchInput = document.getElementById("searchInput");
+                                                        //     const projectsShow = document.querySelectorAll(".card");
 
-                                                            searchInput.addEventListener("input", function () {
-                                                                const searchTerm = searchInput
-                                                                    .value
-                                                                    .toLowerCase();
+                                                        //     searchInput.addEventListener("input", function () {
+                                                        //         const searchTerm = searchInput
+                                                        //             .value
+                                                        //             .toLowerCase();
 
-                                                                projectsShow.forEach(projectCard => {
-                                                                    const name = projectCard
-                                                                        .querySelector(".card h2")
-                                                                        .textContent
-                                                                        .toLowerCase();
+                                                        //         projectsShow.forEach(projectCard => {
+                                                        //             const name = projectCard
+                                                        //                 .querySelector(".card h2")
+                                                        //                 .textContent
+                                                        //                 .toLowerCase();
 
-                                                                    if (name.startsWith(searchTerm)) {
-                                                                        projectCard.style.display = "block";
-                                                                    } else {
-                                                                        projectCard.style.display = "none";
-                                                                    }
-                                                                });
-                                                            })
-                                                        ;
+                                                        //             if (name.startsWith(searchTerm)) {
+                                                        //                 projectCard.style.display = "block";
+                                                        //             } else {
+                                                        //                 projectCard.style.display = "none";
+                                                        //             }
+                                                        //         });
+                                                        //     })
+                                                        // ;
+
+
+                                                        const searchInput = document.getElementById("searchInput");
+                                                        const resultCards = document.getElementById("results");
+
+                                                        const data = [
+                                                            'terceiro',
+                                                            'segundo',
+                                                            'primeiro',
+                                                            'Indicações de Backend',
+                                                            'Programação Orientada a Objetos',
+                                                            'Desafio: TechNinjas',
+                                                            'Interativo: Audio Jogo sobre ODS',
+                                                            'Portugol para JavaScript',
+                                                            'Sementinha',
+                                                            'Movacidade'
+                                                        ];
+                                                        function search(query) {
+                                                            const filterResults = data.filter(item=>
+                                                        item.toLowerCase().includes(query.toLowerCase()));
+
+                                                        resultCards.innerHTML = " ";
+                                                        filterResults.forEach(result=>{
+                                                            const card = document.querySelector('h2');
+                                                            card.textContent = result;
+                                                            resultCards.appendChild(h2);
+                                                        })
+                                                        }
+
+                                                        searchInput.addEventListener('input', () => {
+    const query = searchInput.value;
+    search(query);
                                                     </script>
                                                 </body>
                                             </html>
