@@ -334,7 +334,7 @@
 
                                                             projectsShow.forEach(projectCard => {
                                                                 const projectName = projectCard
-                                                                    .querySelector(".card h2")
+                                                                    .querySelector(".card h2" + ".card span")
                                                                     .textContent
                                                                     .toLowerCase();
                                                                 const includesKeyword = keywords.some(keyword => projectName.includes(keyword));
