@@ -277,7 +277,7 @@
                                                                             <span class="astro-HL5A4E72">
                                                                                 segundo
                                                                             </span>
-                                                                            <span class="astro-HL5A4E72" >
+                                                                            <span class="astro-HL5A4E72">
                                                                                 projeto
                                                                             </span>
                                                                             <span class="astro-HL5A4E72">
@@ -322,45 +322,27 @@
                                                                 alterStyles(isBackToTopRendered);
                                                             }
                                                         });
-
                                                         //search bar
-                                                            const searchInput = document.getElementById("searchInput");
-                                                            const projectsShow = document.querySelectorAll(".card");
+                                                        const searchInput = document.getElementById("searchInput");
+                                                        const projectsShow = document.querySelectorAll(".card");
 
-                                                            searchInput.addEventListener("input", function () {
-                                                                const searchTerm = searchInput
-                                                                    .value
+                                                        searchInput.addEventListener("input", function () {
+                                                            const searchTerm = searchInput
+                                                                .value
+                                                                .toLowerCase();
+                                                            const keywords = searchTerm.split(";");
+
+                                                            projectsShow.forEach(projectCard => {
+                                                                const projectName = projectCard
+                                                                    .querySelector(".card h2")
+                                                                    .textContent
                                                                     .toLowerCase();
-
-                                                                    const data = [
-                                                            'terceiro',
-                                                            'segundo',
-                                                            'primeiro',
-                                                            'Indicações de Backend',
-                                                            'Programação Orientada a Objetos',
-                                                            'Desafio: TechNinjas',
-                                                            'Interativo: Audio Jogo sobre ODS',
-                                                            'Portugol para JavaScript',
-                                                            'Sementinha',
-                                                            'Movacidade'
-                                                        ];
-
-                                                                projectsShow.forEach(projectCard => {
-                                                                    const name = projectCard
-                                                                        .querySelector(".card h2")
-                                                                        .textContent
-                                                                        .toLowerCase();
-
-                                                                    if (name.startsWith(searchTerm)) {
-                                                                        projectCard.style.display = "block";
-                                                                    } else {
-                                                                        projectCard.style.display = "none";
-                                                                    }
-                                                                });
-                                                            })
-                                                        ;
-
-                                                       
+                                                                const includesKeyword = keywords.some(keyword => projectName.includes(keyword));
+                                                                projectCard.style.display = includesKeyword
+                                                                    ? "block"
+                                                                    : "none";
+                                                            });
+                                                        });
                                                     </script>
                                                 </body>
                                             </html>
