@@ -1,0 +1,106 @@
+*{width: 90%; user-select: none;}
+
+body{
+    background: linear-gradient(rgb(238, 238, 238), rgb(179, 179, 179), rgb(181, 181, 181));
+    background-size: cover;
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:#000;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: -1%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+  }
+  
+.cabecalho a{
+    text-decoration: none;
+}
+  .cabecalho-imagem{
+    width: 6%;
+  }
+  
+  .cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 7.5%;
+  }
+
+/*TITLES*/
+h1{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 0px #878787;
+
+}
+
+.title{
+    display: flex;
+    position: center;
+    text-align:center;
+    margin: 10% 0 0 25%;
+    padding-top: 5%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/*TEXT*/
+.main{ 
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #000;
+
+}
+
+.text{
+    font-kerning:auto;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px;
+    text-align: justify;
+    color: #000;
+}
+
+/*LINK*/
+.main a, footer a{
+    text-decoration: underline;
+    color:#000;
+}
+
+.main a:hover, footer a:hover{
+    text-decoration: underline;
+    color:rgb(79, 79, 79);
+}
+
+
+/*END*/
+#end{
+    text-align: left;
+    position: absolute;
+    display: flex;
+    font-size: 15px;
+}
+
+#end a{
+    text-decoration: underline;
+    color: #000;
+}
