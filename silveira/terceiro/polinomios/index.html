@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Polinômios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Polinômios</h1>
+        <div class="polynomial-input">
+            <label for="polynomial1">Polinômio 1:</label>
+            <input type="text" id="polynomial1" placeholder="Ex: 3x^2 + 2x + 1">
+        </div>
+        <div class="polynomial-input">
+            <label for="polynomial2">Polinômio 2:</label>
+            <input type="text" id="polynomial2" placeholder="Ex: x^2 + 4x + 4">
+        </div>
+        <div class="operations">
+            <button onclick="addPolynomials()">Adicionar</button>
+            <button onclick="subtractPolynomials()">Subtrair</button>
+            <button onclick="multiplyPolynomials()">Multiplicar</button>
+        </div>
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
