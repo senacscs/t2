@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Polinômios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .calculator h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .polynomial-input {
+            margin-bottom: 20px;
+        }
+        .polynomial-input label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .polynomial-input input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Polinômios</h1>
+        <div class="polynomial-input">
+            <label for="poly1">Polinômio 1 (ex: 3x^2+2x+1):</label>
+            <input type="text" id="poly1" placeholder="Insira o primeiro polinômio">
+        </div>
+        <div class="polynomial-input">
+            <label for="poly2">Polinômio 2 (ex: x^2+2x+4):</label>
+            <input type="text" id="poly2" placeholder="Insira o segundo polinômio">
+        </div>
+        <button onclick="calculate()">Calcular Soma</button>
+        <div class="result">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+        function parsePolynomial(poly) {
+            const terms = poly.match(/[+-]?[^-+]+/g);
+            const result = {};
+            terms.forEach(term => {
+                const [coef, exp] = term.split('x^').map(Number);
+                const exponent = exp || (term.includes('x') ? 1 : 0);
+                const coefficient = coef || (term.includes('x') ? (term.includes('-') ? -1 : 1) : Number(term));
+                if (result[exponent] !== undefined) {
+                    result[exponent] += coefficient;
+                } else {
+                    result[exponent] = coefficient;
+                }
+            });
+            return result;
+        }
+
+        function polynomialToString(poly) {
+            const terms = [];
+            Object.keys(poly).sort((a, b) => b - a).forEach(exp => {
+                const coef = poly[exp];
+                if (coef !== 0) {
+                    const sign = coef > 0 ? ' + ' : ' - ';
+                    const absCoef = Math.abs(coef);
+                    if (exp == 0) {
+                        terms.push(`${sign}${absCoef}`);
+                    } else if (exp == 1) {
+                        terms.push(`${sign}${absCoef}x`);
+                    } else {
+                        terms.push(`${sign}${absCoef}x^${exp}`);
+                    }
+                }
+            });
+            let result = terms.join('').trim();
+            if (result.startsWith('+')) result = result.slice(2);
+            if (result.startsWith('-')) result = '-' + result.slice(2).trim();
+            return result;
+        }
+
+        function calculate() {
+            const poly1 = document.getElementById('poly1').value;
+            const poly2 = document.getElementById('poly2').value;
+
+            const parsedPoly1 = parsePolynomial(poly1);
+            const parsedPoly2 = parsePolynomial(poly2);
+
+            const resultPoly = { ...parsedPoly1 };
+            Object.keys(parsedPoly2).forEach(exp => {
+                if (resultPoly[exp] !== undefined) {
+                    resultPoly[exp] += parsedPoly2[exp];
+                } else {
+                    resultPoly[exp] = parsedPoly2[exp];
+                }
+            });
+
+            const resultString = polynomialToString(resultPoly);
+            document.getElementById('result').innerText = `Resultado: ${resultString}`;
+        }
+    </script>
+</body>
+</html>
