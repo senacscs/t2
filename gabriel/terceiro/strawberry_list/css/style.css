@@ -1,0 +1,67 @@
+body {
+	font-family: arial, sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+header {
+	background-color: #4caf50;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+}
+header h1 {
+	margin: 0;
+}
+header .introduction {
+	font-size: 1.1em;
+	margin-top: 0.5em;
+}
+main {
+	padding: 2em;
+}
+#words-list-h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+.word {
+	margin-bottom: 1em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: white;
+	padding: 1em;
+}
+.word-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+.pt-translation, .en-meaning {
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+details {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0.5em;
+	background-color: #fff;
+}
+summary {
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+}
+summary:hover {
+	color: #4caf50;
+}
+details[open] {
+	background-color: #f1f1f1;
+}
+details[open] summary {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5em;
+}
+.pt-translation, .en-meaning {
+	margin: 0.5em 0;
+}
