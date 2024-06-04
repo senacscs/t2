@@ -1,0 +1,25 @@
+body {
+    margin-left: 12rem;
+    margin-top: 3rem;
+    margin-right: 12rem;
+}
+
+.palavra {
+    color: #ffa5a5;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 5px;
+}
+
+.separar {
+    background-color: rgb(183, 45, 61);
+    border: solid 1px black;
+    box-shadow: 3px 3px 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+/* .title {
+    font-family: "Freeman", sans-serif;
+} */
