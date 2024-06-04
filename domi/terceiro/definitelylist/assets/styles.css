@@ -1,0 +1,61 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection {
+    background-color: #EE9618;
+    color: #3b0a65;
+}
+
+header {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+header p {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #cba2c8;
+}
+
+main ul {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+main ul li {
+    font-weight: 800;
+}
+
+/* colors */
+html {
+    background-color: #3b0a65;
+}
+
+h1 {
+    color: #EE9618;
+}
+
+p {
+    color: #f9ebbc;
+}
+
+ul h2, ul li {
+    color: #2a0322;
+}
+
+ul p {
+    color: #3b0a65;
+}
