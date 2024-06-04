@@ -2,6 +2,7 @@ body {
     margin-left: 12rem;
     margin-top: 3rem;
     margin-right: 12rem;
+    background-color: rgb(250, 181, 181);
 }
 
 .palavra {
@@ -20,6 +21,21 @@ body {
     padding-bottom: 10px;
 }
 
-/* .title {
+header {
+    text-align: center;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+}
+
+header h1 {
     font-family: "Freeman", sans-serif;
-} */
+    color: rgb(175, 1, 1);
+    text-transform: uppercase;
+}
+
+.titleB {
+    color: rgb(255, 69, 118);
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-size: 5rem;
+}
