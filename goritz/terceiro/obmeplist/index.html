@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obmep List</title>
+    <script>
+        var elements = document.getElementsByTagName('*');
+
+for(var i = 0; i < elements.length; i++){
+    elements[i].style.position = 'relative';
+    animate(elements[i]);
+}
+
+function animate(element) {
+    var topPos = 0;
+    var direction = 1;
+
+    setInterval(function() {
+        element.style.top = topPos + 'px';
+        if (topPos > 5 || topPos < -5) {
+            direction *= -1;
+        }
+        topPos += direction;
+    }, 100);
+}
+
+    </script>
+
+    <style>
+        body {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Obmep List</h1>
+    
+    <br>
+
+    <ol>
+        <li><b>Streaming</b>: the activity of listening to or watching sound or video directly from the internet.</li>
+
+        <br>
+        <li><b>Reliable</b>: someone or something that is reliable can be trusted or believed because he,</li>
+        <p>she, or it works or behaves well in the way you expect.</p>
+
+        <br>
+        <li><b>Transient</b>: lasting for only a short time; temporary</li>
+
+        <br>
+        <li><b>Ambulacrum</b>: biology term in an echinoderm: each of the radially arranged bands,</li>
+            <p>together with their underlying structures, through which the double rows of tube feet protrude.</p>
+
+        <br>
+        <li><b>Centromere</b>: the point on a chromosome where mitotic spindle fibers attach to</li>
+            <p>pull sister chromatids apart during cell division.</p>
+
+        <br>
+        <li><b>Discomfiture</b>: a feeling of unease or embarrassment or awkwardness.</li>
+
+        <br>
+        <li><b>Chunking</b>: the grouping together of a number of items by the mind,</li>
+            <p>after which they can be remembered as a single item, such as a word or a musical phrase.</p>
+    </ol>
+</body>
+</html>
