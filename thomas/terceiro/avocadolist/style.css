@@ -1,12 +1,24 @@
 .palavra{
     font-size: 30px;
     font-weight: bold;
+    margin-left: 30px;
 }
 
 p{
     font-size: 20px;
+    margin-left: 30px;
 }
 
 h1{
     font-size: 40px;
+    margin-left: 30px;
 }
+
+body{
+    background-image: linear-gradient(90deg, yellow, purple) ;
+}
+
+div{
+    display: flex;
+}
+
