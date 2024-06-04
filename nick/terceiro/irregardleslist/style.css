@@ -1,0 +1,14 @@
+html {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #B9CDDA;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    margin-left: 3%;
+    font-size: 130%;
+}
