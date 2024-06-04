@@ -1,0 +1,55 @@
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Sigmar+One&display=swap');
+
+.scroll__bar {
+    overflow-y: scroll;
+}
+.scroll__bar::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: linear-gradient(to right bottom, #adc178,  #a7c957, #90a955, #597f37);
+}
+::selection {
+    background-color: #adc178;
+}
+    h1 {
+        text-align: center;
+        font-family: "Sigmar One", cursive;
+        font-size: clamp(2rem, 1rem + 10vh, 4rem);
+        user-select: none;
+    
+    }
+hr{
+    width: 40%;
+}
+main{
+    width: 70%;
+    margin: auto;
+}
+header {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 60rem;
+    color: rgb(39,40,44);
+}
+.container {
+    padding:1em;
+    margin: 0 auto;
+    max-width: 60rem;
+    background-color: rgb(244,244,244);
+}
+li{
+    padding-left: 1ch;
+    padding-bottom: 4ch;
+    margin-left: 2ch;
+} li::marker{
+    content: '⤷';
+}
+span{
+    font-family: "Sigmar One", cursive;
+} 
+.tech {
+    text-decoration:underline;
+}
