@@ -21,7 +21,6 @@
 
     <!-- Manifest File link -->
     <link rel="manifest" href="manifest.json">
-    <script src="callsw.js"></script>
 </head>
 
 <body>
@@ -33,6 +32,26 @@
         creating a PWA application.
     </p>
 
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
