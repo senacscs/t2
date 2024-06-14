@@ -1,361 +1,89 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleindex.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/letra-w.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js">
+        
+    </script>
+    <link rel="manifest" href="manifest.json">
     <title>Werner.com</title>
 </head>
 <body>
-    
 
-    <style>
-        :root{
-          --color-white: rgb(99, 254, 3);
-            --color-dark1: rgb(255, 255, 255);
-            --color-dark2: #ffffff;
-            --color-dark3: #25c242;
-            --color-dark4: #00ff00;
-            --color-dark5: #000000;
-            --color-purple: #00ff11;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: var(--color-dark1);
-            color: var(--color-white);
-        }
-        .img_logo_header{
-            width: 45px;
-        }
-        .header,
-        .navigation_header{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .header{
-            background-color: var(--color-dark2);
-            justify-content: space-between;
-            padding: 0 10%;
-            height: 3.5em;
-            box-shadow: 1px 1px 4px var(--color-dark4);
-        }
-        .navigation_header{
-            gap: 3em;
-            z-index: 2;
-        }
-        .content{
-            padding-top: 5em;
-            text-align: center;
-            height: 100vh;
-            transition: 1s;
-        }
-        .navigation_header a{
-            text-decoration: none;
-            color: var(--color-purple);
-            transition: 1s;
-            font-weight: bold;
-        }
-        .navigation_header a:hover{
-            color: var(--color-white);
-        }
-        .active{
-            background: var(--color-dark3);
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .btn_icon_header{
-            background: transparent;
-            border: none;
-            color: var(--color-white);
-            cursor: pointer;
-            display: none;
-        }
-        @media screen and (max-width: 768px) {
-            .navigation_header{
-                position: absolute;
-                flex-direction: column !important;
-                top: 0;
-                background: var(--color-dark5);
-                height: 100%;
-                width: 35vw;
-                padding: 1em;
-                animation-duration: 1s;
-                margin-left: -100vw;
-            }
-            .btn_icon_header{
-                display: block;
-            }
-        }
-        @keyframes showSidebar {
-            from {margin-left: -100vw;}
-            to {margin-left: -10vw;}
-        }
-    </style>
-</head>
-<body id="body">
-    <div class="header" id="header">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
         </button>
-        <div class="logo_header">
-            <img src="w1.png" alt="Logo GN" class="img_logo_header">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i><img src="imagens/letter-w.png" width="30px"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>1 ano</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="far fa-clone"></i>2 ano</a>
+                </li>
+                
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Trabalhos</a>
+                </li>
+            </ul>
         </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btn_icon_header">
-            
-            </button>
-            <a href="https://www.instagram.com/pedro_zinn_werner/?next=%2F">Contato</a>
-        </div>
-    </div>
-    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+    </nav>
 
+    <h1> <img src="imagens/croton.png" width="30px"> Werner</h1>
 
-      <div class="Box-name">
-        <h1>Werner.com</h1>
-      </div>
-        
-        <br>
-    <h3>O<a href="luiz.mp4" >l</a>a! seja bem vindo ao meu site, eu sou Pedro Werner </h3>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="header-placeholder"></div>
-  <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content e2e-site-content">
-        <main>
-          <section class="project-covers" data-context="page.gallery.covers">
-          <a class="project-cover js-project-cover-touch hold-space" href="Indicaçoes.html" data-context="pages" data-identity="id:p63d1681863b35ecb22d5b35b3b9ca749187b400292198b788e174" data-hover-hint="galleryPageCover" data-hover-hint-id="p63d1681863b35ecb22d5b35b3b9ca749187b400292198b788e174">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
-
-            <img
-              class="cover__img js-lazy"
-              src="back-end3.jpg"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x3840.png?h=0c94e94385c550c389503bbc0727fa67"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x640.png?h=35fd2ba582a68698aac7aa5f13c8a6c7 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x1280.png?h=0c13f0fb5e3869a2461130f5395394ce 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x1366.png?h=97863dc33cee806b649e9f5f608d2497 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x1920.png?h=5fcf57f453f738499bb2f575241ac615 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x2560.png?h=34d02f5f61df976ef424fae8dab87075 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2dae3b1d-665d-4852-8e52-d7a8fdb6d187_rwc_0x244x3840x2164x3840.png?h=0c94e94385c550c389503bbc0727fa67 5120w"
-              data-sizes="(max-width: 560px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Indicações Back-End</div>
-                      <div class="date">Site sobre meu orgulho em forma de site ao contrario de certos sites</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="Arquivos de Chat do Microsoft Teams/eca.html" data-context="pages" data-identity="id:p638657a56cf4a77d665ad6ba113ecc5fb208757aad95f62a52bf1" data-hover-hint="galleryPageCover" data-hover-hint-id="p638657a56cf4a77d665ad6ba113ecc5fb208757aad95f62a52bf1">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
-
-            <img
-              class="cover__img js-lazy"
-              src="ECAIMAGEM1.jpg"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_car_16x9.png?h=5098f944ff87ddc1c530b9bf9b7b03b7"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x640.png?h=dc484acfab6f17731164677e4802f8cc 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x1280.png?h=d634a4ca6e3a763fd97fdfc1d1db6d72 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x1366.png?h=aeb748ebaa3882a5af13f15e354e7471 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x1920.png?h=aef7afce2cb2bd0f502d4677baf06891 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x2560.png?h=7f1a1f8f86d0881cf497602ef39ae678 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/1d2d1da9-ad07-4619-af80-d8347b50e16c_carw_16x9x5120.png?h=20cf0723263515118d0ac4b56f0e55c6 5120w"
-              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">ECA</div>
-                      <div class="date">Site sobre o ECA</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="Arquivos de Chat do Microsoft Teams/index de indicação.html" data-context="pages" data-identity="id:p6386570aea5b605ac85aa9d54d9025852c8dcf9713584a2c58077" data-hover-hint="galleryPageCover" data-hover-hint-id="p6386570aea5b605ac85aa9d54d9025852c8dcf9713584a2c58077">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
-
-            <img
-              class="cover__img js-lazy"
-              src="front-end.png"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x3840.png?h=a413c5bdcb81d8a7a73bee48b74e7c7c"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x640.png?h=d9ba8a9c1bbb3029663ed6f0af116000 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x1280.png?h=0e3ba3a7238f7a9fb066637415a8fbd4 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x1366.png?h=12c795fdcccbcfa0adb66038eef8265a 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x1920.png?h=0d2bcc477021675e023dab3ab81f121b 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x2560.png?h=e6eee75859f5f1716c8afcbd0959ab29 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/2a703bf5-9f78-4ab5-896c-6beb675e9599_rwc_0x349x3840x2164x3840.png?h=a413c5bdcb81d8a7a73bee48b74e7c7c 5120w"
-              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Indicações Front-End</div>
-                      <div class="date">Site antigo de indicações(me arrependo pfvr nao perguntar sobre)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="Wales/Galespais.html" data-context="pages" data-identity="id:p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7" data-hover-hint="galleryPageCover" data-hover-hint-id="p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
-
-            <img
-              class="cover__img js-lazy"
-              src="Wales/3 (1).jpg"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_car_16x9.png?h=cfd129476673c05206b7b2f4bb65cf0c"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x640.png?h=068e3a7bb730b4cd85956f4a5886b29f 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1280.png?h=2f16647cdd803a366219e7de234f5c92 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1366.png?h=42ae802b84ff5a8ef9f6522a28d72b51 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1920.png?h=569d1f1578401a0ff625c18f23b239a6 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x2560.png?h=ad51eab9ec7c5366d1e8fe88d04ac311 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x5120.png?h=7cd0b0eba944347cbc7c2441142b0e6f 5120w"
-              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Wales</div>
-                      <div class="date">Site sobre pais de gales em inglês</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-
-          <a class="project-cover js-project-cover-touch hold-space" href="Jogo de historia/Cruzadas.html" data-context="pages" data-identity="id:p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7" data-hover-hint="galleryPageCover" data-hover-hint-id="p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
-
-                <img
-              class="cover__img js-lazy"
-              src="Jogo de historia/ganhou.jpg"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_car_16x9.png?h=cfd129476673c05206b7b2f4bb65cf0c"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x640.png?h=068e3a7bb730b4cd85956f4a5886b29f 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1280.png?h=2f16647cdd803a366219e7de234f5c92 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1366.png?h=42ae802b84ff5a8ef9f6522a28d72b51 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1920.png?h=569d1f1578401a0ff625c18f23b239a6 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x2560.png?h=ad51eab9ec7c5366d1e8fe88d04ac311 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x5120.png?h=7cd0b0eba944347cbc7c2441142b0e6f 5120w"
-              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Jogo de historia</div>
-                      <div class="date">Jogo sobre as cruzadas</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-
-
+  <input id="searchbar" onkeyup="pesquisar_index()" type="text" name="search" placeholder="digite qual trabalho deseja ver..." autocomplete="off">
           
-          <a class="project-cover js-project-cover-touch hold-space" href="" data-context="pages" data-identity="id:p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7" data-hover-hint="galleryPageCover" data-hover-hint-id="p62b10f4fccecaa19c1b7f81962c4c50d5dfa2f17f9ca2330cfbb7">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-                <div class="cover-image">
-                    <div class="cover cover-normal">
+    <br><br>
 
-                <img
-              class="cover__img js-lazy"
-              src="busines men.jpeg"
-              data-src="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_car_16x9.png?h=cfd129476673c05206b7b2f4bb65cf0c"
-              data-srcset="https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x640.png?h=068e3a7bb730b4cd85956f4a5886b29f 640w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1280.png?h=2f16647cdd803a366219e7de234f5c92 1280w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1366.png?h=42ae802b84ff5a8ef9f6522a28d72b51 1366w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x1920.png?h=569d1f1578401a0ff625c18f23b239a6 1920w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x2560.png?h=ad51eab9ec7c5366d1e8fe88d04ac311 2560w, https://cdn.myportfolio.com/089e80de-cb63-4980-a8fe-1cc1910e3d60/caa89cd6-761f-4b0c-a127-45181d942417_carw_16x9x5120.png?h=7cd0b0eba944347cbc7c2441142b0e6f 5120w"
-              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)"
-            >
-                              </div>
-                </div>
-              </div>
-              <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">em breve</div>
-                      <div class="date">tenho toque por isso vou deixar essa caixa aqui</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
+        <ol id='list'>
 
-          </section>
-              
-        </main>
-      </div>
-    </div>
-  </div>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":45,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
-<script type="text/javascript">
-  // fix for Safari's back/forward cache
-  window.onpageshow = function(e) {
-    if (e.persisted) { window.location.reload(); }
-  };
-</script>
-  <script type="text/javascript">var __config__ = {"page_id":"p6261b08dd58067ff70afb987535f5990a122219093a25f5300e47","theme":{"name":"marta\/ludwig"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"G-2VYR01V0RS","anonymization":false}};</script>
-  <script type="text/javascript" src="/site/translations?cb=1f81a2f668f6077716c7aaad295d94bee95c90bb"></script>
-  <script type="text/javascript" src="/dist/js/main.js?cb=1f81a2f668f6077716c7aaad295d94bee95c90bb"></script>
-</body>
-<script>
-    var header           = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigation_header');
-    var content          = document.getElementById('content');
-    var showSidebar      = false;
+            
+            <a href="poo/index.html" > <li class="cidades"> <img class="icone" src="imagens/patas.png" width="20px"> Poo</li></a>
+           
+            <a href="primeiro/Eca/index.html" >    <li class="cidades"> <img src="imagens/familia.png" width="20px" >‎ ‎ ‎ ECA</li></a>
+           
+            <a href="primeiro/country/Galespais.html" >    <li class="cidades"> <img src="imagens/bandeira.png" width="20px" >‎ ‎ ‎ Country</li></a>
+           
+            <a href="primeiro/foguete/index.html" >    <li class="cidades"> <img src="imagens/foguete.png" width="15px" >‎ ‎ ‎ Foguete</li></a>
+           
+            <a href="primeiro/indicacoesfront/index.html" >    <li class="cidades"> <img src="imagens/guia.png" width="15px" >‎ ‎ ‎  Indicações Front-End</li></a>
+           
+            <a href="segundo/cidade/index.html" >    <li class="cidades"> <img src="imagens/cidade.jfif" width="15px" >‎ ‎ ‎  Cidade</li></a>
+            
+            <a href="segundo/indicacoesback/index.html" >    <li class="cidades"> <img src="imagens/trabalhador-autonomo.png" width="15px" >‎ ‎ ‎  Indicações Back-End</li></a>
+            
+            <a href="segundo/jogodehistoria/Cruzadas.html" >    <li class="cidades"> <img src="imagens/stack-of-books.png" width="15px" >‎ ‎ ‎  Jogo de Historia</li></a>
+           
+            <a href="segundo/projeto2/storm.html" >    <li class="cidades"> <img src="imagens/pergaminho-antigo.png" width="15px" >‎ ‎ ‎  Projeto pp antigo</li></a>
+           
+            <a href="segundo/ptjs/tecnico.html" >    <li class="cidades"> <img src="imagens/computador.png" width="15px" >‎ ‎ ‎  Ptjs</li></a>
+           
+            <a href="terceiro/calculadora/calculadora.html" >    <li class="cidades"> <img src="imagens/calculadora.png" width="15px" >‎ ‎ ‎  Calculadora</li></a>
+           
+            <a href="terceiro/indicacoes mobile/indicacoesmobile.html" >    <li class="cidades"> <img src="imagens/aplicativo-movel.png" width="15px" >‎ ‎ ‎  Indicações Mobile</li></a>
+           
+            <a href="terceiro/modulo/index.html" >    <li class="cidades"> <img src="imagens/modulos.png" width="15px" >‎ ‎ ‎  Modulo</li></a>
+            
+            <a href="terceiro/pineapplelist/index.html" >    <li class="cidades"> <img src="terceiro/pineapplelist/abacaxi.png" width="20px" >‎ ‎ ‎  Pineapplelist</li></a>
+           
+            <a href="terceiro/pp/index.html" >    <li class="cidades"> <img src="imagens/carteira-de-identidade.png" width="15px" >‎ ‎ ‎  PP</li></a>
+           
+            <a href="terceiro/skate/index.html" >    <li class="cidades"> <img src="imagens/skate.png" width="15px" >‎ ‎ ‎  Skate - MVP/Técnico</li></a>
+           
+            <a href="terceiro/tutorialreact/hello-world/index.html" >    <li class="cidades"> <img src="imagens/tutorial.png" width="15px" >‎ ‎ ‎  Tutorial React</li></a>
+                
 
-    function toggleSidebar()
-    {
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '-10vw';
-            navigationHeader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else
-        {
-            navigationHeader.style.marginLeft = '-100vw';
-            navigationHeader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
-
-    function closeSidebar()
-    {
-        if(showSidebar)
-        {
-            showSidebar = true;
-            toggleSidebar();
-        }
-    }
-
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar) 
-        {  
-            showSidebar = true;
-            toggleSidebar();
-        }
-    });
-
-</script>
+        </ol>
 </body>
 </html>
