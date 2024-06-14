@@ -1,6 +1,6 @@
 {
     "name": "Index do Wesley",
-    "short_name": "Wesley",
+    "short_name": "PWA",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#5900b3",
