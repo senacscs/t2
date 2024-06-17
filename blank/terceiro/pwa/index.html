@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<>
+
+<meta charset="utf-8">
+<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1">
+<meta http-equiv="X-UA-Compatible"
+		content="ie=edge">
+        <link rel="stylesheet" href="assets/style.css">
+
+<title>Veste e Reveste</title>
+
+<!-- Meta Tags required for
+	Progressive Web App -->
+<meta name=
+"apple-mobile-web-app-status-bar"
+		content="#aa7700">
+<meta name="theme-color"
+		content="black">
+
+<!-- Manifest File link -->
+<link rel="manifest"
+		href="manifest.json">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                width: 200%;
+                height: 100%;
+                transition: transform 0.5s ease-in-out;
+            }
+            .section {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .landing-page {
+                background-color: #ff5733;
+                color: white;
+            }
+            .login-page {
+                background-color: #333;
+                color: white;
+            }
+            .btn {
+                background-color: #fff;
+                color: #ff5733;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+            .btn:hover {
+                background-color: #e04e2e;
+                color: #fff;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            input[type="text"], input[type="password"] {
+                padding: 10px;
+                margin: 10px 0;
+                width: 200px;
+                border: none;
+                border-radius: 5px;
+            }
+            input[type="submit"] {
+                background-color: #ff5733;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            input[type="submit"]:hover {
+                background-color: #e04e2e;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="container" id="container">
+        <div class="section landing-page">
+            <h1>Bem-vindo à Minha Landing Page</h1>
+            <p>Deslize para a esquerda para fazer login</p>
+            <button class="btn" onclick="slideLeft()">Deslize para Login</button>
+        </div>
+        <div class="section login-page">
+            <h1>Login</h1>
+            <form action="login.html" method="POST">
+                <input type="text" name="username" placeholder="Nome de Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+            <button class="btn" onclick="slideRight()">Voltar</button>
+        </div>
+    </div>
+    
+    <script>
+        function slideLeft() {
+            document.getElementById('container').style.transform = 'translateX(-50%)';
+        }
+    
+        function slideRight() {
+            document.getElementById('container').style.transform = 'translateX(0)';
+        }
+    </script>
+    
+    </body>
+    </html>
