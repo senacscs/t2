@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="index.css"/>
 		<title>Index de Gabriel Haberkamp (3º ano)</title>
+		<meta name="apple-mobile-web-app-status-bar" content="#aa7700"/>
+		<meta name="theme-color" content="black"/>
+		<link rel="manifest" href="manifest.json"/>
 	</head>
 	<body>
 		<header>
@@ -28,5 +31,22 @@
 			</ul>
 		</main>
 		<script src="js/shortcut_keys.js"></script>
+		<script>
+			window.addEventListener('load', () => {
+			registerSW();
+			});
+			async function registerSW() {
+			if("serviceWorker" in navigator) {
+			try {
+			await navigator
+			.serviceWorker
+			.register("serviceworker.js");
+			}
+			catch(e) {
+			console.log('SW registration failed');
+			}
+		}
+	}
+	</script>
 	</body>
 </html>
