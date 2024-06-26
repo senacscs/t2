@@ -18,8 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-     <link href="manifest.json">
     <link href="styles.css" rel="stylesheet" />
+
+        <!-- Meta Tags required for
+	Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+
+    <!-- Manifest File link -->
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body id="page-top">
@@ -240,7 +247,7 @@
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="segundo/jogodehistoria/index.html">
+                    <a class="portfolio-item" href="segundo/gamecrusadas/index.html">
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">Jogo</div>
@@ -368,18 +375,18 @@
                     <img class="img-fluid" src="assets/img/modulo.webp" alt="..." />
                 </a>
             </div>
+            <!--
             <div class="col-lg-6">
-                <a class="portfolio-item" href="terceiro/blueberrylist/index.html">
+                <a class="portfolio-item" href="segundo/gamecrusadas/index.html">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2">Blueberry</div>
-                            <p class="mb-0">Lista de palavras em inglês que desconhecemos com suas respectivas traduções.</p>
+                            <div class="h2">Jogo</div>
+                            <p class="mb-0">Programamos um jogo simples, de múltipla escolha sobre as Cruzadas.</p>
                         </div>
                     </div>
-                    <img class="img-fluid" src="assets/img/blueberrylist.avif" alt="..." />
+                    <img class="img-fluid" src="assets/img/gameCrusadas.webp" alt="..." />
                 </a>
             </div>
-              <!--
             <div class="col-lg-6">
                 <a class="portfolio-item" href="segundo/hq_artes/index.html">
                     <div class="caption">
@@ -490,12 +497,33 @@
                 </li>
         </div>
     </footer>
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="scripts.js"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
