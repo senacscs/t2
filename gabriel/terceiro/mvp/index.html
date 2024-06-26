@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="css/style.css"/>
 		<link rel="stylesheet" href="css/menu.css"/>
 		<title>Página inicial - Accessibling: dando voz à acessibilidade digital</title>
+		<meta name="apple-mobile-web-app-status-bar" content="#aa7700"/>
+		<meta name="theme-color" content="black"/>
+		<link rel="manifest" href="manifest.json"/>
 	</head>
 	<body>
 		<header>
@@ -61,5 +64,22 @@
 			<p class="copiright-warning">Copiright (C) 2024 - Accessibling. Todos os direitos reservados.</p>
 		</footer>
 		<script src="js/menu.js"></script>
+		<script>
+			window.addEventListener('load', () => {
+			registerSW();
+			});
+			async function registerSW() {
+			if("serviceWorker" in navigator) {
+			try {
+			await navigator
+			.serviceWorker
+			.register("js/serviceworker.js");
+			}
+			catch(e) {
+			console.log('SW registration failed');
+			}
+		}
+	}
+		</script>
 	</body>
 </html>
