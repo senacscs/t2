@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  aparência em tela grande */
+@media (min-width: 960px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+/* para telas pequenas */
+@media (max-width: 960px) {
+    body {
+        background-color: red;
+    }
+}
