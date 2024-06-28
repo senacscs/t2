@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-title {
+    font-size: 24px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.background-image {
+    background-image: url('path_to_your_image/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+
+    menuIcon.addEventListener('click', () => {
+        alert('Menu clicked!'); // Add your menu functionality here
+    });
+});
