@@ -1,64 +1,52 @@
 body {
-    background-color: #6c6c6c; /* Fundo preto */
-    color: #0f0;           /* Texto verde claro */
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    line-height: 1.5;
+    background-color: #0f0f23;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
     padding: 20px;
 }
 
-
-h1 {    width: 80%;
+#game-container {
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 5%;
-}
-#container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #6c6c6c; /* Fundo do container preto */
-    border: 2px solid #0f0; /* Borda verde */
     padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #area-texto {
-    background-color: #6c6c6c; /* Fundo da área de texto preto */
-    color: #0f0;           /* Texto da área de texto verde */
+    margin-bottom: 20px;
     padding: 10px;
+    background-color: #0f0f23;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcao {
     margin-bottom: 10px;
-    min-height: 200px;
-    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
 }
 
-#input-comando {
-    background-color: #6c6c6c; /* Fundo do input preto */
-    color: #0f0;           /* Texto do input verde */
+.opcao button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    width: 100%;
-    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Efeito de scanlines (opcional) */
-body {
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(0, 15, 0, 0.1), /* Verde claro transparente */
-        rgba(0, 15, 0, 0.1) 1px,
-        transparent 1px,
-        transparent 2px
-    );
-    background-size: 100% 2px; /* Tamanho das scanlines */
-}
-
-#cursor {
-    color: #0f0; /* Cor do cursor (verde claro) */
-    animation: blink 1s infinite; /* Animação de piscar */
-}
-
-/* Animação de piscar */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+.opcao button:hover {
+    background-color: #45a049;
 }

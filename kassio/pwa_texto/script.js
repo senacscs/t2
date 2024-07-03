@@ -1,82 +1,114 @@
+const game = {
+  estagios: [
+      { // Estágio 0
+          texto: "Você acorda em uma nave espacial. O que você faz?",
+          opcoes: [
+              { texto: "Explorar a nave", proximoEstagio: 1 },
+              { texto: "Verificar sistemas", proximoEstagio: 2 }
+          ]
+      },
+      { // Estágio 1
+          texto: "Você encontra uma sala misteriosa. O que você faz?",
+          opcoes: [
+              { texto: "Investigar os controles", proximoEstagio: 3 },
+              { texto: "Procurar por artefatos", proximoEstagio: 4 }
+          ]
+      },
+      { // Estágio 2
+          texto: "Os sistemas estão instáveis. O que você faz?",
+          opcoes: [
+              { texto: "Reparar os sistemas", proximoEstagio: 5 },
+              { texto: "Explorar outras áreas", proximoEstagio: 6 }
+          ]
+      },
+      { // Estágio 3
+          texto: "Os controles revelam uma mensagem codificada. O que você faz?",
+          opcoes: [
+              { texto: "Decifrar a mensagem", proximoEstagio: 7 },
+              { texto: "Continuar explorando", proximoEstagio: 8 }
+          ]
+      },
+      { // Estágio 4
+          texto: "Você encontra artefatos valiosos. O que você faz?",
+          opcoes: [
+              { texto: "Coletar os artefatos", proximoEstagio: 9 },
+              { texto: "Explorar mais a fundo", proximoEstagio: 8 }
+          ]
+      },
+      { // Estágio 5
+          texto: "Os sistemas foram reparados. O que você faz agora?",
+          opcoes: [
+              { texto: "Continuar a jornada", proximoEstagio: 7 },
+              { texto: "Explorar a nave", proximoEstagio: 9 }
+          ]
+      },
+      { // Estágio 6
+          texto: "Você encontra uma passagem bloqueada. O que você faz?",
+          opcoes: [
+              { texto: "Procurar por uma chave", proximoEstagio: 8 },
+              { texto: "Voltar para a sala principal", proximoEstagio: 7 }
+          ]
+      },
+      { // Estágio 7
+          texto: "Você decifra a mensagem e descobre um mapa estelar. O que você faz?",
+          opcoes: [
+              { texto: "Seguir para o próximo destino", proximoEstagio: 9 },
+              { texto: "Explorar planetas próximos", proximoEstagio: 8 }
+          ]
+      },
+      { // Estágio 8
+          texto: "Você explora áreas desconhecidas da nave. O que você faz?",
+          opcoes: [
+              { texto: "Descobrir mais sobre a nave", proximoEstagio: 9 },
+              { texto: "Retornar para a sala principal", proximoEstagio: 7 }
+          ]
+      },
+      { // Estágio 9
+          texto: "Você encontra um portal interdimensional. O que você faz?",
+          opcoes: [
+              { texto: "Ativar o portal", proximoEstagio: 10 },
+              { texto: "Estudar o portal", proximoEstagio: 8 }
+          ]
+      },
+      { // Estágio 10
+          texto: "O portal se abre para um novo universo. O que você faz?",
+          opcoes: [
+              { texto: "Explorar o novo universo", proximoEstagio: null },
+              { texto: "Fechar o portal", proximoEstagio: 9 }
+          ]
+      }
+  ]
+};
+
 const areaTexto = document.getElementById("area-texto");
-const inputComando = document.getElementById("input-comando");
-let estadoAtual = 0;
+const opcoesContainer = document.getElementById("opcoes");
 
-const historia = [
-    { // 0 estágio 0
-        texto: "Você está em uma floresta escura. O que você faz?",
-        opcoes: ["Ir para o norte", "Ir para o sul", "Gritar por ajuda"],
-        regras: {
-          "ir para o norte": 1, // Ajuste para minúsculas
-          "1": 1, // Ajuste para minúsculas
-          "ir para o sul": 2,   // Ajuste para minúsculas
-          "gritar por ajuda": 3  // Ajuste para minúsculas
-        }
-      },
-      { // 1 Novo estágio para "Ir para o norte"
-        texto: "Você segue para o norte e encontra um caminho estreito. O que você faz?",
-        opcoes: ["Seguir o caminho", "Voltar para a floresta"],
-        regras: {
-          "seguir o caminho": 4,  // Índice do próximo estágio (você precisa criar esse estágio)
-          "voltar para a floresta": 0 // Volta para o primeiro estágio
-        }
-      },
-      { // 2 Novo estágio para "Ir para o norte"
-        texto: "Não pode, vai pro norte ou grite",
-        opcoes: ["Voltar para a floresta"],
-        regras: {
-          "voltar para a floresta": 0 // Volta para o primeiro estágio
-        }
-      },
-      { // 3 Novo estágio para "gritar por ajuda"
-        texto: "AHHHHHHHHHHHHHHHHHHHHH",
-        opcoes: ["Voltar para a floresta", "Gritar por ajuda"],
-        regras: {
-          "voltar para a floresta": 0,  // Índice do próximo estágio (você precisa criar esse estágio)
-          "gritar por ajuda": 3 // Volta para o primeiro estágio
-        }
-      },
-      { // 4 Novo estágio para "gritar por ajuda"
-        texto: "Parabéns, você encontrou o tesouro!",
-        opcoes: ["Voltar para a floresta", "Gritar por ajuda"],
-        regras: {
-          "voltar para a floresta": 0 // Volta para o primeiro estágio
-        }
-      },
-    // ... (adicione mais estágios da história aqui)
-];
+// Função para exibir o estágio atual do jogo
+function exibirEstagio(numeroEstagio) {
+  const estagioAtual = game.estagios[numeroEstagio];
 
-function mostrarTexto(indice) {
-    areaTexto.textContent = historia[indice].texto;
-    if (historia[indice].opcoes) {
-        areaTexto.textContent += "\n\nOpções:";
-        historia[indice].opcoes.forEach(opcao => {
-            areaTexto.textContent += "\n- " + opcao;
-        });
-    }
+  areaTexto.textContent = estagioAtual.texto;
+  opcoesContainer.innerHTML = '';
+
+  // Exibir opções clicáveis
+  estagioAtual.opcoes.forEach((opcao, index) => {
+      const botaoOpcao = document.createElement("button");
+      botaoOpcao.textContent = opcao.texto;
+      botaoOpcao.classList.add("opcao");
+
+      botaoOpcao.addEventListener("click", () => {
+          const proximoEstagio = opcao.proximoEstagio;
+          if (proximoEstagio !== null && proximoEstagio !== undefined) {
+              exibirEstagio(proximoEstagio);
+          } else {
+              areaTexto.textContent = "Você chegou ao fim da jornada. Obrigado por jogar!";
+              opcoesContainer.innerHTML = '';
+          }
+      });
+
+      opcoesContainer.appendChild(botaoOpcao);
+  });
 }
 
-function processarComando(comando) {
-    comando = comando.replace(/^\d+\s*-\s*/, '').trim().toLowerCase(); // Remove número e ajusta
-    const regras = historia[estadoAtual].regras;
-
-    console.log("Comando digitado:", comando); // Depuração
-    console.log("Regras:", regras); // Depuração
-
-    if (comando in regras) {
-        estadoAtual = regras[comando];
-        mostrarTexto(estadoAtual);
-    } else {
-        areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
-    }
-}
-
-inputComando.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-        processarComando(inputComando.value.toLowerCase()); // Converte para minúsculas
-        inputComando.value = "";
-    }
-});
-
-mostrarTexto(estadoAtual);
-  
+// Iniciar o jogo a partir do primeiro estágio
+exibirEstagio(0);
