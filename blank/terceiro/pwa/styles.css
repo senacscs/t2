@@ -81,6 +81,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 10px;
+    margin-bottom: 100px;
 }
 
 .product-item {
