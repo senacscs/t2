@@ -1,92 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veste e Reveste | Moda Sustentável</title>
-    <script src="https://kit.fontawesome.com/a130a3744b.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./images/icon-vr.png">
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Veste e Reveste | Moda Sustentável</title>
+        <script src="https://kit.fontawesome.com/a130a3744b.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="./images/icon-vr.png">
+        <link rel="stylesheet" href="styles.css">
 
-   <!-- Meta Tags required for
-	Progressive Web App -->
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
-    <meta name="theme-color" content="black">
+        <!-- Meta Tags required for Progressive Web App -->
+        <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+        <meta name="theme-color" content="black">
 
-    <!-- Manifest File link -->
-    <link rel="manifest" href="manifest.json">
+        <!-- Manifest File link -->
+        <link rel="manifest" href="manifest.json">
 
-</head>
-<body>
-    <header>
-         <div class="top-bar">
-            <div class="location"><strong>Nome de usuário</strong></div>
-            <div class="profile">
-                <i class="fa fa-user"></i>
-            </div>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Procurar">
-            <button class="filter-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
-    </header>
-    
-    <main>
-        <div class="promo-banner">
-            <span class="promo-text">50% off</span>
-            <h2>Em peças jeans</h2>
-        </div>
-        
-        <div class="category-bar">
-            <button class="category active">Vestidos</button>
-            <button class="category">Camisetas</button>
-            <button class="category">Saias</button>
-            <button class="category">Jaquetas</button>
-        </div>
-        
-        <div class="product-list">
-            <div class="product-item">
-                <i class="fa fa-shirt"></i>
-                <div class="product-info">
-                    <h3>Item</h3>
-                    <p>Nome do vendedor</p>
-                    <p class="price">R$</p>
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="location">
+                    <strong>Nome de usuário</strong>
+                </div>
+                <div class="profile">
+                    <i class="fa fa-user"></i>
                 </div>
             </div>
-            <div class="product-item">
-                <i class="fa fa-shirt"></i>
-                <div class="product-info">
-                    <h3>Item</h3>
-                    <p>Nome do vendedor</p>
-                    <p class="price">R$</p>
-                </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Procurar" id="searchbar">
+                <button class="filter-button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="promo-banner">
+                <span class="promo-text">50% off</span>
+                <h2>Em peças jeans</h2>
             </div>
 
-            <div class="product-item">
-                <i class="fa fa-shirt"></i>
-                <div class="product-info">
-                    <h3>Item</h3>
-                    <p>Nome do vendedor</p>
-                    <p class="price">R$</p>
-                </div>
+            <div class="category-bar">
+                <button class="category active">Vestidos</button>
+                <button class="category">Camisetas</button>
+                <button class="category">Saias</button>
+                <button class="category">Jaquetas</button>
             </div>
-            <div class="product-item">
-                <i class="fa fa-shirt"></i>
-                <div class="product-info">
-                    <h3>Item</h3>
-                    <p>Nome do vendedor</p>
-                    <p class="price">R$</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <nav class="bottom-nav">
-        <button class="nav-button home"><i class="fa fa-shop"></i></button>
-        <button class="nav-button wishlist"><i class="fa fa-heart"></i></button>
-        <button class="nav-button cart"><i class="fa fa-shopping-cart"></i></button>
-    </nav>
 
-    <script src="script.js"></script>
-</body>
+            <div class="product-list">
+                <div class="product-item">
+                    <i class="fa fa-shirt"></i>
+                    <div class="product-info">
+                        <h3>Item</h3>
+                        <p>Nome do vendedor</p>
+                        <p class="price">R$</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <i class="fa fa-shirt"></i>
+                    <div class="product-info">
+                        <h3>Item</h3>
+                        <p>Nome do vendedor</p>
+                        <p class="price">R$</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <i class="fa fa-shirt"></i>
+                    <div class="product-info">
+                        <h3>Item</h3>
+                        <p>Nome do vendedor</p>
+                        <p class="price">R$</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <i class="fa fa-shirt"></i>
+                    <div class="product-info">
+                        <h3>Item</h3>
+                        <p>Nome do vendedor</p>
+                        <p class="price">R$</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <button class="nav-button home">
+                <i class="fa fa-shop"></i>
+            </button>
+            <button class="nav-button wishlist">
+                <i class="fa fa-heart"></i>
+            </button>
+            <button class="nav-button cart">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+        </nav>
+
+        <script src="script.js"></script>
+
+        <script>
+
+            function search_bar() {
+                let input = document
+                    .getElementById('searchbar')
+                    .value
+                input = input.toLowerCase();
+                let x = document.getElementsByClassName('product-list');
+
+                for (i = 0; i < x.length; i++) {
+                    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                        x[i].style.display = "none";
+                    } else {
+                        x[i].style.display = "product-item";
+                    }
+                }
+            }
+        </script>
+    </body>
 </html>
