@@ -1,0 +1,102 @@
+body {
+    background-color: #0e0e0e; /* Fundo ainda mais escuro */
+    color: #d4af37; /* Texto dourado */
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    animation: fadeIn 2s; /* Animação de entrada suave */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffd700; /* Dourado mais claro */
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222; /* Fundo do container ainda mais escuro */
+    border: 2px solid #d4af37; /* Borda dourada */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Efeito de sombra */
+    animation: pulse 2s infinite; /* Animação de pulsação */
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+    50% { box-shadow: 0 0 30px rgba(0, 0, 0, 1); }
+    100% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+}
+
+#area-texto {
+    background-color: #333; /* Fundo da área de texto ainda mais escuro */
+    color: #d4af37; /* Texto da área de texto dourado */
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+    border: 1px solid #d4af37; /* Borda dourada */
+    animation: textFadeIn 2s; /* Animação de entrada de texto */
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#input-comando {
+    background-color: #333; /* Fundo do input ainda mais escuro */
+    color: #d4af37; /* Texto do input dourado */
+    border: none;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #d4af37; /* Borda dourada */
+}
+
+#cursor {
+    color: #d4af37; /* Cor do cursor (dourado) */
+    animation: blink 1s infinite; /* Animação de piscar */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.botao-medieval {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333; /* Cor de fundo escura */
+    color: #d4af37; /* Cor do texto dourado */
+    border: 2px solid #d4af37; /* Borda dourada */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-medieval:hover {
+    background-color: #444; /* Cor de fundo escura quando hover */
+}
+
+.botao-medieval:focus {
+    outline: none;
+    box-shadow: 0 0 10px #d4af37; /* Sombra dourada ao focar */
+}
+
+#imagem{
+    width: 250px;
+}

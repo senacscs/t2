@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O Despertar do Guardião</title>
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>O Despertar do Guardião</h1>
+
+    <div id="container">
+        <div id="area-texto">
+        </div>
+        <img id="imagem" src="images/armor.png" alt="" style="display: none;">
+        <input type="text" id="input-comando" placeholder="Digite seu comando" autofocus autocomplete="off">
+        <span id="cursor">_</span>
+    </div>
+
+    <div id="final" style="display: none;">
+        <button class="botao-medieval" onclick="irProximoJogo()">Próximo Jogo</button>
+    </div>
+
+    <audio id="musica-fundo" loop>
+        <source src="/sound/ytmp3free.cc_regal-ancestor-spirit-youtubemp3free.org.mp3" type="audio/mpeg">
+        **Seu navegador não suporta o elemento de áudio.**
+    </audio>
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+            document.getElementById('musica-fundo').play();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
