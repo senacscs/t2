@@ -17,7 +17,7 @@ const historia = [
         }
       },
       { // 1 Novo estágio para "Ir para o norte"
-        texto: "Primeira corrida aparece a Thomas as 08:02 com o passageiro Juan Carlos",
+    texto: "Primeira corrida aparece para Thomas às 08:02 com o passageiro Juan Carlos",
         opcoes: ["1. Aceitar a corrida", "2. Negar a corrida"],
         regras: {
           "aceitar corrida": 2,
