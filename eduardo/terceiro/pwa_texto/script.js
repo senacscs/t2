@@ -73,7 +73,7 @@ const historia = [
         opcoes: ["Recomeçar", "Voltar para a Parte 1"],
         regras: {
             "1": 0,
-            "2": "https://senacscs.github.io/t2/bernardo/terceiro/pwa_texto"
+            "2": "https://senacscs.github.io/t2/bernardo/terceiro/pwa_game"
         }
     },
     { // 9: Aliar-se ao Guardião
