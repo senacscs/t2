@@ -92,14 +92,14 @@ main p {
 
 .main-page img {
     border-radius: 50%;
-    width: 400px; 
-    height: 400px; 
+    width: 350px; 
+    height: 350px; 
     object-fit: cover;
     margin-left: -150px; 
 }
 /* BOOKS*/ 
  .b-container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     padding: 20px;
     margin: 0 auto;
@@ -157,4 +157,5 @@ footer {
     border-top: 1px solid #ddd;
     text-align: center;
     color: #ddd;
+    width: 100%;
 }
