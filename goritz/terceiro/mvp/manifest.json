@@ -1,0 +1,20 @@
+{
+    "name": "Mente ao Cubo",
+    "short_name": "MenteCubo",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f4f4f4",
+    "theme_color": "#333",
+    "icons": [
+        {
+            "src": "assets/images/icon-512x512.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/icon-192x192.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

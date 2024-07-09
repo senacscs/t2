@@ -1,0 +1,64 @@
+body {
+    background-color: #191919;
+    color: rgb(0, 255, 255);
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 15, 0, 0.1),
+        rgba(0, 15, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: 100% 2px;
+}
+ 
+h1 {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+ 
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid rgb(0, 255, 255);
+    padding: 20px;
+}
+ 
+#area-texto {
+    background-color: rgb(79, 79, 79);
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    white-space: pre-wrap;
+}
+ 
+#input-comando {
+    background-color: #6c6c6c;
+    color: rgb(0, 255, 255);
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: rgb(0, 255, 255);
+}
+
+#cursor {
+    color: rgb(0, 255, 255);
+    animation: blink 1s infinite;
+}
+ 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

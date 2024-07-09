@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Parte 2</title>
+<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+<meta name="theme-color" content="black">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="images/icon-192x192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+    <h1>Parte 2</h1>
+ 
+    <div id="container">
+<div id="area-texto"></div>
+<input type="text" id="input-comando" placeholder="Digite seu comando">
+<span id="cursor">_</span>
+</div>
+ 
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+ 
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+</script>
+<script src="script.js"></script>
+</body>
+ 
+</html>

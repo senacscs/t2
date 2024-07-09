@@ -1,0 +1,73 @@
+<!-- código original em https://www.geeksforgeeks.org/making-a-simple-pwa-under-5-minutes/ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Responsive -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>PWA Tutorial</title>
+
+    <!-- Meta Tags required for
+	Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+
+    <!-- Manifest File link -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#1">Título 1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 id="1">Título 1</h1>
+            <h2>Subtítulo 1.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt sapiente minus dolorem impedit
+                assumenda provident suscipit sed eligendi obcaecati non cum, ipsam sit, velit qui placeat itaque
+                commodi. Vitae.</p>
+            <img src="images/icon-192x192.png" alt="icone de 192px">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2021 GeeksforGeeks</p>
+    </footer>
+
+    <!-- Registering Service Worker -->
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
