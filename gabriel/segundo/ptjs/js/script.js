@@ -3,6 +3,7 @@ function mostrarConteudo(nomeDiv, conteudo) {
 	div.innerHTML=conteudo;
 	let screenReaderDiv=document.createElement("div");
 	screenReaderDiv.setAttribute("aria-live", "polite");
+	screenReaderDiv.classList.add("sr-only");
 	document.body.appendChild(screenReaderDiv);
 	setTimeout(() => {
 		screenReaderDiv.innerHTML=conteudo;
