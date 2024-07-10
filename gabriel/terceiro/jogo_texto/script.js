@@ -206,12 +206,12 @@ function mostrarTexto(indice) {
 }
 
 function falarLeitor(conteudo) {
-	let divLeitor=document.createElement("div");
+	let divLeitor = document.createElement("div");
 	divLeitor.setAttribute("aria-live", "polite");
 	divLeitor.classList.add("visually-hidden");
 	document.body.appendChild(divLeitor);
 	setTimeout(() => {
-		divLeitor.innerHTML=conteudo;
+		divLeitor.innerHTML = conteudo;
 		setTimeout(() => document.body.removeChild(divLeitor), 5000);
 	}, 150);
 }
