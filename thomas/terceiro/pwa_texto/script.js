@@ -34,20 +34,20 @@ const historia = [
         texto: "Ao aceitar a corrida, o aplicativo mostra a estimativa de tempo da corrida, que é de 0,40 horas. Em qual horário Juan Carlos chegará ao seu destino segundo a previsão?(08:02 horário de saída)",
         opcoes: ["1. 08:32","2. 08:42","3. 08:29","4. 08:26","5. 08:35"],
         regras: {
-          "08:32": 3 ,
-          "08:42": 3 ,
-          "08:29": 3 ,
+          "08:32": 10 ,
+          "08:42": 10 ,
+          "08:29": 10 ,
           "08:26": 5 ,
-          "08:35": 3 ,
-          "1" : 3,
-          "2" : 3,
-          "3" : 3,
+          "08:35": 10 ,
+          "1" : 10,
+          "2" : 10,
+          "3" : 10,
           "4" : 5,
-          "5" : 3,
+          "5" : 10,
         }
       },
       { // 3 Novo estágio para "gritar por ajuda"
-        texto: "Errado! Juan ve sua resposta e acha que será muito demorado por causa do trânsito, e decide ir correndo por um caminho alternativo",
+        texto: "Juan ve sua resposta e acha que será muito demorado por causa do trânsito, e decide ir correndo por um caminho alternativo",
         opcoes: ["1. Desistir de ser motorista de aplicativo","2. Correr atrás do Juan e obrigar ele a fazer a corrida com você" ],
         regras: {
           "1": 7,
@@ -109,6 +109,14 @@ const historia = [
           "levar o carro para o mecânico": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto'
         }
       },
+      { // 9 Novo estágio para "gritar por ajuda"
+        texto: "Errado! A resposta correta é 08:26, pois 0,4 horas são 24 minutos, e não 40 minutos, como muitos pensam. Na mesma ideia de 0,5 horas ser 30 minutos, meia hora.",
+        opcoes: ["1. Continuar"],
+        regras: {
+          "continuar": 3,
+          "1" : 3
+        }
+      },
 ];
 
 function mostrarTexto(indice) {
@@ -148,3 +156,4 @@ inputComando.addEventListener("keydown", (event) => {
 });
 
 mostrarTexto(estadoAtual);
+
