@@ -1,6 +1,6 @@
 body {
-	background-color: #6c6c6c; /* Fundo preto */
-	color: #0f0;		   /* Texto verde claro */
+	background-color: #3c3c3c; /* Fundo preto */
+	color: #6699cc;		   /* Texto verde claro */
 	font-family: 'Courier New', monospace;
 	font-size: 14px;
 	line-height: 1.5;
@@ -8,7 +8,8 @@ body {
 }
 
 
-h1 {	width: 80%;
+h1 {
+	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
 	padding-bottom: 5%;
@@ -18,16 +19,16 @@ h1 {	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
 	background-color: #6c6c6c; /* Fundo do container preto */
-	border: 2px solid #0f0; /* Borda verde */
+	border: 2px solid #cae8ff; /* Borda verde */
 	padding: 20px;
 }
 
 #area-texto {
 	background-color: #6c6c6c; /* Fundo da área de texto preto */
-	color: #0f0;		   /* Texto da área de texto verde */
+	color: #6699cc;		   /* Texto da área de texto verde */
 	padding: 10px;
-	margin-bottom: 10px;
 	min-height: 200px;
+	margin-bottom: 10px;
 	white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
 }
 
