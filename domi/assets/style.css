@@ -136,6 +136,7 @@ section#outros {
 .card {
     max-width: 300px;
     width: 100%;
+    min-height: 280px;
     max-height: 280px;
     height: 100%;
     background-color: #5D3FD3;
@@ -230,6 +231,6 @@ footer a:hover {
     .card-holder {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
   }
