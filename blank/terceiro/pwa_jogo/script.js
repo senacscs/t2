@@ -1,6 +1,7 @@
 const areaTexto = document.getElementById("area-texto");
 const inputComando = document.getElementById("input-comando");
 let estadoAtual = 0;
+inputComando.focus();
 
 const historia = [
 	{
