@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
     } else {
       areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
-      falarLeitor("Nova fase carregada. Pressione escape e depois control + home para ler a história");
+      falarLeitor("Comando Inválido, Tente Novamente. Pressione escape e depois control + home para ler a história");
     }
   }
 
