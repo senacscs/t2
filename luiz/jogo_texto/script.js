@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
     } else {
       areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
+	  falarLeitor("Comando inválido");
     }
   }
 

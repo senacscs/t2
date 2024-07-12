@@ -6,7 +6,28 @@ body {
 	line-height: 1.5;
 	padding: 20px;
 }
+.typewriter p {
+    overflow: hidden; /* Esconde o texto que ainda não foi digitado */
+    border-right: .15em solid orange; /* Adiciona o cursor piscante */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 0 auto; /* Centraliza o texto */
+    letter-spacing: .15em; /* Espaçamento entre as letras */
+    animation: 
+        typing 3.5s steps(40, end), /* Animação de digitação */
+        blink-caret .75s step-end infinite; /* Animação do cursor piscante */
+}
 
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animação do cursor piscante */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
 
 h1 {
 	width: 80%;
