@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   inputComando.focus();
 
-
   const bemvindo = `
 ### ##   ### ###  ##   ##           ### ###    ####   ###  ##  ### ##    ## ##   
  ##  ##   ##  ##   ## ##             ##  ##     ##      ## ##   ##  ##  ##   ##  
@@ -20,7 +19,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const fim = ``
   const historia = [
     { // 0 
-      texto: "Você está em uma floresta. O que você faz?",
+      texto: "Você está em uma floresta. O que você faz? Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem \n Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem \n Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem \n Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem \n Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ",
+      // texto: bemvindo,
       opcoes: ["1 - Ir para o norte", "Ir para o sul", "Gritar por ajuda", "Site"],
       regras: {
         "Ir para o norte": 1, // Ajuste para minúsculas
@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let i = 0;
     let texto = historia[indice].texto;
 
-    falarLeitor("Nova fase carregada. Pressione escape e depois control + home para ler a história");
-
     function digitar() {
       
       if (i < texto.length) {
@@ -110,6 +108,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         inputComando.focus();
       }
     }
+
     digitar(); 
   }
 
@@ -135,22 +134,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
       } else {
         estadoAtual = destino;
         mostrarTexto(estadoAtual);
+        falarLeitor("Nova fase carregada. Pressione escape e depois control + home para ler a história");
       }
     } else {
       areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
+      falarLeitor("Nova fase carregada. Pressione escape e depois control + home para ler a história");
     }
-  }
-
-  function falarLeitor(conteudo) {
-    let divLeitor = document.createElement("div");
-    divLeitor.setAttribute("aria-live", "polite");
-    divLeitor.classList.add("visually-hidden");
-    document.body.appendChild(divLeitor);
-
-    setTimeout(() => {
-      divLeitor.innerHTML = conteudo;
-      setTimeout(() => document.body.removeChild(divLeitor), 500);
-    }, 150);
   }
 
   inputComando.addEventListener("keydown", (event) => {
