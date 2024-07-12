@@ -17,4 +17,4 @@ linhas.forEach((linha, index) => {
 
 setTimeout(function() {
     window.location.href = "index.html"; 
-}, 10000); 
+}, 1); 
