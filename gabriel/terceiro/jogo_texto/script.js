@@ -26,7 +26,7 @@ const historia = [
 		}
 	},
 	{
-		texto: "Ao ver onde está, você fica desesperado e começa a correr como louco para fora do computador, tentando a todo custo sair. Porém, você tropessa em uma peça aleatória do dispositivo e cai com a cara no chão. Você continua desesperadamente tentando sair, mas a movimentação interna das peças do computador, incluindo o giro do HD, o impede totalmente de sair. Você não vê alternativa a não ser continuar lá.",
+		texto: "Ao ver onde está, você fica desesperado e começa a correr como louco para fora do computador, tentando a todo custo sair. Porém, você tropessa em uma peça aleatória do dispositivo e cai com a cara no chão. Você continua desesperadamente tentando sair, mas a movimentação interna das peças do computador, incluindo o giro do HD, o impede totalmente de sair. Você se perde e acaba girando tanto que cai, ficando preso dentro de uma peça do computador.",
 		opcoes: ["1. Voltar ao início",],
 		regras: {
 			"voltar ao início": 0,
