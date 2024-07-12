@@ -1,18 +1,42 @@
 body {
-    background-color: #000000; /* Fundo preto */
-    color: rgb(255, 0, 0);           /* Texto verde claro */
+    background-color: #6c6c6c; /* Fundo preto */
+    color: #0f0; /* Texto verde claro */
     font-family: 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.5;
     padding: 20px;
 }
 
+.typewriter p {
+    overflow: hidden; /* Esconde o texto que ainda não foi digitado */
+    border-right: .15em solid orange; /* Adiciona o cursor piscante */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 0 auto; /* Centraliza o texto */
+    letter-spacing: .15em; /* Espaçamento entre as letras */
+    animation: 
+        typing 3.5s steps(40, end), /* Animação de digitação */
+        blink-caret .75s step-end infinite; /* Animação do cursor piscante */
+}
 
-h1 {    width: 80%;
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animação do cursor piscante */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+h1 {    
+    width: 80%;
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 5%;
 }
+
 #container {
     width: 80%;
     max-width: 800px;
@@ -24,7 +48,7 @@ h1 {    width: 80%;
 
 #area-texto {
     background-color: #6c6c6c; /* Fundo da área de texto preto */
-    color: #0f0;           /* Texto da área de texto verde */
+    color: #0f0; /* Texto da área de texto verde */
     padding: 10px;
     margin-bottom: 10px;
     min-height: 200px;
@@ -33,7 +57,7 @@ h1 {    width: 80%;
 
 #input-comando {
     background-color: #6c6c6c; /* Fundo do input preto */
-    color: #0f0;           /* Texto do input verde */
+    color: #0f0; /* Texto do input verde */
     border: none;
     width: 100%;
     padding: 5px;
