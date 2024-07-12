@@ -1,0 +1,83 @@
+body {
+    background-color: #000000; /* Fundo preto */
+    color: rgb(255, 255, 255);           /* Texto verde claro */
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.typewriter p {
+    overflow: hidden; /* Esconde o texto que ainda não foi digitado */
+    border-right: .15em solid orange; /* Adiciona o cursor piscante */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 0 auto; /* Centraliza o texto */
+    letter-spacing: .15em; /* Espaçamento entre as letras */
+    animation: 
+        typing 3.5s steps(40, end), /* Animação de digitação */
+        blink-caret .75s step-end infinite; /* Animação do cursor piscante */
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+h1 {    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #000000; /* Fundo do container preto */
+    border: 2px solid rgb(255, 255, 255); /* Borda verde */
+    padding: 20px;
+}
+
+#area-texto {
+    display: inline-block;
+    background-color: #000000; /* Fundo da área de texto preto */
+    color: rgb(255, 255, 255);           /* Texto da área de texto verde */
+    padding: 1px;
+    margin-bottom: 15px;
+    min-height: 200px;
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+}
+
+#input-comando {
+    background-color: #000000; /* Fundo do input preto */
+    color: rgb(255, 255, 255);           /* Texto do input verde */
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Efeito de scanlines (opcional) */
+body {
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 15, 0, 0.1), /* Verde claro transparente */
+        rgba(0, 15, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: 100% 2px; /* Tamanho das scanlines */
+}
+
+#cursor {
+    color: rgb(255, 255, 255); /* Cor do cursor (verde claro) */
+    animation: blink 1s infinite; /* Animação de piscar */
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

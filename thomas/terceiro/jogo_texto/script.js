@@ -119,15 +119,55 @@ const historia = [
       },
 ];
 
+mostrarTexto(estadoAtual);
+
 function mostrarTexto(indice) {
-    areaTexto.textContent = historia[indice].texto;
-    if (historia[indice].opcoes) {
-        areaTexto.textContent += "\n\nOpções:";
+    
+  console.log("Função mostrarTexto chamada com índice:", indice);
+
+  const paragrafoTexto = areaTexto.querySelector("p");
+  const imagemJogo = areaTexto.querySelector("#imagem-jogo");
+
+  console.log("paragrafoTexto:", paragrafoTexto);
+  // console.log("imagemJogo:", imagemJogo);
+
+  paragrafoTexto.textContent = ""; // Limpa o texto anterior
+  // imagemJogo.style.display = "none"; // Esconde a imagem
+
+  console.log("paragrafoTexto:", paragrafoTexto);
+  // console.log("imagemJogo:", imagemJogo);
+
+  let i = 0;
+  let texto = historia[indice].texto;
+
+  // falarLeitor("Nova fase carregada. Pressione escape e depois control + home para ler a história");
+
+  function digitar() {
+    
+    if (i < texto.length) {
+      paragrafoTexto.textContent += texto.charAt(i);
+      i++;
+      setTimeout(digitar, 10); // Atraso de 50ms (ajuste conforme desejado)
+    } else {
+      // if (historia[indice].imagem) {
+      //   imagemJogo.src = historia[indice].imagem;
+      //   imagemJogo.style.display = "block";
+      // }
+
+      if (historia[indice].opcoes) {
+        paragrafoTexto.textContent += "\n\nOpções:\n";
         historia[indice].opcoes.forEach(opcao => {
-            areaTexto.textContent += "\n- " + opcao;
+          paragrafoTexto.textContent += "- " + opcao + "\n";
         });
+      }
+
+      inputComando.focus();
     }
+  }
+
+  digitar(); 
 }
+
 
 function processarComando(comando) {
     comando = comando.replace(/^\d+\s*-\s*/, '').trim().toLowerCase(); // Remove número e ajusta
@@ -154,6 +194,3 @@ inputComando.addEventListener("keydown", (event) => {
         inputComando.value = "";
     }
 });
-
-mostrarTexto(estadoAtual);
-
