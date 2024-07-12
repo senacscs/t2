@@ -1,0 +1,64 @@
+body {
+	background-color: #6c6c6c; /* Fundo preto */
+	color: #0f0;		   /* Texto verde claro */
+	font-family: 'Courier New', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 20px;
+}
+
+
+h1 {	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+#container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #6c6c6c; /* Fundo do container preto */
+	border: 2px solid #0f0; /* Borda verde */
+	padding: 20px;
+}
+
+#area-texto {
+	background-color: #6c6c6c; /* Fundo da área de texto preto */
+	color: #0f0;		   /* Texto da área de texto verde */
+	padding: 10px;
+	margin-bottom: 10px;
+	min-height: 200px;
+	white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+}
+
+#input-comando {
+	background-color: #6c6c6c; /* Fundo do input preto */
+	color: #0f0;		   /* Texto do input verde */
+	border: none;
+	width: 100%;
+	padding: 5px;
+}
+
+/* Efeito de scanlines (opcional) */
+body {
+	background-image: repeating-linear-gradient(
+		0deg,
+		rgba(0, 15, 0, 0.1), /* Verde claro transparente */
+		rgba(0, 15, 0, 0.1) 1px,
+		transparent 1px,
+		transparent 2px
+	);
+	background-size: 100% 2px; /* Tamanho das scanlines */
+}
+
+#cursor {
+	color: #0f0; /* Cor do cursor (verde claro) */
+	animation: blink 1s infinite; /* Animação de piscar */
+}
+
+/* Animação de piscar */
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
