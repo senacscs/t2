@@ -5,8 +5,8 @@ inputComando.focus();
 
 const historia = [
 	{
-		texto: "Na avenida movimentada, o Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c      p        ão      s m       f      m.\"" +
-		"Você quer jogar comigo?",
+		texto: "Na avenida movimentada, o Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c      p        ão      s m       f      m.\" "+
+		"\"" + "Você quer jogar comigo?",
 		opcoes: ["jogar"],
 		regras: {
 			"jogar": 1,
