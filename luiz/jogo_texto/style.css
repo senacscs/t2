@@ -1,65 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 body {
-	background-color: #6c6c6c; /* Fundo preto */
-	color: #0f0; /* Texto verde claro */
-	font-family: 'Courier New', monospace;
+    background-color: #000000;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	padding: 20px;
-}
+    }
 
 h1 {
-	width: 80%;
+    font-size: 3rem;
 	max-width: 800px;
 	margin: 0 auto;
-	padding-bottom: 5%;
-	color: #E6B8AF; /* Rosa Antigo para o título */
-}
+	padding-bottom: 2%;
+	color: #E6B8AF; 
+    text-shadow: 0 0 18px #ff086f;
+    position: relative;
+    &::after, &::before{
+      content: attr(data-text);
+      position: absolute;
+      left: 3px;
+      text-shadow: none;
+      background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3DPAzwJxrwCre%2Fgiphy.gif&f=1&nofb=1&ipt=dc4dd2260b9ccecc06fc391c3c781a47f6dd210b6e9d1d80c61beb36b618cdc9&ipo=images);
+      background-clip: text;
+      color: transparent;
+      mix-blend-mode: lighten;
+      pointer-events: none;
+    }
+    &::before{
+      left: -2px;
+      mix-blend-mode: lighten;
+    }
+  }
+
 
 #container {
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
-	background-color: #6c6c6c; /* Fundo do container preto */
-	border: 2px solid #0f0; /* Borda verde */
+	background-color: #000000; 
+	border: 2px solid rgb(255, 0, 153); 
 	padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #area-texto {
-	background-color: #6c6c6c; /* Fundo da área de texto preto */
-	color: #0f0; /* Texto da área de texto verde */
+	background-color: #000000; 
+	color: #ddd;
 	padding: 10px;
 	margin-bottom: 10px;
 	min-height: 200px;
-	white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
-	border: 2px solid #B0E0E6; /* Adicionando borda Azul Celeste */
+	white-space: pre-wrap;
+	border: 2px solid #1aa6b9; 
 }
 
 #input-comando {
-	background-color: #6c6c6c; /* Fundo do input preto */
-	color: #0f0; /* Texto do input verde */
+	background-color: #000000; 
+	color: #0f0; 
 	border: none;
-	width: 100%;
+	width: 50%;
 	padding: 5px;
 }
 
-/* Efeito de scanlines (opcional) */
-body {
-	background-image: repeating-linear-gradient(
-		0deg,
-		rgba(0, 15, 0, 0.1), /* Verde claro transparente */
-		rgba(0, 15, 0, 0.1) 1px,
-		transparent 1px,
-		transparent 2px
-	);
-	background-size: 100% 2px; /* Tamanho das scanlines */
-}
-
 #cursor {
-	color: #0f0; /* Cor do cursor (verde claro) */
-	animation: blink 1s infinite; /* Animação de piscar */
+	color: #0f0; 
+	animation: blink 1s infinite; 
+    
 }
 
-/* Animação de piscar */
 @keyframes blink {
 	0% {
 		opacity: 1;

@@ -5,11 +5,10 @@ inputComando.focus();
 
 const historia = [
 	{
-		texto: "Na avenida movimentada, o Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c      p        ão      s m       f      m.\" "+
-		"\"" + "Você quer jogar comigo?",
+		texto: "Na avenida movimentada, o Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c      p        ão      s m       f      m.",
 		opcoes: ["jogar"],
 		regras: {
-			"jogar": 1,
+			"jogar": 1, 
 			"1": 1,
 		}
 	},
@@ -24,22 +23,22 @@ const historia = [
 			"2": 4,
 		}
 	},
-	// {
-	// 	texto: "Ao ver onde está, você fica desesperado e começa a correr como louco para fora do computador, tentando a todo custo sair. Porém, você tropessa em uma peça aleatória do dispositivo e cai com a cara no chão. Você continua desesperadamente tentando sair, mas a movimentação interna das peças do computador, incluindo o giro do HD, o impede totalmente de sair. Você não vê alternativa a não ser continuar lá.",
-	// 	opcoes: ["voltar para o início",],
-	// 	regras: {
-	// 		"voltar para o início": 0,
-	// 		"1": 0,
-	// 	}
-	// },
-	// {
-	// 	texto: "Você fica com muita raiva e começa a pisar no arquivo do trabalho sem parar. Você nota que o arquivo realmente começou a se corromper, mas isso não era tão bom quanto parecia. Quando o arquivo corrompido entra em contato com sua pele, você é atingido por um choque elétrico e morre.",
-	// 	opcoes: ["Voltar para o início",],
-	// 	regras: {
-	// 		"voltar para o início": 0,
-	// 		"1": 0,
-	// 	}
-	// },
+	{
+		texto: "Ao ver onde está, você fica desesperado e começa a correr como louco para fora do computador, tentando a todo custo sair. Porém, você tropessa em uma peça aleatória do dispositivo e cai com a cara no chão. Você continua desesperadamente tentando sair, mas a movimentação interna das peças do computador, incluindo o giro do HD, o impede totalmente de sair. Você não vê alternativa a não ser continuar lá.",
+		opcoes: ["voltar para o início",],
+		regras: {
+			"voltar para o início": 0,
+			"1": 0,
+		}
+	},
+	{
+		texto: "Você fica com muita raiva e começa a pisar no arquivo do trabalho sem parar. Você nota que o arquivo realmente começou a se corromper, mas isso não era tão bom quanto parecia. Quando o arquivo corrompido entra em contato com sua pele, você é atingido por um choque elétrico e morre.",
+		opcoes: ["Voltar para o início",],
+		regras: {
+			"voltar para o início": 0,
+			"1": 0,
+		}
+	},
 	// {
 	// 	texto: "Você conta até 3, respira um pouco e segue tranquilamente seu caminho pelas peças do computador, mesmo com todo o estresse que o trabalho te fez passar. De repente, você começa a ouvir um barulho muito alto e constante que começa a tomar todo o lugar. Logo depois, você perde toda a sua capacidade de movimento e fica simplesmente travado no lugar. Para continuar caminhando, você deve dar ao computador um comando específico que o salvará. Qual é esse comando?",
 	// 	opcoes: ["desligar o computador", "control+alt+del"],
