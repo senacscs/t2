@@ -1,22 +1,22 @@
 {
-	"name": "App PWA",
-	"short_name": "PWA",
+	"name": "PWA game",
+	"short_name": "game",
 	"start_url": "index.html",
 	"display": "standalone",
-	"background_color": "#5900b3",
+	"background_color": "#E6B8AF",
 	"theme_color": "black",
 	"scope": ".",
-	"description": "This is a PWA tutorial.",
+	"description": "This is a game.",
 	"icons": [
 		{
-			"src": "images/icon-192x192.png",
+			"src": "images/icon-arcade.avif",
 			"sizes": "192x192",
-			"type": "image/png"
+			"type": "image/avif"
 		},
 		{
-			"src": "images/icon-512x512.png",
+			"src": "images/icon-arcade.avif",
 			"sizes": "512x512",
-			"type": "image/png"
+			"type": "image/avif"
 		}
 	]
 }

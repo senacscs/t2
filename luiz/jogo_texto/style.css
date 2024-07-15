@@ -7,7 +7,6 @@ body {
 	line-height: 1.5;
 	padding: 20px;
     }
-
 h1 {
     font-size: 3rem;
 	max-width: 800px;
@@ -32,8 +31,6 @@ h1 {
       mix-blend-mode: lighten;
     }
   }
-
-
 #container {
 	width: 80%;
 	max-width: 800px;
@@ -44,7 +41,6 @@ h1 {
     display: flex;
     flex-direction: column;
 }
-
 #area-texto {
 	background-color: #000000; 
 	color: #ddd;
@@ -54,7 +50,6 @@ h1 {
 	white-space: pre-wrap;
 	border: 2px solid #1aa6b9; 
 }
-
 #input-comando {
 	background-color: #000000; 
 	color: #0f0; 
@@ -62,13 +57,11 @@ h1 {
 	width: 50%;
 	padding: 5px;
 }
-
 #cursor {
 	color: #0f0; 
 	animation: blink 1s infinite; 
     
 }
-
 @keyframes blink {
 	0% {
 		opacity: 1;
