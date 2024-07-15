@@ -24,7 +24,6 @@ const historia = [
 			"2": 7,
 		}
 	},
-<<<<<<< HEAD
 
 // 2- sair do fliperama
 	{
