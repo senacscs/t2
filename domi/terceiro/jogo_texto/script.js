@@ -10,11 +10,11 @@ const historia = [
     opcoes: ["quero trilhar o caminho da floresta", "quero entrar na base da montanha", "quero passar pelo túnel verde"],
     regras: {
       "quero trilhar o caminho da floresta": "/floresta", // rota do vampiro na floresta (theo)
-      "1": "/floresta",  // rota do vampiro na floresta (theo)
+      "1": "floresta/index.html",  // rota do vampiro na floresta (theo)
       "quero entrar na base da montanha": "/caverna", // rota do dragão na caverna (nick)
-      "2": "/caverna", // rota do dragão na caverna (nick)
+      "2": "caverna/index.html", // rota do dragão na caverna (nick)
       "quero passar pelo túnel verde": "/tunel", // rota do cavaleiro (henryque)
-      "3": "/tunel" // rota do cavaleiro (henryque)
+      "3": "tunel/index.html" // rota do cavaleiro (henryque)
     }
   },
   { // 1 Novo estágio para "continuar" e encontrar uma mansão
