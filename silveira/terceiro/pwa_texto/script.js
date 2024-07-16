@@ -110,7 +110,7 @@ const historia = [
           "19:50": 11,  // Índice do próximo estágio
           "1": 11,  // Índice do próximo estágio
           "19:51": 12,  // Índice do próximo estágio
-          "2": 11,  // Índice do próximo estágio
+          "2": 12,  // Índice do próximo estágio
           "19:52": 11,  // Índice do próximo estágio
           "3": 11,  // Índice do próximo estágio
           "19:53": 11,  // Índice do próximo estágio

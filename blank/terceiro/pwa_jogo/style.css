@@ -1,11 +1,11 @@
 body {
-	color: #0f0;		   /* Texto verde claro */
+	color: #0f0;		   
+	background-color: black;
 	font-family: 'Courier New', monospace;
 	font-size: 14px;
 	line-height: 1.5;
 	padding: 20px;
 }
-
 
 h1 {	width: 80%;
 	max-width: 800px;
@@ -16,20 +16,20 @@ h1 {	width: 80%;
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
-	border: 2px solid #0f0; /* Borda verde */
+	border: 2px solid #0f0; 
 	padding: 20px;
 }
 
 #area-texto {
-	color: #0f0;		   /* Texto da área de texto verde */
+	color: #0f0;		   
 	padding: 10px;
 	margin-bottom: 10px;
 	min-height: 200px;
-	white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+	white-space: pre-wrap; 
 }
 
 #input-comando {
-	color: #0f0;		   /* Texto do input verde */
+	color: #0f0;		   
 	border: none;
 	width: 100%;
 	padding: 5px;
@@ -37,11 +37,10 @@ h1 {	width: 80%;
 
 
 #cursor {
-	color: #0f0; /* Cor do cursor (verde claro) */
-	animation: blink 1s infinite; /* Animação de piscar */
+	color: #0f0; 
+	animation: blink 1s infinite; 
 }
 
-/* Animação de piscar */
 @keyframes blink {
 	0% { opacity: 1; }
 	50% { opacity: 0; }
