@@ -103,7 +103,7 @@ const historia = [
         opcoes: ["Recomeçar", "Ir para parte 4"],
         regras: {
             "1": 0,
-            "2": "https://senacscs.github.io/t2/eduardo/terceiro/pwa_texto"
+            "2": "https://senacscs.github.io/t2/eduardo/terceiro/jogo_texto"
         }
     },
     { // 13: Enigma Matemático
