@@ -7,14 +7,16 @@ inputComando.focus();
 const historia = [
   { // 0 estágio 0
     texto: "Você trabalha entregando cartas! É um trabalho que ninguém quer fazer, mas é mais do que necessário; constantemente, há uma nova aventura que você deve enfrentar para que as cartas na sua bolsa sejam entregues aos seus destinos, independente dos perigos que aparecerão no seu caminho. Mas, apesar de não podermos controlar o destino, hoje você pode escolher como você quer chegar lá.",
-    opcoes: ["quero trilhar o caminho da floresta", "quero entrar na base da montanha", "quero passar pelo túnel verde"],
+    opcoes: ["quero trilhar o caminho da floresta", "quero entrar na base da montanha", "quero passar pelo túnel verde", "quero seguir o caminho da cascata"],
     regras: {
       "quero trilhar o caminho da floresta": "floresta/index.html", // rota do vampiro na floresta (theo)
       "1": "floresta/index.html",  // rota do vampiro na floresta (theo)
       "quero entrar na base da montanha": "/caverna", // rota do dragão na caverna (nick)
       "2": "caverna/index.html", // rota do dragão na caverna (nick)
       "quero passar pelo túnel verde": "/tunel", // rota do cavaleiro (henryque)
-      "3": "tunel/index.html" // rota do cavaleiro (henryque)
+      "3": "tunel/index.html", // rota do cavaleiro (henryque)
+      "quero seguir o caminho da cascata": "cascata/index.html", // rota da elfa (laura)
+      "4": "cascata/index.html" // rota da elfa (laura)
     }
   },
   { // 1 Novo estágio para "continuar" e encontrar uma mansão

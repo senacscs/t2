@@ -1,8 +1,8 @@
 body {
-    background-color: #3d3d3d; /* Fundo preto */
-    color: rgb(67, 37, 82);           /* Texto verde claro */
+    background-color: #111111; /* Fundo preto */
+    color: #0f0;           /* Texto verde claro */
     font-family: 'Courier New', monospace;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.5;
     padding: 20px;
 }
@@ -14,17 +14,17 @@ h1 {    width: 80%;
     padding-bottom: 5%;
 }
 #container {
-    width: 70%;
+    width: 80%;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #6c6c6c; /* Fundo do container preto */
-    border: 2px solid rgb(67, 37, 82); /* Borda verde */
-    padding: 70px;
+    background-color: #111111; /* Fundo do container preto */
+    border: 2px solid #0f0; /* Borda verde */
+    padding: 20px;
 }
 
 #area-texto {
-    background-color: #6c6c6c; /* Fundo da área de texto preto */
-    color: rgb(67, 37, 82);           /* Texto da área de texto verde */
+    background-color: #111111; /* Fundo da área de texto preto */
+    color: #0f0;           /* Texto da área de texto verde */
     padding: 10px;
     margin-bottom: 10px;
     min-height: 200px;
@@ -32,8 +32,8 @@ h1 {    width: 80%;
 }
 
 #input-comando {
-    background-color: #6c6c6c; /* Fundo do input preto */
-    color: rgb(67, 37, 82);           /* Texto do input verde */
+    background-color: #111111; /* Fundo do input preto */
+    color: #0f0;           /* Texto do input verde */
     border: none;
     width: 100%;
     padding: 5px;
@@ -52,7 +52,7 @@ body {
 }
 
 #cursor {
-    color: rgb(255, 251, 0); /* Cor do cursor (verde claro) */
+    color: #0f0; /* Cor do cursor (verde claro) */
     animation: blink 1s infinite; /* Animação de piscar */
 }
 

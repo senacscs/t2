@@ -25,10 +25,10 @@ const historia = [
         texto: "Manu, embora surpresa com a atitude, manteve a calma e rapidamente preparou a linguiça para Raul. No momento do pagamento, Manu informa o valor que ficou de R$88,50, Raul inconformado com o valor, entrega uma nota de R$400, qual será o valor do troco que Manu deverá entregar para Raul?",
         opcoes: ["1. R$310,50", "2. R$311,50", "3. R$312", "4. R$312,50"],
         regras: {
-          "1": 9, // Volta para o primeiro estágio
+          "1": 12, // Volta para o primeiro estágio
           "2": 4,
-          "3": 9,
-          "4": 9
+          "3": 12,
+          "4": 12
         }
       },
       { // 3 
@@ -49,7 +49,7 @@ const historia = [
         }
       },
       { // 5 
-        texto: "Manu, ao entregar as coisa para Raul, joga todo seu dinheiro e mercadoria no chão obrigando Raul a pegar sua mercadoria e seu troco do chão. Após isso, Raul extremamante irritado sai da feira xingando até a mãe de Manuela, e Manu começa a rir da situação. " ,
+        texto: "Manu, ao entregar as coisas para Raul, joga todo seu dinheiro e mercadoria no chão obrigando Raul a pegar sua mercadoria e seu troco do chão. Após isso, Raul extremamante irritado sai da feira xingando até a mãe de Manuela, e Manu começa a rir da situação. " ,
         opcoes: ["1. Continuar suas vendas"],
         regras: {
           "1": 6 
@@ -69,25 +69,46 @@ const historia = [
         texto: "Surpresa e um pouco curiosa, Manuela aceitou o convite. Mais tarde, já à noite, decidiu ir à festa para relaxar e se divertir um pouco. Chegando lá, a batida da música eletrônica preenchia o ambiente, e as luzes piscavam ritmicamente." ,      
         opcoes: ["1. Continuar história"],
         regras: {
-          "1": 1 
+          "1":  9
         }
         
       },
       { // 8 
-        texto: "Recusando o convite, Manu agradeçe, após virar de costas Rafael coloca seu convite dentro de casaco de Manuela e vai embora " ,      
+        texto: "Recusando o convite, Manu agradeçe, após virar de costas Rafael coloca seu convite dentro de casaco de Manuela e vai embora, após chegar em casa percebe algo dentro de seu casaco e vê que é o convite de Rafael. Depois de algum tempo pensando, decidiu ir à festa para relaxar e se divertir um pouco. Chegando lá, a batida da música eletrônica preenchia o ambiente, e as luzes piscavam ritmicamente. " ,      
         opcoes: ["1. Continuar história"],
         regras: {
-          "1": 3 
+          "1": 9 
         }
         
       },
       { // 9 
-        texto: "" ,      
-        opcoes: [""],
+        texto: "Enquanto explorava o lugar, ela avistou alguns rostos familiares. Eram seus velhos amigos de escola, pessoas que ela não via há anos. Wesley o mecânico, Thomas o uber, Isadora a manicure e Raul o desenvolvedor qua havia brigado no mesmo dia. A alegria do reencontro tomou conta dela. Eles riram, dançaram e conversaram sobre os bons tempos, como se o tempo não tivesse passado. Depois de algum tempo Manu está cansada e quer ir embora, mas seus amigos insistem para que ela fique. " ,      
+        opcoes: ["1. Ficar na festa", "2. Ir embora"],
         regras: {
-          "1": 1 
+          "1": 10,
+          "2": 11 
         }
-        
+      },
+      { // 10 
+        texto: "A noite estava chegando ao fim, e a música eletrônica ainda ecoava no ar. Todas as luzes apagaram e os portões se fecharam, Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Ricardo: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Ricardo, por que nos reuniu? O que está acontecendo? Ricardo: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
+        opcoes: ["1. Apenas escutem"],
+        regras: {
+          "1": 'https://www.youtube.com/watch?v=9yvUS3hRnxs&ab_channel=RafaelSwarowsky'
+        }
+      },
+      { // 11 
+        texto: "No momento em que Manu chegava a saída todas as portas se fecham e a luz se apaga, Manu corre até seus amigos e Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Ricardo: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Ricardo, por que nos reuniu? O que está acontecendo? Ricardo: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
+        opcoes: ["1. Ficar na festa", "2. Ir embora"],
+        regras: {
+          "1": 'https://www.youtube.com/watch?v=9yvUS3hRnxs&ab_channel=RafaelSwarowsky'
+        }
+      },
+      { // 12
+        texto: "Você Errou" ,      
+        opcoes: ["1. Recomeçar"],
+        regras: {
+          "1": 0
+        }
       }
 
 ];
