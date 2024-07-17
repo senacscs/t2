@@ -90,14 +90,14 @@ const historia = [
         }
       },
       { // 10 
-        texto: "A noite estava chegando ao fim, e a música eletrônica ainda ecoava no ar. Todas as luzes apagaram e os portões se fecharam, Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Ricardo: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Ricardo, por que nos reuniu? O que está acontecendo? Ricardo: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
+        texto: "A noite estava chegando ao fim, e a música eletrônica ainda ecoava no ar. Todas as luzes apagaram e os portões se fecharam, Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Rafael: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Rafael, por que nos reuniu? O que está acontecendo? Rafael: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
         opcoes: ["1. Apenas escutem"],
         regras: {
           "1": 'https://www.youtube.com/watch?v=9yvUS3hRnxs&ab_channel=RafaelSwarowsky'
         }
       },
       { // 11 
-        texto: "No momento em que Manu chegava a saída todas as portas se fecham e a luz se apaga, Manu corre até seus amigos e Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Ricardo: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Ricardo, por que nos reuniu? O que está acontecendo? Ricardo: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
+        texto: "No momento em que Manu chegava a saída todas as portas se fecham e a luz se apaga, Manu corre até seus amigos e Rafael, o DJ da festa, terminou seu set e se aproximou do grupo com um olhar sério e determinado. Ricardo: (com um sorriso misterioso) - Espero que todos tenham se divertido esta noite. Vocês devem estar se perguntando por que juntei todos vocês aqui. Manuela e seus amigos trocam olhares curiosos e confusos, sentindo a tensão aumentar. Wesley: (curioso) -Sim, Rafael, por que nos reuniu? O que está acontecendo? Rafael: (respirando fundo) -Há algo que preciso compartilhar com vocês. Algo que pode mudar a vida de todos nós." ,      
         opcoes: ["1. Ficar na festa", "2. Ir embora"],
         regras: {
           "1": 'https://www.youtube.com/watch?v=9yvUS3hRnxs&ab_channel=RafaelSwarowsky'
