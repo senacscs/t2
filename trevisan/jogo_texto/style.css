@@ -1,6 +1,6 @@
 body {
     background-color: #3d3d3d; /* Fundo preto */
-    color: rgb(206, 101, 255);           /* Texto verde claro */
+    color: rgb(67, 37, 82);           /* Texto verde claro */
     font-family: 'Courier New', monospace;
     font-size: 17px;
     line-height: 1.5;
@@ -18,13 +18,13 @@ h1 {    width: 80%;
     max-width: 800px;
     margin: 0 auto;
     background-color: #6c6c6c; /* Fundo do container preto */
-    border: 2px solid rgb(206, 101, 255); /* Borda verde */
+    border: 2px solid rgb(67, 37, 82); /* Borda verde */
     padding: 70px;
 }
 
 #area-texto {
     background-color: #6c6c6c; /* Fundo da área de texto preto */
-    color: rgb(206, 101, 255);           /* Texto da área de texto verde */
+    color: rgb(67, 37, 82);           /* Texto da área de texto verde */
     padding: 10px;
     margin-bottom: 10px;
     min-height: 200px;
@@ -33,7 +33,7 @@ h1 {    width: 80%;
 
 #input-comando {
     background-color: #6c6c6c; /* Fundo do input preto */
-    color: rgb(206, 101, 255);           /* Texto do input verde */
+    color: rgb(67, 37, 82);           /* Texto do input verde */
     border: none;
     width: 100%;
     padding: 5px;
