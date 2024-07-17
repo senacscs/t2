@@ -138,7 +138,7 @@ const historia = [
                                                             opcoes: ["tentar acordar"],
                                                             regras: {
                                                                 "tentar acordar": "senacscs.github.io/t2/gabriel/terceiro/jogo_texto/index.html",
-                                                                "1": senacscs.github.io/t2/gabriel/terceiro/jogo_texto/index.html,
+                                                                "1": "senacscs.github.io/t2/gabriel/terceiro/jogo_texto/index.html",
                                                         },
                                                     },
 												];
