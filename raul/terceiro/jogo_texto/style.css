@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#area-texto {
+    background-color: black;
+    border: 2px solid green;
+    padding: 20px;
+    width: 80%;
+    height: 60%;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-comando {
+    background-color: black;
+    color: green;
+    border: 2px solid green;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#input-comando::placeholder {
+    color: green;
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
