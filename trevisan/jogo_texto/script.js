@@ -82,7 +82,7 @@ const historia = [
         
       },
       { // 9 
-        texto: "Enquanto explorava o lugar, ela avistou alguns rostos familiares. Eram seus velhos amigos de escola, pessoas que ela não via há anos. Wesley o mecânico, Thomas o uber, Isadora a manicure e Raul o desenvolvedor qua havia bragado no mesmo dia. A alegria do reencontro tomou conta dela. Eles riram, dançaram e conversaram sobre os bons tempos, como se o tempo não tivesse passado. Depois de algum tempo Manu está cansada e quer ir embora, mas seus amigos insistem para que ela fique. " ,      
+        texto: "Enquanto explorava o lugar, ela avistou alguns rostos familiares. Eram seus velhos amigos de escola, pessoas que ela não via há anos. Wesley o mecânico, Thomas o uber, Isadora a manicure e Raul o desenvolvedor qua havia brigado no mesmo dia. A alegria do reencontro tomou conta dela. Eles riram, dançaram e conversaram sobre os bons tempos, como se o tempo não tivesse passado. Depois de algum tempo Manu está cansada e quer ir embora, mas seus amigos insistem para que ela fique. " ,      
         opcoes: ["1. Ficar na festa", "2. Ir embora"],
         regras: {
           "1": 10,
