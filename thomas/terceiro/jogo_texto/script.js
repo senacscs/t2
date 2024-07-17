@@ -71,9 +71,9 @@ const historia = [
         texto: "Correto! Você continua sua corrida normalmente com Juan Carlos. No meio do caminho, você percebe uma obra, que não estava mostrando no GPS, então precisa fazer um desvio, e ir por uma rota que você não conhecia. Mas, no meio dessa nova rota, você não vê a placa de pare, e segue reto, e um carro, que por sorte não estava tão rápido, bate na lateral do seu carro e amassa toda porta. Ninguém fica ferido, mas a porta do carro não fecha mais, então você deixa Juan Carlos ir apé e não cobra a corrida, e decide levar seu carro para o mecânico.",
         opcoes: ["1. Levar o carro para o mecânico"],
         regras: {
-          "levar": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto',
-          "1": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto',
-          "levar o carro para o mecânico": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto'
+          "levar": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto',
+          "1": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto',
+          "levar o carro para o mecânico": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto'
         }
       },
       { // 6 Novo estágio para "gritar por ajuda"
@@ -104,9 +104,9 @@ const historia = [
         texto: "Você continua sua corrida normalmente com Juan Carlos. No meio do caminho, você percebe uma obra, que não estava mostrando no GPS, então precisa fazer um desvio, e ir por uma rota que você não conhecia. Mas, no meio dessa nova rota, você não vê a placa de pare, e segue reto, e um carro, que por sorte não estava tão rápido, bate na lateral do seu carro e amassa toda porta. Ninguém fica ferido, mas a porta do carro não fecha mais, então você deixa Juan Carlos ir apé e não cobra a corrida, e decide levar seu carro para o mecânico.",
         opcoes: ["1. Levar o carro para o mecânico"],
         regras: {
-          "levar": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto' ,
-          "1": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto',
-          "levar o carro para o mecânico": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto'
+          "levar": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto' ,
+          "1": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto',
+          "levar o carro para o mecânico": 'https://senacscs.github.io/t2/silveira/terceiro/jogo_texto'
         }
       },
       { // 9 Novo estágio para "gritar por ajuda"
