@@ -118,7 +118,7 @@ const historia = [
     opcoes: ["Recomeçar", "Jogar parte 3"],
     regras: {
         "1": 0,
-        "2": "https://senacscs.github.io/t2/pablo/terceiro/pwa_texto"
+        "2": "https://senacscs.github.io/t2/pablo/terceiro/jogo_texto"
     }
   },
   { // 15: Responder 23
