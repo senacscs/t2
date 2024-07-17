@@ -56,8 +56,8 @@ const historia = [
         texto: "Karol recebe o troco, mas Isadora pergunta novamente, com quem ela está falando, Karol fica nervosa, começa a tremer mas assume quase aos prantos, que era com o Augusto, pedreiro da região",
         opcoes: ["1. Conhecer mais sobre Augusto"],
         regras: {
-          "Conhecer mais sobre Augusto": 'https://senacscs.github.io/t2/silveira/terceiro/pwa_texto',
-          "1": 'https://senacscs.github.io/t2/augusto/terceiro/pwa_texto'
+          "Conhecer mais sobre Augusto": 'https://senacscs.github.io/t2/augusto/terceiro/jogo_texto',
+          "1": 'https://senacscs.github.io/t2/augusto/terceiro/jogo_texto'
         }
       },
     // ... (adicione mais estágios da história aqui)
