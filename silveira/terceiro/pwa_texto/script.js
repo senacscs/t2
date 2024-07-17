@@ -27,8 +27,8 @@ const historia = [
           "ligar para a esposa": 4, // Índice do próximo estágio
           "ligar": 4, // Índice do próximo estágio
           "2": 4, // Índice do próximo estágio
-          "3": 'https://senacscs.github.io/t2/isadora/terceiro/pwa_texto',
-          "quem é a manicure": 'https://senacscs.github.io/t2/isadora/terceiro/pwa_texto',
+          "3": 'https://senacscs.github.io/t2/kist/terceiro/pwa_texto',
+          "quem é a manicure": 'https://senacscs.github.io/t2/kist/terceiro/pwa_texto',
         }
       },
       { // 2 Novo estágio para "Ignorar a mensagem"
