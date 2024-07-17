@@ -18,8 +18,8 @@ const historia = [
         }
       },
       { // 1 Novo estágio para "Atender a mensagem"
-        texto: "Wesley decide olhar a mensagem. É de sua esposa, avisando que não vai voltar para casa tão cedo porque vai ajudar uma amiga. Ele acha a mensagem estranha, mas decide continuar trabalhando. Wesley finalmente termina o serviço no carro de Thomas e decide ir para casa. Ao chegar, ele percebe que a casa está mais escura e silenciosa do que o normal.",
-        opcoes: ["1. Entrar direto em casa", "2. Ligar para a esposa"],
+        texto: "Wesley decide olhar a mensagem. É de sua esposa, avisando que não vai ir na manicure. Ele acha a mensagem estranha, mas decide continuar trabalhando. Wesley finalmente termina o serviço no carro de Thomas e decide ir para casa. Ao chegar, ele percebe que a casa está mais escura e silenciosa do que o normal.",
+        opcoes: ["1. Entrar direto em casa", "2. Ligar para a esposa", "3. Quem é a manicure?"],
         regras: {
           "entrar direto em casa": 3,  // Índice do próximo estágio
           "entrar": 3,  // Índice do próximo estágio
@@ -27,6 +27,8 @@ const historia = [
           "ligar para a esposa": 4, // Índice do próximo estágio
           "ligar": 4, // Índice do próximo estágio
           "2": 4, // Índice do próximo estágio
+          "3": 'https://senacscs.github.io/t2/isadora/terceiro/pwa_texto',
+          "quem é a manicure": 'https://senacscs.github.io/t2/isadora/terceiro/pwa_texto',
         }
       },
       { // 2 Novo estágio para "Ignorar a mensagem"
@@ -110,7 +112,7 @@ const historia = [
           "19:50": 11,  // Índice do próximo estágio
           "1": 11,  // Índice do próximo estágio
           "19:51": 12,  // Índice do próximo estágio
-          "2": 12,  // Índice do próximo estágio
+          "2": 11,  // Índice do próximo estágio
           "19:52": 11,  // Índice do próximo estágio
           "3": 11,  // Índice do próximo estágio
           "19:53": 11,  // Índice do próximo estágio
@@ -159,35 +161,41 @@ const historia = [
 
 
 function mostrarTexto(indice) {
-    areaTexto.textContent = historia[indice].texto;
-    if (historia[indice].opcoes) {
-        areaTexto.textContent += "\n\nOpções:";
-        historia[indice].opcoes.forEach(opcao => {
-            areaTexto.textContent += "\n- " + opcao;
-        });
-    }
+  areaTexto.textContent = historia[indice].texto;
+  if (historia[indice].opcoes) {
+      areaTexto.textContent += "\n\nOpções:";
+      historia[indice].opcoes.forEach(opcao => {
+          areaTexto.textContent += "\n- " + opcao;
+      });
+  }
 }
 
 function processarComando(comando) {
-    comando = comando.replace(/^\d+\s*-\s*/, '').trim().toLowerCase(); // Remove número e ajusta
-    const regras = historia[estadoAtual].regras;
+  comando = comando.replace(/^\d+\s*-\s*/, '').trim().toLowerCase(); // Remove número e ajusta
+  const regras = historia[estadoAtual].regras;
 
-    console.log("Comando digitado:", comando); // Depuração
-    console.log("Regras:", regras); // Depuração
+  console.log("Comando digitado:", comando); // Depuração
+  console.log("Regras:", regras); // Depuração
 
-    if (comando in regras) {
-        estadoAtual = regras[comando];
-        mostrarTexto(estadoAtual);
+  if (comando in regras) {
+    const destino = regras[comando];
+    if(typeof destino === "string") {
+      window.location.href = destino;
     } else {
-        areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
-    }
+      areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
+  }
+      estadoAtual = regras[comando];
+      mostrarTexto(estadoAtual);
+  } else {
+      areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
+  }
 }
 
 inputComando.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-        processarComando(inputComando.value.toLowerCase()); // Converte para minúsculas
-        inputComando.value = "";
-    }
+  if (event.key === "Enter") {
+      processarComando(inputComando.value.toLowerCase()); // Converte para minúsculas
+      inputComando.value = "";
+  }
 });
 
 mostrarTexto(estadoAtual);
