@@ -187,10 +187,10 @@ const historia = [
 	},
 	{
 		texto: "Com sua alta determinação em escapar daquele lugar para o qual você foi teletransportado e voltar à sua vida normal fora do mundo computadorizado, você pensa bastante sobre as aulas de informática que teve na escola e se lembra de que o dispositivo de saída é o alto-falante. Isso porque o alto-falante recebe o conteúdo dos áudios que deve reproduzir, como áudios do WhatsApp ou de vídeos do YouTube, e o envia ao meio externo, caracterizando-se como um dispositivo de saída. Parabéns, você chegou à última fase desta história e conseguiu escapar da sua nova vida digital!",
-		opcoes: ["1. Ir para a próxima história",],
+		opcoes: ["1. Recomeçar a história",],
 		regras: {
-			"ir para a próxima história": "https://senacscs.github.io/t2/blank/terceiro/jogo_texto/",
-			"1": 21,
+			"recomeçar a história": "https://senacscs.github.io/t2/blank/terceiro/jogo_texto/",
+			"1": "https://senacscs.github.io/t2/blank/terceiro/jogo_texto/",
 		}
 	},
 ];
