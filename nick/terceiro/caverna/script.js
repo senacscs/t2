@@ -12,7 +12,7 @@ const historia = [
         }
       },
       { // 1
-        texto: "Você pega a tocha e a acende, a sua luz ilumina a caverna, sua estrutura rocha e empla se estende por alguns metros, você vem alguns buracos nas paredes, semelhantes a túneis que se parecem se estender por quilometros pela estrutura da montanha. Você decide seguir o caminho principal, sem se arriscar a entrar em algum túnel ainda. Conforme você avança, você escuta o som de algo se movendo, e um vulto passa muito rapidamente no fundo do caminho que você escolheu seguir. Mesmo sentindo medo, você continua seguindo esse caminho. Você chega em um espaço amplo, uma espécie de sala repleta de tesouros inimagináveis, amontoados pelo espaço. Conforme você caminha, olhado a sala, você percebe uma caixa e vai até ela, segurando ela em mãos, você percebe que para conseguir abri-la, você precisa resolver um enigma. O que voce deseja fazer?",
+        texto: "Você pega a tocha e a acende, a sua luz ilumina a caverna, sua estrutura rocha e empla se estende por alguns metros, você vem alguns buracos nas paredes, semelhantes a túneis que se parecem se estender por quilometros pela estrutura da montanha. Você decide seguir o caminho principal, sem se arriscar a entrar em algum túnel ainda. Conforme você avança, você escuta o som de algo se movendo, e um vulto passa muito rapidamente no fundo do caminho que você escolheu seguir. Mesmo sentindo medo, você continua seguindo esse caminho. Você chega em um espaço amplo, uma espécie de sala repleta de tesouros inimagináveis, amontoados pelo espaço. Conforme você caminha, olhado a sala, você percebe uma caixa e vai até ela, segurando ela em mãos, você percebe que para conseguir abri-la, você precisa resolver um enigma. O que você deseja fazer?",
         opcoes: ["Resolver o enigma (1)", "Colocar a caixa de volta no lugar (2)"],
         regras: {
           "resolver o enigma": 4,
@@ -94,7 +94,7 @@ const historia = [
         }
       },
       { // 11 
-        texto: "Você se vira lentamente, dando de cara um dragão enorme, suas escamas e olhos azuis reluzem com luz que você carrega, seu olhar penetra sua alma e você sente sua respiração começando a acelerar ainda mais. O rosto da criatura se aproxima do seu em um movimento brusco, você se assusta e cai no chão, arranhando sua mão no processo. O dragão parcesse se divertir com as suas reações e diz: “Vocês humanos são muito frágeis mesmo. O que você veio fazer aqui, coisinha? Aqui não é seguro para o seu tipo.” Você vai fazer?",
+        texto: "Você se vira lentamente, dando de cara um dragão enorme, suas escamas e olhos azuis reluzem com luz que você carrega, seu olhar penetra sua alma e você sente sua respiração começando a acelerar ainda mais. O rosto da criatura se aproxima do seu em um movimento brusco, você se assusta e cai no chão, arranhando sua mão no processo. O dragão parece se divertir com as suas reações e diz: “Vocês humanos são muito frágeis mesmo. O que você veio fazer aqui, coisinha? Aqui não é seguro para o seu tipo.” Você vai fazer?",
         opcoes: ["Responder (1)", "Ficar em silêncio (2)", "Sair correndo (3)"],
         regras: {
           "responder": 12,
