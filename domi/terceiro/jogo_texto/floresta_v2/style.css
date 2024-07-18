@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+    /* Fundo preto */
+    color: rgb(255, 204, 0);
+    /* Texto amarelo */
+    font-family: 'Silkscreen', monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 10px;
+    color: #ffffff;
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+        padding: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+        padding: 5%;
+    }
+
+    100% {
+        opacity: 0%;
+        padding: 0%;
+    }
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #111111;
+    /* Fundo do container preto */
+    border: 2px solid rgb(255, 204, 0);
+    /* Borda amarela */
+    padding: 20px;
+    animation: change-bg 2s infinite;
+}
+
+#area-texto {
+    background-color: #111111;
+    /* Fundo da área de texto preto */
+    color: rgb(255, 204, 0);
+    /* Texto da área de texto amarela */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Preserva quebras de linha e espaços em branco */
+    white-space: pre-wrap;
+    animation: change-bg 2s infinite;
+}
+
+@keyframes change-bg {
+    0% {
+        background-color: #111111;
+    }
+
+    50% {
+        background-color: #ffffff;
+    }
+
+    100% {
+        background-color: #111111;
+    }
+}
+
+/* Animação do texto */
+/* animation: aparecer 2s forwards;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+} */
+
+#input-comando {
+    background-color: #111111;
+    /* Fundo do input preto */
+    color: rgb(255, 204, 0);
+    /* Texto do input amarelo */
+    border: none;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Silkscreen', monospace;
+}
+
+/* Efeito de scanlines (opcional) */
+body {
+    background: rgb(255, 0, 0);
+    /* Tamanho das scanlines */
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    /* Animação das scanlines */
+    animation: animation-bg .5s infinite;
+}
+
+@keyframes animation-bg {
+    0% {
+        /*opacity: 0;*/
+        background: rgba(255, 0, 0, 1);
+    }
+
+    25% {
+        background: rgb(250, 163, 13);
+    }
+
+    50% {
+        background: rgba(42, 202, 0, 1);
+    }
+
+    75% {
+        opacity: 100%;
+        background: rgba(14, 7, 255, 1);
+    }
+
+    100% {
+        background: rgb(255, 0, 0);
+    }
+}
+
+@-webkit-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+#cursor {
+    color: #111111;
+    /* Cor do cursor para fazer ele desaparecer */
+    animation: blink 0.8s infinite;
+    /* Animação de piscar */
+}
+
+/* centralizar o áudio */
+#audio {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    opacity: 25%;
+}
+
+/* animação de arco-íris que não combina nem um pouco com a estética, mas o professor achou pouca animação do outro jeito */
+
+/* 0%{background-position:0% 82%}
+50%{background-position:100% 19%}
+100%{background-position:0% 82%} */

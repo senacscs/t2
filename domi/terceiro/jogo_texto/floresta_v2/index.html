@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floresta</title>
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="floresta.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Rota do vampiro na floresta, feito por Theo -->
+</head>
+
+<body class="container">
+
+    <h1>
+███████╗██╗░░░░░░█████╗░██████╗░███████╗░██████╗████████╗░█████╗░
+██╔════╝██║░░░░░██╔══██╗██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔══██╗
+█████╗░░██║░░░░░██║░░██║██████╔╝█████╗░░╚█████╗░░░░██║░░░███████║
+██╔══╝░░██║░░░░░██║░░██║██╔══██╗██╔══╝░░░╚═══██╗░░░██║░░░██╔══██║
+██║░░░░░███████╗╚█████╔╝██║░░██║███████╗██████╔╝░░░██║░░░██║░░██║
+╚═╝░░░░░╚══════╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝</h1>
+
+    <div id="container">
+        <div id="area-texto">
+            <p></p> 
+        </div>
+        <input type="text" id="input-comando" placeholder="Digite seu comando">
+    </div>
+
+    <div id="audio">
+        <audio controls loop autoplay>
+            <source src="chipi.mp3" type="audio/mp3" />
+            <source src="chipi.mp3" type="audio/ogg" />
+            <p>
+                Seu navegador não suporta áudio HTML5, mas temos um
+                <a href="chipi.mp3">link direto para a trilha sonora aqui.</a>
+            </p>
+        </audio>
+    </div>
+
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="quebra.js"></script>
+</body>
+
+</html>
