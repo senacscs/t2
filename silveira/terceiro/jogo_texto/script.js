@@ -148,11 +148,11 @@ const historia = [
       },
       { // 12 Novo estágio para "Acertar a pergunta"
         texto: "Wesley sai de casa as 19:51 e decide ir para uma festa, lá ele encontra alguns conhecidos não tão conhecidos assim",
-        opcoes: ["1. Digite 1 para saber onde Wesley está", "2. Recomeçar o jogo",],
+        opcoes: ["1. Recomeçar o jogo",],
         regras: {
-          "1": 13,  // Índice do próximo estágio
+          "1": 0,  // Índice do próximo estágio
           "recomeçar o jogo": 0,  // Índice do estágio 0
-          "2": 0,  // Índice do estágio 0
+          
         }
       },
     // ... (adicione mais estágios da história aqui)
