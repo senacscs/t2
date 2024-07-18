@@ -81,7 +81,7 @@ const areaTexto = document.getElementById("area-texto");
                     "ir para o próximo estágio": 10,
                     "1": 10
                 },
-                link: "https://senacscs.github.io/t2/trevisan/jogo_texto/jogo.html" // Adiciona o link aqui
+                link: "https://senacscs.github.io/t2/trevisan/jogo_texto/" // Adiciona o link aqui
             },
             { // 8 Estágio final: Refletir sobre suas ações
                 texto: "Raul reflete sobre suas ações e decide procurar ajuda para lidar com sua frustração. Ele percebe que descontar sua raiva nos outros não é a solução e promete a si mesmo que irá trabalhar para ser uma pessoa melhor. A história termina com Raul determinado a melhorar tanto em sua vida pessoal quanto profissional.",
