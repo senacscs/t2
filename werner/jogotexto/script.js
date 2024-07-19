@@ -19,29 +19,29 @@ const historia = [
     }
   },
   { // 1 - NOME
-    texto: "Você acorda em uma cidade na superficie uma cidade grande com varios predios ao estilo steampunk, ela aparenta ser magica",
-    opcoes: ["explorar a cidade", "voltar a dormir"],
+    texto: "Você acorda em uma cidade na superfície uma grande cidade com varios prédios ao estilo steampunk, ela aparenta ser mágica",
+    opcoes: ["Explorar a cidade", "Voltar a dormir"],
     regras: {
-      "exlorar a cidade": 2,
+      "Exlorar a cidade": 2,
       "1": 2, // Índice do próximo estágio (você precisa criar esse estágio)
-      "voltar a dormir": 0,
+      "Voltar a dormir": 0,
       "2": 0
     }
   },
   { // 2 Novo estágio para "explorar a cidade"
-    texto: "Você entra no centro da cidade, você esta com dor de cabeça e não lembra de muita coisa, apenas que você precisa ir ao ponto de coleta de missão para saber quem será o seu alvo",
-    opcoes: ["ir ao ponto de coleta", "explorar mais o centro da cidade"],
+    texto: "Você entra no centro da cidade, você está com dor de cabeça e não lembra de muita coisa, apenas que você precisa ir ao ponto de coleta de missão para saber quem será o seu alvo",
+    opcoes: ["Ir ao ponto de coleta", "Explorar mais o centro da cidade"],
     regras: {
-      "ir ao ponto de coleta": 4,
+      "Ir ao ponto de coleta": 4,
       "1": 4,
-      "explorar mais o centro da cidade": 3,
+      "Explorar mais o centro da cidade": 3,
       "2": 3
     }
   },
 
   { // 3 Novo estágio para
     texto: "Você anda mais pela cidade, se depara com alguns moradores que te cumprimentam até chegar a um guarda que te para e te pergunta se você já fez seu serviço diário, você sabe que se mentir pode acabar se prejudicando então fala a verdade e ele te manda ir para o ponto de coleta.",
-    opcoes: ["ir ao ponto de coleta", "ignorar e ameaçar o guarda"],
+    opcoes: ["Ir ao ponto de coleta", "Ignorar e ameaçar o guarda"],
     regras: {
       "Ir ao ponto de coleta": 4, // Voltar para o ponto
       "1": 4,
@@ -54,35 +54,35 @@ const historia = [
     texto: "Você chega ao ponto de coleta e você pega o papel com o rosto do alvo, é um bardo cujo o papel revela a localização em um bar perto do centro da cidade",
     opcoes: ["Seguir para o bar"],
     regras: {
-      "seguir para o bar": 5,
+      "Seguir para o bar": 5,
       "1": 5 
     }
   },
 
   { // 5 
-    texto: "voce entra no bar e se depara com o alvo tocando uma bela música para diversas pessoas totalmente bebadas.enquanto você estava se aproximando do alvo é subtamente interrompido por um homem extremamente bombado e grande exalando um cheiro forte de alcool e começa a discutir com você sem motivo aparente. o que você faz?",
-    opcoes: ["ignorar", "xingar o bebado", "conversar com ele"],
+    texto: "Você entra no bar e se depara com o alvo tocando uma bela música para diversas pessoas totalmente bêbadas.enquanto você estava se aproximando do alvo é subtamente interrompido por um homem extremamente bombado e grande exalando um cheiro forte de alcool e começa a discutir com você sem motivo aparente. o que você faz?",
+    opcoes: ["Ignorar", "Xingar o bebado", "Conversar com ele"],
     regras: {
-      "ignorar o bebado": 9,
+      "Ignorar o bebado": 9,
       "1": 9,
-      "xingar o bebado": 8,
+      "Xingar o bebado": 8,
       "2": 8,
-      "conversar com ele": 7,
+      "Conversar com ele": 7,
       "3": 7// O certo
     }
   },
 
   { // 6 
-    texto: "O guarda olha para você estremamente irritado e saca a arma te pegando desprevenido, e em seguida te da um corte que pega direto na sua garganta. Agonizando você começa a lentamente morrer pela perda de sangue",
-    opcoes: ["recomeçar"],
+    texto: "O guarda olha para você estremamente irritado e saca a arma te pegando desprevenido, e em seguida te dá um corte que pega direto na sua garganta. Agonizando você começa a lentamente morrer pela perda de sangue",
+    opcoes: ["Recomeçar"],
     regras: {
-      "recomeçar": 0,
+      "Recomeçar": 0,
       "1": 0,
     }
   },
 
   { // 7 
-    texto: "enquanto você conversava com o bebado você acabou o conhecendo melhor e descobrindo que ele é um forte guerreiro e que seria um bom aliado. Ele parece contente em conversar com você e se apresenta como Aduarde o Bruto. *ADUARDE O BRUTO JUNTOU-SE A SEU GRUPO*. Mas enquanto você conversa com Aduarde o alvo saiu pela porta dos fundos após terminar seu show.",
+    texto: "Enquanto você conversava com o bêbado você acabou o conhecendo melhor e descobrindo que ele é um forte guerreiro e que seria um bom aliado. Ele parece contente em conversar com você e se apresenta como Aduarde o Bruto. *ADUARDE O BRUTO JUNTOU-SE A SEU GRUPO*. \nMas enquanto você conversa com Aduarde o alvo saiu pela porta dos fundos após terminar seu show.",
     opcoes: ["Seguir ele"],
     regras: {
       "Seguir ele": 10,
@@ -91,19 +91,19 @@ const historia = [
   },
 
   { // 8 
-    texto: "O homem te da um soco e começa a gritar com você dizendo como que tu poderias xingar o grande ADUARDE, que em um surto pega um grande machado de suas costas e antes que você pudesse reagir você é partido em dois em um único golpe.",
-    opcoes: ["recomeçar"],
+    texto: "O homem te dá um soco e começa a gritar com você dizendo como que tu poderias xingar o grande ADUARDE, que em um surto pega um grande machado de suas costas e antes que você pudesse reagir você é partido em dois em um único golpe.",
+    opcoes: ["Recomeçar"],
     regras: {
-      "recomeçar": 0,
+      "Recomeçar": 0,
       "1": 0,
     }
   },
 
   { // 9 
-    texto: " O homem te puxa para frente dele e começa a gritar com você dizendo como que tu poderias ignorar o grande ADUARDE, que em um surto pega um grande machado de suas costas e antes que você pudesse reagir você é partido em dois em um único golpe.",
-    opcoes: ["recomeçar"],
+    texto: "O homem te puxa para frente dele e começa a gritar com você dizendo como que tu poderias ignorar o grande ADUARDE, que em um surto pega um grande machado de suas costas e antes que você pudesse reagir você é partido em dois em um único golpe.",
+    opcoes: ["Recomeçar"],
     regras: {
-      "recomeçar": 0,
+      "Recomeçar": 0,
       "1": 0,
     }
   },
@@ -118,7 +118,7 @@ const historia = [
   },
 
   { // 11
-    texto: "Quando você se aproxima da pessoa caída, analisando melhor você percebe que é uma mulher qualquer, alta de cabelos longos e loiros e não aparenta ser seu alvo. Você olha decepcionado e se desculpa, cansado você se vira, mas antes de você e Aduarde saírem a moça começa a falar: \n-Du korrupter Scheißer. Tinha que ser esse governo desgraçado mesmo, todos vocês estão sendo vendados com essa perda de crença na igreja! \nVocê se vira e começa uma conversa com ela em que você descobre que ela é uma poderosa necromante chamada Marta e logo ela decide ajudar vocês com a missão, porém ela ainda não concorda com as diretrizes do governo então você decide não contar pra ela que essa missão veio do governo, mas sim diretamente da igreja. *MARTA A MORTA",
+    texto: "Quando você se aproxima da pessoa caída, analisando melhor você percebe que é uma mulher qualquer, alta de cabelos longos e loiros e não aparenta ser seu alvo. Você olha decepcionado e se desculpa, cansado você se vira, mas antes de você e Aduarde saírem a moça começa a falar: \n-Du korrupter Scheißer. Tinha que ser esse governo desgraçado mesmo, todos vocês estão sendo vendados com essa perda de crença na igreja! \nVocê se vira e começa uma conversa com ela, descobrindo que ela é uma poderosa necromante chamada Marta e logo ela decide ajudar vocês com a missão, porém ela ainda não concorda com as diretrizes do governo então você decide não contar pra ela que essa missão veio do governo, mas sim diretamente da igreja. *MARTA A MORTA JUNTOU-SE A SEU GRUPO",
     opcoes: ["Seguir a jornada em busca do alvo"],
     regras: {
       "Se aproximar do alvo caído": 12,
@@ -127,8 +127,8 @@ const historia = [
   },
 
   { // 12
-    texto: "Vocês rondam por toda a cidade perguntando aos residentes locais sobre o alvo mas ninguém te da uma resposta além de você ter de ficar curando as pessoas porque Aduarde acabava batendo nelas. além de que as únicas informações acabam se mostrando falsas, até o momento em que o sol começa a se por e a luz do luar começa a surgir. Cansados e por já estar ficando muito tarde você guia seu grupo até a central do governo. Que ao chegar Marta olha extremamente furiosa pra vocês por terem mentido para a ela e enquanto isso Aduarde fica confuso em um canto olhando para tudo.",
-    opcoes: ["convencer Marta a entrar", "(Utilizar magia clérica)"],
+    texto: "Vocês rondam por toda a cidade perguntando aos residentes locais sobre o alvo mas ninguém te da uma resposta além de você ter de ficar curando as pessoas porque Aduarde acabava batendo nelas. além de que as únicas informações acabam se mostrando falsas, até o momento em que o sol começa a se por e a luz do luar começa a surgir. Cansados e por já estar ficando muito tarde você guia seu grupo até a central do governo. Ao chegar Marta olha extremamente furiosa pra vocês por terem mentido para a ela e enquanto isso Aduarde fica confuso em um canto olhando para tudo.",
+    opcoes: ["Convencer Marta a entrar", "(Utilizar magia clérica)"],
     regras: {
       "Convencer Marta a entrar": 13,
       "1": 13,
@@ -138,7 +138,7 @@ const historia = [
   },
 
   { // 13
-    texto: "você tenta convencer ela mas nada que você diz consegue fazer ela mudar de ideia além de Aduarde não ajudar em nada.",
+    texto: "Você tenta convencer ela mas nada que você diz consegue fazer ela mudar de ideia além de Aduarde não ajudar em nada.",
     opcoes: ["(Utilizar magia clérica)"],
     regras: {
       "(Utilizar magia clérica)": 14,
@@ -147,7 +147,7 @@ const historia = [
   },
 
   { // 14
-    texto: "você com suas últimas energias, utiliza uma magia clérica e começa a irradiar uma aura brilhante e acolhedora e diz que estas coisas estão no plano de Deus e que é um mal necessário. O que realmente parece funcionar.",
+    texto: "Você com suas últimas energias, utiliza uma magia clérica e começa a irradiar uma aura brilhante e acolhedora e diz que estas coisas estão no plano de Deus e que é um mal necessário. O que realmente parece funcionar.",
     opcoes: ["Adentrar o grande palácio real"],
     regras: {
       "Adentrar o grande palácio real": 15,
@@ -157,18 +157,18 @@ const historia = [
 
   { // 15
     texto: "Você e seu grupo adentra o grande palácio real, percorrendo por todos aqueles corredores dourados repletos de estátuas e quadros até o momento em que vocês chegam ao salão que o rei se encontra até que antes mesmo de você conseguir falar algo você escuta uma melodia vindo de traz de você, uma bela melodia. Você extramente sente medo, os guardas locais sacam suas armas e antes de você apagar vê o rosto de Marta derretendo e se transformando em uma face masculina enquanto toca a melodia...",
-    opcoes: ["tentar acordar"],
+    opcoes: ["Tentar acordar"],
     regras: {
-      "tentar acordar": 16,
+      "Tentar acordar": 16,
       "1": 16
     }
   },
 
   { // 16
     texto: "Você não consegue, você se esforça muito, mas mesmo assim não consegue acordar, entretanto não é o momento para desistir.",
-    opcoes: ["tentar de novo"],
+    opcoes: ["Tentar de novo"],
     regras: {
-      "tentar acordar": 17,
+      "Tentar acordar": 17,
       "1": 17
     }
   },
@@ -177,7 +177,7 @@ const historia = [
     texto: "Você sente que está chegando em algum lugar, você consegue ver uma luz longe.",
     opcoes: ["Acordar"],
     regras: {
-      "tentar acordar": 18,
+      "Acordar": 18,
       "1": 18
     }
   },
