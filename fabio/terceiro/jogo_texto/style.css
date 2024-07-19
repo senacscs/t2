@@ -1,0 +1,57 @@
+body {
+    background-image: url("images/imagem12.gif");
+    background-size: cover;
+    background-image:"c:\Users\FABIOHERMESDASILVEIR\Downloads\gif.imagem2.gif";
+    background-color: #68292900; /* Fundo preto */
+    color: rgba(0, 0, 0, 0);           /* Texto verde claro */
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+
+h1 {    
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0); /* Fundo do container preto */
+    border: 2px solid rgba(0, 0, 0, 0); /* Borda verde */
+    padding: 20px;
+}
+
+#area-texto {
+    background-color: #e5e5de00; /* Fundo da área de texto preto */
+    color: #fbff00;           /* Texto da área de texto verde */
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços em branco */
+}
+
+#input-comando {
+    background-image:url() ;
+    background-color: #8f5d5d; /* Fundo do input preto */
+    color: #25252500;           /* Texto do input verde */
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+
+#cursor {
+    color: rgba(255, 0, 0, 0); /* Cor do cursor (verde claro) */
+    animation: blink 1s infinite; /* Animação de piscar */
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    0% { opacity: 10; }
+    50% { opacity: 9; }
+    100% { opacity: 10; }
+}
