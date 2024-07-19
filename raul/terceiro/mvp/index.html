@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="keywords" content="PP">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula risus gravida erat placerat efficitur. Nullam malesuada tellus vel eros tincidunt cursus. Fusce condimentum ex quis enim bibendum efficitur. Curabitur et nulla at enim maximus posuere. Nunc id nunc a orci facilisis vulputate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP</title>
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192x192.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+   
+    <header id="header">
+
+        <a href="index.html"><h1>PP</h1></a>
+
+        <nav id="nav">
+
+            <button id="btn-mobile">
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu">
+
+                <li><a href="#freen.png">Home</a></li>
+                <li><a href="#main">Lojas</a></li>
+                <li><a href="#footer">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <img src="assets/img/freen.png" alt="Imagem genérica" id="img">
+
+    <div id="home">
+
+        <div id="landing">
+
+            <h2>Sobre o projeto</h2>
+
+            <p>bla bla bla</p>
+
+        </div>
+
+    </div>
+
+    <main id="main">
+
+        <h2>Lojas parceiras</h2>
+
+        <div id="celulares">
+
+            <div class="cel">
+
+                <h3>Big Bold Burger</h3>
+
+                <img src="assets/img/big bold burger.png" alt="Logo Big Bold Burger">
+
+                <p>Big Bold Burger</p>
+
+                <span class="preco"></span>
+                <br>
+                <button><a href="">Faça o seu pedido aqui</a></button>
+
+            </div>
+
+            <div class="cel">
+
+                <h3>Bolos da Márcia</h3>
+
+                <img src="assets/img/Marcia.png" alt="Logo Bolos da Márcia">
+
+                <p>Bolos da Márcia</p>
+                
+                <span class="preco"></span>
+                <br>
+                <button><a href="">Faça o seu pedido aqui</a></button>
+
+            </div>
+
+            <div class="cel">
+
+                <h3>Churrascaria Fogo e Brasa</h3>
+
+                <img src="assets/img/fogo e brasa.png" alt="Logo Churrascaria Fogo e Brasa">
+                
+                <p>Churrascaria Fogo e Brasa</p>
+
+                <span class="preco"></span>
+                <br>
+                <button><a href="">Faça o seu pedido aqui</a></button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer">
+
+        <p>Nos siga nas redes sociais:</p>
+
+        <ul>
+
+            <li><a href="#"><i class="fa-solid fa-envelope fa-bounce"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook fa-bounce"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-bounce"></i></a></li>
+            
+        </ul>
+
+        <p>Desenvolvido por Raul Flores <span class=""></span><span class="point"></span></p>
+
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
