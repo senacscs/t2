@@ -5,7 +5,7 @@ inputComando.focus();
 
 const historia = [
 	{
-		texto: "Na avenida movimentada, o Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c  p     ão       s m       f      m.",
+		texto: "Na avenida movimentada, o fliperama Bit Bunker brilha como um oásis de luzes vibrantes e sons eletrizantes. Conhecido por sua atmosfera animada e pela vasta coleção de jogos viciantes que cativam jogadores de todas as idades. É o ponto de encontro para entusiastas de jogos que buscam experiências imersivas e adrenalina pura. Seja durante o dia agitado ou à noite, suas portas abertas convidam todos a mergulharem em um mundo de c  p    ão     s m     f         m.",
 		opcoes: ["jogar"],
 		regras: {
 			"jogar": 1, 
@@ -141,6 +141,17 @@ const historia = [
                                                                 "1": "senacscs.github.io/t2/gabriel/terceiro/jogo_texto/index.html",
                                                         },
                                                     },
+
+													// 13- próxima fase
+													{
+														texto: "A próxima fase ainda está em desenvolvimento....",
+																					   opcoes: ["voltar ao início"],
+																					   regras: {
+																						   "voltar ao início": 0,
+																						   "1": 0,
+																						   
+																				   },
+																			   },
 												];
 
 function mostrarTexto(indice) {
