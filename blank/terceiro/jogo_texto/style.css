@@ -69,6 +69,11 @@ h1 {
     
 }
 
+#how-to-play{
+	color: #0f0; 
+	animation: blink 15s infinite; 
+}
+
 @keyframes blink {
 	0% {
 		opacity: 1;
