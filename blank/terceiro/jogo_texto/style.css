@@ -63,6 +63,11 @@ h1 {
 	padding: 5px;
 }
 
+#cursor {
+	color: #0f0; 
+	animation: blink 1s infinite; 
+    
+}
 #how-to-play{
 	color: #0f0; 
 	animation: blink 15s infinite; 
