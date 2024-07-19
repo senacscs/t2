@@ -1,96 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PWA Tutorial</title>
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
-    <meta name="theme-color" content="black">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="images/icon-192x192.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mistério da Mansão Sombria</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        setTimeout(function() {
-            window.location.href = "jogo.html"; // Substitua pelo nome correto do seu arquivo HTML do jogo
-        }, 10); // 10000 milissegundos = 10 segundos
-    </script>
 </head>
-
 <body>
-
-    <h1>NOME DO JOGO</h1>
-
-    <div id="container" role="img" aria-label="Caracteres são uma imagem refeita em código ASCII">
-                                                                                          
-                                                                                          
-                                                                                          
-                                                                                          
-                                       ..::::..                                           
-                                   :-==++******++=-:                                      
-                              .:-=+***##############*=                                    
-                             -=-=*##%%%%%%%%%%%%%%#####+:                                 
-                            -++##%%%%%%%%%%%%%%%%%%%%%#%#*=                               
-                          :+*###%############%##%%#########*:                             
-                         .+*##%%#**+++++++******#########%%#*=                            
-                         =*##%%#+++==+++++++++++****##%####%%#+                           
-                        :*##%%*+============+++++++***#########+.                         
-                        -####*+=+===============++++++***##**##*+                         
-                        =####+++=================++++++++++==+##*-                        
-                        -*#%*=======================++==+=====*#*-                        
-                        .#%%+=====================++++++++====*##+                        
-                         *%#+==================++++++++++++===+##=                        
-                         *%#===++++****++++++++++***#****++===+##:                        
-                         =%*==++++********++++**************+==##                         
-                         .#+=+++*#*##%##**++++**###*#####*+++==#=                         
-                          *==+++++++++**+++==++****+*#***#**+==#.                         
-                          :=========++=======+++++++++++++=====*                          
-                           :==========+++====++++++++==========:                          
-                           .=======++**+=====+++****+++++++===-                           
-                           :==+++++***+++====++++****++++++++=:                           
-                            -+++++***+++*******##**********++-                            
-                            :++++***+++++++*****************+:                            
-                            .++++****##*++++*******##***+***+                             
-                             =++++++++**+++-===++**#*++++***=                             
-                              =++++++++++++********+++++****                              
-                               =++++++++++++++**++++++*****##+-:                          
-                         .:-=+*%#++++==++++++++++++++*****+#@@%%%+====:                   
-                    :-=*%%%%%%%%%++*++++++=+++++++++**##**+#@@@@@@@@@@%*=----:            
-               :-+#%%%%%%%%%%%%%#=+*##***++++++****##%#****#@@@@@@@@@@@@@@@@@@%#*=:       
-           :=*%%%%%%%%%%%%%%%%%%%==++*%%###***###%%%##*****%@@@@@@@@@@@@@@@@@%%%%##*-.    
-        -*#%%%%%%%%%%%%%%%%@@%%%%*=+++*##%%%%%%%%%##***####@@@@@@@@@@@@@@@@@%%%%%%%%%@%+. 
-      :#%%%%%%%%%%%%%%%%@%%@@@@@@%+++++++**#***###****####@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@%+
-     +%%%%%%%%%%%%%%%%@%%@@@@@@@@@@*+++++++**********####@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%
-   .+%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@%*++***********##**#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  =%%%%%%%%%%%%@@%%@@@@@@@@@@@@@@@@@@@#++*************#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- *%%%%%%%@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@#**********#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
--%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%####%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-=%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-=%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  
+    <div class="container">
+        <h1>O Mistério da Mansão Sombria</h1>
+        <div id="area-texto" role="region" aria-live="polite"></div>
+        <input type="text" id="input-comando" placeholder="Digite sua escolha..." aria-label="Campo de entrada para comando">
     </div>
-
-
-    <script>
-        window.addEventListener('load', () => {
-            registerSW();
-        });
-
-        // Register the Service Worker
-        async function registerSW() {
-            if ('serviceWorker' in navigator) {
-                try {
-                    await navigator
-                        .serviceWorker
-                        .register('serviceworker.js');
-                }
-                catch (e) {
-                    console.log('SW registration failed');
-                }
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
