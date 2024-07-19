@@ -55,9 +55,9 @@ const historia = [
 		texto: "Na tela da máquina, a palavra ‘instruções’ se destaca em vermelho. Assim que você se aproxima, um texto aparece. É perceptível que há partes faltando. ‘Olá, jogador! N      j               a           t Sua missão é encontrar o caminho antes da meia-noite.   	e    ca   o     ad      l    O relógio corre!    a   h               t         Não deixe pedra sobre pedra!’  Você olha novamente para a porta.",
 		opcoes: ["aventurar-se no jogo", "explorar mais o fliperama"],
 		regras: {
-			"aventurar-se no jogo": 0,
+			"aventurar-se no jogo": 13,
 			"explorar mais o fliperama": 7,
-			"1": 0,
+			"1": 13,
 			"2": 7,
 		}
 	},
@@ -66,8 +66,8 @@ const historia = [
 		texto: "Você se aproxima da porta. A sala, do outro lado, está escura. Não há nenhuma iluminação. Assim que você cruza a porta, ela se fecha. Não há volta. O único som é a sua respiração. Não há nada que consiga ver. Não há nada que consiga sentir. Então, há uma risada infantil. ‘Estou feliz que veio jogar comigo. Desejamos-lhe boa-sorte. Você vai precisar. O jogo já vai começar!’ Do outro lado da porta, as máquinas desligam. A música cessa. E o 6, incrustado na porta e desenhado no papel, é substituído por um 7.",
 		opcoes: ["próxima fase",],
 		regras: {
-			"próxima fase": 0,
-			"1": 0,
+			"próxima fase": 13,
+			"1": 13,
 		}
 	},
     // 6- desligar
@@ -107,9 +107,9 @@ const historia = [
             opcoes: ["ir até a máquina", "passar pela porta"],
             regras: {
                 "ir até a máquina": 4,
-                "passar pela porta": 0,
+                "passar pela porta": 13,
                 "1": 4,
-                "2": 0,
+                "2": 13,
             }
         },
                 // 10- tentar abrir a porta com o grampo
