@@ -21,7 +21,7 @@ h1 {
       position: absolute;
       left: 3px;
       text-shadow: none;
-      background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3DPAzwJxrwCre%2Fgiphy.gif&f=1&nofb=1&ipt=dc4dd2260b9ccecc06fc391c3c781a47f6dd210b6e9d1d80c61beb36b618cdc9&ipo=images);
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3DPAzwJxrwCre%2Fgiphy.gif&f=1&nofb=1&ipt=dc4dd2260b9ccecc06fc391c3c781a47f6dd210b6e9d1d80c61beb36b618cdc9&ipo=images");
       background-clip: text;
       color: transparent;
       mix-blend-mode: lighten;
