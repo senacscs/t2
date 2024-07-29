@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mistério da Mansão Sombria</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://images.unsplash.com/photo-1557682260-967b7d4d90a5') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h1 {
+            font-family: 'Garamond', serif;
+            font-size: 3em;
+            color: #ff6347;
+            text-align: center;
+        }
+        h2 {
+            color: #ff6347;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .choice {
+            margin: 20px 0;
+        }
+        .choice button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .choice button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>O Mistério da Mansão Sombria</h1>
+        <div id="story">
+            <p>Você é um detetive renomado, conhecido por resolver casos intrigantes e misteriosos. Um dia, você recebe uma carta anônima pedindo sua ajuda para desvendar o segredo por trás de uma mansão abandonada na periferia da cidade. Dizem que a mansão é assombrada e que ninguém que entrou nela voltou para contar a história. Sua curiosidade é despertada, e você decide investigar.</p>
+            
+            <h2>Capítulo 1: A Chegada</h2>
+            <p>Você chega à mansão ao entardecer. O portão principal está entreaberto, rangendo ao vento. O jardim é coberto por ervas daninhas e a casa, imponente, está envolta em uma névoa espessa.</p>
+            
+            <div class="choice">
+                <button onclick="chooseOption(1, 'frontDoor')">Entrar pela porta da frente</button>
+                <button onclick="chooseOption(1, 'backDoor')">Contornar a casa e procurar uma entrada pelos fundos</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const story = document.getElementById('story');
+
+        const storyParts = {
+            1: {
+                frontDoor: `
+                    <h2>O Hall de Entrada</h2>
+                    <p>Ao entrar, você se depara com um hall de entrada grandioso, mas empoeirado. Quadros antigos pendem das paredes e há uma escada imponente à sua frente.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(2, 'upstairs')">Subir a escada</button>
+                        <button onclick="chooseOption(2, 'rightCorridor')">Explorar o corredor à direita</button>
+                    </div>
+                `,
+                backDoor: `
+                    <h2>A Cozinha</h2>
+                    <p>Você encontra uma porta de serviço destrancada. Ao entrar, se vê em uma cozinha antiga e mal iluminada. Um forte cheiro de mofo e comida estragada invade suas narinas.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(2, 'pantry')">Investigar a despensa</button>
+                        <button onclick="chooseOption(2, 'leftCorridor')">Seguir pelo corredor à esquerda</button>
+                    </div>
+                `
+            },
+            2: {
+                upstairs: `
+                    <h2>O Corredor Superior</h2>
+                    <p>No topo da escada, há um longo corredor com várias portas. Um leve gemido pode ser ouvido vindo de uma das portas no fim do corredor.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(3, 'soundRoom')">Abrir a porta de onde vem o som</button>
+                        <button onclick="chooseOption(3, 'exploreRooms')">Explorar os quartos ao longo do corredor</button>
+                    </div>
+                `,
+                rightCorridor: `
+                    <h2>A Biblioteca</h2>
+                    <p>O corredor leva a uma biblioteca antiga, com estantes cheias de livros empoeirados. Uma lareira apagada e uma poltrona de couro velho compõem o cenário.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(3, 'fireplace')">Investigar a lareira</button>
+                        <button onclick="chooseOption(3, 'books')">Procurar pistas nos livros</button>
+                    </div>
+                `,
+                pantry: `
+                    <h2>A Despensa</h2>
+                    <p>A despensa está cheia de potes e frascos antigos. Entre as prateleiras, você encontra um velho diário com uma capa desgastada.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(3, 'readDiary')">Ler o diário</button>
+                        <button onclick="chooseOption(3, 'continueKitchen')">Continuar explorando a cozinha</button>
+                    </div>
+                `,
+                leftCorridor: `
+                    <h2>O Porão</h2>
+                    <p>O corredor escuro leva a um porão. Há uma escada que desce para o porão, onde você pode ouvir o som de água pingando.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(3, 'goBasement')">Descer para o porão</button>
+                        <button onclick="chooseOption(3, 'returnKitchen')">Voltar para a cozinha</button>
+                    </div>
+                `
+            },
+            3: {
+                soundRoom: `
+                    <h2>O Quarto Misterioso</h2>
+                    <p>Você encontra um quarto escuro com uma janela entreaberta. Uma figura sombria está sentada em uma cadeira, murmurando palavras incompreensíveis.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'approachFigure')">Aproximar-se da figura</button>
+                        <button onclick="chooseOption(4, 'leaveRoom')">Sair do quarto e trancar a porta</button>
+                    </div>
+                `,
+                exploreRooms: `
+                    <h2>Os Quartos Vazios</h2>
+                    <p>Os quartos estão cheios de móveis cobertos por lençóis brancos. Em um deles, você encontra um baú trancado.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'forceChest')">Forçar o baú</button>
+                        <button onclick="chooseOption(4, 'findKey')">Procurar a chave do baú</button>
+                    </div>
+                `,
+                fireplace: `
+                    <h2>Passagem Secreta</h2>
+                    <p>Ao mexer na lareira, você encontra uma alavanca escondida. Quando a puxa, uma passagem secreta se abre na parede.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'enterPassage')">Entrar na passagem secreta</button>
+                        <button onclick="chooseOption(4, 'closePassage')">Fechar a passagem e continuar explorando a biblioteca</button>
+                    </div>
+                `,
+                books: `
+                    <h2>O Livro de Feitiços</h2>
+                    <p>Você encontra um livro de feitiços antigos. Uma página está marcada com um símbolo estranho.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'reciteSpell')">Recitar o feitiço</button>
+                        <button onclick="chooseOption(4, 'keepBook')">Guardar o livro e continuar explorando</button>
+                    </div>
+                `,
+                readDiary: `
+                    <h2>Segredos Obscuros</h2>
+                    <p>O diário revela segredos obscuros sobre os antigos moradores da mansão, mencionando rituais e acontecimentos macabros.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'continueReading')">Continuar lendo o diário</button>
+                        <button onclick="chooseOption(4, 'leavePantry')">Guardar o diário e sair da despensa</button>
+                    </div>
+                `,
+                continueKitchen: `
+                    <h2>Investigação na Cozinha</h2>
+                    <p>Você continua explorando a cozinha e encontra um alçapão escondido sob um tapete velho.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'openTrapdoor')">Abrir o alçapão</button>
+                        <button onclick="chooseOption(4, 'ignoreTrapdoor')">Ignorar o alçapão e continuar explorando</button>
+                    </div>
+                `,
+                goBasement: `
+                    <h2>O Porão Misterioso</h2>
+                    <p>O porão é úmido e cheio de teias de aranha. No canto, há uma porta de metal com uma fechadura enferrujada.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'openMetalDoor')">Abrir a porta de metal</button>
+                        <button onclick="chooseOption(4, 'findExit')">Procurar outra saída do porão</button>
+                    </div>
+                `,
+                returnKitchen: `
+                    <h2>Retorno à Cozinha</h2>
+                    <p>Você decide voltar para a cozinha, mas sente uma presença estranha ao seu redor, como se estivesse sendo observado.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(4, 'continueExploring')">Continuar explorando a cozinha</button>
+                        <button onclick="chooseOption(4, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `
+            },
+            4: {
+                approachFigure: `
+                    <h2>O Espírito</h2>
+                    <p>A figura se revela como o espírito de um antigo morador, que lhe entrega um amuleto e pede que você desvende o mistério da mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'acceptAmulet')">Aceitar o amuleto</button>
+                        <button onclick="chooseOption(5, 'declineAmulet')">Recusar o amuleto</button>
+                    </div>
+                `,
+                leaveRoom: `
+                    <h2>Fuga</h2>
+                    <p>Você escapa do espírito, mas ouve batidas fortes na porta enquanto se afasta.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'exploreFurther')">Continuar explorando</button>
+                        <button onclick="chooseOption(5, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                forceChest: `
+                    <h2>O Baú</h2>
+                    <p>Dentro do baú, você encontra antigas relíquias e um mapa da mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'takeRelics')">Pegar as relíquias</button>
+                        <button onclick="chooseOption(5, 'studyMap')">Estudar o mapa</button>
+                    </div>
+                `,
+                findKey: `
+                    <h2>A Chave</h2>
+                    <p>Você encontra a chave em um dos quartos e abre o baú, revelando antigas relíquias e um mapa da mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'takeRelics')">Pegar as relíquias</button>
+                        <button onclick="chooseOption(5, 'studyMap')">Estudar o mapa</button>
+                    </div>
+                `,
+                enterPassage: `
+                    <h2>A Câmara Secreta</h2>
+                    <p>A passagem leva a uma câmara oculta cheia de artefatos antigos e escritos enigmáticos nas paredes.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'exploreArtifacts')">Explorar os artefatos</button>
+                        <button onclick="chooseOption(5, 'studyWritings')">Estudar os escritos</button>
+                    </div>
+                `,
+                closePassage: `
+                    <h2>Ruído Estranho</h2>
+                    <p>Você ouve um ruído estranho atrás da parede e decide continuar explorando a biblioteca.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'investigateNoise')">Investigar o ruído</button>
+                        <button onclick="chooseOption(5, 'continueExploring')">Continuar explorando a biblioteca</button>
+                    </div>
+                `,
+                reciteSpell: `
+                    <h2>Feitiço Antigo</h2>
+                    <p>Uma força sobrenatural toma conta do ambiente, revelando segredos ocultos sobre a mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'followVision')">Seguir a visão</button>
+                        <button onclick="chooseOption(5, 'ignoreVision')">Ignorar a visão</button>
+                    </div>
+                `,
+                keepBook: `
+                    <h2>O Livro Guardado</h2>
+                    <p>Você guarda o livro e sente uma presença estranha ao seu redor.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'continueExploring')">Continuar explorando a biblioteca</button>
+                        <button onclick="chooseOption(5, 'leaveLibrary')">Sair da biblioteca</button>
+                    </div>
+                `,
+                continueReading: `
+                    <h2>Revelações do Diário</h2>
+                    <p>O diário revela a localização de um altar secreto no porão, usado em rituais antigos.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'findAltar')">Procurar o altar</button>
+                        <button onclick="chooseOption(5, 'ignoreDiary')">Ignorar as revelações do diário</button>
+                    </div>
+                `,
+                leavePantry: `
+                    <h2>A Presença</h2>
+                    <p>Você sente uma presença estranha ao seu redor, como se estivesse sendo observado.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'continueExploring')">Continuar explorando a cozinha</button>
+                        <button onclick="chooseOption(5, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                openTrapdoor: `
+                    <h2>O Alçapão</h2>
+                    <p>O alçapão leva a um túnel escuro e estreito que parece nunca ter sido usado.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'enterTunnel')">Entrar no túnel</button>
+                        <button onclick="chooseOption(5, 'ignoreTrapdoor')">Ignorar o alçapão e continuar explorando</button>
+                    </div>
+                `,
+                ignoreTrapdoor: `
+                    <h2>Decisão</h2>
+                    <p>Você decide ignorar o alçapão e continuar explorando a cozinha.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'searchKitchen')">Buscar na cozinha</button>
+                        <button onclick="chooseOption(5, 'leaveKitchen')">Sair da cozinha</button>
+                    </div>
+                `,
+                openMetalDoor: `
+                    <h2>A Porta de Metal</h2>
+                    <p>A porta se abre para uma câmara secreta, onde você encontra o altar mencionado no diário.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'investigateAltar')">Investigar o altar</button>
+                        <button onclick="chooseOption(5, 'ignoreAltar')">Ignorar o altar e sair do porão</button>
+                    </div>
+                `,
+                findExit: `
+                    <h2>Outra Saída</h2>
+                    <p>Você encontra uma escada que leva a um alçapão na cozinha, escapando do porão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'searchKitchen')">Buscar na cozinha</button>
+                        <button onclick="chooseOption(5, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                continueExploring: `
+                    <h2>Exploração</h2>
+                    <p>Você decide continuar explorando a mansão, ciente de que há segredos a serem revelados.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(5, 'findSecrets')">Procurar segredos</button>
+                        <button onclick="chooseOption(5, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                leaveHouse: `
+                    <h2>Fuga</h2>
+                    <p>Você decide deixar a mansão, levando consigo as lembranças do que descobriu.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'conclusion')">Conclusão</button>
+                    </div>
+                `
+            },
+            5: {
+                acceptAmulet: `
+                    <h2>O Amuleto</h2>
+                    <p>Você aceita o amuleto, sentindo um poder estranho emanar dele. O espírito pede que você vá até o porão para desvendar o segredo final.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'goBasement')">Ir para o porão</button>
+                    </div>
+                `,
+                declineAmulet: `
+                    <h2>Rejeição</h2>
+                    <p>Você recusa o amuleto, mas o espírito insiste que você deve desvendar o mistério. Relutantemente, você decide continuar explorando a mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'exploreFurther')">Continuar explorando</button>
+                    </div>
+                `,
+                exploreFurther: `
+                    <h2>Exploração Adicional</h2>
+                    <p>Você continua explorando a mansão, determinado a desvendar todos os seus segredos.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'findSecrets')">Procurar segredos</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                takeRelics: `
+                    <h2>As Relíquias</h2>
+                    <p>Você pega as relíquias, sentindo uma conexão estranha com os antigos moradores da mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'studyRelics')">Estudar as relíquias</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                studyMap: `
+                    <h2>O Mapa</h2>
+                    <p>O mapa revela a localização de um tesouro escondido na mansão. Você decide segui-lo.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'findTreasure')">Procurar o tesouro</button>
+                    </div>
+                `,
+                exploreArtifacts: `
+                    <h2>Artefatos Antigos</h2>
+                    <p>Os artefatos revelam segredos antigos e pistas sobre os rituais realizados na mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'studyRituals')">Estudar os rituais</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                studyWritings: `
+                    <h2>Escritos Enigmáticos</h2>
+                    <p>Os escritos nas paredes contam a história dos antigos moradores e seus segredos macabros.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'revealSecrets')">Revelar os segredos</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                investigateNoise: `
+                    <h2>O Ruído Misterioso</h2>
+                    <p>Você investiga o ruído e descobre um esconderijo secreto atrás da parede.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'exploreHideout')">Explorar o esconderijo</button>
+                        <button onclick="chooseOption(6, 'leaveLibrary')">Sair da biblioteca</button>
+                    </div>
+                `,
+                followVision: `
+                    <h2>A Visão</h2>
+                    <p>A visão leva você a um altar secreto, onde você descobre segredos ocultos da mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'investigateAltar')">Investigar o altar</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                ignoreVision: `
+                    <h2>Ignorar a Visão</h2>
+                    <p>Você decide ignorar a visão, mas a sensação de estar sendo observado permanece.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'exploreFurther')">Continuar explorando</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                findAltar: `
+                    <h2>O Altar Secreto</h2>
+                    <p>Você encontra o altar secreto mencionado no diário e descobre seu propósito sinistro.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'investigateAltar')">Investigar o altar</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                findSecrets: `
+                    <h2>Segredos Ocultos</h2>
+                    <p>Você descobre segredos ocultos sobre os antigos moradores e os rituais realizados na mansão.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'revealSecrets')">Revelar os segredos</button>
+                        <button onclick="chooseOption(6, 'leaveHouse')">Sair da mansão</button>
+                    </div>
+                `,
+                conclusion: `
+                    <h2>Conclusão</h2>
+                    <p>Com o mistério resolvido, você decide o que fazer com as descobertas. Guardará o segredo para si, ou revelará ao mundo o que realmente aconteceu na mansão? A escolha é sua.</p>
+                    <div class="choice">
+                        <button onclick="chooseOption(6, 'end')">Fim</button>
+                    </div>
+                `,
+                end: `
+                    <h2>Fim</h2>
+                    <p>Obrigado por jogar "O Mistério da Mansão Sombria". Esperamos que tenha gostado!</p>
+                `
+            }
+        };
+
+        function chooseOption(chapter, option) {
+            story.innerHTML = storyParts[chapter][option];
+        }
+    </script>
+</body>
+</html>
