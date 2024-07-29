@@ -25,6 +25,7 @@ h1 {
     font-size: 3em;
     color: #ff4500;
     text-align: center;
+    margin: 40px 0; /* Espaço acima e abaixo do título */
 }
 
 #area-texto {
@@ -88,4 +89,15 @@ input {
     border-radius: 10px;
     color: #00ff00;
     text-align: center;
+}
+
+/* Efeito de piscar a tela */
+.blinking {
+    animation: blink-screen 0.1s infinite;
+    animation: blink-screen 0.1s infinite;
+}
+
+@keyframes blink-screen {
+    0%, 100% { background-color: #000000; }
+    50% { background-color: #ff0000; } /* Flash vermelho para assustar */
 }

@@ -1,150 +1,205 @@
 const areaTexto = document.getElementById("area-texto");
 const inputComando = document.getElementById("input-comando");
-const videoContainer = document.getElementById("video-container");
-const video = document.getElementById("video");
+const mazeContainer = document.getElementById("maze-container");
+const puzzleContainer = document.getElementById("puzzle-container");
+const puzzle = document.getElementById("puzzle");
+const puzzleInput = document.getElementById("puzzle-input");
+
 let estadoAtual = 0;
+let playerPosition = { x: 0, y: 0 };
 
 const historia = [
-    {
+    { // Fase 0: Introdução
         texto: "Você é um detetive renomado, conhecido por resolver casos intrigantes e misteriosos. Um dia, você recebe uma carta anônima pedindo sua ajuda para desvendar o segredo por trás de uma mansão abandonada na periferia da cidade. Dizem que a mansão é assombrada e que ninguém que entrou nela voltou para contar a história. Sua curiosidade é despertada, e você decide investigar.\n\nVocê chega à mansão ao entardecer. O portão principal está entreaberto, rangendo ao vento. O jardim é coberto por ervas daninhas e a casa, imponente, está envolta em uma névoa espessa. O que você faz?",
-        opcoes: ["Entrar pela porta da frente", "Contornar a casa e procurar uma entrada pelos fundos"],
+        opcoes: ["1 - Entrar pela porta da frente", "2 - Contornar a casa e procurar uma entrada pelos fundos"],
         regras: {
-            "entrar pela porta da frente": 1,
-            "contornar a casa e procurar uma entrada pelos fundos": 2
-        },
-        video: "https://videocdn.cdnpk.net/videos/8e75fb52-03cd-41cb-ba8c-f41957ba2146/horizontal/previews/clear/small.mp4?token=exp=1720537977~hmac=abf69b787a38c18cdc9c4ffd351a5448e1e96cb4ba30cad8f9619b1f23acc150"
+            "1": 1,
+            "2": 2,
+        }
     },
-    {
-        texto: "Ao entrar, você se depara com um hall de entrada grandioso, mas empoeirado. Quadros antigos pendem das paredes e há uma escada imponente à sua frente. O que você faz?",
-        opcoes: ["Subir a escada", "Explorar o corredor à direita"],
+    { // Fase 1: Hall de Entrada
+        texto: "Ao entrar, você se depara com um hall de entrada grandioso, mas há algo assustador... Quadros antigos que dão a impressão que estão a te olhar conforme você anda. O que você faz?",
+        opcoes: ["1 - Começar a correr e subir as escadas", "2 - Explorar o corredor à direita"],
         regras: {
-            "subir a escada": 3,
-            "explorar o corredor à direita": 4
-        },
-        video: "https://videocdn.cdnpk.net/videos/398c8d0a-1dae-46db-b74b-00e5a85341bf/horizontal/previews/clear/small.mp4?token=exp=1720537897~hmac=eb5b3d25108d426e45b07fc678d694794e703ba3b394fa4b50c55717a91fb2c1"
+            "1": 3,
+            "2": 4
+        }
     },
-    {
-        texto: "Você encontra uma porta de serviço destrancada. Ao entrar, se vê em uma cozinha antiga e mal iluminada. Um forte cheiro de mofo e comida estragada invade suas narinas. O que você faz?",
-        opcoes: ["Investigar a despensa", "Seguir pelo corredor à esquerda"],
+    { // Fase 2: Entrada pelos Fundos
+        texto: "Ao contornar a casa, você encontra uma janela quebrada que dá acesso à cozinha. O que você faz?",
+        opcoes: ["1 - Entrar pela janela", "2 - Continuar contornando a casa"],
         regras: {
-            "investigar a despensa": 5,
-            "seguir pelo corredor à esquerda": 6
-        },
-        video: "https://videocdn.cdnpk.net/videos/1f4d5166-5d90-42ac-a614-526182469150/horizontal/previews/clear/small.mp4?token=exp=1720537977~hmac=6ea2f51bbbe689dea02da64893dc71432ee76c674a94c46774916956ef6475f3"
+            "1": 5,
+            "2": 6
+        }
     },
-    {
+    { // Fase 3: No Topo das Escadas
         texto: "No topo da escada, há um longo corredor com várias portas. Um leve gemido pode ser ouvido vindo de uma das portas no fim do corredor. O que você faz?",
-        opcoes: ["Abrir a porta de onde vem o som", "Explorar os quartos ao longo do corredor"],
+        opcoes: ["1 - Abrir a porta de onde vem o som", "2 - Explorar os quartos ao longo do corredor"],
         regras: {
-            "abrir a porta de onde vem o som": 7,
-            "explorar os quartos ao longo do corredor": 8
-        },
-        video: "https://videocdn.cdnpk.net/videos/edf07319-5b29-4e9e-a928-0240af62c599/horizontal/previews/clear/small.mp4?token=exp=1720537834~hmac=7841d5d139c91dbe239f0a2b9bad3e0d624cd983de9a8c6e9adf3248140e3eb1"
+            "1": 7,
+            "2": 8
+        }
     },
-    {
-        texto: "Você encontra um velho diário com uma capa desgastada. O que você faz?",
-        opcoes: ["Ler o diário", "Guardar o diário e sair"],
+    { // Fase 4: Corredor à Direita
+        texto: "Ao explorar o corredor você sente um cheiro forte como se fosse cheiro de decomposição. De tão curioso(a), você insiste em descobrir de onde está vindo esse cheiro. O que você faz?",
+        opcoes: ["1 - Investigar a despensa", "2 - Deixar para o próximo espertinho e curioso tentar a sorte... kk"],
         regras: {
-            "ler o diário": 9,
-            "guardar o diário e sair": 10
-        },
-        video: "https://videocdn.cdnpk.net/videos/edf07319-5b29-4e9e-a928-0240af62c599/horizontal/previews/clear/small.mp4?token=exp=1720537834~hmac=7841d5d139c91dbe239f0a2b9bad3e0d624cd983de9a8c6e9adf3248140e3eb1"
+            "1": 9,
+            "2": 10
+        }
     },
-    {
-        texto: "Você entra na despensa e encontra um velho diário com uma capa desgastada. O que você faz?",
-        opcoes: ["Ler o diário", "Sair da despensa"],
+    { // Fase 5: Cozinha pela Janela
+        texto: "Você entra na cozinha e encontra uma porta de serviço destrancada. Ao entrar, você se vê em uma cozinha antiga e mal iluminada. Um forte cheiro de mofo e comida estragada invade suas narinas. O que você faz?",
+        opcoes: ["1 - Investigar a despensa", "2 - Seguir pelo corredor à esquerda"],
         regras: {
-            "ler o diário": 9,
-            "sair da despensa": 2
-        },
-        video: "https://videocdn.cdnpk.net/videos/790a985d-cedb-4ad3-91b1-a0da25cd266b/horizontal/previews/clear/small.mp4?token=exp=1720538948~hmac=980889a96ed11e68672853d494a006491e0c3bcc30e4da06a58eb33bdd7a34c6"
+            "1": 9,
+            "2": 10
+        }
     },
-    {
-        texto: "O corredor escuro leva a um porão. Há uma escada que desce para o porão, onde você pode ouvir o som de água pingando. O que você faz?",
-        opcoes: ["Descer para o porão", "Voltar para a cozinha"],
+    { // Fase 6: Contornando a Casa
+        texto: "Você continua contornando a casa e encontra uma porta dos fundos destrancada. Ao entrar, você se depara com um porão escuro e úmido. O que você faz?",
+        opcoes: ["1 - Descer para o porão", "2 - Voltar para a cozinha"],
         regras: {
-            "descer para o porão": 11,
-            "voltar para a cozinha": 2
-        },
-        video: "https://videocdn.cdnpk.net/videos/96b44b96-e1a3-437b-ba33-337eeb71440d/horizontal/previews/clear/small.mp4?token=exp=1720538771~hmac=42ec3fc7eaa22507aaf357dd99171481888634df0084e682e73eb7886d11f71a"
+            "1": 11,
+            "2": 10
+        }
     },
-    {
-        texto: "Você encontra um quarto escuro com uma janela entreaberta. Uma figura sombria está em pé, murmurando palavras incompreensíveis. O que você faz?",
-        opcoes: ["Aproximar-se da figura", "Sair do quarto"],
+    { // Fase 7: Quarto com Figura Sombria
+        texto: "Você abre a porta de onde vem o som e encontra um quarto escuro com uma janela entreaberta. Uma figura sombria está em pé, murmurando palavras incompreensíveis. O que você faz?",
+        opcoes: ["1 - Aproximar-se da figura", "2 - Sair do quarto"],
         regras: {
-            "aproximar-se da figura": 12,
-            "sair do quarto": 2
-        },
-        video: "https://videocdn.cdnpk.net/videos/8739886f-ca80-4e0b-b1de-e656554f1314/horizontal/previews/clear/small.mp4?token=exp=1720538552~hmac=5ce9c28ea55c14a054804f16b71d902b07b5122accb5e812dcc42153a83d2b5a"
+            "1": 12,
+            "2": 8
+        }
     },
-    {
+    { // Fase 8: Quartos com Lençóis Brancos
         texto: "Os quartos estão cheios de móveis cobertos por lençóis brancos. Em um deles, você encontra um baú trancado. O que você faz?",
-        opcoes: ["Forçar o baú", "Sair do quarto"],
+        opcoes: ["1 - Forçar o baú", "2 - Sair do quarto"],
         regras: {
-            "forçar o baú": 13,
-            "sair do quarto": 2
-        },
-        video: "https://example.com/video_abrindo_bau.mp4"
-    },
-    {
-        texto: "O diário revela segredos obscuros sobre os antigos moradores da mansão, mencionando rituais e acontecimentos macabros. Você sente uma presença estranha ao seu redor, como se estivesse sendo observado. O que você faz?",
-        opcoes: ["Continuar lendo o diário", "Sair da mansão"],
-        regras: {
-            "continuar lendo o diário": 14,
-            "sair da mansão": 10
+            "1": 13,
+            "2": 3
         }
     },
-    {
-        texto: "Você decide sair da mansão, levando consigo as lembranças do que descobriu. Fim.",
-        opcoes: [],
-        regras: {}
+    { // Fase 9: Pessoa Caída na Despensa
+        texto: "Você entra na despensa e encontra uma pessoa no chão (VIVA) com muito sangue para todos os lados. Você olha para ela e percebe que ela está falando algo. Mas como você não conseguiu escutar o que ela disse, você coloca o ouvido bem perto da boca dela... até que ela diz que tem uma pessoa que está seguindo ela o tempo inteiro. O que você faz?",
+        opcoes: ["1 - Sair correndo da casa e chamar a polícia", "2 - Continuar investigando a mansão"],
+        regras: {
+            "1": 16,
+            "2": 17
+        }
     },
-    {
+    { // Fase 10: Corredor com Porta para o Porão
+        texto: "Você segue pelo corredor e encontra uma porta que leva a um porão. Há uma escada que desce para o porão, onde você pode ouvir o som de água pingando. O que você faz?",
+        opcoes: ["1 - Descer para o porão", "2 - Voltar para a cozinha"],
+        regras: {
+            "1": 11,
+            "2": 5
+        }
+    },
+    { // Fase 11: Altar no Porão
         texto: "Você desce para o porão e encontra um altar antigo coberto de velas derretidas e símbolos estranhos. Você sente uma presença assustadora ao seu redor. O que você faz?",
-        opcoes: ["Investigar o altar", "Sair do porão"],
+        opcoes: ["1 - Investigar o altar", "2 - Sair do porão"],
         regras: {
-            "investigar o altar": 14,
-            "sair do porão": 2
+            "1": 15,
+            "2": 10
         }
     },
-    {
+    { // Fase 12: Espírito com Amuleto
         texto: "A figura se revela como o espírito de um antigo morador, que lhe entrega um amuleto e pede que você desvende o mistério da mansão. O que você faz?",
-        opcoes: ["Aceitar o amuleto", "Recusar o amuleto"],
+        opcoes: ["1 - Aceitar o amuleto", "2 - Recusar o amuleto"],
         regras: {
-            "aceitar o amuleto": 14,
-            "recusar o amuleto": 2
+            "1": 15,
+            "2": 7
         }
     },
-    {
+    { // Fase 13: Enigma do Baú
+        texto: "QUER ABRIR O BAÚ?? KKKKKK Então resolva: 1 + 4 = 5, 2 + 5 = 12, 3 + 6 = 21, 8 + 11 = ??",
+        opcoes: ["40", "19"],
+        regras: {
+            "40": 14,
+            "19": 8
+        }
+    },
+    { // Fase 14: Relíquias e Mapa
         texto: "Dentro do baú, você encontra antigas relíquias e um mapa da mansão. O que você faz?",
-        opcoes: ["Pegar as relíquias", "Estudar o mapa"],
+        opcoes: ["1 - Pegar as relíquias", "2 - Estudar o mapa"],
         regras: {
-            "pegar as relíquias": 14,
-            "estudar o mapa": 14
+            "1": 15,
+            "2": 15
         }
     },
-    {
+    { // Fase 15: Conclusão
         texto: "Você descobre o segredo sombrio da mansão: um culto antigo realizava rituais macabros no porão. Com o mistério resolvido, você decide o que fazer com as descobertas. Guardará o segredo para si, ou revelará ao mundo o que realmente aconteceu na mansão? Fim.",
-        opcoes: [],
-        regras: {}
+        opcoes: ["1 - Recomeçar"],
+        regras: {
+            "1": 0,
+        }
+    },
+    { // Fase 16: Chamando a Polícia
+        texto: "Você sai correndo da casa e chama a polícia. Eles chegam rapidamente e invadem a mansão. A pessoa ferida é resgatada e levada para o hospital. Você se sente aliviado, mas o mistério da mansão permanece. Fim.",
+        opcoes: ["1 - Recomeçar"],
+        regras: {
+            "1": 0,
+        }
+    },
+    { // Fase 17: Continuando a Investigação
+        texto: "Você decide continuar investigando a mansão. Enquanto explora os corredores, você sente uma presença constante atrás de você. O que você faz?",
+        opcoes: ["1 - Confrontar a presença", "2 - Tentar escapar pela janela mais próxima"],
+        regras: {
+            "1": 18,
+            "2": 19
+        }
+    },
+    { // Fase 18: Enfrentando a Presença
+        texto: "Você se vira rapidamente e se depara com uma figura encapuzada. Antes que você possa reagir, a figura desaparece nas sombras, deixando apenas um bilhete no chão. O que você faz?",
+        opcoes: ["1 - Ler o bilhete", "2 - Ignorar o bilhete e continuar investigando"],
+        regras: {
+            "1": 20,
+            "2": 21
+        }
+    },
+    { // Fase 19: Tentando Escapar
+        texto: "Você corre para a janela mais próxima e a abre com dificuldade. Ao pular para fora, você sente uma dor aguda no tornozelo, mas continua correndo até se sentir seguro. O mistério da mansão permanece sem solução. Fim.",
+        opcoes: ["1 - Recomeçar"],
+        regras: {
+            "1": 0,
+        }
+    },
+    { // Fase 20: Lendo o Bilhete
+        texto: "O bilhete contém um enigma: 'Eu não tenho boca, mas falo. Não tenho asas, mas voo. O que sou eu?' O que você faz?",
+        opcoes: ["1 - Responder 'O Vento'", "2 - Responder 'Um Fantasma'"],
+        regras: {
+            "1": 22,
+            "2": 21
+        }
+    },
+    { // Fase 21: Ignorando o Bilhete
+        texto: "Você decide ignorar o bilhete e continuar investigando. Enquanto anda pelo corredor, você sente a presença novamente. O que você faz?",
+        opcoes: ["1 - Confrontar a presença", "2 - Tentar escapar pela janela mais próxima"],
+        regras: {
+            "1": 18,
+            "2": 19
+        }
+    },
+    { // Fase 22: Resolvendo o Enigma do Bilhete
+        texto: "Ao responder 'O Vento', você sente uma brisa leve passar por você, levando embora a sensação de ser observado. Você continua investigando com uma nova determinação. O que você faz?",
+        opcoes: ["1 - Explorar o porão", "2 - Investigar o altar"],
+        regras: {
+            "1": 11,
+            "2": 18
+        }
     }
 ];
 
 function mostrarTexto(indice) {
-    const { texto, opcoes, video } = historia[indice];
+    const { texto, opcoes } = historia[indice];
     areaTexto.textContent = texto;
     if (opcoes) {
         areaTexto.textContent += "\n\nOpções:";
         opcoes.forEach(opcao => {
             areaTexto.textContent += `\n- ${opcao}`;
         });
-    }
-    if (video) {
-        videoContainer.style.display = 'flex';
-        video.src = video;
-    } else {
-        videoContainer.style.display = 'none';
-        video.src = '';
     }
 }
 
@@ -154,6 +209,10 @@ function processarComando(comando) {
     if (regras[comando] !== undefined) {
         estadoAtual = regras[comando];
         mostrarTexto(estadoAtual);
+        if (estadoAtual === 17 || estadoAtual === 18 || estadoAtual === 21) {
+            document.body.classList.add('blinking');
+            setTimeout(() => document.body.classList.remove('blinking'), 1000);
+        }
     } else {
         areaTexto.textContent += "\n\nComando inválido. Tente novamente.";
     }
