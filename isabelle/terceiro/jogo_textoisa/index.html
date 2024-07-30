@@ -4,111 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Mistério da Mansão Sombria</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: url('https://images.unsplash.com/photo-1557682260-967b7d4d90a5') no-repeat center center fixed;
-            background-size: cover;
-            color: #00ff00;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            max-width: 800px;
-            border-radius: 10px;
-            width: 80%;
-            border: 2px solid #00ff00;
-        }
-
-        h1 {
-            font-family: 'Lucida Console', Courier, monospace;
-            font-size: 3em;
-            color: #ff4500;
-            text-align: center;
-        }
-
-        #area-texto {
-            white-space: pre-wrap;
-            margin-bottom: 20px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-            border: 2px solid #00ff00;
-            border-radius: 5px;
-            font-size: 1em;
-            background-color: #000;
-            color: #00ff00;
-        }
-
-        .maze-container {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .maze-row {
-            display: flex;
-        }
-
-        .cell {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #00ff00;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .player {
-            background-color: #ff4500;
-            width: 80%;
-            height: 80%;
-            border-radius: 50%;
-        }
-
-        .door {
-            background-color: #0000ff;
-        }
-
-        .puzzle-container {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .puzzle {
-            background-color: #000;
-            padding: 20px;
-            border: 2px solid #00ff00;
-            border-radius: 10px;
-            color: #00ff00;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>O Mistério da Mansão Sombria</h1>
         <div id="area-texto" role="region" aria-live="polite"></div>
         <input type="text" id="input-comando" placeholder="Digite sua escolha..." aria-label="Campo de entrada para comando">
-        <div class="maze-container" id="maze-container"></div>
-        <div class="puzzle-container" id="puzzle-container">
-            <div class="puzzle" id="puzzle"></div>
-            <input type="text" id="puzzle-input" placeholder="Digite sua resposta..." aria-label="Campo de entrada para resposta do enigma">
-        </div>
     </div>
-    <script src="scriptvideo.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
