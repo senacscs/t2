@@ -253,14 +253,6 @@ list-style-type: none;}
     margin-top: 0;
     margin-bottom: 12px;
 }
-.skillset .level-bar {
-    height: 12px;
-    background: #f5f5f5;
-}
-.skillset .level-bar-inner {
-    height: 12px;
-    background: #9FB79F;
-}
 
 .skillset .skillset-title{
     color:#516551;
