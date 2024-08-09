@@ -393,6 +393,7 @@ span.astro-HL5A4E72 {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(285px,1fr));
     gap: 24px;
+        overflow: hidden;
 }
 
 .back-to-top {
@@ -433,7 +434,9 @@ span.astro-HL5A4E72 {
 .filterDiv{
     display: none; 
 }
-
 span.active {
     background-color: #e7b0a5;   
   }
+.btn:hover {
+ cursor: pointer;
+}
