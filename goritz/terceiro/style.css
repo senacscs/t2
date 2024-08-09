@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;  /* Permite que a div flutue pela tela */
+    text-align: center;
+    transform: translate(-50%, -50%); /* Centraliza o container */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.link-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.link-item img:hover {
+    transform: scale(1.05);
+}
+
+.link-item p {
+    margin-top: 10px;
+    color: #333333;
+}
