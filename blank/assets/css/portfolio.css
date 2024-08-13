@@ -227,7 +227,6 @@ body {
     margin: 0 32px;
     background: var(--pale);
     color: var(--black);
-    cursor: url('../icon-cursor.png'), auto !important;
 }
 @media (max-width: 350px) {
     body {
