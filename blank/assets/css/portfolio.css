@@ -427,17 +427,3 @@ span.astro-HL5A4E72 {
         right: 1rem;
     }
 }
-
-.show {
-    display: block;
-  }
-
-.filterDiv{
-    display: none; 
-}
-span.active {
-    background-color: #e7b0a5;   
-  }
-.btn:hover {
- cursor: pointer;
-}
