@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll__bar {
+    overflow-y: scroll;
+}
+.scroll__bar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    user-select: none;
+}
+
+
+header{
+  margin: 5rem auto;
+  max-width: 50rem;
+  text-align: center;
+
+}
+    h1 {
+        color: #ece4b7;
+        font-family: 'Lora', serif;
+        font-size: clamp(3rem, 1rem + 10vh, 4rem);
+        margin: 0.5em 0;
+    }
+       header > p {
+        color: #f9f7f3;
+            font-size: 17px;
+        }
+
+@media screen and (min-width: 320px){
+.site-container{
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 70rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+}
+
+
+.project{
+    margin: 0 auto;
+    width: 30rem;
+    height: 20rem;
+
+    text-align: center;
+    }
+
+    
+.project-1{
+    background: url(https://i.pinimg.com/564x/4c/08/23/4c082366b3e137009286f9dbaba72150.jpg);
+    background-size: cover;
+}
+.project-2{
+    background: #fcbf49;
+    background: url(https://i.pinimg.com/474x/df/6e/8f/df6e8f24f98b30ca679cfd145744bd64.jpg) center;
+    background-size: cover;
+}
+
+.project-3{
+    background: #a7c957;
+
+}
+
+.project-4{
+    background: #f4acb7;
+}
+
+.project-5{
+    background: #8ecae6;
+}
+
+.project-6{
+    background: #c77dff;
+}
+
+.details-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    transition: background .3s;
+}
+
+.details-wrap:hover{
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.details{
+    color: #dbd8d8;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    opacity: 0;
+    transition: opacity .3s;
+}
+    .details:hover{
+        opacity: 1;
+    }
+        .details h2{
+            font-family: 'Lora', serif;
+            letter-spacing: 0.7rem;
+            padding: 1rem;
+        }
+        .details a{
+            color: #ece4b7;
+        }
+            .details a:hover{
+                color: #fcbf49;
+            }
+
