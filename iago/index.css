@@ -179,12 +179,20 @@ header {
   max-width: 1000px;
 }
 
+.anotitu {
+  border: 1px solid rgb(255, 255, 255); 
+  background-color: #f1aee776;
+  font-size: 30px;
+  margin-right: 45rem;
+  border-radius: 5px;
+}
+
 #projetos h1,
 #sobre h1,
 #contato h1 {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 40px;
   color: #2f0034;
   margin-left: 30px;
 }
