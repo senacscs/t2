@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<title></title>
+</head>
+<body>
+	<header>
+		<div id="go-to-home">
+			<a href="../index.html" data-shortcut-key="h">Página inicial do Accessibling</a>
+		</div>
+		<nav>
+			<ul id="account-options-notlogedin">
+				<li><a href="login/index.html" data-shortcut-key="l">Fazer login</a></li>
+				<li><a href="signup/index.html" data-shortcut-key="c">Criar uma conta</a></li>
+			</ul>
+			<div id="account-options-logedin">
+				<p id="account-name"></p>
+				<ul>
+					<li><a href="leave_account.html" data-shortcut-key="s">Sair da conta</a></li>
+				</ul>
+			</div>
+			<ul id="main-navigation">
+				<li><a href="companies/index.html" data-shortcut-key="e">Empresas cadastradas</a></li>
+				<li><a href="register_company/index.html" data-shortcut-key="a">Cadastrar uma empresa</a></li>
+				<li><a href="../contact/index.html" data-shortcut-key="t">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1 id="company-name"></h1>
+		<p id="time-ago">Cadastrada há <span id="time-ago-place"></span></p>
+		<p id="views"><span id="views-number"></span> visualizações</p>
+		<div id="rate-company">
+			<a href="#" id="rate-company-link">Avaliar acessibilidade da empresa</a>
+		</div>
+		<ul class="nav" id="company-tabs">
+			<li><a href="index.html">Página inicial da empresa</a></li>
+			<li><a href="rattings.html">Avaliações</a></li>
+		</ul>
+		<h2 id="rattings-h2">Avaliações</h2>
+		<div id="rattings"></div>
+	</main>
+	<script src="js/script.js"></script>
+	<script src="js/rattings.js"></script>
+</body>
+</html>

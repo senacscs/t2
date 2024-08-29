@@ -1,0 +1,59 @@
+#company-name {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+#time-ago, #views {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 10px;
+}
+#rate-company {
+	margin: 20px 0;
+}
+#rate-company-link {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+}
+#rate-company-link:hover {
+	background-color: #0056b3;
+}
+#company-tabs {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	border-bottom: 2px solid #ccc;
+}
+#company-tabs li {
+	margin-right: 20px;
+}
+#company-tabs a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #007bff;
+	padding-bottom: 5px;
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+#company-tabs a:hover {
+	color: #0056b3;
+	border-bottom: 2px solid #007bff;
+}
+#ratting-h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	color: #333;
+}
+#ratting-level, #ratting {
+	font-size: 20px;
+	color: #555;
+	margin-bottom: 10px;
+}

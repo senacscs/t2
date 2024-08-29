@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<title>Cadastrar uma empresa - Accessibling: dando voz à acessibilidade digital</title>
+</head>
+<body>
+	<header>
+		<div id="go-to-home">
+			<a href="../index.html" data-shortcut-key="h">Página inicial do Accessibling</a>
+		</div>
+		<nav>
+			<ul id="account-options-notlogedin">
+				<li><a href="../login/index.html" data-shortcut-key="l">Fazer login</a></li>
+				<li><a href="../signup/index.html" data-shortcut-key="c">Criar uma conta</a></li>
+			</ul>
+			<ul id="main-navigation">
+				<li><a href="../companies/index.html" data-shortcut-key="e">Empresas cadastradas</a></li>
+				<li><a href="../register_company/index.html" data-shortcut-key="a">Cadastrar uma empresa</a></li>
+				<li><a href="../contact/index.html" data-shortcut-key="t">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Cadastrar uma empresa</h1>
+		<form id="company-form">
+			<div class="form-field">
+				<label for="name">Nome do aplicativo ou da empresa</label> 
+				<input type="text" id="name" name="name" required autofocus/>
+			</div>
+			<div class="form-field">
+				<label for="description">O que este aplicativo faz?</label> 
+				<textarea id="description" name="description" required></textarea>
+			</div>
+			<div class="form-field">
+				<button type="submit" id="register-btn">Enviar para análise da equipe</button>
+			</div>
+		</form>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
