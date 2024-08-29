@@ -1,6 +1,6 @@
 const companiesList = document.getElementById("companies");
 async function getCompanies() {
-	const companiesUrl = "http://localhost:8000/companies/";
+	const companiesUrl = "http://http://blind-center.com.br:8000/companies/";
 	const fetchInfo = {
 		method: "get",
 		headers: {

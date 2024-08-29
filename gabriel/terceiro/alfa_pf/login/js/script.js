@@ -1,7 +1,7 @@
 async function login(e) {
 	e.preventDefault();
 	try {
-		const loginURL = "http://localhost:8000/login/"
+		const loginURL = "http://http://blind-center.com.br:8000/login/"
 		const username = document.getElementById("username").value;
 		const password = document.getElementById("password").value;
 		const fetchInfo = {

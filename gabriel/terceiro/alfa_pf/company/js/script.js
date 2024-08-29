@@ -3,7 +3,7 @@ if(!token) {
 		window.href = "../login/index.html";
 }
 async function setCompanyData(companyId) {
-	const companyUrl = `http://localhost:8000/companies/${companyId}/`;
+	const companyUrl = `http://http://blind-center.com.br:8000/companies/${companyId}/`;
 	const fetchInfo = {
 		method: "get",
 		headers: {

@@ -1,7 +1,7 @@
 const rattingsList = document.getElementById("rattings");
 document.title = `Avaliações de ${companyName} - Accessibling: dando voz à acessibilidade digital`;
 async function setCompanyRattings(companyId) {
-	const rattingsUrl = `http://localhost:8000/rattings_list/?company=${companyId}`;
+	const rattingsUrl = `http://http://blind-center.com.br:8000/rattings_list/?company=${companyId}`;
 	const fetchInfo = {
 		method: "get",
 		headers: {

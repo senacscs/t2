@@ -1,7 +1,7 @@
 async function signup(e) {
 	e.preventDefault();
 	try {
-		const signupURL = "http://localhost:8000/userprofiles/"
+		const signupURL = "http://http://blind-center.com.br:8000/userprofiles/"
 		const username = document.getElementById("username").value;
 		const firstName = document.getElementById("first-name").value;
 		const lastName = document.getElementById("last-name").value;
