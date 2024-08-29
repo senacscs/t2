@@ -3,7 +3,7 @@ const userId = localStorage.getItem("userId");
 async function registerCompany(e) {
 	e.preventDefault();
 	try {
-		const companyURL = "http://http://blind-center.com.br:8000/companies/"
+		const companyURL = "http://blind-center.com.br:8000/companies/"
 		const name = document.getElementById("name").value;
 		const description = document.getElementById("description").value;
 		const fetchInfo = {

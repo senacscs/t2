@@ -4,7 +4,7 @@ async function sendCode(e) {
 	e.preventDefault();
 	const userCode = document.getElementById("code").value;
 	try {
-		const codeUrl = "http://http://blind-center.com.br:8000/authcode/";
+		const codeUrl = "http://blind-center.com.br:8000/authcode/";
 		const fetchInfo = {
 			method: "post",
 			headers: {

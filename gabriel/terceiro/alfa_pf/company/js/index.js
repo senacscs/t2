@@ -1,5 +1,5 @@
 async function setCompanyGrade() {
-	const gradeUrl = `http://http://blind-center.com.br:8000/company_grade?company=${companyId}`;
+	const gradeUrl = `http://blind-center.com.br:8000/company_grade?company=${companyId}`;
 	const gradeFetchInfo = {
 		method: "get",
 		headers: {

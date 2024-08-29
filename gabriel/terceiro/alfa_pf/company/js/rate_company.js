@@ -2,7 +2,7 @@ const token = localStorage.getItem("token");
 const userId = localStorage.getItem("userId");
 async function rateCompany(e) {
 	try {
-		const rateURL = "http://http://blind-center.com.br:8000/rattings/";
+		const rateURL = "http://blind-center.com.br:8000/rattings/";
 		const title = document.getElementById("title").value;
 		const star = document.getElementById("star").value;
 		const text = document.getElementById("text").value;
