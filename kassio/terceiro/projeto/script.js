@@ -1,7 +1,15 @@
-// Para futuras funcionalidades como filtragem de pesquisa ou interação com os cards.
-document.getElementById('search-bar').addEventListener('input', function() {
-    console.log(this.value);
+document.getElementById('search-bar').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        const query = e.target.value.toLowerCase();
+        
+        if (query.includes('vaga a')) {
+            window.location.href = 'vaga_a.html';
+        } else if (query.includes('vaga b')) {
+            window.location.href = 'vaga_b.html';
+        } else if (query.includes('vaga c')) {
+            window.location.href = 'vaga_c.html';
+        } else {
+            alert('Vaga não encontrada.');
+        }
+    }
 });
-function abrirVaga(url) {
-    window.location.href = url;
-}
