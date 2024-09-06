@@ -68,3 +68,44 @@ body {
 .ad-card:hover {
     background-color: #005f8a;
 }
+/* Estilos para a seção de cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para cada card */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0073b1;
+}
+
+.card p {
+    margin: 15px 0;
+    color: #333333;
+}
+
+.card button {
+    background-color: #0073b1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #005f8a;
+}
