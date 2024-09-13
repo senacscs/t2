@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    font-family: Arial;
+    font-style: italic;
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    font-style: italic;
+}
+
+
+
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #00FFFF;
+    text-align: center;
+   
+}
+   
+header{
+    background-color: orange;
+    padding: 0.5%;
+    width: 98%;
+    margin: 0;
+}
+
+.eca{
+    font-size: large;
+}
