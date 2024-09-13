@@ -1,0 +1,77 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+header h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Links (retirando sublinhado e estilizando) */
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Cor do link */
+    font-weight: bold;
+}
+
+/* Mudar cor ao passar o mouse sobre o link */
+a:hover {
+    color: #ffcc00; /* Amarelo claro ao passar o mouse */
+}
+
+/* Container dos cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo dos cards */
+.card {
+    background-color: #333333; /* Fundo cinza escuro */
+    border: 1px solid #444444;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #ffffff; /* Texto branco */
+}
+
+.card p {
+    font-size: 14px;
+    color: #cccccc; /* Texto cinza claro */
+}
+
+/* Efeito de hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
