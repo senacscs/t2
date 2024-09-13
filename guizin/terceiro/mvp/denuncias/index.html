@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FéSegura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FéSegura</h1>
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <section class="report-section">
+            <h2>Denuncias</h2>
+            
+            <form>
+                <label for="details">Nos conte o que aconteceu e lembre-se de informar todos os detalhes</label>
+                <textarea id="details" name="details" placeholder="Nos informe todos os detalhes aqui" oninput="updateCharacterCount()"></textarea>
+                <span class="character-count" id="characterCount">O seu relato possui 0 caracteres</span>
+
+                <label for="person-name">Poderia indicar o nome completo da pessoa envolvida?</label>
+                <input type="text" id="person-name" name="person-name" placeholder="Escreva aqui">
+
+                <label for="person-role">Poderia indicar qual o cargo da pessoa envolvida?</label>
+                <input type="text" id="person-role" name="person-role" placeholder="Escreva aqui">
+
+                <label for="neighborhood">Bairro que aconteceu</label>
+                <input type="text" id="neighborhood" name="neighborhood" placeholder="Escreva aqui">
+
+                <label for="street">Rua que aconteceu</label>
+                <input type="text" id="street" name="street" placeholder="Escreva aqui">
+
+                <label for="city">Cidade que aconteceu</label>
+                <input type="text" id="city" name="city" placeholder="Escreva aqui">
+
+                <label for="victim-name">Nome de quem sofreu a intolerância religiosa</label>
+                <input type="text" id="victim-name" name="victim-name" placeholder="Escreva aqui">
+
+                <label for="emergency-contact">Contato de emergência caso o primeiro contato não funcionar</label>
+                <input type="text" id="emergency-contact" name="emergency-contact" placeholder="Escreva aqui">
+
+                <label for="relationship">Parentesco de você e o agressor(a)</label>
+                <input type="text" id="relationship" name="relationship" placeholder="Escreva aqui">
+
+                <label for="email">Digite aqui seu email</label>
+                <input type="email" id="email" name="email" placeholder="Escreva aqui">
+
+                <label for="contact-number">Digite seu número de contato</label>
+                <input type="text" id="contact-number" name="contact-number" placeholder="Escreva aqui">
+
+                <label for="evidence">Caso tenha alguma evidência de fato (fotos, documentos, etc) que gostaria de anexar, utilize a opção abaixo</label>
+                <input type="file" id="evidence" name="evidence">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <script>
+        function updateCharacterCount() {
+            const textarea = document.getElementById('details');
+            const characterCount = document.getElementById('characterCount');
+            characterCount.textContent = `O seu relato possui ${textarea.value.length} caracteres`;
+        }
+    </script>
+</body>
+</html>

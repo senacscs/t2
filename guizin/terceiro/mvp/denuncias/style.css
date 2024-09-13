@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d5664;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B0082; /* Cor de fundo mais agradável */
+    padding: 40px 20px; /* Ajustado para preencher mais a parte de cima */
+    color: white;
+    width: 100%; /* Faz o menu ocupar toda a largura */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+header h1 {
+    margin: 0;
+}
+    
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  
+}
+
+.menu-icon div {
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.report-section {
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D3D3D3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.step.completed {
+    background-color: #4B0082;
+}
+
+.step.active {
+    background-color: #9370DB;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form textarea,
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="file"] {
+    display: block;
+    margin: 10px 0;
+}
+
+.character-count {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: grey;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #9370DB;
+}
+
+
+h2 {
+    color: white;
+}
