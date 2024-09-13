@@ -1,0 +1,17 @@
+* {
+    background-color: rgb(118, 38, 118);
+
+}
+
+li {
+    font-family: cursive;
+    color: black;
+    padding: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+    padding: 5%;
+}
