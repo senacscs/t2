@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Rubik:ital,wght@0,300;1,300&family=Merienda:wght@700&display=swap");
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -22,34 +22,36 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
-#navegacao {
-  flex-direction: row;
-  display: flex;
-  padding: auto;
-  list-style: none;
-  align-items: center;
-}
+@media (min-width: 851px) {
+  #navegacao {
+    flex-direction: row;
+    display: flex;
+    padding: auto;
+    list-style: none;
+    align-items: center;
+  }
 
-#navegacao li a {
-  display: flex;
-  text-decoration: none;
-  padding: 25px 30px;
-  margin: 10px 100px;
-  font-size: 20px;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 3px;
-  overflow: hidden;
-  color: #5c0000;
-  font: bolder;
-}
+  #navegacao li a {
+    display: flex;
+    text-decoration: none;
+    padding: 25px 30px;
+    margin: 10px 100px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    overflow: hidden;
+    color: #49001c;
+    font: bolder;
+  }
 
-#navegacao li a:hover {
-  background: #ff9d9d;
-  color: #050801;
-  box-shadow: 0 0 5px #ff9d9d, 0 0 25px #ff9d9d, 0 0 50px #ff9d9d,
-    0 0 200px #ff9d9d;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  #navegacao li a:hover {
+    background: #ff9d9d;
+    color: #050801;
+    box-shadow: 0 0 5px #ff9d9d, 0 0 25px #ff9d9d, 0 0 50px #ff9d9d,
+      0 0 200px #ff9d9d;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
 }
 
 #navegacao a:nth-child(1) {
@@ -148,24 +150,26 @@ body::-webkit-scrollbar {
   }
 }
 
-#inicio h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-  margin-left: 10rem;
-  margin-top: 8rem;
-  margin-bottom: 0;
-  color: #2f0034;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 3px;
-}
+@media (min-width: 851px) {
+  #inicio h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    color: #2f0034;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+  }
 
-#inicio p {
-  margin-left: 10rem;
-  margin-top: 0;
-  font-family: 'Rubik', sans-serif;
-  font-style: italic;
-  font-size: 2rem;
-  color: #aeb8f1;
+  #inicio p {
+    margin-left: 10rem;
+    margin-top: 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: #aeb8f1;
+  }
 }
 
 header {
@@ -180,7 +184,7 @@ header {
 }
 
 .anotitu {
-  border: 1px solid rgb(255, 255, 255); 
+  border: 1px solid rgb(255, 255, 255);
   background-color: #f1aee776;
   font-size: 30px;
   margin-right: 45rem;
@@ -205,9 +209,11 @@ header {
   color: #D1267D;
 }
 
-#projetos p {
-  max-width: 300px;
-  text-align: justify;
+@media (min-width: 851px) {
+  #projetos p {
+    max-width: 300px;
+    text-align: justify;
+  }
 }
 
 #projetos h2 {
@@ -228,20 +234,35 @@ header {
 }
 
 #projetos div {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
-.botao {
-  max-width: max-content;
-  margin-left: 30rem;
+@Media (min-width:851px) {
+  .botao {
+    max-width: max-content;
+    margin-left: 30rem;
+    margin-top: -60px;
+  }
+
+  .botaoCity {
+    max-width: max-content;
+    margin-left: 30rem;
+    margin-top: -120px;
+  }
 }
 
+.espacamento {
+  margin-bottom: 5rem;
+}
+
+.botaoCity a,
 .botao a {
   text-align: center;
   padding: 15px 5rem;
   border: #2f0034 solid 2px;
 }
 
+.botaoCity a:hover,
 .botao a:hover {
   transition: all 2s;
   background-color: #521459;
@@ -256,10 +277,12 @@ a {
   font-weight: bold;
 }
 
-.filimg {
-  margin-left: 48rem;
-  margin-top: -43rem;
-  height: 560px;
+@media (min-width: 851px) {
+  .filimg {
+    margin-left: 54rem;
+    margin-top: -43rem;
+    height: 320px;
+  }
 }
 
 /* Sobre */
@@ -269,8 +292,8 @@ a {
 }
 
 .alinhar {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .alinhar img {
@@ -330,3 +353,97 @@ a {
 } */
 
 /* #bc98f3 */
+
+/* ----------------- RESPONSIVO --------------------- */
+
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    display: flex;
+  }
+
+  nav {
+    margin-top: -16px;
+  }
+
+  #navegação {
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+  }
+
+  #navegacao li {
+    list-style: none;
+  }
+
+  #navegacao li a {
+    display: flex;
+    text-decoration: none;
+    padding: 25px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    overflow: hidden;
+    color: #5c0000;
+    font: bolder;
+    margin-left: -40px;
+  }
+
+  #navegacao li a:hover {
+    background: #ff9d9d;
+    color: #050801;
+    box-shadow: 0 0 5px #ff9d9d, 0 0 25px #ff9d9d, 0 0 50px #ff9d9d,
+      0 0 200px #ff9d9d;
+    border: 1px solid #ff0040;
+    transition: 0.5s;
+
+  }
+
+  .botao {
+    max-width: max-content;
+    margin-top: 3rem;
+    margin-left: 7rem;
+  }
+
+  .botaoCity {
+    max-width: max-content;
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+
+  #projetos p {
+    max-width: 450px;
+    text-align: justify;
+  }
+
+  .filimg {
+    height: 230px;
+    margin: 8rem 0 0.5rem 100px;
+  }
+
+  /* ----------- INÍCIO ---------- */
+
+  #inicio h1 {
+    margin-left: 9rem;
+    margin-top: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #2f0034;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+  }
+
+  #inicio p {
+    margin-top: 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: #aeb8f1;
+    margin-left: 4rem;
+  }
+}
