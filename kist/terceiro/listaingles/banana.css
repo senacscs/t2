@@ -1,0 +1,28 @@
+html {
+    background-color: rgb(243, 243, 152);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family: italic;
+}
+
+
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-style:'Times New Roman';
+    text-align: center;
+    
+    
+}
+
+html{
+    background-image: url(https://img.freepik.com/vetores-gratis/padrao-de-banana-gravado-linear-desenhado-a-mao_23-2149353214.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712880000&semt=ais);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-color: rgba(0, 0, 0, 3);
+}
