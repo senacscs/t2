@@ -2181,7 +2181,7 @@
 			}
 
 			.panel > *.color1 {
-				background-size: 128px 128px, auto;
+				background-size: cover;
 				background-color: linear-gradient(45deg, #b4bde8 25%,  #c9b0d7 25%, #d7a4c7 25%, #f2a9c3 25%, #f9c1cc 25%);
 			}
 
