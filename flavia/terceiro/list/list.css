@@ -1,13 +1,13 @@
 html {
-    background-color: rgb(199, 228, 255);
+    background-color: rgb(211, 228, 228);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1 {
-    font-size: 50px
+    font-size: 45px
 }
 table {
     position: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 td {
     padding: 15px;
