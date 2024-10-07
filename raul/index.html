@@ -2,28 +2,63 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FGr%25C3%25AAmio_Foot-Ball_Porto_Alegrense&psig=AOvVaw1tQiez30ns5PTYlzvg4jrF&ust=1693486430026000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCLDwueC2hIEDFQAAAAAdAAAAABAD" type="image/x-icon">
-    <title>Index do Raul</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio do Raul Flores</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-  <body>
-    
- <h1>Index Do Raul</h1>
-  
-  <a href="https://senacscs.github.io/t2/raul/indicacoesbackend/index.html">Indicações de Back-end</a>
-  <a href="https://www.canva.com/design/DAFchNQXTJk/DBnZWdPyqREu7HWp8gRh3Q/view?mode=prototype#p-gina-sem-nome">Mulheres esportistas</a>
-  <a href="https://senacscs.github.io/t2/raul/trabalhoportugues/jogodaspalavras.html">Jogo das palavras</a>
-  <a href="https://senacscs.github.io/t2/raul/poo/poo.html">Poo</a>
-  <a href="https://senacscs.github.io/t2/augusto/interativo/menu.html">Projeto interativo</a>
-  <a href="https://senacscs.github.io/t2/augusto/primeiro/historia/historia.html">Jogo de história</a>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou Raul Flores, estudante do terceiro ano do ensino médio e técnico do Senac Santa Cruz do Sul.</p>
+    </section>
+
+    <section id="projetos" class="section">
+        <h2>Meus Projetos</h2>
+        <div class="grid">
+            <div class="projeto">
+                <h3>Projeto Freen</h3>
+                <p>Projeto de Projeto profissionalizante, ajudar comércios afetados pela enchente</p>
+                <a target="_blank" href="https://senacscs.github.io/t2/raul/terceiro/mvp/">Ver mais</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto Indicações mobile</h3>
+                <p>Projeto de indicação de conteúdos de programação mobile.</p>
+                <a target="_blank" href="https://senacscs.github.io/t2/raul/terceiro/indicacoesmobile/">Ver mais</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto Jogo texto</h3>
+                <p>Projeto de jogo texto feito em português e técnico.</p>
+                <a target="_blank" href="https://senacscs.github.io/t2/thomas/terceiro/jogo_texto/">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <form id="contato-form">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <a href="https://senacscs.github.io/t2/raul/index2022/" target="_blank">
-            <button>Clique aqui para ir a index de 2022</button>
-        </a>
+        <p>© 2024 - Portfólio do Raul Flores</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>

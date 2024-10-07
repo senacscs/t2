@@ -1,0 +1,22 @@
+/* tela no computador */
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+h1 {
+    color: rgb(10, 227, 10);
+}
+
+h2 {
+    color: rgb(146, 247, 44);
+}
+/* tela no smartphone */
+
+@media (max-width: 768px) {
+    body {
+        background-color: brown;
+    }
+
+}

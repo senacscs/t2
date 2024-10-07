@@ -416,7 +416,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-    url('segundo/img/fim2.webp');
+    url('img/fim2.webp');
     height: 100vh;
     background-size: cover;
     background-position: center;

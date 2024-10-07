@@ -1,0 +1,32 @@
+html{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#050405;
+  }
+  h1{
+    color:#c682c5;
+    font-family:monospace;
+    font-size: 45px;
+    text-align: center;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2{
+    font-family: monospace;
+    color:#a2559a;
+    
+  }
+  button {
+    background-color: #31053f;
+    color:rgb(252, 245, 245);
+    border: 0;
+    padding: 15px 32px;
+    border-radius: 60px;
+    margin: 3px;
+  }
+  footer{
+    margin-top: 3%;
+    margin-left: 100%;
+    color: white;
+  }
