@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #ecfbff;
+    color: rgb(10, 4, 82);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#search {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.word-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.word-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.word-item h2 {
+    color: #0b1467;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #2d95eb;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
