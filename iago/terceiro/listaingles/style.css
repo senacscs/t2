@@ -2,11 +2,11 @@ body {
     margin-left: 12rem;
     margin-top: 3rem;
     margin-right: 12rem;
-    background-color: rgb(250, 181, 181);
+    background-color: #7cf77c;
 }
 
 .palavra {
-    color: #ffa5a5;
+    color: #7cf77c;
     font-size: 40px;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
@@ -34,7 +34,7 @@ header h1 {
 }
 
 .titleB {
-    color: rgb(255, 69, 118);
+    color: #7cf77c;
     text-transform: uppercase;
     text-decoration: line-through;
     font-size: 5rem;
