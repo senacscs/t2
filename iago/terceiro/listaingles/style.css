@@ -6,7 +6,7 @@ body {
 }
 
 .palavra {
-    color: #7cf77c;
+    color: #38ff38;
     font-size: 40px;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
@@ -34,7 +34,7 @@ header h1 {
 }
 
 .titleB {
-    color: #7cf77c;
+    color: #00ff00;
     text-transform: uppercase;
     text-decoration: line-through;
     font-size: 5rem;
