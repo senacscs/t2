@@ -26,7 +26,38 @@ h1 {
     color: cadetblue;
 }
 
-body {
+p, h1 {
     text-align: center;
     font-size: 30px;
+}
+
+div {
+    width: 582;
+    height: 512;
+}
+
+.mycontainer {
+    width: 100%;
+}
+
+.mycontainer2 {
+    width: 33%;
+    float: left;
+}
+
+.mycontainer3 {
+    width: 33%;
+    float: inline-start;
+}
+
+.mycontainer4 {
+    width: 33%;
+    float: right;
+}
+
+.a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
