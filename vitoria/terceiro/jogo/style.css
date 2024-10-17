@@ -1,0 +1,105 @@
+/* tela no computador */
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+h1 {
+    color: rgb(10, 227, 10);
+}
+
+h2 {
+    color: rgb(146, 247, 44);
+}
+/* tela no smartphone */
+
+@media (max-width: 768px) {
+    body {
+        background-color: brown;
+    }
+
+}
+
+
+
+body {
+background-color: green;
+} 
+
+.a {
+    color: #000;
+    font-size: 300%;
+    text-align: center;
+}
+
+.mycontainer {
+    width: 100%;
+}
+
+.mycontainer2 {
+    width: 33%;
+    float: left;
+}
+
+
+.mycontainer3 {
+    width: 33%;
+    float: inline-start;
+    background-image: url(projeto.png);
+
+}
+
+.mycontainer4 {
+    width: 33%;
+    float: right;
+}
+
+.b {
+    color: #000;
+    text-align: center;
+}
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    border: 1px solid #aaaaaa;
+    margin-left: 45px;
+}
+
+#div2 {
+    width: 350px;
+    height: 570px;
+    border: 1px solid #aaaaaa;
+    margin-left: 60px;
+}
+
+.img {
+    width: 270px;
+    height: 44px;
+    padding: 10px;
+}
+/* 
+#div1, #div2 {
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  } */
+
+#div3 {
+    width: 350px;
+    height: 70px;
+    border: 1px solid #aaaaaa;
+    margin-left: 45px;
+}
+
+#div4 {
+    width: 350px;
+    height: 70px;
+    border: 1px solid #aaaaaa;
+    margin-left: 45px;
+    margin-top: 10px;
+}

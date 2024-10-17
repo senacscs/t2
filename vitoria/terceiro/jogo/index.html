@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        function allowDrop(ev) {
+            console.log("chamou allow");
+
+          ev.preventDefault();
+          console.log("allow ev",ev);
+          console.log("allow id",id);
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+        //   if (id=="papelhigienico") alert("papel");
+        //   if (id=="cascadefruta") alert("casca");
+        alert("largou");
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+
+        function funcao1() {
+            alert("composteira");
+        }
+
+        </script>
+    <body>
+        
+    <header>
+        <h1 class="a">Jogo sobre composteiras</h1>
+    </header>
+    
+    <div class="mycontainer">
+    
+<!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>-->
+
+        <div class="mycontainer2">
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                     <img class="img" src="papelhigienico.png" draggable="true" ondragstart="drag(event)" id="papelhigienico" width="88" height="31"></div>
+                     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                     <img class="img" src="papelhigienico.png" draggable="true" ondragstart="drag(event)" id="papelhigienico2" width="88" height="31"></div>
+
+                     <!-- <div id="papelhigienico" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+        </div>
+<!-- <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+-->        
+        <div class="mycontainer3">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- <img src="projeto.png"> -->
+
+        </div>
+         
+    </div>
+    <div class="mycontainer4">
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="img" src="cascadefruta.png" true" ondragstart="drag(event)" id="cascadefruta" width="88" height="31">
+    </div>
+  
+      
+    </body>
+</html>
