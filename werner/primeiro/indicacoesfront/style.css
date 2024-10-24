@@ -1,0 +1,14 @@
+body{
+text-align: center;
+text-decoration-line:initial;
+background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+button{
+    color: #33ccff;
+    border: 2px solid pink;
+    width: 80px;
+    height: 20px;
+    border-radius:100px;
+
+
+}
