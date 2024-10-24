@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de indicações</title>
+
+    <style>
+        :root{
+            --color-white: rgb(124, 254, 3);
+            --color-dark1: rgb(255, 255, 255);
+            --color-dark2: #ffffff;
+            --color-dark3: #21f849;
+            --color-dark4: #00ff00;
+            --color-dark5: #ffffff;
+            --color-purple: #ffffff;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--color-dark1);
+            color: var(--color-white);
+        }
+        .img_logo_header{
+            width: 45px;
+        }
+        .header,
+        .navigation_header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .header{
+            background-color: var(--color-dark2);
+            justify-content: space-between;
+            padding: 0 10%;
+            height: 3.5em;
+            box-shadow: 1px 1px 4px var(--color-dark4);
+        }
+        .navigation_header{
+            gap: 3em;
+            z-index: 2;
+        }
+        .content{
+            padding-top: 5em;
+            text-align: center;
+            height: 100vh;
+            transition: 1s;
+        }
+        .navigation_header a{
+            text-decoration: none;
+            color: var(--color-purple);
+            transition: 1s;
+            font-weight: bold;
+        }
+        .navigation_header a:hover{
+            color: var(--color-white);
+        }
+        .active{
+            background: var(--color-dark3);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn_icon_header{
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            cursor: pointer;
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .navigation_header{
+                position: absolute;
+                flex-direction: column !important;
+                top: 0;
+                background: var(--color-dark5);
+                height: 100%;
+                width: 35vw;
+                padding: 1em;
+                animation-duration: 1s;
+                margin-left: -100vw;
+            }
+            .btn_icon_header{
+                display: block;
+            }
+        }
+        @keyframes showSidebar {
+            from {margin-left: -100vw;}
+            to {margin-left: -10vw;}
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            
+        </button>
+        <div class="logo_header">
+            <img src="imagens/w5.png" alt="Logo GN" class="img_logo_header">
+        
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                
+            </button>
+            <a href="index.html" class="active">Voltar</a>
+            
+        </div>
+        
+    </div>
+    <br> <br> <br> <br> 
+
+
+    <h1>Recomendações Sobre Back-End <img src="imagens/xicara-de-cafe.gif" width="40px" height="35"></h1>
+    <ul>
+       
+   <div class="botao">
+    <button><a href="#site">Sites</button></a> 
+    <button><a href="#livros">Livros</button></a> 
+     <button><a href="#Podcast " style="text-decoration:none">Podcast</button></a> 
+     <button><a href="#video" style="text-decoration:none">Video</button></a> 
+
+   </div>
+
+   <br>
+   <br>
+   
+   <br>
+   <br><br>
+   <br>
+
+   <br><br>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  
+    <br>
+    <br>
+
+     <br> <br>
+     <br>
+     <br>
+  
+   
+
+     <div id="site">
+   <h1>Recomendações de sites Sobre Back-End <img src="imagens/monitor.gif" width="50px" height="35"></h1>
+   <br><br>
+        <br>
+        
+        <h3>Temos indicações de sites sobre Back-end onde alem de explicar como é feito temos as diferenças entre Back-end e Front-end</h3>
+   
+    <div class="botao">
+        
+        <button><a href="https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Javascript/dp/8575226932/ref=asc_df_8575226932/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802639&hvpos=&hvnetw=g&hvrand=69353405816774695&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001688&hvtargid=pla-811121404201&psc=1">JavaScript</button></a> 
+         <button><a href="https://www.amazon.com.br/Front-End-Back-End-Development-Javascript-Jquery/dp/1119813093/ref=asc_df_1119813093/?tag=googleshopp00-20&linkCode=df0&hvadid=379787788238&hvpos=&hvnetw=g&hvrand=15613097180170820618&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001688&hvtargid=pla-919746238704&psc=1">Back-end</button></a> 
+         <button><a href="https://www.casadocodigo.com.br/products/livro-backend-java" style="text-decoration:none">Back-end Java</button></a> 
+       </div>
+   </div>
+       
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+     <br>
+      <br> <br>
+      <br>
+      <br>
+      <br>
+       <br>
+        <br> <br>
+        <br>
+         <br>
+
+       
+         <div id="livros">
+   <h1>Recomendações de Livros Sobre Back-End <img src="imagens/livro.gif" width="40px" height="35"></h1>
+   <br><br>
+        <br>
+        
+        <h3>Temos indicações de sites sobre Back-end onde alem de explicar como é feito temos as diferenças entre Back-end e Front-end</h3>
+   
+    <div class="botao">
+        
+        <button><a href="https://tecnoblog.net/responde/qual-a-diferenca-entre-front-end-e-back-end/#:~:text=Ou%20seja%2C%20o%20back%2Dend,menus%2C%20imagens%20entre%20outras%20funcionalidades.">Tecnoblog</button></a> 
+         <button><a href="https://www.treinaweb.com.br/blog/o-que-e-front-end-e-back-end?utm_source=google&utm_medium=openserp&utm_campaign=dinamicos&gclid=EAIaIQobChMIxKXWhcm__QIVCjORCh2_bgAAEAAYBCAAEgI1cvD_BwE" style="text-decoration:none">Tecnoweb</button></a> 
+         <button><a href="https://harve.com.br/blog/desenvolvimento-web/o-que-e-backend-guia-completo/" style="text-decoration:none">Harve</button></a> 
+       </div>
+   </div>
+
+
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+     <br>
+      <br> <br>
+      <br>
+      <br>
+      <br>
+       <br>
+        <br> <br>
+        <br>
+         <br>
+
+         <div id="Podcast">
+         <h1>Recomendações de podcasts Sobre Back-End <img src="imagens/podcast.gif" width="40px" height="35"></h1>
+         <br><br>
+              <br>
+              
+              <h3>Temos indicações de podcasts sobre Back-end onde você pode ouvir onde quiser</h3>
+         
+          <div class="botao">
+              
+              <button><a href="https://youtu.be/fffr8KjKdVw">PrimoTech</button></a> 
+               <button><a href="https://youtu.be/GQ4RbsonT3U">PapoWeb</button></a> 
+               <button><a href="https://youtu.be/py6vHgL6saw" style="text-decoration:none">FalaDev</button></a> 
+             </div>
+         </div>
+
+
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+          <br> <br>
+          <br>
+          <br>
+          <br>
+      
+          <br>
+           <br>
+            <br> <br>
+            <br>
+            <br>
+            <br>
+             <br>
+              <br> <br>
+              <br>
+               <br>
+      
+
+               <div id="video">
+         <h1>Recomendações de Videos Sobre Back-End <img src="imagens/reprodutor-de-video.gif" width="40px" height="35"></h1>
+         <br><br>
+              <br>
+              
+              <h3>Temos indicações de videos sobre Back-end onde você pode ver onde quiser</h3>
+         
+          <div class="botao">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qjk-cSW-jk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TeY7jRDlrgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TJ90DZjYdWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xrRy3RI3HE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+         </div>
+
+
+
+
+
+      
+</body>
+<script>
+    var header           = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+
+</script>
+</html>

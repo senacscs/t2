@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portugol para Java</title>
+</head>
+<body>
+    <h1>
+        Portugol para JavaScript<br>
+        Exemplos do <a href="https://portugol-webstudio.dgadelha.xyz/ide" target="_blank">Portugol WebStudio</a> convertidos para JavaScript
+    </h1>
+    <br><br>
+    <details close>
+        <summary>Olá Mundo</summary><br>
+        <button onclick="olaMundo()">Executar</button>
+
+    </details>       
+    <br><br> 
+    <details close>
+        <summary>Número Digitado</summary><br>
+        <label>Digite um número: </label><input type="number" id="numero" placeholder="Só Números"><br><br>
+        <button onclick="numeroDigitado()">Executar</button>
+    </details>
+    <br><br>
+    <details close>
+        <summary>Nome Digitado</summary><br>
+        <label>Digite seu nome: </label><input type="text" id="nome" placeholder="Só Letras"><br><br>
+        <button onclick="nomeDigitado()">Executar</button>
+    </details>          
+
+    <div id="mostrar"></div>
+
+     <script src="script.js"></script>
+
+     <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@200&family=Montserrat:wght@100&family=Noto+Sans+TC:wght@100&display=swap');
+body{
+    font-family: 'Abel', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+text-align: center;
+}
+a{
+    text-decoration-color: rgb(255, 255, 255);
+    color: black;
+}
+summary{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+     </style>
+</body>
+</html>
