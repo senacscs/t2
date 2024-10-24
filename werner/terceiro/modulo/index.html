@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Módulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Módulo</h1> <a href="https://youtu.be/UxrJ_iN6qnA?si=O4H2NE_vk7rWRfvK"> <img src="imagem/rauber.jfif" width="50px" height="50px"></a>
+    <label for="number">Digite um número:</label>
+    <input type="number" id="number" placeholder="Insira um número">
+    <button onclick="calculateModule()">Calcular</button>
+    <div id="result"></div>
+
+    <script>
+        function calculateModule() {
+            const inputNumber = parseFloat(document.getElementById('number').value);
+            const module = Math.abs(inputNumber);
+            document.getElementById('result').innerText = `O módulo de ${inputNumber} é ${module}.`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" media="screen" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Task</title>
+</head>
+<body>
+    <h1>Task</h1>
+
+   
+  <input id="searchbar" onkeyup="pesquisar_index()" type="text" name="search" placeholder="Digite qual tema você prefere..." autocomplete="off">
+          
+    <br><br>
+
+        <ol id='list'>
+
+            
+            <a href="poo/index.html" > <li class="btn-12"> <img class="icone" src="imagens/abobora.png" width="20px">‎ ‎ ‎Terror</li></a>
+           
+            <a href="primeiro/Eca/index.html" >    <li class="cidades"> <img src="imagens/familia.png" width="20px" >‎ ‎ ‎ Aventura</li></a>
+           
+            <a href="primeiro/country/Galespais.html" >    <li class="cidades"> <img src="imagens/bandeira.png" width="20px" >‎ ‎ ‎ Psicologico</li></a>
+           
+            <a href="primeiro/foguete/index.html" >    <li class="cidades"> <img src="imagens/foguete.png" width="15px" >‎ ‎ ‎ Jogos online</li></a>
+           
+            <a href="primeiro/indicacoesfront/index.html" >    <li class="cidades"> <img src="imagens/guia.png" width="15px" >‎ ‎ ‎  Jogos fisicos</li></a>
+           
+            <a href="segundo/cidade/index.html" >    <li class="cidades"> <img src="imagens/cidade.jfif" width="15px" >‎ ‎ ‎  RPG </li></a>
+            
+            <a href="segundo/indicacoesback/index.html" >    <li class="cidades"> <img src="imagens/trabalhador-autonomo.png" width="15px" >‎ ‎ ‎  Mundo aberto </li></a>
+            
+            <a href="segundo/jogodehistoria/Cruzadas.html" >    <li class="cidades"> <img src="imagens/stack-of-books.png" width="15px" >‎ ‎ ‎  Plataforma </li></a>
+           
+            <a href="segundo/projeto2/storm.html" >    <li class="cidades"> <img src="imagens/pergaminho-antigo.png" width="15px" >‎ ‎ ‎  Pixelado </li></a>
+           
+
+        </ol>
+
+        <script>
+            window.addEventListener('load', () => {
+                registerSW();
+            });
+    
+            // Register the Service Worker
+            async function registerSW() {
+                if ('serviceWorker' in navigator) {
+                    try {
+                        await navigator
+                            .serviceWorker
+                            .register('serviceworker.js');
+                    }
+                    catch (e) {
+                        console.log('SW registration failed');
+                    }
+                }
+            }
+        </script>
+
+
+</body>
+</html>
