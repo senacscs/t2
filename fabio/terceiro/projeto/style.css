@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #04ff00;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #4cad13;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+    border: 1px solid #fffffffd;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    flex-direction: space-between;
+    justify-content: space-between;
+
+}
+
+.button-container a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #e2e827;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    align-content: center;
+}
+
+.search-button.active {
+    background-color: #0056b3;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    font-size: 18px;
+}
+
+.button-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.button-container::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
