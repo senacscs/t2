@@ -54,7 +54,7 @@ li {
 }
 
 button {
-    background-color:  rgb(31, 83, 27);
+    background-color:   rgb(31, 83, 27);
     color:  rgb(31, 83, 27);
     border: 0;
     padding: 30px;
@@ -67,4 +67,11 @@ button {
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
+}
+section {
+	padding: 20px;
+	margin: 40px;
+	border: 2px solid rgb(31, 83, 27);
+    background-color: rgb(186, 253, 180);
+	border-radius: 9px;
 }
