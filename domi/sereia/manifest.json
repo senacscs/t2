@@ -1,0 +1,22 @@
+{
+	"name":"Serei A: transformando os vales",
+	"short_name":"SereiA",
+	"start_url":"index.html",
+	"display":"standalone",
+	"background_color":"#5900b3",
+	"theme_color":"black",
+	"scope": ".",
+	"description":"Portal com direitos trans e informações sobre a comunidade, parte do projeto de pesquisa Serei A: transformando os vales de Theo Dominique",
+	"icons":[
+	{
+	"src":"assets/images/mermaid.png",					 
+	"sizes":"192x192",
+	"type":"image/png"
+	},
+	{
+	"src":"assets/images/mermaid.png",
+	"sizes":"512x512",
+	"type":"image/png"
+	}
+]
+}
