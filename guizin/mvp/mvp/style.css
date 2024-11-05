@@ -3,6 +3,10 @@ body {
     background-color: #2d5664;
     margin: 0;
     padding: 0;
+    width: 1;
+    height: 0%;
+    text-align: center;
+  
 }
 
 .container {
@@ -11,34 +15,16 @@ body {
     padding: 20px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4B0082; /* Cor de fundo mais agradável */
-    padding: 40px 20px; /* Ajustado para preencher mais a parte de cima */
-    color: white;
-    width: 100%; /* Faz o menu ocupar toda a largura */
-    box-sizing: border-box; /* Inclui o padding na largura total */
-}
 
-header h1 {
+
+ h1 {
     margin: 0;
 }
     
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  
-}
 
-.menu-icon div {
-    width: 50px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
+  
+
+
 
 .report-section {
     text-align: center;
@@ -129,3 +115,4 @@ form button:hover {
 h2 {
     color: white;
 }
+
