@@ -1,14 +1,14 @@
 body {
     margin: 0; 
     padding-top: 45px; 
-    background-color: #ff9ec1;
+    background-color: white;
 }
 main {
   margin-left: 10%;
   margin-right: 10%;
 }
 .navbar {
-  background-color: #fc77a8;
+  background-color: #FF3B7B;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -50,10 +50,10 @@ p {
 }
 
 footer {
-  background-color: #fc77a8;
+  background-color: #FF3B7B;
 }
 button {
-  background-color: #fb5491;
+  background-color: #FF3B7B;
   color:rgb(255, 255, 255);
   border: 0;
   padding: 15px 32px;
