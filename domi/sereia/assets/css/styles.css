@@ -253,7 +253,7 @@ p {
 #iniciativas p {
     margin-left: 20px;
     line-height: 30px;
-    max-width: 320px;
+    max-width: 750px;
     font-size: 15px;
 }
 
@@ -277,7 +277,7 @@ p {
     max-width: 800px;
 }
 
-#direitos .direito p, 
+#direitos .direito p,
 #iniciativas .iniciativa p {
     margin-left: 0;
 }
@@ -292,7 +292,7 @@ p {
 }
 
 #direitos .direito .btn-direito i,
-#iniciativas .iniciativa .btn-iniciativa i  {
+#iniciativas .iniciativa .btn-iniciativa i {
     margin-right: 10px;
 }
 
@@ -613,9 +613,14 @@ footer p {
         margin-left: 0;
         margin-top: 10px;
     }
-    
+
     #iniciativas .lide {
         padding-left: 0;
+    }
+
+    #direitos p,
+    #iniciativas p {
+        max-width: 320px;
     }
 
     footer {
