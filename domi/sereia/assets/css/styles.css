@@ -105,8 +105,8 @@ p {
 }
 
 #home a button {
-    background-color: #fff;
-    color: #010101;
+    background-color: #010101;
+    color: #fff;
     border: none;
     padding: 10px;
     font-weight: 900;
@@ -116,8 +116,9 @@ p {
 }
 
 #home a button:hover {
-    background-color: #010101;
-    color: #fff;
+    background-color: #fff;
+    color: #010101;
+    cursor: pointer;
     border: none;
     padding: 10px;
     font-weight: 900;
