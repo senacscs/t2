@@ -74,3 +74,18 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.download-btn {
+    display: inline-block;
+    margin: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+}
