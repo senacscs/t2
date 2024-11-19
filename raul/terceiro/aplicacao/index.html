@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREEN! - seu App de delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1aff00">
+    <div class="carrinho">
+        <a href="checkout.html"><img src="assets/img/carrinho-de-compras-rapido.png" alt="Carrinho de Compras"></a>
+        <span id="contador-carrinho"></span>
+    </div>
+</head>
+<body>
+    <header>
+        <h1>FREEN! - seu App de delivery</h1>
+    </header>
+
+    <main>
+        <h2>Selecione um Restaurante</h2>
+        <section id="lojas">
+            <div class="loja">
+                <a href="bolos.html" style="text-decoration: none;">
+                    <img src="assets/img/bolos da marcia.png" alt="imagem/logo de um restaurante de bolos">
+                    <h3>Bolos da Marcia</h3>
+                </a>
+            </div>
+            <div class="loja">
+                <a href="hamburgueria.html" style="text-decoration: none;">
+                    <img src="assets/img/big bold burger.png" alt="imagem/logo de uma hamburgueria">
+                    <h3>Big Bold Burguer</h3>
+                </a>
+            </div>
+            <div class="loja">
+                <a href="sushi.html" style="text-decoration: none;">
+                    <img src="assets/img/sushi sakura.png" alt="imagem/logo de um restaurante de sushi">
+                    <h3>Sushi Sakura</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado com sucesso:', registration);
+                })
+                .catch(function(error) {
+                    console.log('Falha ao registrar o Service Worker:', error);
+                });
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

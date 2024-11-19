@@ -1,3 +1,4 @@
+/* Estilo básico */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
@@ -7,105 +8,46 @@ body {
 
 .navbar {
     background-color: #0073b1;
-    padding: 10px;
+    padding: 20px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
-.navbar input[type="text"] {
-    padding: 5px;
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #005f8a;
+    color: white;
     border: none;
     border-radius: 5px;
-    width: 30%;
+    cursor: pointer;
 }
 
-.navbar nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+button:hover {
+    background-color: #00476a;
 }
 
-.search-instructions {
-    color: #ffffff;
-    background-color: #333333;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.main-card {
-    background-color: #0f0f0f;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-}
-
-.scroll-container {
+.cards-container {
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 10px 0;
-}
-
-.ad-card {
-    background-color: #0073b1;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 200px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.ad-card:hover {
-    background-color: #005f8a;
-}
-/* Estilos para a seção de cards */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
 }
 
-/* Estilos para cada card */
 .card {
     background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
+    width: 300px;
     text-align: center;
-}
-
-.card h3 {
-    margin-top: 0;
-    color: #0073b1;
-}
-
-.card p {
-    margin: 15px 0;
-    color: #333333;
-}
-
-.card button {
-    background-color: #0073b1;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.card button:hover {
-    background-color: #005f8a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

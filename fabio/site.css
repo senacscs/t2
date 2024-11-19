@@ -1,0 +1,50 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  border-radius: 6px;
+  background-image: url("https://i.pinimg.com/originals/4c/b8/c4/4cb8c4cfc86c8b4df29625386afe3c8e.gif");
+  position: relative;
+  color: blue;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 0.5%;
+  width: 35%;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  background:
+    linear-gradient(115deg,
+      #4fcf70, #fad648,
+      #a767e5, #12bcfe,
+      #44ce7b);
+  background-size: 50% 100%;
+  border-radius: inherit;
+}
+
+.button:hover::before {
+  animation: animate_border .75s linear infinite;
+}
+
+.button span {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.797);
+  padding: 13px 20px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+}
