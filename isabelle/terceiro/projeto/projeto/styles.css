@@ -42,13 +42,13 @@
   
   .toc li a {
     display: inline-block;
-    color: #aaa;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .toc li.visible > a {
-    color: #111;
+    color: #0000c5;
     transform: translateX(5px);
   }
   
