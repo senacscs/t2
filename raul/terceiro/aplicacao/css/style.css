@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #1aff00;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h1, #voltar-bnt {
+    margin: 0;
+    display: inline-flex;
+}
+
+main {
+    padding: 20px;
+}
+
+#lojas, #produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.loja, .produto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loja img, .produto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #1aff00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#voltar-btn{
+    width: 2%;
+}
+
+button:hover {
+    background-color: #1aff00;
+}
+
+.carrinho {
+    float: right;
+    margin-right: 20px;
+}
+
+.carrinho img {
+    width: 30px;
+    height: 30px;
+}
+
+#itens-carrinho {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itens-carrinho li {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+#form-checkout {
+    margin-top: 20px;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+#esvaziar-carrinho {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#esvaziar-carrinho:hover {
+    background-color: #d40000;
+}
+
+h3{
+    color: black;
+}
+
+/* Estilizando o botão */
+#voltar-btn {
+    display: flex;
+    align-items: left;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 1px;
+    cursor: pointer;
+    margin: 1px;
+    font-size: 1px;
+    position: absolute; /* Alinha o botão de acordo com a posição absoluta */
+    top: 20px; /* Defina a posição em relação ao topo */
+    left: 20px; /* Define o alinhamento à esquerda */
+}
+
+#voltar-btn:hover {
+    background-color: transparent;
+}
+
+.icone-voltar {
+    width: 20px;
+    height: 20px;
+    margin-right: 8%;
+}
+a {
+    text-decoration: none;
+}

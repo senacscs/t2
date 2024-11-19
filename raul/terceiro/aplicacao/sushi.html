@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Sakura - Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sushi Sakura</h1>
+        <div class="carrinho">
+            <img src="assets/img/carrinho-de-compras-rapido.png" alt="Carrinho de Compras" id="icone-carrinho">
+            <span id="contador-carrinho">0</span>
+            <a href="checkout.html">
+                <button>Finalizar Compra</button>
+            </a>
+        </div>
+        <button id="voltar-btn" onclick="history.back()">
+            <img src="assets/img/seta-para-a-esquerda.png" alt="Voltar" class="icone-voltar">
+        </button>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <div class="produto">
+                <img src="assets/img/combosushi.png" alt="Combo Sushi">
+                <h3>Combo Sushi</h3>
+                <p>R$ 60.00</p>
+                <button onclick="adicionarAoCarrinho('Combo Sushi', 60.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="assets/img/temaki.png" alt="Temaki">
+                <h3>Temaki</h3>
+                <p>R$ 30.00</p>
+                <button onclick="adicionarAoCarrinho('Temaki', 30.00)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

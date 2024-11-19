@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+    </div class="voltar-btn" >
+    <button id="voltar-btn" onclick="history.back()">
+        <img src="assets/img/seta-para-a-esquerda.png" alt="Voltar" class="icone-voltar">
+    
+    </header>
+
+    <main>
+        <section id="resumo-carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+            <p>Total: R$ <span id="total-carrinho">0,00</span></p>
+            <button id="esvaziar-carrinho">Esvaziar Carrinho</button> <!-- Novo botão -->
+        </section>
+
+        <section id="dados-entrega">
+            <h2>Informações de Entrega</h2>
+            <form id="form-checkout">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required>
+
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="pix">PIX</option>
+                </select>
+
+                <button type="submit">Confirmar Pedido</button>
+            </form>
+            <div id="mensagem-confirmacao" style="display: none; margin-top: 20px;">
+                <p>Pedido confirmado! Obrigado por comprar conosco.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
