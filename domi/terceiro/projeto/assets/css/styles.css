@@ -203,8 +203,8 @@ body {
     margin-bottom: 30px;
 }
 
-/* mvp */
-#mvp {
+/* resultados e plataforma */
+#resultados {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,28 +215,28 @@ body {
     min-height: 400px;
 }
 
-#mvp h4 {
+#resultados h4 {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-#mvp p {
+#resultados p {
     font-size: 15px;
     line-height: 170%;
     text-align: justify;
     margin-bottom: 30px;
 }
 
-#mvp #btn-mvp {
+#resultados #btn-resultados {
     border: none;
     background-color: #160D0C;
     color: #f1f1f1;
     padding: 15px 40px;
 }
 
-#mvp #btn-mvp:hover {
+#resultados #btn-resultados:hover {
     cursor: pointer;
 }
 
