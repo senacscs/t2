@@ -9,6 +9,8 @@ body {
   
 }
 
+
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -116,3 +118,18 @@ h2 {
     color: white;
 }
 
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+header p {
+    margin: 10px 0 0;
+    font-size: 16px; 
+}
