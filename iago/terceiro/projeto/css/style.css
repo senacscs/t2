@@ -339,7 +339,13 @@ header h1 {
     color: #172540;
 }
 
-
+.musicoConclusao h3 {
+    margin-left: 26px;
+    padding-top: 20px;
+    color: #0c1528;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 /* RODAPÉ */
 footer {
     background-color: #000000;
