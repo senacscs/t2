@@ -1,0 +1,249 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e container principal */
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Estilos da sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 20px;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  display: block;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar nav ul li a:hover {
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão estilizado na sidebar */
+.sidebar button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 40px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar button:hover {
+  background: linear-gradient(135deg, #e52e71, #ff5863);
+  transform: scale(1.05);
+}
+
+/* Estilos da seção principal */
+.content {
+  margin-left: 270px;
+  padding: 40px;
+  width: calc(100% - 270px);
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #ffffff, #dde1e7);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #3d3d3d;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: #1f4068;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+section p, section ul {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #d1d1d1;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+/* Estilizando links dentro da seção */
+section a {
+  color: #42a5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+section a:hover {
+  color: #1976d2;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões nas seções */
+section button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+section button:hover {
+  background: linear-gradient(135deg, #009688, #8bc34a);
+  transform: scale(1.05);
+}
+
+/* Adicionando um footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #ffffff;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 3;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+  .content {
+      margin-left: 0;
+      padding: 20px;
+      width: 100%;
+  }
+  header h1 {
+      font-size: 28px;
+  }
+  section h2 {
+      font-size: 24px;
+  }
+  section p, section ul {
+      font-size: 16px;
+  }
+  footer {
+      font-size: 14px;
+  }
+}
+
+/* Animações suaves e gradientes */
+a, button {
+  transition: all 0.4s ease;
+}
+
+/* Background animado para a sidebar */
+.sidebar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  animation: animate-bg 8s ease-in-out infinite;
+}
+
+@keyframes animate-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

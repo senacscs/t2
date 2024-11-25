@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Estilo padrão para telas grandes */
+@media screen and (min-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+}
+
+/* Estilo para telas médias */
+@media screen and (max-width: 767px) {
+  header, footer {
+      padding: 0.5em 0;
+  }
+
+  main {
+      padding: 1em;
+  }
+}
+
+/* Estilo para telas pequenas */
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+}
