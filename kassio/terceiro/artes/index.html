@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal Digital</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telejornal Digital</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header">
+    <h1>Jornal Digital</h1>
+    <p>As principais notícias do dia, na sua tela!</p>
+  </header>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Jornal Digital</h1>
-    </header>
+  <main class="news-container">
+    <div class="news-card">
+      <h2>Nacional</h2>
+      <p>Reforma tributária avança no Congresso e promete simplificar impostos. Especialistas debatem impactos no curto prazo.</p>
+      <button class="read-more" onclick="location.href='nacional.html'">Saiba mais</button>
+    </div>
+    <div class="news-card">
+      <h2>Internacional</h2>
+      <p>Líderes globais discutem mudanças climáticas em conferência anual. Cientistas alertam para os próximos cinco anos críticos.</p>
+      <button class="read-more" onclick="location.href='internacional.html'">Saiba mais</button>
+    </div>
+    <div class="news-card">
+      <h2>Comunidade do Sol</h2>
+      <p>Comunidade de Sol Nascente luta por melhores condições de vida após décadas de negligência.</p>
+      <button class="read-more" onclick="location.href='noticia.html'">Saiba mais</button>
+    </div>
+  </main>
 
-    <!-- Destaque Principal -->
-    <section class="highlight">
-        <h2>Comunidade de Sol Nascente Luta por Melhores Condições de Vida após Décadas de Negligência</h2>
-        <p>Moradores enfrentam falta de saneamento básico, saúde e educação, enquanto projetos prometidos nunca saem do papel.</p>
-        <a href="noticia.html" class="read-more">Leia mais</a>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Jornal Digital. Todos os direitos reservados.</p>
-    </footer>
-
+  <footer class="footer">
+    <p>&copy; 2024 Jornal Digital. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
