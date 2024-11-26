@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!-- -->
+<!-- outra inspiração https://www.w3schools.com/jsref/event_ondrag.asp -->
+<script>
+  function allowDrop(ev) {
+    console.log("chamou allow");
+    ev.dataTransfer.setData("text/plain", ev.target.id);
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    console.log("chamou drag");
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    console.log("chamou drop");
+
+    // alert("largou");
+    ev.preventDefault();
+    
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+</script>
+
+<body>
+
+  <header>
+    <h1 class="a">Jogo sobre composteiras</h1>
+  </header>
+
+  <section class="jogo">
+    <div class="mycontainer">
+      <div class="mycontainer2">
+
+        <div class="mycontainer10">
+
+        
+        <div class="papel higienico" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="papelhigienico.jpeg" alt="papel higienico" draggable="true" 
+            id="papelhigienico" width="88" height="31">
+        </div>
+
+        
+        <div class="caixa" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="papelao.jpg" alt="caixa de papelão fechada com fita amarela em volta" draggable="true" id="papelao"  width="88" height="31">
+        </div>
+        
+        <div class="rolodepapelhigiênico" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="rolo de papel higiênico.jpeg" draggable="true" ondragstart="drag(event)" id="rolo de papel higiênico"
+            width="88" height="31">
+            
+          </div>
+
+          <div class="folhas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="folhas" src="folhas-secas-no-chao_83782-146.png" draggable="true" ondragstart="drag(event)" id="folhas" width="120" height="100">
+          </div>
+
+          <!-- <div class="papel toalha" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="papeltoalha" src="toalha de papel.jpeg" draggable="true" ondragstart="drag(event)" id="papel toalha" width="100" height="110">
+          </div> -->
+
+          
+
+          <div class="borra de café" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="img" src="borra de café.jpg" draggable="true" ondragstart="drag(event)" id="id1"
+              width="88" height="31">
+          </div>
+          
+          <div class="cascadealhoecebola" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img class="cascadealhoecebola" src="Alho_13.webp" alt="cascas de alho e cebola" draggable="true" ondragstart="drag(event)" id="id2">
+            </div>
+
+          <div class="laticínios" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="img" src="laticínios.jpeg" alt="leite, queijo e iorgute" draggable="true" id="id3" width="88" height="31">
+          </div>
+
+        </div>
+
+          <div class="mycontainer7">
+            
+            
+        </div>
+
+
+            
+
+          </div>
+
+          <div class="mycontainer8">
+            
+            
+
+      </div>
+
+      <div class="composteira">
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+      </div>
+      <div class="mycontainer4">
+      <div class="mycontainer5">
+        <div class="casca de fruta" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="casca de fruta.jpeg" draggable="true" ondragstart="drag(event)" id="cascadefruta"
+            width="88" height="31">
+        </div>
+
+        <div class="carne" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="carne.jpeg" alt="pedaço de carne" draggable="true" id="carne"  width="88" height="31">
+        </div>
+
+        <div class="alho" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="alho.jpeg" alt="duas cabeças de alho, uma a direita virada para cima e a outra a esquerda na diagonal para a direita para baixo, e dois dentes de alho no meio" draggable="true" id="alho"  width="88" height="31">
+        </div>
+
+        
+
+      </div>
+
+        <div class="mycontainer6">
+        <div class="cebola" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="cebola.jpeg" alt="três cebolas com casca em um fundo branco" draggable="true" id="cebola"  width="88" height="31">
+        </div>
+        
+        <div class="serragem" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="serragem.jpeg" alt="uma pilha de serragem" draggable="true" ondragstart="drag(event)" id="serragem" width="88" height="31">
+        </div>
+        
+        <div class="grama" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="grama" src="grama.jpeg" alt="carrinho de mão em cima de grama com grama cortada dentro" draggable="true" ondragstart="drag(event)" id="grama" width="150" height="100">
+          </div>
+
+        <div class="galhos" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="img" src="galhos.jpeg" alt="uma pilha de galhos pequenos" draggable="true" ondragstart="drag(event)" id="galhos" width="88" height="31">
+        </div>
+
+        </div>
+
+        <div class="mycontainer7">
+
+          <!-- <div class="papel" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img class="papel" src="papel.jpeg" alt="folhas de papel empilhadas" draggable="true" id="papel" width="88" height="31">
+          </div> -->
+
+        </div>
+
+      </div>
+
+      </div>
+
+  </section>
+  <section class="conteudo">
+    <p>Arraste os itens, os que permanecerem na composteira podem ir nela</p>
+
+  </section>
+
+  <section class="conteudo1">
+    <h1 class="conteudo2">Mais informações sobre composteiras</h1>
+    <h2 class="conteudo3">O que pode ser colocado:</h2>
+    <h3>Restos de Alimentos</h3>
+    <p class="conteudo4">Restos, talos e casca de verduras e frutas (menos as cítricas), cascas de ovo, borra de café podem se converter em excelentes fontes de nitrogênio.</p>
+  </section>
+
+</body>
+
+</html>
