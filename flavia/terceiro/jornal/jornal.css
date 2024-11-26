@@ -1,0 +1,30 @@
+h1 {
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 0, 81);
+}
+h2 {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(169, 0, 54);
+}
+h3 { 
+    color: rgb(255, 0, 81);
+    font-size: 25px;
+}
+h4 {
+    color: rgb(169, 0, 54);
+}
+p { 
+    font-size: 16px;
+}
+section {
+	padding: 20px;
+	margin: 40px;
+	border: 2px solid rgb(255, 0, 81);
+    background-color: rgb(255, 181, 204);
+	border-radius: 9px;
+}
+center { 
+    background-color:  rgb(255, 230, 238);
+}
