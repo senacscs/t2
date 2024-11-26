@@ -11396,7 +11396,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://st3.depositphotos.com/5647624/12684/i/600/depositphotos_126842228-stock-photo-ripening-ears-of-yellow-wheat.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/portfolio/trigobg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
