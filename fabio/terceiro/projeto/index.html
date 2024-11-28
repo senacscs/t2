@@ -3,86 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seja muito bem-vindo ao meu site sobre Medicamentos Naturais</title>
+    <title>Medicamentos Naturais para Animais</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagem.png.webp">
-    <style>
-
-    </style>
 </head>
 <body>
-<header>
-    <div class="button-container">
-        <img src="logo.webp" width="60px">
-        <a class="search-button" href="index.html">Inicio</a>
-        <button class="search-button" ><a href="veterinarios.html">Veterinários</a></button>
-        <button class="search-button"><a  href="loja.html">Loja</a></button>
-        <button class="search-button" ><a  href="racas.html">Raças</a></button>
-        <button class="search-button"><a  href="videos.html">Videos</a></button>
-        <button class="search-button"><a  href="sobre.html">Sobre o Site</a></button>
-    </div>
-</header>
-
-    <div class="container">
-        <h1>Medicamentos Naturais</h1>
-
-        <!-- Área de pesquisa com a lupa -->
-        <div class="search-container">
-            <input type="text" placeholder="Pesquisar...">
-            <button>
-                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Lupa de Pesquisa">
-            </button>
-        </div>
-
-        <div class="image-gallery">
-            <img src="/remedio/remedio.png">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpj3uPfzorECh4eaOJCQ0nyUNPls_q-ybyA&s" alt="Imagem 4">
-        </div>
-    </div>
-    <script>
-        function filterResults(option) {
-            document.getElementById('result').textContent = 'Você selecionou: ' + option;
-            let buttons = document.querySelectorAll('.search-button');
-            buttons.forEach(button => button.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-    </script>
-</body>
-</html>
-
-<div class="profile-square">
-  <img src="data:image/jpeg;base64,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" alt="Imagem de Perfil" class="profile-image">
-  <h2>Mauro</h2>
-  <p>36anos</p>
-</div>
-
-<style>
-  .profile-square {
-      width: 200px; /* Largura do quadrado */
-      padding: 15px;
-      background-color: #ffffff; /* Cor de fundo do perfil */
-      border: 1px solid #000000; /* Borda do quadrado */
-      border-radius: 10px; /* Cantos arredondados */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra do quadrado */
-      text-align: center;
-      margin: 20px auto; /* Centraliza o quadrado */
-  }
-
-  .profile-image {
-      width: 100%; /* Imagem ocupa 100% da largura do quadrado */
-      height: auto; /* Mantém a proporção da imagem */
-      border-radius: 10px; /* Cantos arredondados da imagem */
-      margin-bottom: 10px; /* Espaço entre a imagem e o texto */
-  }
-
-  h2 {
-      color: #4b4b4b; /* Cor do nome */
-      font-size: 20px; /* Tamanho do texto do nome */
-      margin: 10px 0; /* Margem superior e inferior */
-  }
-
-  p {
-      color: #666; /* Cor da descrição */
-      font-size: 14px; /* Tamanho da fonte da descrição */
-  }
-</style>
+    <header>
+        <h1>Medicamentos Naturais para Animais</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tema">Tema</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="aplicacao/index.html">Aplicação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>A medicina veterinária tem evoluído, explorando alternativas naturais como fitoterápicos para melhorar o bem-estar de cães e gatos. Este projeto aborda os benefícios, cuidados e riscos do uso de medicamentos naturais.</p>
+        </section>
+        <section id="tema">
+            <h2>Tema</h2>
+            <p>O trabalho foca no uso de medicamentos naturais na medicina veterinária, conectando saúde, biologia e ciências sociais para melhorar o bem-estar animal.</p>
+        </section>
+        <section id="problema">
+            <h2>Problema</h2>
+            <p>Identificar medicamentos naturais seguros e eficazes para cães e gatos.</p>
+        </section>
+        <section id="objetivos">
+            <h2>Objetivos</h2>
+            <h3>Objetivo Geral</h3>
+            <p>Orientar tutores sobre medicamentos naturais para animais domésticos.</p>
+            <h3>Objetivos Específicos</h3>
+            <ul>
+                <li>Pesquisar o uso de medicamentos naturais na veterinária.</li>
+                <li>Entrevistar veterinários sobre práticas relacionadas.</li>
+                <li>Desenvolver um site informativo para tutores.</li>
+            </ul>
+        </section>
+        <section id="metodologia">
+            <h2>Metodologia</h2>
+            <p>Foi realizada uma pesquisa em artigos acadêmicos e entrevistas com veterinários para levantar informações sobre o uso de plantas medicinais em tratamentos para animais.</p>
+        </section>
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>O projeto busca promover
