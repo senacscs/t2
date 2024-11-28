@@ -38,3 +38,14 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover{
+    color:aqua;
+}
+
+.app {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2c9333;
+}
+
