@@ -68,7 +68,6 @@ body {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Botão estilizado na sidebar */
 .sidebar button {
   width: 100%;
   padding: 15px;
@@ -144,7 +143,6 @@ ul li {
   margin-left: 20px;
 }
 
-/* Estilizando links dentro da seção */
 section a {
   color: #42a5f5;
   text-decoration: none;
@@ -157,7 +155,6 @@ section a:hover {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Botões nas seções */
 section button {
   padding: 12px 25px;
   background: linear-gradient(135deg, #00b09b, #96c93d);
@@ -174,7 +171,6 @@ section button:hover {
   transform: scale(1.05);
 }
 
-/* Adicionando um footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -192,58 +188,48 @@ footer p {
   margin: 0;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade para tablets */
+@media screen and (max-width: 1024px) {
+  .content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    z-index: 4;
+    transition: left 0.3s ease;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+}
+
+/* Responsividade para celulares */
 @media screen and (max-width: 768px) {
   .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
   .content {
-      margin-left: 0;
-      padding: 20px;
-      width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
   }
   header h1 {
-      font-size: 28px;
+    font-size: 24px;
   }
   section h2 {
-      font-size: 24px;
+    font-size: 20px;
   }
   section p, section ul {
-      font-size: 16px;
+    font-size: 14px;
   }
   footer {
-      font-size: 14px;
-  }
-}
-
-/* Animações suaves e gradientes */
-a, button {
-  transition: all 0.4s ease;
-}
-
-/* Background animado para a sidebar */
-.sidebar:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: -1;
-  animation: animate-bg 8s ease-in-out infinite;
-}
-
-@keyframes animate-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    font-size: 12px;
   }
 }
