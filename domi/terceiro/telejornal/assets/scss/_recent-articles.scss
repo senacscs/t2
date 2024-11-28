@@ -1,0 +1,103 @@
+.recent-articles{
+        .recent-wrapper{
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 23px;
+        }
+
+        .single-recent{
+            position: relative;
+
+            margin-left: 15px;
+            margin-right: 15px;
+            .what-img{
+                img{
+                    border-radius: 6px;
+                    width: 100%;
+                }
+            }
+            .what-cap{
+                padding: 25px 20px 10px 0;
+                background:#fff;
+                position: absolute;
+                bottom: -63px;
+                left: 0;
+                width: 80%;
+                border-radius:0  7px 0 0;
+                @include transition(.4s);
+                span{
+                    color: $heading-color;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    font-weight: 600;
+                    padding: 10px 15px;
+                    line-height: 1;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+                h4{  
+                    font-size: 18px;
+                    @media #{$xs}{
+                        font-size: 13px;
+                    }                 
+                    a{ 
+                        font-weight: 700;
+                        line-height:1.4;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .what-cap{
+                    bottom: -70px;
+                }
+            }
+        }
+        .slick-arrow {
+            background: none;
+            border: none;
+            position: absolute;
+            bottom: -87px;
+            text-align: center;
+            left: 0;
+            right: -85px;
+            margin: auto;
+            font-size: 46px;
+            cursor: pointer;
+            color: #ff0b0b;
+            @include transition(.4s);
+          
+        } 
+        .slick-prev.slick-arrow {
+            transform: rotate(180deg);
+            left: -172px;
+            color: #ddd;
+            &:hover{
+                color: red;
+            }
+        }
+    
+}
+
+
+
+// .recent-articles .slick-arrow {
+// 	background: none;
+// 	border: none;
+// 	position: absolute;
+// 	bottom: -50px;
+// 	text-align: center;
+// 	left: 0;
+// 	right: 0;
+// 	margin: auto;
+//     font-size: 46px;
+//     cursor: pointer;
+//     color: red;
+// }
+
+
+// .recent-articles .slick-arrow.slick-next {
+//     left: 0;
+//     color: red($color: #000000);
+// }

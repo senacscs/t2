@@ -534,8 +534,24 @@ nav.navbar.bootsnav .navbar-toggle i{color: #21542e;}
     fill: rgb(255, 255, 255);
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 535px) {
     .button-59 {
       min-width: 170px;
     }
+    .welcome-hero {
+        position: relative;
+        background:url(../images/welcome-hero/banner.jpg)no-repeat;
+        background-position:center;
+        background-size:cover;
+        text-align: center;
+        height:1300px;
+        z-index: 1;
+    }
+
+    
+
   }
+
+
+
+  
