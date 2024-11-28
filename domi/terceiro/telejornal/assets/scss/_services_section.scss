@@ -1,0 +1,94 @@
+.services-area{
+    .single-services{
+        padding: 86px 61px 64px 61px;
+        @include transition(.4s);
+        background:#fcfdff;
+        position: relative;
+        &:hover{
+            background: #f8fafe;
+        }
+
+        // padding
+        @media #{$lg}{
+            padding:26px;
+        }
+        @media #{$md}{
+            padding:40px;
+        }
+        @media #{$xs}{
+            padding:30px;
+        }
+        .services-icon{
+           & span{
+            font-size: 54px;
+            margin-bottom: 23px;
+            display: block;
+            color: #000;
+            @include transition(.4s);
+           }
+        }
+        .services-caption{
+            & h4{
+                color:$heading_color;
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 25px;
+                display: inline-block;
+                @media #{$laptop}{
+                    font-size: 22px;
+                }
+                @media #{$xs}{
+                    font-size: 19px;
+                }
+            }
+            & p{
+                line-height:25px;
+            }
+        }
+        // before-img
+        &::before{
+            background-image: url(../img/service/services_bg.png);
+            content: "";
+            position: absolute;
+            min-width: 221px;
+            height: 216px;
+            right: 0px;
+            bottom: 0px;
+            z-index: -1;
+            @include transition(.4s);
+            @media #{$xs}{
+                display: none;
+            }
+        }
+    }
+}
+
+// Hover
+.single-services:hover{
+    &::before{
+        right: -12px;
+        bottom: -12px;
+    }
+    .services-icon{
+        & span{
+            color:$theme_color;
+        }
+    }
+   
+}
+
+// section Tittle
+.section-tittle{
+    & h2{
+        color: $heading_color;
+        font-size:60px;
+        font-weight:700;
+        line-height:1;
+        margin-bottom: 95px;
+        @media #{$xs}{
+			font-size: 39px;
+            line-height: 1.3;
+            margin-bottom: 50px;
+		}
+    }
+}
