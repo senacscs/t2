@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+body p {
+    font-size: 18px;
+}
+
+body h2 {
+    font-size: 30px;
+}
+
+
+/* NAVEGAÇÃO */
+nav {
+    background-color: #172540;
+    padding: 20px;
+    max-width: 100%;
+}
+
+nav ul {
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFECCC;
+    padding: 16px 40px;
+    max-width: 100%;
+
+}
+
+nav ul li a:hover {
+    color: #172540;
+    background-color: #FFECCC;
+    transition: all .5s;
+}
+
+
+/* CABEÇALHO */
+header {
+    margin: 0;
+    padding: 14rem 0;
+    background-image: url("../img/musicoterapia.png");
+}
+
+header #inicio {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin: 0 218px;
+    border-top: 1px solid #000000;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+
+/* INTRODUÇÃO */
+.musicoIntro {
+    background-color: #172540;
+}
+
+.musicoIntro h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+    font-weight: 700;
+}
+
+.musicoIntro p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
+
+
+/* TEMA */
+.musicoTema {
+    background-color: #fdd897;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.musicoTema h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoTema p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+
+/* PROBLEMA */
+.musicoProb {
+    background-color: #172540;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.musicoProb h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+    font-weight: 700;
+}
+
+.musicoProb p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
+
+/* JUSTIFICATIVA */
+.musicoJust {
+    background-color: #fdd897;
+}
+
+.musicoJust h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoJust p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+
+/* OBJETIVOS */
+.musicoObjetivo {
+    background-color: #FFECCC;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#geral,
+#especifico {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: justify;
+    max-width: 500px;
+    color: #172540;
+}
+
+#geral {
+    list-style: none;
+}
+
+.musicoObjetivo h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    font-weight: 700;
+    color: #172540;
+}
+
+.musicoObjetivo h3 {
+    text-align: center;
+}
+
+#observacao {
+    font-style: italic;
+    margin: auto;
+}
+
+
+/* METODOLOGIA */
+.musicoMeto {
+    background-color: #fdd897;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.musicoMeto h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #172540;
+    font-weight: 700;
+}
+
+.musicoMeto h3 {
+    margin-left: 30px;
+    padding-top: 20px;
+    color: #0c1528;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+
+.musicoMeto p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+.botao {
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.botao a {
+    border: 1px solid black ;
+    border-radius: 3px;
+    padding: 20px;
+    text-decoration: none;
+    color: #94a8d3;
+    background-color: #0c1528;
+    transition: 1s;
+}
+
+.botao a:hover {
+    transition: 1s;
+    border: 1px solid black ;
+    color: #c18a2b;
+    background-color: #FFECCC;
+}
+
+/* REFERÊNCIAL */
+.musicoRefe {
+    background-color: #172540;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.musicoRefe h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fdd897;
+    font-weight: 700;
+}
+
+.musicoRefe h3 {
+    margin-left: 26px;
+    padding-top: 20px;
+    color: #dcbe8a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.musicoRefe ul {
+    color: #f9df9e;
+    margin-top: -12px;
+}
+
+.musicoRefe p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #FFECCC;
+}
+
+/* RESULTADOS E DISCUSSÕES */
+.resulDisc {
+    background-color: #394253;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.resulDisc h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #ffb83e;
+    font-weight: 700;
+}
+
+.resulDisc p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #ffcb70;
+}
+
+/* CONCLUSÃO */
+.musicoConclusao {
+    background-color: #fdd897;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.musicoConclusao h2 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color: #172540;
+    justify-content: center;
+}
+
+.musicoConclusao p {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    text-align: justify;
+    color: #172540;
+}
+
+.musicoConclusao h3 {
+    margin-left: 26px;
+    padding-top: 20px;
+    color: #0c1528;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* RODAPÉ */
+footer {
+    background-color: #000000;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #5a6e98;
+}
