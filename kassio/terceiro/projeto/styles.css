@@ -1,53 +1,86 @@
-/* Estilo básico */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
     margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    background-color: #0073b1;
-    padding: 20px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-input[type="text"] {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    width: 50%;
-}
-
-button {
-    padding: 8px 12px;
-    background-color: #005f8a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #00476a;
-}
-
-.cards-container {
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #eaeaea; /* Texto claro */
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #0f3460; /* Azul escuro suave */
+    color: #eaeaea; /* Texto claro */
+    padding: 20px 0;
+  }
+  
+  .news-container,
+  .connections-container,
+  .jobs-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-}
-
-.card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+  }
+  
+  .news-card,
+  .post-card {
+    background-color: #16213e; /* Azul muito escuro */
+    border: 1px solid #0f3460;
     border-radius: 8px;
-    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra mais suave no tema escuro */
     width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s;
+    color: #eaeaea; /* Texto claro */
+  }
+  
+  .news-card:hover,
+  .post-card:hover {
+    transform: scale(1.05);
+    background-color: #0f3460; /* Realce ao passar o mouse */
+  }
+  
+  .news-card h2,
+  .post-card h3 {
+    color: #00aaff; /* Azul vibrante para títulos */
+  }
+  
+  .read-more {
+    background-color: #00aaff; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .read-more:hover {
+    background-color: #007acc; /* Azul mais escuro ao passar o mouse */
+  }
+  
+  footer {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    padding: 10px 0;
+    background-color: #0f3460;
+    color: #eaeaea;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .news-card,
+    .post-card {
+      width: 90%;
+    }
+  
+    .header {
+      font-size: 1.2em;
+      padding: 15px 0;
+    }
+  
+    footer {
+      font-size: 0.9em;
+    }
+  }
+  

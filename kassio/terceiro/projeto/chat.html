@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - LinkJobs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="chat-page">
+  <header class="header">
+    <h1>Conversa com João Silva</h1>
+    <p>Você está conectado com João. Sinta-se à vontade para iniciar a conversa!</p>
+  </header>
+
+  <main class="chat-container">
+    <div class="chat-window" id="chatWindow">
+      <!-- Mensagens serão adicionadas aqui dinamicamente -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Digite sua mensagem..." />
+      <button id="sendButton">Enviar</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="read-more" onclick="location.href='connections.html'">Voltar para Conexões</button>
+  </footer>
+
+  <script src="chat.js"></script>
+</body>
+</html>

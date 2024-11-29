@@ -1,24 +1,21 @@
 // scripts.js
 
-// Função para redirecionar ao digitar "oportunidades de carreira"
-document.getElementById('search-button').addEventListener('click', handleSearch);
-document.getElementById('search-bar').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        handleSearch();
+// Redireciona para a página de candidatura, passando o nome da vaga na URL
+function applyJob(jobTitle) {
+    window.location.href = `candidatura.html?vaga=${encodeURIComponent(jobTitle)}`;
+}
+
+// Mostra o título da vaga na página de candidatura
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const jobTitle = urlParams.get('vaga');
+    if (jobTitle) {
+        document.getElementById('job-title').innerText = jobTitle;
     }
 });
 
-function handleSearch() {
-    const query = document.getElementById('search-bar').value.toLowerCase();
-
-    if (query.includes('oportunidades de carreira')) {
-        window.location.href = 'oportunidades.html';
-    } else {
-        alert('Não foram encontradas páginas ou vagas com o termo pesquisado.');
-    }
-}
-
-// Função para candidatura (para ser usada na página de vagas)
-function applyJob(jobTitle) {
-    alert(`Você se candidatou à vaga: ${jobTitle}`);
-}
+// Adiciona funcionalidade ao formulário de candidatura
+document.getElementById('candidatura-form')?.addEventListener('submit', (event) => {
+    event.preventDefault(); // Evita o envio real do formulário
+    alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
+});

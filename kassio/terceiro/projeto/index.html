@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - LinkNet Carreiras</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkJobs</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <h1>LinkNet Carreiras</h1>
-        <input type="text" id="search-bar" placeholder="Buscar oportunidades de carreira...">
-        <button id="search-button">Buscar</button>
-    </header>
-    
-    <main>
-        <section class="welcome">
-            <h2>Bem-vindo à LinkNet</h2>
-            <p>Encontre as melhores oportunidades de carreira para você!</p>
-        </section>
-    </main>
+  <header class="header">
+    <h1>LinkJobs</h1>
+    <p>Conectando talentos e oportunidades!</p>
+  </header>
 
-    <script src="scripts.js"></script>
+  <main class="news-container">
+    <div class="news-card">
+      <h2>Meu Perfil</h2>
+      <p>Visualize e edite suas informações profissionais e pessoais.</p>
+      <button class="read-more" onclick="location.href='profile.html'">Acessar Perfil</button>
+    </div>
+    <div class="news-card">
+      <h2>Conexões</h2>
+      <p>Gerencie e encontre profissionais para sua empresa.</p>
+      <button class="read-more" onclick="location.href='connections.html'">Ver Conexões</button>
+    </div>
+    <div class="news-card">
+      <h2>Vagas</h2>
+      <p>Explore oportunidades de trabalho alinhadas ao seu perfil.</p>
+      <button class="read-more" onclick="location.href='jobs.html'">Buscar Vagas</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+  </footer>
 </body>
 </html>
