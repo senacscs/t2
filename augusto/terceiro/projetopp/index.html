@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REAPROVEITAMENTO DE LIXO eletronico</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  
+}
+
+
+/* Alinha as imagens no centro */
+.w3-row-padding {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.app {
+  flex: 1;
+  max-width: 100%; /* Garante que a imagem ocupe 100% do espaço disponível */
+}
+
+@media (max-width: 500px) {
+  .w3-row-padding {
+    flex-direction: column; /* Empilha as imagens em uma coluna */
+    align-items: center; /* Alinha as imagens no centro */
+  }
+
+  .app {
+    max-width: 100%; /* Garante que cada imagem ocupe 100% da largura disponível */
+    margin-bottom: 20px; /* Espaço entre as imagens empilhadas */
+  }
+}
+
+
+.titulo {
+  font-size: 2em; /* Tamanho padrão do título */
+  white-space: nowrap; /* Impede a quebra de linha */
+  color: #2b7522;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    white-space: normal; /* Permite a quebra de linha */
+    word-wrap: break-word; /* Quebra palavras longas, se necessário */
+    text-align: center; /* Alinha o texto ao centro, se necessário */
+    color: #2b7522;
+  }
+}
+
+.noticia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noticia-item {
+  margin: 20px 0; /* Espaçamento entre as notícias */
+  text-align: center;
+}
+
+.noticia-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+.map-container {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os mapas */
+  justify-content: center;
+  align-items: flex-start; /* Alinha todos os mapas ao topo */
+  max-width: 100%;
+  flex-wrap: wrap; /* Permite reorganizar os itens se necessário */
+}
+
+.map-item {
+  flex: 1; /* Faz com que os mapas tenham o mesmo tamanho */
+  max-width: 600px; /* Largura máxima por mapa */
+  text-align: center; /* Centraliza o título */
+}
+
+.map-item h3 {
+  margin-bottom: 10px; /* Espaçamento entre o título e o mapa */
+  font-size: 1.2rem; /* Tamanho do título */
+  color: #333; /* Cor do título */
+  font-weight: bold; /* Negrito */
+  min-height: 2.5rem; /* Define uma altura mínima para os títulos */
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* Proporção 16:9 */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsividade: Modo coluna para telas menores que 700px */
+@media (max-width: 700px) {
+  .map-container {
+      flex-direction: column; /* Alinha os mapas verticalmente */
+      gap: 30px; /* Espaçamento maior entre os mapas em coluna */
+      align-items: center;
+  }
+
+  .map-item {
+      max-width: 100%; /* Mapas ocupam 100% da largura */
+  }
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('assets/img/ImagemInicial.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("assets/img/imagemmapa.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar fundo" id="myNavbar">
+    <a class="fundo w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#noticia" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NOTICIAS</a>
+    <a href="#localizacao" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LOCALIZAÇÃO</a>
+    <a href="#duvidas" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> DUVIDAS</a>
+    <a href="#app" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> APP</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#noticia" class="w3-bar-item w3-button" onclick="toggleFunction()">NOTICIAS</a>
+    <a href="#localizacao" class="w3-bar-item w3-button" onclick="toggleFunction()">LOCALIZAÇÃO</a>
+    <a href="#duvidas" class="w3-bar-item w3-button" onclick="toggleFunction()">DUVIDAS</a>
+    <a href="#app" class="w3-bar-item w3-button" onclick="toggleFunction()">APP</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span  class="titulo" class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">REAPROVEITAMENTO   <span class="w3-hide-small">DO LIXO</span> ELETRÔNICO</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<h3 class="w3-center">NOTÍCIAS</h3>
+<div class="noticia" id="noticia">
+  <div class="noticia-item">
+    <img src="assets/img/Imagem Drive Thru.png" alt="">
+    <h6>Drive-Thru de Lixo Eletrônico acontece em Ribeirão Pires</h6>
+    <a target="_blank" href="https://abcdoabc.com.br/drive-thru-de-lixo-eletronico-acontece-em-ribeirao-pires-na-proxima-quarta-feira-30/"><button>ABRIR</button></a>
+  </div>
+
+  <div class="noticia-item">
+    <img src="assets/img/Imagem Coleta de Lixo.png" alt="">
+    <h6>Santa Cruz terá ação de coleta de lixo eletrônico no próximo sábado</h6>
+    <a target="_blank" href="https://portalarauto.com.br/22-10-2024/santa-cruz-tera-acao-de-coleta-de-lixo-eletronico-no-proximo-sabado/"><button>ABRIR</button></a>
+  </div>
+
+  <div class="noticia-item">
+    <img src="assets/img/image eletronico.png" alt="">
+    <h6>Lixo eletrônico chegou a nível recorde</h6>
+    <a target="_blank" href="https://www.cnnbrasil.com.br/tecnologia/lixo-eletronico-chegou-a-nivel-recorde-entenda-o-problema/#:~:text=Do%20velhos%20celulares%20a%20geladeiras,volta%20na%20linha%20do%20equador."><button>ABRIR</button></a>
+  </div>
+</div>
+
+
+<br><br>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="localizacao">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">LOCALIZAÇÃO</span>
+  </div>
+</div>
+
+<br><br>
+
+<div class="map-container">
+  <div class="map-item">
+      <h3>P.E.V da Coleta Seletiva Solidária</h3>
+      <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13859.317297232037!2d-52.4309982!3d-29.7247028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ca3695bef0b0f%3A0x5537ef04710807ef!2sP.E.V%20da%20Coleta%20Seletiva%20Solid%C3%A1ria%20-%20COOMCAT%20-%20MNCR!5e0!3m2!1spt-BR!2sbr!4v1732543073995!5m2!1spt-BR!2sbr" 
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+  <div class="map-item">
+      <h3>Rua 28 de Setembro, 1707 - Goiás</h3>
+      <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.137789475901!2d-52.4424187!3d-29.7157677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ca35995321165%3A0x436061e1e3466de5!2sRua%2028%20de%20Setembro%2C%201707%20-%20Goi%C3%A1s%2C%20Santa%20Cruz%20do%20Sul%20-%20RS%2C%2096810-234!5e0!3m2!1spt-BR!2sbr!4v1732542987212!5m2!1spt-BR!2sbr" 
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="app">
+  <h3 class="w3-center">APP</h3>
+  <br>
+
+  <!-- Responsive Grid -->
+  <div class="w3-row-padding w3-center">
+    <div class="app w3-col m3">
+      <img src="assets/img/app-loc.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="PONTOS DE COLETA">
+    </div>
+
+    <div class="app w3-col m3">
+      <img src="assets/img/app-prot.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="PROTOTICOS">
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">DUVIDAS</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="duvidas">
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+     
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+
+      </div>
+   
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
