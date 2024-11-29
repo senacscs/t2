@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+    function allowDrop(ev) {
+        console.log("chamou allow");
+        ev.dataTransfer.setData("text/plain", ev.target.id);
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        console.log("chamou drag");
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        console.log("chamou drop");
+
+        // alert("largou");
+        ev.preventDefault();
+
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+
+<body>
+
+    <!-- <script src="index1.js"></script> -->
+
+    <header class="conteudo5">Jogo sobre composteiras</header>
+    <section class="mycontainer">
+        <div class="mycontainer11">
+            <!-- </section> -->
+            <div class="mycontainer1">
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="cascadefruta" src="casca de fruta.jpeg" draggable="true" ondragstart="drag(event)" id="cascadefruta">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="rolodepapelhigienico" src="rolo de papel higiênico.jpeg" draggable="true" ondragstart="drag(event)" id="rolodepapelhigienico">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="carne" src="carne.jpeg" draggable="true" id="carne">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="caixa" src="papelao.jpg" draggable="true" id="papelao">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="serragem" src="serragem.jpeg" draggable="true" ondragstart="drag(event)" id="serragem">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="grama" src="grama.jpeg" draggable="true" ondragstart="drag(event)" id="grama">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="folhas" src="folhas-secas-no-chao_83782-146.png" draggable="true" ondragstart="drag(event)" id="folhas">
+                </div>
+
+
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="jornal" src="jornal.jpg" draggable="true" id="jornal">
+                </div>
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="laticinios" src="laticínios.jpeg" draggable="true" id="laticinios">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="papelhigienico" src="papelhigienico.jpeg" draggable="true" id="papelhigienico">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="laranja" src="laranja.jpg" draggable="true" id="laranja">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="cha" src="chá.jpeg" draggable="true" ondragstart="drag(event)" id="cha">
+                </div>
+
+            </div>
+
+            <!-- <div class="img4">
+        <div class="img2">
+
+        </div> -->
+            <!-- <div class="img1"> -->
+
+            <!-- <div class="mycontainer2"> -->
+            <!-- <div class="composteira">
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" id="composteira">
+
+                </div> -->
+                <!-- <img src="composteira-bg.png" alt="composteira preta de três andares"> -->
+            <!-- </div> -->
+
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img class="composteira" ondragstart="drag(event)" id="div2">
+            </div>
+
+
+            <!-- </div> -->
+
+            <!-- </div> -->
+
+            <!-- <div class="img3">
+
+        </div>
+        </div> -->
+
+            <!-- <section> -->
+
+            <!-- </section> -->
+
+            <!-- <section> -->
+
+
+            <!-- </section> -->
+
+            <div class="mycontainer3">
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="cascadealhoecebola" src="Alho_13.webp" draggable="true" ondragstart="drag(event)" id="acscadealhoecebola">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="cebola" src="cebola.jpeg" draggable="true" id="cebola">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="alho" src="alho.jpeg" draggable="true" id="alho">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="borradecafe" src="borra de café.jpg" draggable="true" ondragstart="drag(event)" id="borradecafe">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="toalhadepapel" src="toalha de papel.jpeg" draggable="true" ondragstart="drag(event)" id="toalhadepapel">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="galhos" src="galhos.jpeg" draggable="true" ondragstart="drag(event)" id="galhos">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="papel" src="papel.jpeg" draggable="true" id="papel">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="revista" src="revista.jpg" draggable="true" id="revista">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="cascadeovo" src="casca de ovo.jpeg" draggable="true" ondragstart="drag(event)" id="cascadeovo">
+                </div>
+
+                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="limao" src="limao.jpeg" draggable="true" id="limao">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <p>Arraste os itens, os que permanecerem na composteira podem ir nela</p>
+
+    </section>
+
+    <section class="conteudo8">
+
+        <h1 class="conteudo2">Mais informações sobre composteiras</h1>
+
+        <section class="conteudo11">
+            <section class="conteudo1">
+
+                <h2 class="conteudo3">O que pode ser colocado:</h2>
+                <h3>Restos de Alimentos</h3>
+
+                <section id="cascadefruta">
+                    <p class="conteudo4">Restos, talos e casca de verduras e frutas (menos as cítricas), cascas de ovo,
+                        borra de
+                        café podem se converter em excelentes fontes de nitrogênio.</p>
+                </section>
+                <h3>Alimentos Cozidos ou Assados</h3>
+                <p class="conteudo4">Podem ser usados desde que em pequenas quantidades. É preciso evitar o excesso de
+                    sal e
+                    conservantes dos alimentos processados. Esse tipo de material não pode estar úmido, por isso se deve
+                    adicionar
+                    bastante pó de serra em cima dos restos.</p>
+                <h3>Borra de Café</h3>
+
+                <section id="borradecafe">
+                    <p class="conteudo4">Inibe o aparecimento das formigas e é um excelente complemento nutricional para
+                        as
+                        minhocas. O filtro de papel usado para o preparo do café também pode ser adicionado na
+                        compostagem.</p>
+                </section>
+                <h3>Resíduos Frescos</h3>
+
+                <section id="grama">
+                    <p class="conteudo4">Podas de grama e folhas possuem alta concentração de nitrogênio. Uma boa
+                        solução é separar
+                        um espaço em que os resíduos frescos possam secar antes de serem usados, gerando uma boa
+                        economia, pois se não
+                        houver serragem, os resíduos secos são excelentes substitutos.</p>
+                </section>
+                <h3>Serragem e Folhas</h3>
+
+                <section id="serragem">
+                    <p class="conteudo4">A serragem não tratada, ou seja, sem verniz e as folhas secas ajudam no
+                        equilíbrio, são
+                        ricos em carbono e evitam o aparecimento de animais indesejados e do mau cheiro.</p>
+                </section>
+
+            </section>
+
+            <section class="conteudo111">
+
+                <h2 class="conteudo3">O que não pode ser colocado:</h2>
+                <h3>Frutas Cítricas</h3>
+
+                <section id="">
+                    <p class="conteudo4">a polpa e as cascas podem alterar o pH da terra, é o caso da laranja, abacaxi,
+                        limão, entre outros;</p>
+                </section>
+                <h3>Arroz</h3>
+                <p class="conteudo4">depois de cozido é um ótimo local para bactérias, mas péssimo para a saúde humana e
+                    das plantas;</p>
+                <h3>Laticínios</h3>
+
+                <section id="">
+                    <p class="conteudo4">qualquer derivado de leite não pode ser compostado, pois a decomposição é muito
+                        lenta, causa um mau cheiro e atrai organismos indesejáveis;</p>
+                </section>
+                <h3>Carne</h3>
+
+                <section id="">
+                    <p class="conteudo4">a decomposição de restos de frango, peixe e carne bovina são muito demoradas,
+                        causa mau cheiro e atrai animais;</p>
+                </section>
+                <h3>Alho e Cebola</h3>
+
+                <section id="">
+                    <p class="conteudo4">têm decomposição muito lenta e trazem mau cheiro. Acabam desacelerando todo o
+                        processo de compostagem;</p>
+                </section>
+
+                <h3>A maioria dos tipos de papel</h3>
+
+                <section id="">
+                    <p class="conteudo4">revistas, jornais, papéis de impressão, envelopes e catálogos são todos
+                        tratados com químicos pesados, geralmente branqueadores (que contêm cloro) e tintas que não são
+                        biodegradáveis. A reciclagem é a solução;</p>
+                </section>
+
+            </section>
+        </section>
+    </section>
+
+    <section>
+        <h1 class="conteudo7">Como fazer composteira</h1>
+        <p class="conteudo9">A compostagem orgânica é um processo biológico que utiliza microrganismos para transformar
+            matéria orgânica em um composto que pode ser utilizado como adubo para a agricultura e cultivo de plantas em
+            geral.</p>
+    </section>
+
+    <section>
+        <h1 class="conteudo3">Referências</h1>
+        <p>SOBRENOME, Nome. Título da matéria. Nome do jornal, cidade de publicação, dia, mês e ano. Seção (se houver).
+            Disponível em: <URL>. Acesso em: dia, mês e ano.</p>
+    </section>
+</body>
+
+</html>
