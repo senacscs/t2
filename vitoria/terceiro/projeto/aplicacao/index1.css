@@ -1,0 +1,357 @@
+/* tela no computador */
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+h1 {
+    color: rgb(10, 227, 10);
+}
+
+h2 {
+    color: rgb(146, 247, 44);
+}
+/* tela no smartphone */
+
+@media (max-width: 768px) {
+    body {
+        background-color: brown;
+    }
+
+}
+
+.mycontainer {
+    width: 2000px;
+    height: 700px;
+    background-color: green;
+    padding-top: 100px;
+}
+
+.conteudo5 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+
+/* .img {
+    width: 762px;
+    height: 848px;
+    top: 246px;
+    left: 60px;
+} */
+
+/* .img4 {
+    width: 100%;
+}
+
+.img2 {
+    width: 33%;
+    float: left;
+} */
+.composteira {
+    width: 500px;
+    height: 600px;
+    color: rgb(0, 128, 0);
+    position: absolute;
+    /* width: 33%; */
+    top: 260px;
+    left: 500px;
+    background-image: url(composteira-bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* box-sizing: border-box; */
+    /* display: block; */
+    padding-left: 1000px;
+}
+
+/* .img3 {
+    width: 33%;
+    float: right;
+} */
+
+.cascadefruta {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 150px;
+    left: 50px;
+}
+
+.caixa {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 282px;
+    left: 50px;
+}
+
+#div2 {
+    width: 500px;
+    height: 600px;
+    border: 0;
+    background-position: center;
+    box-sizing: border-box;
+    /* outline: 0px solid transparent; */
+}
+
+.conteudo {
+    background-color: rgb(215, 247, 215);
+
+}
+
+.conteudo2 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.conteudo3 {
+    color: #000;
+    font-family: sans-serif;
+}
+
+.conteudo11 {
+    width: 100%;
+}
+.conteudo1 {
+    float: left;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+.conteudo111 {
+    float: right;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.conteudo4 {
+    font-family: sans-serif;
+}
+
+.rolodepapelhigienico {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 210px;
+    left: 180px;
+}
+
+.carne {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 160px;
+    left: 310px;
+}
+
+.borradecafe {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 282px;
+    left: 1590px;
+}
+
+.folhas {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 417px;
+    left: 50px;
+}
+
+.cebola {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 210px;
+    left: 1740px;
+}
+
+.alho {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 150px;
+    left: 1870px;
+}
+
+.cascadealhoecebola {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 150px;
+    left: 1590px;
+}
+
+.galhos {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 282px;
+    left: 1870px;
+}
+
+.cascadealhoecebola {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 150px;
+    left: 1590px;
+}
+
+.grama {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 281px;
+    left: 310px;
+}
+
+.cascadeovo {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 417px;
+    left: 1870px;
+}
+
+.papelhigienico {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 550px;
+    left: 50px;
+}
+
+.papel {
+    position: absolute;
+    width: 130px;
+    height: 99px;
+    top: 345px;
+    left: 310px;
+}
+
+.laticinios {
+    position: absolute;
+    width: 130px;
+    height: 99px;
+    top: 417px;
+    left: 310px;
+}
+
+.serragem {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 345px;
+    left: 180px;
+}
+
+.papel {
+    position: absolute;
+    width: 120px;
+    height: 99px;
+    top: 417px;
+    left: 1590px;
+}
+
+.toalhadepapel {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 345px;
+    left: 1740px;
+}
+
+.jornal {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 483px;
+    left: 180px;
+}
+
+.revista {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 470px;
+    left: 1740px;
+}
+
+.laranja {
+    position: absolute;
+    width: 140px;
+    height: 99px;
+    top: 550px;
+    left: 310px;
+}
+
+.limao {
+    position: absolute;
+    width: 140px;
+    height: 99px;
+    top: 550px;
+    left: 1860px;
+}
+
+.cha {
+    position: absolute;
+    width: 140px;
+    height: 99px;
+    top: 686px;
+    left: 310px;
+}
+
+.conteudo8 {
+    padding-bottom: 50px;
+}
+
+.conteudo7 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 600px;
+    padding-bottom: 10px;
+}
+
+.conteudo9 {
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-left: 200px;
+    padding-right: 350px;
+    padding-bottom: 100px;
+}
+
+.mycontainer11 {
+    width: 100%;
+}
+
+.mycontainer1 {
+    width: 33%;
+    display: flex;
+}
+
+.mycontainer2 {
+    width: 33%;
+}
+
+.mycontainer3 {
+    width: 33%;
+}
+
+.ul {
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-left: 200px;
+    padding-right: 350px;
+}
+
+.li {
+    padding-bottom: 90px;
+}
