@@ -23,21 +23,30 @@ ul#index-antigas {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	list-style-type: none;
+	list-style: none;
 }
 ul#index-antigas li {
 	padding: 8px;
 }
 ul#sites {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
-	list-style-type: none;
+	list-style: none;
 }
 ul#sites li {
 	padding: 8px;
 }
-#sites a {
+ul#redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+}
+ul#redes li {
+	padding: 8px;
+}
+a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
@@ -52,10 +61,11 @@ main {
 	padding: 20px;
 	margin: 20px;
 }
-a {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+footer {
+	padding: 20px;
+	margin: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
 	body {
 		font-family: "Arial", sans-serif;
 		font-size: 14px;
@@ -75,7 +85,7 @@ a {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		list-style-type: none;
+		list-style: none;
 	}
 	ul#index-antigas li {
 		padding: 5px;
@@ -84,15 +94,28 @@ a {
 		display: flex;
 	flex-direction: column;
 		justify-content: space-between;
-		list-style-type: none;
+		list-style: none;
 	}
 	ul#sites li {
 		padding: 5px;
 	}
-	#sites a {
+	ul#redes {
+		display: flex;
+	flex-direction: column;
+		justify-content: space-between;
+		list-style: none;
+	}
+	ul#redes li {
+		padding: 5px;
+	}
+	a {
 		font-size: 1em;
 	}
 	main {
+		padding: 10px;
+		margin: 10px;
+	}
+	footer {
 		padding: 10px;
 		margin: 10px;
 	}
